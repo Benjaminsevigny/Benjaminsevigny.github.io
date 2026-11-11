@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Ga-Ga Patates</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Casse-croûte de quartier à Pointe-Gatineau. Frites, poutines, club sandwichs, hot-dogs. Portions généreuses, prix raisonnables. 1123, rue Saint-Louis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#0E0C09; --bg2:#17130E; --ink:#F4EBDD; --muted:#A79A86; --line:rgba(244,235,221,.12);
+  --mustard:#F2B632; --ketchup:#E0452B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip;background:#0E0C09}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.serif{font-family:"Instrument Serif",Georgia,serif;font-weight:400}
+em{font-style:italic;color:var(--mustard)}
+
+/* grain */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.07;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* nav */
+nav{position:fixed;top:0;padding-top:env(safe-area-inset-top,0px);left:0;right:0;z-index:20;transition:background .3s}
+nav.solid{background:rgba(14,12,9,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:"Instrument Serif",serif;font-size:1.55rem;letter-spacing:.01em}
+.logo i{color:var(--mustard)}
+nav ul{display:flex;gap:30px;list-style:none}
+nav ul a{font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+nav ul a:hover{color:var(--ink)}
+.tel{font-family:"JetBrains Mono",monospace;font-size:.78rem;letter-spacing:.06em;border:1px solid var(--line);padding:9px 14px;border-radius:999px;transition:.2s}
+.tel:hover{border-color:var(--mustard);color:var(--mustard)}
+
+/* hero : la fenêtre qui s'ouvre au scroll */
+.hero{height:230vh;position:relative}
+.stage{position:sticky;top:0;height:100vh;display:grid;place-items:center;overflow:hidden}
+.window{position:absolute;inset:0;clip-path:inset(var(--y,30%) var(--x,34%) var(--y,30%) var(--x,34%) round var(--r,18px));will-change:clip-path}
+.window img{transform:scale(var(--s,1.25));transform-origin:center;filter:saturate(1.1) contrast(1.05)}
+.window::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(14,12,9,.35),rgba(14,12,9,.7) 75%),linear-gradient(180deg,transparent 60%,var(--bg))}
+.hero-txt{position:relative;z-index:2;text-align:center;padding:0 20px;pointer-events:none}
+.hero-txt h1{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(3.4rem,11vw,10rem);line-height:.9;letter-spacing:-.02em;mix-blend-mode:difference}
+.hero-txt h1 .out{color:transparent;-webkit-text-stroke:1.5px var(--ink);font-style:italic}
+.hero-txt .mono{margin-bottom:22px;display:block}
+.hero-sub{position:absolute;bottom:42px;left:0;right:0;z-index:2;display:flex;justify-content:space-between;align-items:end;gap:20px}
+.hero-sub p{max-width:340px;color:var(--ink);font-size:.98rem;opacity:var(--o,0);transition:opacity .2s}
+.scroll-cue{display:flex;align-items:center;gap:10px}
+.scroll-cue span{width:1px;height:38px;background:linear-gradient(var(--mustard),transparent);animation:cue 1.8s infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* bande avis */
+.band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:18px 0}
+.band .track{display:inline-flex;gap:56px;animation:slide 32s linear infinite}
+.band .track span{font-family:"Instrument Serif",serif;font-size:1.9rem;font-style:italic}
+.band .track b{color:var(--mustard);font-weight:400;font-style:normal}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:130px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:70px;flex-wrap:wrap}
+.head h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(2.6rem,6vw,5rem);line-height:.95;letter-spacing:-.015em;max-width:760px}
+.head p{max-width:330px;color:var(--muted)}
+
+/* intro */
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.intro h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(2.2rem,4.4vw,3.8rem);line-height:1.02}
+.intro p{color:var(--muted);margin-top:22px;max-width:480px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:40px;border-top:1px solid var(--line)}
+.facts div{padding:20px 0 0}
+.facts b{display:block;font-family:"Instrument Serif",serif;font-weight:400;font-size:2.4rem;line-height:1}
+.frame{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 40px 80px -30px rgba(0,0,0,.8)}
+.frame .cap{position:absolute;left:14px;bottom:12px;font-family:"JetBrains Mono",monospace;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;background:rgba(14,12,9,.7);backdrop-filter:blur(6px);padding:6px 10px;border-radius:6px}
+.intro .stack{position:relative;height:560px}
+.intro .stack .frame:nth-child(1){position:absolute;right:0;top:0;width:78%;height:72%}
+.intro .stack .frame:nth-child(2){position:absolute;left:0;bottom:0;width:52%;height:50%}
+
+/* menu */
+.menu{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}
+.item{grid-column:span 4}
+.item.big{grid-column:span 8}
+.item .frame{aspect-ratio:4/5}
+.item.big .frame{aspect-ratio:auto;height:100%;min-height:420px}
+.item.wide{grid-column:span 6}
+.item.wide .frame{aspect-ratio:16/11}
+.item .frame img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.item:hover .frame img{transform:scale(1.05)}
+.item h3{font-family:"Instrument Serif",serif;font-weight:400;font-size:1.9rem;margin-top:16px;display:flex;justify-content:space-between;align-items:baseline}
+.item h3 .mono{font-size:.66rem}
+.item p{color:var(--muted);font-size:.95rem;max-width:420px}
+.item.big{display:grid;grid-template-rows:1fr auto}
+
+/* avis */
+.quotes{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.qgrid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+blockquote{font-family:"Instrument Serif",serif;font-size:clamp(1.8rem,3.4vw,2.9rem);line-height:1.1}
+blockquote::before{content:"«";color:var(--mustard);margin-right:.15em}
+blockquote::after{content:"»";color:var(--mustard);margin-left:.15em}
+.qgrid .mono{margin-top:18px;display:block}
+.score{display:flex;align-items:baseline;gap:18px;margin-bottom:70px}
+.score b{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(5rem,13vw,10rem);line-height:.8;color:var(--mustard)}
+
+/* visite */
+.visit{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px}
+.hours{list-style:none;border-top:1px solid var(--line)}
+.hours li{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid var(--line);font-family:"JetBrains Mono",monospace;font-size:.86rem}
+.hours li.off{color:var(--muted)}
+.hours li.today{color:var(--mustard)}
+.addr{margin-top:34px}
+.addr h3{font-family:"Instrument Serif",serif;font-weight:400;font-size:2.2rem;line-height:1.05}
+.addr p{color:var(--muted);margin-top:8px}
+.links{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+.links a{border:1px solid var(--line);padding:11px 16px;border-radius:999px;font-family:"JetBrains Mono",monospace;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;transition:.2s}
+.links a:hover{border-color:var(--mustard);color:var(--mustard)}
+.map{border-radius:14px;overflow:hidden;border:1px solid var(--line);min-height:440px}
+.mapcard{display:flex;flex-direction:column;justify-content:end;gap:10px;height:100%;min-height:440px;padding:28px;background:linear-gradient(180deg,rgba(14,12,9,.2),rgba(14,12,9,.85)),url(img/frites.jpg) center/cover;font-family:"Instrument Serif",serif;font-size:2rem;line-height:1.05}
+.mapcard .mono{color:var(--mustard)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;filter:invert(.9) hue-rotate(180deg) saturate(.6) brightness(.95)}
+
+footer{overflow:hidden;padding:60px 0 40px;border-top:1px solid var(--line)}
+footer .big{font-family:"Instrument Serif",serif;font-size:clamp(4rem,16vw,15rem);line-height:.8;letter-spacing:-.03em;color:transparent;-webkit-text-stroke:1px rgba(244,235,221,.35);font-style:italic;white-space:nowrap}
+footer .row{display:flex;justify-content:space-between;gap:20px;margin-top:30px;flex-wrap:wrap}
+
+/* apparition */
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1s ease,transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:860px){
+  .hero-txt .mono{font-size:.62rem;letter-spacing:.1em}
+  .menu>*,.intro>*,.visit>*,.qgrid>*{min-width:0}
+  footer .big{font-size:18vw}
+  nav ul{display:none}
+  section{padding:90px 0}
+  .intro,.visit,.qgrid{grid-template-columns:1fr;gap:44px}
+  .intro .stack{height:420px}
+  .item,.item.big,.item.wide{grid-column:span 12}
+  .item.big .frame{min-height:320px}
+  .hero-sub{flex-direction:column;align-items:start}
+  .head{margin-bottom:44px}
+}
+.shot .hero{height:var(--shotH,820px)}.shot .stage{position:relative;height:var(--shotH,820px)}.shot .rv{opacity:1;transform:none;transition:none}.shot .band .track{animation:none}
+@media (prefers-reduced-motion:reduce){
+  .band .track,.scroll-cue span{animation:none}
+  .rv{opacity:1;transform:none}
+}
+</style>
+<style>
+.demo-bar{position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#fff;font:500 13px/1.3 system-ui,-apple-system,"Segoe UI",sans-serif;
+ text-align:center;padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+html{scroll-padding-top:40px}
+body{padding-top:36px}
+nav{top:36px!important}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}.demo-bar{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Ga-Ga Patates<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav id="nav">
+  <div class="wrap">
+    <a href="#" class="logo">Ga-Ga <i>Patates</i></a>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#avis">Avis</a></li>
+      <li><a href="#visite">Heures</a></li>
+    </ul>
+    <a class="tel" href="tel:+18195687034">819 568-7034</a>
+  </div>
+</nav>
+
+<header class="hero" id="hero">
+  <div class="stage">
+    <div class="window" id="win"><img src="img/neon.jpg" alt="Enseigne néon « Poutine » dans une vitrine le soir"></div>
+    <div class="hero-txt">
+      <span class="mono">Casse-croûte · Pointe-Gatineau · Rue Saint-Louis</span>
+      <h1>Ga-Ga<br><span class="out">Patates</span></h1>
+    </div>
+    <div class="wrap hero-sub">
+      <p id="sub">Des frites coupées, une poutine qui coule, un club qui tient à deux mains. Le casse-croûte du quartier, comme il se doit.</p>
+      <div class="scroll-cue mono"><span></span>Défiler</div>
+    </div>
+  </div>
+</header>
+
+<div class="band" aria-hidden="true">
+  <div class="track">
+    <span>Frites <b>✦</b></span><span>Poutines <b>✦</b></span><span>Club sandwichs <b>✦</b></span><span>Hot-dogs <b>✦</b></span><span>Burgers <b>✦</b></span><span>4,7 ★ sur Google <b>✦</b></span>
+    <span>Frites <b>✦</b></span><span>Poutines <b>✦</b></span><span>Club sandwichs <b>✦</b></span><span>Hot-dogs <b>✦</b></span><span>Burgers <b>✦</b></span><span>4,7 ★ sur Google <b>✦</b></span>
+  </div>
+</div>
+
+<section>
+  <div class="wrap intro">
+    <div class="rv">
+      <span class="mono">01 — La maison</span>
+      <h2 style="margin-top:18px">Des portions <em>généreuses</em>, des prix qui ont du bon sens.</h2>
+      <p>Chez Ga-Ga Patates, on fait simple et on le fait bien : des frites dorées, de la vraie sauce, du fromage qui fait couic. On mange sur place ou on part avec, du mardi au samedi.</p>
+      <div class="facts">
+        <div><b>4,7★</b><span class="mono">Note Google</span></div>
+        <div><b>1 261</b><span class="mono">Avis</span></div>
+        <div><b>9 h 30</b><span class="mono">On ouvre</span></div>
+      </div>
+    </div>
+    <div class="stack rv">
+      <div class="frame" data-par="-0.06"><img src="img/frites.jpg" alt="Frites dorées dans un petit panier"><span class="cap">Frites maison</span></div>
+      <div class="frame" data-par="0.08"><img src="img/table.jpg" alt="Burger et poutine sur une table"><span class="cap">Poutine + burger</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" style="padding-top:40px">
+  <div class="wrap">
+    <div class="head rv">
+      <h2>Le <em>menu</em>, en vrai.</h2>
+      <p>Les classiques du casse-croûte. Menu complet et prix affichés au comptoir.</p>
+    </div>
+    <div class="menu">
+      <article class="item big rv">
+        <div class="frame"><img src="img/poutine.jpg" alt="Poutine et burger dans une assiette"><span class="cap">La vedette</span></div>
+        <div><h3>Poutines <span class="mono">La classique et plus</span></h3>
+        <p>Frites croustillantes, sauce brune bien chaude et fromage en grains bien frais.</p></div>
+      </article>
+      <article class="item rv">
+        <div class="frame"><img src="img/club.jpg" alt="Club sandwich et frites"><span class="cap">Le favori</span></div>
+        <h3>Club sandwich</h3>
+        <p>Trois étages, poulet, bacon, laitue, tomate. Servi avec frites.</p>
+      </article>
+      <article class="item wide rv">
+        <div class="frame"><img src="img/hotdog.jpg" alt="Hot-dog garni"><span class="cap">Classique</span></div>
+        <h3>Hot-dogs</h3>
+        <p>Moutarde, relish, oignons : le classique du casse-croûte.</p>
+      </article>
+      <article class="item wide rv">
+        <div class="frame"><img src="img/frites2.jpg" alt="Grosse portion de frites avec sauce"><span class="cap">Grosse portion</span></div>
+        <h3>Frites</h3>
+        <p>Petite, moyenne, familiale. Avec mayo, sauce ou vinaigre.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="quotes" id="avis">
+  <div class="wrap">
+    <div class="score rv"><b>4,7</b><div><span class="mono">sur 5 · 1 261 avis Google</span></div></div>
+    <div class="qgrid">
+      <div class="rv"><blockquote>Les meilleures frites et club sandwiches de l'Outaouais!</blockquote><span class="mono">Avis Google</span></div>
+      <div class="rv"><blockquote>Bonne bouffe et les portions sont généreuses, en plus les prix sont raisonnables.</blockquote><span class="mono">Avis Google</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="visite">
+  <div class="wrap">
+    <div class="head rv"><h2>Passez nous <em>voir</em>.</h2><p>Sur la rue Saint-Louis, à Pointe-Gatineau. Accès en fauteuil roulant.</p></div>
+    <div class="visit">
+      <div class="rv">
+        <ul class="hours" id="hours">
+          <li data-d="2"><span>Mardi</span><span>9 h 30 – 19 h</span></li>
+          <li data-d="3"><span>Mercredi</span><span>9 h 30 – 19 h</span></li>
+          <li data-d="4"><span>Jeudi</span><span>9 h 30 – 19 h</span></li>
+          <li data-d="5"><span>Vendredi</span><span>9 h 30 – 19 h</span></li>
+          <li data-d="6"><span>Samedi</span><span>9 h 30 – 19 h</span></li>
+          <li data-d="0" class="off"><span>Dimanche</span><span>Fermé</span></li>
+          <li data-d="1" class="off"><span>Lundi</span><span>Fermé</span></li>
+        </ul>
+        <div class="addr">
+          <h3>1123, rue Saint-Louis<br>Gatineau, QC J8T 2R8</h3>
+          <p>819 568-7034</p>
+          <div class="links">
+            <a href="https://maps.google.com/?cid=9212290579532857272" target="_blank" rel="noopener">Google Maps ↗</a>
+            <a href="https://www.facebook.com/gagapatates/" target="_blank" rel="noopener">Facebook ↗</a>
+          </div>
+        </div>
+      </div>
+      <div class="map rv"><a class="mapcard" href="https://maps.google.com/?cid=9212290579532857272" target="_blank" rel="noopener"><span>Pointe-Gatineau, à deux pas de la rivière.</span><span class="mono">Ouvrir l'itinéraire dans Google Maps ↗</span></a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="big">Ga-Ga Patates</div>
+    <div class="row mono"><span>© Ga-Ga Patates · Gatineau</span><span>1123, rue Saint-Louis · 819 568-7034</span></div>
+  </div>
+</footer>
+
+<script>
+// mode capture d'écran (?shot) : fenêtre ouverte, tout visible
+const SHOT=location.search.includes('shot');
+if(SHOT){document.documentElement.classList.add('shot');const w=parseInt(new URLSearchParams(location.search).get('shot'))||0;if(w)document.documentElement.style.setProperty('--shotH',w+'px');}
+// fenêtre du hero qui s'ouvre au défilement
+const hero=document.getElementById('hero'),win=document.getElementById('win'),sub=document.getElementById('sub'),nav=document.getElementById('nav');
+const pars=[...document.querySelectorAll('[data-par]')];
+function frame(){
+  const max=hero.offsetHeight-innerHeight;
+  const t=SHOT?1:Math.min(Math.max(scrollY/max,0),1);
+  const e=1-Math.pow(1-t,3);
+  const narrow=innerWidth<700;
+  const x0=narrow?14:34, y0=narrow?26:30;
+  win.style.setProperty('--x',(x0*(1-e))+'%');
+  win.style.setProperty('--y',(y0*(1-e))+'%');
+  win.style.setProperty('--r',(18*(1-e))+'px');
+  win.style.setProperty('--s',(1.25-.25*e));
+  sub.style.setProperty('--o',Math.min(1,t*2.2));
+  nav.classList.toggle('solid',!SHOT&&scrollY>max*.9);
+  pars.forEach(el=>{const r=el.getBoundingClientRect();const c=r.top+r.height/2-innerHeight/2;el.style.transform='translateY('+(c*parseFloat(el.dataset.par))+'px)';});
+}
+addEventListener('scroll',()=>requestAnimationFrame(frame),{passive:true});
+addEventListener('resize',frame);frame();
+
+// apparition
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+// jour courant dans les heures
+const d=new Date().getDay();const li=document.querySelector('#hours li[data-d="'+d+'"]');if(li)li.classList.add('today');
+</script>
+
+</body>
+</html>
