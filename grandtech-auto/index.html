@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Demo · Grandtech Auto · Auto repair in Hintonburg</title>
+<meta name="description" content="Honest auto repair in Hintonburg, Ottawa. Great service, friendly staff and fair prices: repairs, brakes, maintenance and diagnostics.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+/* Tableau de bord : témoins lumineux cliquables qui expliquent ce qu'ils veulent dire, blanc chaud, ambre et bleu */
+:root{--bg:#F6F4EF;--panel:#101318;--amber:#FFB020;--redw:#FF4A3D;--bluew:#3DA5FF;--greenw:#3DDC84;--blue:#2E6CF6;--ink:#14161A;--mu:#5C6068;--ln:rgba(20,22,26,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.03rem/1.6 "Instrument Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.mono{font-family:"IBM Plex Mono",monospace;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0}
+.logo{text-decoration:none;font:700 1.35rem "Instrument Sans";letter-spacing:-.03em}.logo span{color:var(--blue)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600}nav ul a{text-decoration:none}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;font-weight:700;text-decoration:none;transition:.2s;border:2px solid var(--ink)}
+.btn.k{background:var(--ink);color:#fff}.btn.k:hover{background:var(--blue);border-color:var(--blue)}.btn.o:hover{background:#fff}.btn.sm{padding:10px 16px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;padding:40px 0 80px}
+h1{font:700 clamp(3rem,7vw,6rem)/.95 "Instrument Sans";letter-spacing:-.05em;margin:14px 0 20px}h1 span{color:var(--blue)}
+.lead{font-size:1.15rem;color:var(--mu);max-width:42ch;margin:0 0 26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.dash{background:var(--panel);border-radius:28px;padding:26px;color:#cfd3da;box-shadow:0 40px 70px -40px rgba(0,0,0,.6),inset 0 2px 0 rgba(255,255,255,.05)}
+.dash .ph{border-radius:16px;overflow:hidden;aspect-ratio:16/9;margin-bottom:18px;opacity:.9}.dash img{width:100%;height:100%;object-fit:cover}
+.lights{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.lt{all:unset;cursor:pointer;aspect-ratio:1;border-radius:14px;background:#1A1E25;display:grid;place-items:center;transition:.25s;border:1.5px solid transparent}
+.lt svg{width:58%;height:58%;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.35;transition:.25s}
+.lt.a{color:var(--amber)}.lt.r{color:var(--redw)}.lt.b{color:var(--bluew)}
+.lt[aria-pressed=true]{border-color:currentColor;background:#20252e}.lt[aria-pressed=true] svg{opacity:1;filter:drop-shadow(0 0 8px currentColor)}
+.lt:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.read{margin-top:16px;min-height:120px;border-top:1px solid rgba(255,255,255,.08);padding-top:14px}
+.read b{display:block;color:#fff;font-size:1.2rem;margin:6px 0 4px}.read p{margin:0;font-size:.95rem}
+.urg{display:inline-block;padding:3px 10px;border-radius:999px;font:500 .72rem "IBM Plex Mono";text-transform:uppercase}
+.urg.r{background:var(--redw);color:#fff}.urg.a{background:var(--amber);color:#1a1200}.urg.b{background:var(--bluew);color:#00142a}
+section{padding:96px 0}
+h2{font:700 clamp(2.3rem,5vw,4rem)/1 "Instrument Sans";letter-spacing:-.045em;margin:10px 0 0}h2 span{color:var(--blue)}
+.honest{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.hn{background:#fff;border-radius:20px;padding:26px;border:1px solid var(--ln)}.hn b{font:700 2.6rem/1 "Instrument Sans";letter-spacing:-.04em;color:var(--blue)}.hn h3{margin:12px 0 6px;font-size:1.2rem}.hn p{margin:0;color:var(--mu)}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.s{border-radius:20px;overflow:hidden;background:#fff;border:1px solid var(--ln)}.s .ph{aspect-ratio:4/3;overflow:hidden}.s img{width:100%;height:100%;object-fit:cover}
+.s .in{padding:18px}.s h3{margin:6px 0 4px;font-size:1.15rem}.s p{margin:0;color:var(--mu);font-size:.93rem}
+.qs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+.q{margin:0;padding:30px;border-radius:22px;background:var(--panel);color:#fff}.q blockquote{margin:0;font-size:1.4rem;font-weight:600;letter-spacing:-.02em;line-height:1.3}.q figcaption{margin-top:12px;color:var(--amber);font-family:"IBM Plex Mono";font-size:.78rem;text-transform:uppercase}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln)}.hrs li.td{color:var(--blue);font-weight:700}
+.st{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-weight:700}.st::before{content:"";width:10px;height:10px;border-radius:50%;background:#bbb}.st.on::before{background:var(--greenw);box-shadow:0 0 10px var(--greenw)}
+.box{background:#fff;border-radius:22px;padding:30px;border:1px solid var(--ln);display:grid;gap:8px;align-content:start}.box h3{margin:0;font-size:1.6rem;letter-spacing:-.03em}
+footer{padding:40px 0 26px;border-top:1px solid var(--ln);text-align:center}footer b{font:700 clamp(2rem,6vw,4rem)/1 "Instrument Sans";letter-spacing:-.05em}footer b span{color:var(--blue)}footer p{color:var(--mu);font-size:.85rem}
+@media (max-width:900px){nav ul{display:none}.hero,.qs,.vis{grid-template-columns:minmax(0,1fr)}.honest{grid-template-columns:minmax(0,1fr)}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}.lights{grid-template-columns:repeat(3,1fr)}section{padding:72px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DEMO</b>Example made for Grandtech Auto<span class="long"> · not the business's official website</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><a class="logo" href="#">Grandtech<span>.</span>Auto</a><ul><li><a href="#lights">Dashboard lights</a></li><li><a href="#services">Services</a></li><li><a href="#visit">Visit</a></li></ul><a class="btn k sm" href="tel:+16137296888">613 729-6888</a></nav>
+<header class="hero">
+ <div><span class="mono" style="color:var(--blue)">Auto repair · Hintonburg, Ottawa</span><h1>Honest prices, <span>good work.</span></h1>
+ <p class="lead">A local shop with an honest owner who explains the work and charges fairly. Great service and friendly staff, on Breezehill Avenue.</p>
+ <div class="ctas"><a class="btn k" href="tel:+16137296888">Book a repair</a><a class="btn o" href="#lights">A light just came on</a></div>
+ <p style="margin-top:20px;font-weight:600">★ 4.9 · 92 Google reviews</p></div>
+ <div class="dash" id="lights"><div class="ph"><img src="img/1.jpg" alt="Inside the Grandtech Auto shop"></div>
+  <span class="mono">Tap the light you see on your dashboard</span>
+  <div class="lights" role="group" aria-label="Dashboard warning lights" style="margin-top:10px">
+   <button class="lt a" data-k="0" aria-label="Check engine"><svg viewBox="0 0 24 24"><path d="M5 9h2l1-2h6l1 2h3v3h2v4h-2v2h-4l-2 2H8l-1-2H5z"/><path d="M3 11v4"/></svg></button>
+   <button class="lt r" data-k="1" aria-label="Oil pressure"><svg viewBox="0 0 24 24"><path d="M3 13h4l3-3h8l3 3-3 4H7l-4-4"/><path d="M21 9c0 1-1 2-1 2"/></svg></button>
+   <button class="lt r" data-k="2" aria-label="Battery"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="12" rx="1"/><path d="M7 7V5h3v2M14 7V5h3v2M7 13h3M15 11.5v3M13.5 13h3"/></svg></button>
+   <button class="lt r" data-k="3" aria-label="Engine temperature"><svg viewBox="0 0 24 24"><path d="M12 3v11"/><circle cx="12" cy="17" r="3"/><path d="M12 6h3M12 9h3M4 20c2-1 3 1 5 0M15 20c2-1 3 1 5 0"/></svg></button>
+   <button class="lt a" data-k="4" aria-label="Tire pressure"><svg viewBox="0 0 24 24"><path d="M6 6c-2 2-3 5-3 7 0 4 3 7 9 7s9-3 9-7c0-2-1-5-3-7"/><path d="M12 8v5M12 16v.5"/></svg></button>
+   <button class="lt a" data-k="5" aria-label="ABS brakes"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><path d="M4 7a10 10 0 0 0 0 10M20 7a10 10 0 0 1 0 10"/><text x="12" y="14.5" text-anchor="middle" font-size="5" fill="currentColor" stroke="none" font-family="sans-serif" font-weight="700">ABS</text></svg></button>
+  </div>
+  <div class="read" aria-live="polite"><span class="urg" id="ru"></span><b id="rt"></b><p id="rp"></p></div></div>
+</header></div>
+
+<section id="services" style="padding-top:10px"><div class="wrap">
+ <div class="rv"><span class="mono" style="color:var(--blue)">How we work</span><h2>No surprises <span>on the bill</span>.</h2></div>
+ <div class="honest">
+  <div class="hn rv"><b>01</b><h3>We look first</h3><p>We find out what's really wrong before we quote anything.</p></div>
+  <div class="hn rv" style="--d:.08s"><b>02</b><h3>We explain</h3><p>You hear what needs doing now, and what can wait.</p></div>
+  <div class="hn rv" style="--d:.16s"><b>03</b><h3>Fair price</h3><p>You approve the work and the price before we start.</p></div>
+ </div>
+ <div class="svc">
+  <div class="s rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><div class="in"><span class="mono" style="color:var(--blue)">Complete</span><h3>General repair</h3><p>All makes and models.</p></div></div>
+  <div class="s rv" style="--d:.06s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><div class="in"><span class="mono" style="color:var(--blue)">Safety</span><h3>Brakes</h3><p>Pads, rotors, inspection.</p></div></div>
+  <div class="s rv" style="--d:.12s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><div class="in"><span class="mono" style="color:var(--blue)">Quick</span><h3>Maintenance</h3><p>Oil changes and tune-ups.</p></div></div>
+  <div class="s rv" style="--d:.18s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><div class="in"><span class="mono" style="color:var(--blue)">Clear</span><h3>Diagnostics</h3><p>Check engine lights and more.</p></div></div>
+ </div>
+ <div class="qs"><figure class="q rv"><blockquote>“Great service, friendly staff, and honest prices.”</blockquote><figcaption>Google review · 4.9 ★ · 92 reviews</figcaption></figure><figure class="q rv" style="--d:.1s"><blockquote>“Great place, honest owner, very professional.”</blockquote><figcaption>Google review</figcaption></figure></div>
+</div></section>
+
+<section id="visit" style="padding-top:0"><div class="wrap vis">
+ <div class="rv"><span class="mono" style="color:var(--blue)">Shop hours</span><h2>Come by <span>the shop</span>.</h2><div class="st" data-status>Hours</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="mono" style="color:var(--blue)">Address</span><h3>111 Breezehill Ave N</h3><p style="margin:0;color:var(--mu)">Ottawa, ON K1Y 2H6</p><div class="ctas" style="margin-top:12px"><a class="btn k sm" href="tel:+16137296888">613 729-6888</a><a class="btn o sm" href="https://www.google.com/maps?cid=6096206137827408112" target="_blank" rel="noopener">Directions ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><b>Grandtech<span>.</span>Auto</b><p>© Grandtech Auto · Hintonburg, Ottawa · 613 729-6888</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [540, 1080], "6": null, "0": null, "1": [540, 1080], "2": [540, 1080], "3": [540, 1080], "4": [540, 1080]}, "en") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [540, 1080], "6": null, "0": null, "1": [540, 1080], "2": [540, 1080], "3": [540, 1080], "4": [540, 1080]},EN="en"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const D=[["a","Soon","Check engine","Something in the engine or emissions system needs a look. If it's flashing, slow down and call us today."],["r","Stop now","Oil pressure","Pull over safely and turn off the engine. Driving with low oil pressure can damage the engine fast."],["r","Today","Battery / charging","The battery or alternator isn't charging. You may not be able to restart the car, so come in soon."],["r","Stop now","Engine temperature","The engine is overheating. Pull over, let it cool and don't open the radiator cap while hot."],["a","Soon","Tire pressure","One or more tires are low. Check the pressure, especially when temperatures drop."],["a","Soon","ABS","Your regular brakes still work, but the anti-lock system is off. Get it checked before the snow."]];
+const bs=[...document.querySelectorAll('.lt')];function sel(k){bs.forEach(b=>b.setAttribute('aria-pressed',+b.dataset.k===k));const d=D[k],u=document.getElementById('ru');u.className='urg '+d[0];u.textContent=d[1];document.getElementById('rt').textContent=d[2];document.getElementById('rp').textContent=d[3]}
+bs.forEach(b=>b.onclick=()=>sel(+b.dataset.k));sel(0);
+</script>
+
+</body>
+</html>

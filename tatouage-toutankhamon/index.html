@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Tatouage Toutankhamon · Vieux-Québec depuis 2004</title>
+<meta name="description" content="Tatouage et perçage au coeur du Vieux-Québec, dans une maison historique de la rue D'Auteuil, depuis 2004.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bk:#0B0A08;--bk2:#14120E;--gold:#D9AE55;--g1:#8C6A2E;--g2:#F6DC93;--sand:#E9DDC4;--lap:#24427A;--mu:#A89E8A;--ln:rgba(217,174,85,.22);--vh:100svh;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bk);color:var(--sand);font:400 1rem/1.7 Manrope,system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 max(22px,env(safe-area-inset-left,0px))}
+.cz{font-family:Cinzel,serif}
+.gold{background:linear-gradient(100deg,var(--g1) 0%,var(--g2) 25%,var(--gold) 45%,var(--g1) 60%,var(--g2) 80%,var(--gold) 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 7s linear infinite}
+@keyframes sheen{to{background-position:-250% 0}}
+.k{font:700 .72rem Cinzel;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 0;border-bottom:1px solid var(--ln)}
+.logo{text-decoration:none;font:900 1.15rem Cinzel;letter-spacing:.14em}
+nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;font:500 .8rem Cinzel;letter-spacing:.18em}
+nav ul a{text-decoration:none;color:var(--mu);transition:.2s}nav ul a:hover{color:var(--gold)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:10px;padding:14px 26px;font:700 .82rem Cinzel;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold);transition:.3s}
+.btn.g{background:linear-gradient(120deg,var(--g1),var(--gold),var(--g1));color:#140F05}.btn.g:hover{filter:brightness(1.15)}
+.btn.o{color:var(--gold)}.btn.o:hover{background:rgba(217,174,85,.1)}
+.btn.sm{padding:10px 18px;font-size:.74rem}
+/* héros : pylône */
+.hero{position:relative;text-align:center;padding:50px 0 90px;min-height:calc(var(--vh) - 90px);display:grid;align-content:center;justify-items:center;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse 60% 50% at 50% 55%,rgba(217,174,85,.16),transparent 70%)}
+.pylon{position:relative;width:min(80vw,520px);aspect-ratio:1.1;margin-bottom:-90px;z-index:-1;filter:drop-shadow(0 0 1px var(--gold)) drop-shadow(0 30px 60px rgba(0,0,0,.8))}
+.pylon .in{position:absolute;inset:0;clip-path:polygon(12% 0,88% 0,100% 100%,0 100%);background:var(--gold);padding:2px}
+.pylon .in div{width:100%;height:100%;clip-path:polygon(12% 0,88% 0,100% 100%,0 100%);overflow:hidden}
+.pylon img{width:100%;height:100%;object-fit:cover;filter:sepia(.35) contrast(1.1) brightness(.75)}
+.pylon::after{content:"";position:absolute;inset:0;clip-path:polygon(12% 0,88% 0,100% 100%,0 100%);background:linear-gradient(180deg,transparent 35%,var(--bk) 92%)}
+.sun{position:absolute;top:-36px;left:50%;transform:translateX(-50%);width:72px;height:36px;z-index:2}
+.pre{font:500 clamp(.9rem,1.6vw,1.2rem) Cinzel;letter-spacing:.6em;margin:0 0 6px;padding-left:.6em}
+h1{margin:0;font:900 clamp(2.6rem,9.2vw,8.4rem)/.95 Cinzel;letter-spacing:.02em}
+.sub{display:flex;align-items:center;gap:18px;margin:20px 0 34px;font:italic 500 clamp(1.1rem,2vw,1.5rem) "Cormorant Garamond";color:var(--sand)}
+.sub::before,.sub::after{content:"";width:60px;height:1px;background:var(--gold)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.frieze{height:34px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='34'%3E%3Cg fill='none' stroke='%23D9AE55' stroke-width='1.4'%3E%3Cpath d='M0 33h68M0 1h68'/%3E%3Cpath d='M4 29 L17 7 L30 29 Z'/%3E%3Ccircle cx='17' cy='22' r='3'/%3E%3Cpath d='M38 7v22M44 7v22M50 7v22M41 12h6M41 24h6'/%3E%3Cpath d='M56 29c0-8 4-14 8-18'/%3E%3C/g%3E%3C/svg%3E") repeat-x center/68px 34px;opacity:.75;animation:fr 40s linear infinite}
+@keyframes fr{to{background-position:-680px center}}
+section{padding:120px 0}
+h2{margin:14px 0 0;font:700 clamp(2.2rem,4.6vw,3.9rem)/1.05 Cinzel;letter-spacing:.01em}
+.cent{text-align:center;max-width:760px;margin:0 auto}
+.cent p{color:var(--mu);font-size:1.08rem}
+/* processus : cartouches */
+.cart{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:60px}
+.ca{border:1px solid var(--gold);border-radius:120px;padding:56px 30px 46px;text-align:center;position:relative;background:linear-gradient(180deg,rgba(217,174,85,.07),transparent 60%);transition:transform .5s,box-shadow .5s}
+.ca::before{content:"";position:absolute;inset:7px;border:1px solid var(--ln);border-radius:120px;pointer-events:none}
+.ca:hover{transform:translateY(-8px);box-shadow:0 30px 60px -30px rgba(217,174,85,.4)}
+.ca .n{font:900 2.8rem/1 Cinzel}
+.ca h3{font:700 1.35rem Cinzel;margin:18px 0 10px;letter-spacing:.04em}
+.ca p{margin:0;color:var(--mu)}
+/* maison historique */
+.house{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.house .ph{position:relative;aspect-ratio:4/5;overflow:hidden;border:1px solid var(--ln);padding:12px}
+.house .ph img{width:100%;height:100%;object-fit:cover;filter:sepia(.25)}
+.yr{font:900 clamp(5rem,12vw,9rem)/.9 Cinzel;margin:10px 0 6px}
+.house p{color:var(--mu);font-size:1.06rem}
+.svc{list-style:none;padding:0;margin:30px 0 0;border-top:1px solid var(--ln)}
+.svc li{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid var(--ln)}
+.svc b{font:700 1.02rem Cinzel;letter-spacing:.06em}.svc span{color:var(--mu);font-size:.92rem;text-align:right}
+/* portfolio */
+.pf{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:12px;margin-top:56px}
+.pf figure{margin:0;position:relative;overflow:hidden;border:1px solid transparent;transition:border-color .5s}
+.pf figure:nth-child(1){grid-row:span 2}.pf figure:nth-child(2){grid-column:span 2}.pf figure:nth-child(5){grid-column:span 2}
+.pf img{width:100%;height:100%;object-fit:cover;filter:grayscale(.6) sepia(.25);transition:filter .6s,transform 1.2s}
+.pf figure:hover{border-color:var(--gold)}.pf figure:hover img{filter:none;transform:scale(1.05)}
+.pf figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px;font:700 .72rem Cinzel;letter-spacing:.2em;background:linear-gradient(0deg,rgba(11,10,8,.9),transparent);transform:translateY(100%);transition:transform .5s}
+.pf figure:hover figcaption{transform:none}
+/* avis */
+.rev{background:var(--bk2);border-block:1px solid var(--ln)}
+.score{display:flex;justify-content:center;align-items:center;gap:20px;margin-top:20px}.score b{font:900 4.6rem/1 Cinzel}.score span{text-align:left;color:var(--mu)}
+.qs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px}
+.q{margin:0;padding:34px 28px;border:1px solid var(--ln);text-align:center}
+.q blockquote{margin:0;font:italic 500 1.55rem/1.25 "Cormorant Garamond"}
+.q figcaption{margin-top:16px;font:700 .68rem Cinzel;letter-spacing:.2em;color:var(--gold)}
+/* visite */
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.hrs{list-style:none;margin:24px 0 0;padding:0}
+.hrs li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--ln);color:var(--mu)}.hrs li.td{color:var(--sand);font-weight:700}
+.st{display:inline-block;margin-top:18px;font:700 .72rem Cinzel;letter-spacing:.2em;padding:8px 14px;border:1px solid var(--ln);color:var(--mu)}.st.on{color:var(--gold);border-color:var(--gold)}
+.box{border:1px solid var(--gold);padding:40px;text-align:center;position:relative}
+.box::before{content:"";position:absolute;inset:8px;border:1px solid var(--ln);pointer-events:none}
+.box h3{font:700 1.6rem Cinzel;margin:10px 0}
+.box p{color:var(--mu)}
+footer{padding:70px 0 30px;text-align:center;border-top:1px solid var(--ln)}
+footer .big{font:900 clamp(2.4rem,8vw,6.6rem)/1 Cinzel}
+footer p{color:var(--mu);font-size:.85rem;margin-top:22px}
+.rv{opacity:0;transform:translateY(30px);transition:opacity 1.1s cubic-bezier(.2,.7,.2,1),transform 1.1s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media (max-width:900px){nav ul{display:none}.cart,.qs,.house,.vis{grid-template-columns:minmax(0,1fr)}.ca{border-radius:90px}.pf{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:170px}.pf figure:nth-child(2),.pf figure:nth-child(5){grid-column:span 2}section{padding:84px 0}.pre{letter-spacing:.4em}nav .btn.sm{padding:9px 12px;letter-spacing:.08em}.logo{font-size:.95rem}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+html.shot .rv{opacity:1;transform:none;transition:none}html.shot *{animation-play-state:paused!important}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Tatouage Toutankhamon<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap"><nav><a class="logo gold" href="#">TOUTANKHAMON</a>
+<ul><li><a href="#oeuvre">L'oeuvre</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#avis">Avis</a></li><li><a href="#visite">Visite</a></li></ul>
+<a class="btn o sm" href="tel:+14186925606">418 692-5606</a></nav></div>
+
+<header class="hero">
+ <div class="pylon" aria-hidden="true"><svg class="sun" viewBox="0 0 72 36"><path d="M2 34 A34 34 0 0 1 70 34" fill="none" stroke="#D9AE55" stroke-width="1.5"/><circle cx="36" cy="34" r="12" fill="#D9AE55"/></svg><div class="in"><div><img src="img/1.jpg" alt=""></div></div></div>
+ <p class="pre cz gold">Tatouage &amp; perçage</p>
+ <h1 class="gold">Toutankhamon</h1>
+ <p class="sub">Au coeur du Vieux-Québec, depuis 2004</p>
+ <div class="ctas"><a class="btn g" href="tel:+14186925606">Parler de mon projet</a><a class="btn o" href="#portfolio">Voir le portfolio</a></div>
+</header>
+<div class="frieze" aria-hidden="true"></div>
+
+<section id="oeuvre"><div class="wrap">
+ <div class="cent rv"><span class="k">De l'idée à l'oeuvre</span><h2>Votre tatouage, <span class="gold">en trois temps</span>.</h2><p>Confier votre tatouage à un de nos artistes, c'est mettre leur talent et leur créativité au service de votre idée.</p></div>
+ <div class="cart">
+  <div class="ca rv"><div class="n gold">I</div><h3>L'idée</h3><p>Vous arrivez avec une image en tête, une photo ou juste une envie. On en discute ensemble.</p></div>
+  <div class="ca rv" style="--d:.12s"><div class="n gold">II</div><h3>Le dessin</h3><p>L'artiste crée un dessin sur mesure, pensé pour votre peau et l'endroit choisi.</p></div>
+  <div class="ca rv" style="--d:.24s"><div class="n gold">III</div><h3>L'oeuvre</h3><p>La séance, avec une hygiène nickel et des conseils pour bien guérir.</p></div>
+ </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap house">
+ <div class="ph rv"><img src="img/2.jpg" alt="" loading="lazy"></div>
+ <div class="rv" style="--d:.1s"><span class="k">25, rue D'Auteuil</span><div class="yr gold">2004</div><h2 style="font-size:clamp(1.8rem,3vw,2.6rem)">Une maison historique du Vieux-Québec.</h2>
+ <p>Depuis plus de vingt ans, notre studio vous accueille entre des murs chargés d'histoire, à deux pas des fortifications. Une équipe attentionnée et souriante, et un style traditionnel maîtrisé.</p>
+ <ul class="svc"><li><b>Tatouage traditionnel</b><span>Lignes franches, couleurs vives</span></li><li><b>Sur mesure</b><span>Un dessin créé pour vous</span></li><li><b>Perçage</b><span>Fait avec soin</span></li><li><b>Retouches</b><span>Pour raviver vos tatouages</span></li><li><b>Bons cadeaux</b><span>À offrir</span></li></ul></div>
+</div></section>
+
+<section id="portfolio" style="padding-top:0"><div class="wrap">
+ <div class="cent rv"><span class="k">Portfolio</span><h2>Le travail <span class="gold">de nos artistes</span>.</h2></div>
+ <div class="pf rv">
+  <figure><img src="img/3.jpg" alt="" loading="lazy"><figcaption>En séance</figcaption></figure>
+  <figure><img src="img/2.jpg" alt="" loading="lazy"><figcaption>Dessins originaux</figcaption></figure>
+  <figure><img src="img/5.jpg" alt="" loading="lazy"><figcaption>Le trait</figcaption></figure>
+  <figure><img src="img/6.jpg" alt="" loading="lazy"><figcaption>Traditionnel</figcaption></figure>
+  <figure><img src="img/4.jpg" alt="" loading="lazy"><figcaption>Le studio</figcaption></figure>
+ </div>
+</div></section>
+
+<section class="rev" id="avis"><div class="wrap">
+ <div class="cent rv"><span class="k">Avis Google</span><div class="score"><b class="gold">4,9</b><span>★★★★★<br>191 avis</span></div></div>
+ <div class="qs">
+  <figure class="q rv"><blockquote>« Hygiène nickel, rapidité, pur traditionnel. »</blockquote><figcaption>Avis Google</figcaption></figure>
+  <figure class="q rv" style="--d:.1s"><blockquote>« Dans le coeur d'une maison historique, tout le monde est attentionné et souriant. »</blockquote><figcaption>Avis Google</figcaption></figure>
+  <figure class="q rv" style="--d:.2s"><blockquote>« J'adore mon tatoo ! »</blockquote><figcaption>Avis Google</figcaption></figure>
+ </div>
+</div></section>
+
+<section id="visite"><div class="wrap vis">
+ <div class="rv"><span class="k">Heures du studio</span><h2>Poussez la <span class="gold">porte</span>.</h2><div class="st" id="st">HEURES D'OUVERTURE</div><ul class="hrs" id="hrs"></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="k">Nous trouver</span><h3 class="gold">25, rue D'Auteuil</h3><p>Vieux-Québec, QC G1R 4B9<br>Sur rendez-vous ou en passant au studio</p>
+ <div class="ctas" style="margin-top:24px"><a class="btn g" href="tel:+14186925606">418 692-5606</a><a class="btn o" href="https://www.google.com/maps?cid=6122028267745382067" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+
+<footer><div class="wrap"><div class="big gold">Toutankhamon</div><p>© Tatouage Toutankhamon · Vieux-Québec depuis 2004 · 418 692-5606</p></div></footer>
+
+<script>
+(()=>{const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const H={2:[720,1020],3:[720,1020],4:[600,1020],5:[600,1020],6:[600,1020],0:null,1:null},N=['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const f=m=>Math.floor(m/60)+' h'+(m%60?' '+String(m%60).padStart(2,'0'):'');const n=new Date(),d=n.getDay(),m=n.getHours()*60+n.getMinutes(),ul=document.getElementById('hrs');
+[1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';li.innerHTML='<span>'+N[k]+'</span><span>'+(H[k]?f(H[k][0])+' – '+f(H[k][1]):'Fermé')+'</span>';ul.appendChild(li)});
+const t=H[d],st=document.getElementById('st');if(t&&m>=t[0]&&m<t[1]){st.classList.add('on');st.textContent='OUVERT · JUSQU\'À '+f(t[1]).toUpperCase()}else st.textContent='FERMÉ EN CE MOMENT';
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+})();
+</script>
+
+</body>
+</html>

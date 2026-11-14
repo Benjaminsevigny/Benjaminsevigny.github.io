@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Atelier Mécanique ELP · Spécialiste GM à Sherbrooke</title>
+<meta name="description" content="Atelier de mécanique spécialisé dans les produits GM à Sherbrooke. Diagnostic précis, réparations honnêtes, l'heure juste.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+/* Lecteur de codes OBD : fibre de carbone, rouge GM performance, écran de diagnostic qui décode un code moteur */
+:root{--bk:#0C0C0E;--cf:#141417;--red:#D3202A;--red2:#FF3B45;--chrome:#C9CDD2;--fg:#F1F2F4;--mu:#9A9EA6;--ln:rgba(241,242,244,.12);--lcd:#9CFF6E}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bk);color:var(--fg);font:500 1.05rem/1.55 Rajdhani,system-ui,sans-serif;overflow-x:hidden}
+.carbon{background-color:var(--cf);background-image:linear-gradient(45deg,rgba(255,255,255,.025) 25%,transparent 25%,transparent 75%,rgba(255,255,255,.025) 75%),linear-gradient(45deg,rgba(255,255,255,.025) 25%,transparent 25%,transparent 75%,rgba(255,255,255,.025) 75%);background-size:8px 8px;background-position:0 0,4px 4px}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.tk{font-family:Teko,sans-serif;text-transform:uppercase;line-height:.9}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 0;border-bottom:1px solid var(--ln)}
+.logo{text-decoration:none;display:flex;align-items:center;gap:12px}.logo i{font:600 2rem Teko;font-style:italic;color:var(--red);letter-spacing:.02em;line-height:1}.logo span{font-size:.85rem;color:var(--mu);line-height:1.1}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:.92rem}nav ul a{text-decoration:none;color:var(--mu)}nav ul a:hover{color:var(--fg)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:13px 22px;font:700 1rem Rajdhani;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;transition:.2s;border:2px solid var(--red);clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+.btn.r{background:var(--red);color:#fff}.btn.r:hover{background:var(--red2)}.btn.o{color:var(--fg)}.btn.o:hover{background:rgba(211,32,42,.15)}.btn.sm{padding:9px 16px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;padding:50px 0 80px}
+.eye{font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--red2);font-size:.85rem}
+h1{font:600 clamp(4rem,10vw,8.6rem)/.82 Teko;text-transform:uppercase;margin:14px 0 18px}h1 span{color:var(--red);display:block}
+.lead{font-size:1.2rem;color:var(--mu);max-width:44ch;margin:0 0 26px;font-weight:500}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.scan{background:#1A1B1F;border:2px solid #2A2C31;border-radius:22px;padding:18px;box-shadow:0 30px 60px -30px #000,inset 0 1px 0 rgba(255,255,255,.06)}
+.scr{background:#0A140A;border-radius:12px;padding:18px;font:400 1rem "Share Tech Mono";color:var(--lcd);min-height:250px;box-shadow:inset 0 0 30px rgba(0,0,0,.8);position:relative;overflow:hidden}
+.scr::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 1px,transparent 1px 3px);pointer-events:none}
+.scr .h{display:flex;justify-content:space-between;opacity:.75;font-size:.85rem;border-bottom:1px dashed rgba(156,255,110,.3);padding-bottom:8px;margin-bottom:10px}
+.scr .code{font-size:2.6rem;letter-spacing:.06em;line-height:1}.scr .desc{margin-top:8px;font-size:1.02rem}.scr .adv{margin-top:12px;color:#fff;opacity:.85;font-size:.95rem}
+.cur{display:inline-block;width:10px;height:1.1em;background:var(--lcd);vertical-align:middle;animation:bl 1s steps(2) infinite}@keyframes bl{50%{opacity:0}}
+.keys{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.keys input{flex:1;min-width:140px;font:400 1.1rem "Share Tech Mono";padding:10px 12px;border-radius:8px;border:2px solid #2A2C31;background:#0F1012;color:var(--fg);text-transform:uppercase}
+.keys button{font:700 .95rem Rajdhani;text-transform:uppercase;letter-spacing:.06em;padding:10px 14px;border-radius:8px;border:2px solid var(--ln);background:#24262B;color:var(--fg);cursor:pointer}
+.keys button.go{background:var(--red);border-color:var(--red)}
+.brands{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding:22px 0;border-block:1px solid var(--ln);font:600 1.8rem Teko;text-transform:uppercase;letter-spacing:.08em;color:var(--chrome)}
+.brands span{opacity:.7}
+section{padding:90px 0}
+h2{font:600 clamp(3rem,6vw,5rem)/.88 Teko;text-transform:uppercase;margin:8px 0 0}h2 span{color:var(--red)}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:40px;background:var(--ln)}
+.s{background:var(--bk);padding:0 0 22px}.s .ph{aspect-ratio:4/3;overflow:hidden}.s img{width:100%;height:100%;object-fit:cover;filter:grayscale(.5) contrast(1.1);transition:filter .5s}.s:hover img{filter:none}
+.s h3{font:600 2rem Teko;text-transform:uppercase;margin:16px 18px 2px}.s p{margin:0 18px;color:var(--mu)}.s span{display:block;margin:14px 18px 0;color:var(--red2);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem}
+.own{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.own .ph{aspect-ratio:4/3;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 88%,88% 100%,0 100%)}.own img{width:100%;height:100%;object-fit:cover}
+.own blockquote{margin:22px 0 0;font:600 2.4rem/1 Teko;text-transform:uppercase}.own blockquote span{color:var(--red)}
+.own p{color:var(--mu)}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0;font-family:"Share Tech Mono",monospace}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln);color:var(--mu)}.hrs li.td{color:var(--fg)}
+.st{display:inline-block;margin-top:14px;font:400 .9rem "Share Tech Mono";padding:6px 12px;border:1px solid var(--ln);color:var(--mu)}.st.on{color:var(--lcd);border-color:var(--lcd)}
+.box{border:1px solid var(--ln);padding:30px;display:grid;gap:8px;align-content:start}.box h3{font:600 2.2rem Teko;text-transform:uppercase;margin:0;line-height:1}
+footer{padding:40px 0 24px;border-top:1px solid var(--ln);text-align:center}footer .tk{font-size:clamp(3rem,10vw,7rem);font-weight:600;color:transparent;-webkit-text-stroke:1.5px rgba(241,242,244,.3)}footer p{color:var(--mu);font-size:.9rem}
+@media (max-width:900px){nav ul{display:none}.hero,.own,.vis{grid-template-columns:minmax(0,1fr)}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}.brands{font-size:1.3rem;justify-content:center}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Atelier Mécanique ELP<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="carbon"><div class="wrap">
+<nav><a class="logo" href="#"><i>ELP</i><span>Atelier Mécanique<br>Sherbrooke</span></a><ul><li><a href="#scan">Code moteur</a></li><li><a href="#services">Services</a></li><li><a href="#heures">Heures</a></li></ul><a class="btn r sm" href="tel:+18198462220">819 846-2220</a></nav>
+<header class="hero">
+ <div><span class="eye">Spécialiste des produits GM · Fleurimont</span><h1>L'heure <span>juste.</span></h1>
+ <p class="lead">Des techniciens qualifiés qui connaissent les véhicules GM à fond. Diagnostic précis, réparations honnêtes et la tranquillité d'esprit.</p>
+ <div class="ctas"><a class="btn r" href="tel:+18198462220">Prendre rendez-vous</a><a class="btn o" href="#scan">Décoder mon voyant</a></div>
+ <p style="margin-top:20px;color:var(--mu)">★ 4,9 · 42 avis Google</p></div>
+ <div class="scan" id="scan"><div class="scr" aria-live="polite"><div class="h"><span>ELP · DIAG GM</span><span>OBD-II</span></div><div class="code" id="cd">P0300<span class="cur"></span></div><div class="desc" id="ds"></div><div class="adv" id="ad"></div></div>
+  <div class="keys"><input id="ci" maxlength="5" placeholder="Ex. P0420" aria-label="Code moteur"><button class="go" id="cg" type="button">Lire</button><button data-c="P0171" type="button">P0171</button><button data-c="P0420" type="button">P0420</button><button data-c="P0455" type="button">P0455</button></div></div>
+</header></div>
+<div class="wrap"><div class="brands" aria-hidden="true"><span>Chevrolet</span><span>GMC</span><span>Buick</span><span>Cadillac</span><span>Duramax</span></div></div></div>
+
+<section id="services"><div class="wrap">
+ <div class="rv"><span class="eye">Services</span><h2>GM, <span>de A à Z</span>.</h2></div>
+ <div class="svc rv">
+  <div class="s"><div class="ph"><img src="img/1.jpg" alt="" loading="lazy"></div><span>Spécialité</span><h3>Diagnostic GM</h3><p>Outils et savoir-faire spécialisés.</p></div>
+  <div class="s"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><span>Complet</span><h3>Mécanique générale</h3><p>Moteur, transmission, suspension.</p></div>
+  <div class="s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><span>Préventif</span><h3>Entretien</h3><p>Selon le carnet GM.</p></div>
+  <div class="s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><span>Sécurité</span><h3>Freins</h3><p>Inspection et réparation.</p></div>
+ </div></div></section>
+
+<section style="padding-top:0"><div class="wrap own">
+ <div class="ph rv"><img src="img/5.jpg" alt="" loading="lazy"></div>
+ <div class="rv" style="--d:.1s"><span class="eye">Avis Google · 4,9 ★ · 42 avis</span><blockquote>« Pour avoir l'heure juste et la <span>tranquillité d'esprit</span>, c'est ici ! »</blockquote><p>« Compétent, excellent service et technicien très bien qualifié. »</p></div>
+</div></section>
+
+<section id="heures" class="carbon"><div class="wrap vis">
+ <div class="rv"><span class="eye">Heures de l'atelier</span><h2>Passez à <span>l'atelier</span>.</h2><div class="st" data-status>HEURES</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="eye">Adresse</span><h3>165 Rte de Windsor</h3><p style="margin:0;color:var(--mu)">Sherbrooke, QC J1C 0E5</p><div class="ctas" style="margin-top:12px"><a class="btn r sm" href="tel:+18198462220">819 846-2220</a><a class="btn o sm" href="https://www.google.com/maps?cid=16993519041129065870" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><div class="tk">Mécanique ELP</div><p>© Atelier Mécanique ELP · Sherbrooke · 819 846-2220</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [480, 720], "6": null, "0": null, "1": [480, 1020], "2": [480, 1020], "3": [480, 1020], "4": [480, 1020]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [480, 720], "6": null, "0": null, "1": [480, 1020], "2": [480, 1020], "3": [480, 1020], "4": [480, 1020]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const C={P0300:["Ratés d'allumage multiples","Bougies, bobines ou injecteurs à vérifier. Évitez les longs trajets en attendant."],P0171:["Mélange trop pauvre (banc 1)","Souvent une fuite d'air ou un capteur de débit d'air encrassé."],P0420:["Efficacité du catalyseur sous le seuil","Le catalyseur ou une sonde d'oxygène fatigue. À diagnostiquer avant de remplacer quoi que ce soit."],
+P0455:["Grosse fuite du système EVAP","Commencez par le bouchon d'essence : bien serré ? Sinon, on cherche la fuite."],P0128:["Thermostat : moteur trop froid","Le thermostat reste ouvert. Le chauffage et la consommation en souffrent."],P0442:["Petite fuite du système EVAP","Petite fuite de vapeurs d'essence, souvent un joint ou un boyau."],P0101:["Capteur de débit d'air (MAF)","Le capteur lit mal l'air qui entre. Parfois un simple nettoyage suffit."]};
+const cd=document.getElementById('cd'),ds=document.getElementById('ds'),ad=document.getElementById('ad'),ci=document.getElementById('ci');
+function read(c){c=(c||'').toUpperCase().trim();cd.innerHTML=(c||'-----')+'<span class="cur"></span>';const x=C[c];
+ if(x){ds.textContent='> '+x[0];ad.textContent=x[1]+' Appelez-nous pour un diagnostic complet.'}
+ else if(/^[PBCU]\d{4}$/.test(c)){ds.textContent='> Code reconnu, lecture détaillée en atelier';ad.textContent='Chaque code a plusieurs causes possibles. On le lit avec nos outils GM et on vous donne l\'heure juste.'}
+ else{ds.textContent='> Format attendu : une lettre et 4 chiffres';ad.textContent='Exemple : P0420.'}}
+document.getElementById('cg').onclick=()=>read(ci.value);ci.onkeydown=e=>{if(e.key==='Enter')read(ci.value)};
+document.querySelectorAll('.keys button[data-c]').forEach(b=>b.onclick=()=>{ci.value=b.dataset.c;read(b.dataset.c)});read('P0300');
+</script>
+
+</body>
+</html>

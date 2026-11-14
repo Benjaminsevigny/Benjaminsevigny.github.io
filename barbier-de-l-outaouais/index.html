@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Le Barbier de l'Outaouais · Gatineau</title>
+<meta name="description" content="Barbier à Gatineau : coupe, taille de barbe et rasage traditionnel à la serviette chaude, dans une ambiance chaleureuse. Prix raisonnables.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Salon de barbier à l'ancienne : enseigne tournante rouge-blanc-bleu, noir, crème, laiton ; composeur de visite coupe + barbe */
+:root{--bk:#131416;--cream:#F1EADC;--brass:#C8A46A;--red:#B3302A;--blue:#2A4C7A;--fg:#F1EADC;--mu:rgba(241,234,220,.65);--ln:rgba(241,234,220,.15)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bk);color:var(--fg);font:400 1.05rem/1.6 "Josefin Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.ab{font-family:"Abril Fatface",serif;font-weight:400}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0;border-bottom:1px solid var(--ln)}
+.logo{text-decoration:none;display:flex;align-items:center;gap:12px}.logo .ab{font-size:1.4rem}.logo small{display:block;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--brass)}
+.mini{width:14px;height:40px;border-radius:7px;background:repeating-linear-gradient(-45deg,var(--red) 0 6px,#fff 6px 12px,var(--blue) 12px 18px,#fff 18px 24px);background-size:100% 34px;animation:pole 1.6s linear infinite;border:2px solid var(--brass)}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.82rem}nav ul a{text-decoration:none;color:var(--mu)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:15px 26px;font:700 .88rem "Josefin Sans";letter-spacing:.14em;text-transform:uppercase;text-decoration:none;transition:.25s;border:2px solid var(--brass)}
+.btn.b{background:var(--brass);color:var(--bk)}.btn.b:hover{background:#D9B87F}.btn.o{color:var(--brass)}.btn.o:hover{background:rgba(200,164,106,.1)}.btn.sm{padding:10px 16px}
+.hero{display:grid;grid-template-columns:auto 1fr 1fr;gap:44px;align-items:center;padding:50px 0 80px}
+.pole{width:58px;height:440px;border-radius:29px;background:repeating-linear-gradient(-45deg,var(--red) 0 22px,#fff 22px 44px,var(--blue) 44px 66px,#fff 66px 88px);background-size:100% 125px;animation:pole 2.4s linear infinite;border:5px solid var(--brass);box-shadow:inset 0 0 20px rgba(0,0,0,.35),0 0 0 3px var(--bk),0 0 0 5px var(--brass);position:relative}
+.pole::before,.pole::after{content:"";position:absolute;left:-12px;right:-12px;height:26px;background:linear-gradient(180deg,#E3C891,#8F6E37);border-radius:8px}.pole::before{top:-26px}.pole::after{bottom:-26px}
+@keyframes pole{to{background-position:0 125px}}
+.eye{font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);font-weight:700}
+h1{font:400 clamp(3.2rem,7vw,6.2rem)/.95 "Abril Fatface";margin:14px 0 20px}h1 em{font-style:normal;color:var(--brass)}
+.lead{font-size:1.15rem;color:var(--mu);max-width:40ch;margin:0 0 26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.mirror{border-radius:240px 240px 12px 12px;overflow:hidden;border:6px solid var(--brass);aspect-ratio:3/4;box-shadow:0 30px 60px -30px #000}.mirror img{width:100%;height:100%;object-fit:cover;filter:sepia(.25) contrast(1.05)}
+.cnt{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--ln)}
+.cnt div{padding:26px;text-align:center;border-right:1px solid var(--ln)}.cnt div:last-child{border:0}.cnt b{display:block;font:400 2.6rem/1 "Abril Fatface";color:var(--brass)}.cnt span{font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
+section{padding:96px 0}
+h2{font:400 clamp(2.4rem,5vw,4.2rem)/1 "Abril Fatface";margin:10px 0 0}h2 em{font-style:normal;color:var(--brass)}
+/* composeur */
+.comp{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:40px;align-items:start}
+.grp{margin-bottom:24px}.grp b{display:block;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;color:var(--brass);margin-bottom:10px}
+.ch{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.ch button{all:unset;cursor:pointer;padding:16px;border:1.5px solid var(--ln);text-align:center;font-weight:600;transition:.2s}
+.ch button[aria-pressed=true]{border-color:var(--brass);background:rgba(200,164,106,.12);color:var(--brass)}
+.ch button:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+.ticket{background:var(--cream);color:var(--bk);padding:34px;position:relative;box-shadow:0 30px 60px -30px #000}
+.ticket::before{content:"";position:absolute;inset:8px;border:1.5px solid var(--bk);pointer-events:none}
+.ticket .ab{font-size:2rem;line-height:1.05}.ticket ul{list-style:none;padding:0;margin:18px 0;display:grid;gap:10px}
+.ticket li{display:flex;justify-content:space-between;gap:14px;border-bottom:1px dotted rgba(0,0,0,.35);padding-bottom:6px}.ticket li b{font-weight:700}
+.ticket .btn{border-color:var(--bk);color:var(--bk)}.ticket .btn:hover{background:var(--bk);color:var(--cream)}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.s .ph{aspect-ratio:3/4;overflow:hidden;border-radius:120px 120px 8px 8px}.s img{width:100%;height:100%;object-fit:cover;filter:grayscale(.4);transition:filter .5s}.s:hover img{filter:none}
+.s h3{font:400 1.5rem "Abril Fatface";margin:14px 0 2px}.s p{margin:0;color:var(--mu);font-size:.95rem}
+.qs{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:34px}
+.q{margin:0;padding:30px;border:1px solid var(--brass)}.q blockquote{margin:0;font:400 1.6rem/1.25 "Abril Fatface"}.q figcaption{margin-top:12px;color:var(--mu);font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0}.hrs li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--ln);color:var(--mu)}.hrs li.td{color:var(--brass);font-weight:700}
+.st{display:inline-block;margin-top:14px;letter-spacing:.14em;text-transform:uppercase;font-size:.82rem;font-weight:700;padding:7px 14px;border:1px solid var(--ln)}.st.on{border-color:var(--brass);color:var(--brass)}
+.box{border:1px solid var(--ln);padding:32px;display:grid;gap:8px;align-content:start}.box h3{font:400 1.9rem "Abril Fatface";margin:0}
+footer{padding:44px 0 26px;text-align:center;border-top:1px solid var(--ln)}footer .ab{font-size:clamp(2rem,6vw,3.6rem)}footer p{color:var(--mu);font-size:.85rem}
+@media (max-width:900px){nav ul{display:none}.hero{grid-template-columns:minmax(0,1fr)}.pole{display:none}.mirror{width:min(80%,320px);margin:0 auto}.comp,.qs,.vis{grid-template-columns:minmax(0,1fr)}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}.cnt b{font-size:1.8rem}section{padding:72px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Le Barbier de l&#x27;Outaouais<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><a class="logo" href="#"><span class="mini" aria-hidden="true"></span><span><span class="ab">Le Barbier</span><small>de l'Outaouais</small></span></a><ul><li><a href="#visite">Ma visite</a></li><li><a href="#services">Services</a></li><li><a href="#heures">Heures</a></li></ul><a class="btn b sm" href="tel:+18192057535">819 205-7535</a></nav>
+<header class="hero">
+ <div class="pole" aria-hidden="true"></div>
+ <div><span class="eye">Barbier · Gatineau</span><h1>L'art de la <em>coupe</em>.</h1>
+ <p class="lead">Coupe, taille de barbe et rasage traditionnel à la serviette chaude, dans une ambiance chaleureuse où on a le temps de rigoler. Prix raisonnables.</p>
+ <div class="ctas"><a class="btn b" href="tel:+18192057535">Appeler le salon</a><a class="btn o" href="#visite">Composer ma visite</a></div></div>
+ <div class="mirror"><img src="img/1.jpg" alt="Un barbier au travail"></div>
+</header></div>
+<div class="cnt"><div><b>424</b><span>avis Google</span></div><div><b>4,4 ★</b><span>note moyenne</span></div><div><b>6 jours</b><span>sur 7</span></div></div>
+
+<section id="visite"><div class="wrap">
+ <div class="rv"><span class="eye">Composer ma visite</span><h2>Qu'est-ce qu'on <em>vous fait</em> ?</h2></div>
+ <div class="comp">
+  <div class="rv"><div class="grp"><b>Les cheveux</b><div class="ch" data-g="c"><button data-v="Coupe classique" aria-pressed="true">Classique</button><button data-v="Coupe moderne (dégradé)" aria-pressed="false">Moderne / dégradé</button><button data-v="Juste les contours" aria-pressed="false">Juste les contours</button><button data-v="" aria-pressed="false">Rien aujourd'hui</button></div></div>
+  <div class="grp"><b>La barbe</b><div class="ch" data-g="b"><button data-v="Taille de barbe" aria-pressed="true">Taille et contours</button><button data-v="Rasage traditionnel" aria-pressed="false">Rasage à la serviette chaude</button><button data-v="" aria-pressed="false">Pas de barbe</button></div></div>
+  <div class="grp"><b>Pour qui ?</b><div class="ch" data-g="q"><button data-v="Adulte" aria-pressed="true">Adulte</button><button data-v="Enfant" aria-pressed="false">Enfant</button></div></div></div>
+  <div class="ticket rv" style="--d:.1s" aria-live="polite"><span class="eye" style="color:var(--red)">Votre billet de visite</span><div class="ab" id="tt"></div><ul id="tl"></ul><p style="margin:0 0 18px" id="tn"></p><a class="btn" href="tel:+18192057535">Appeler : 819 205-7535</a></div>
+ </div></div></section>
+
+<section id="services" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="eye">Le salon</span><h2>Quatre gestes, <em>bien faits</em>.</h2></div>
+ <div class="svc">
+  <div class="s rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><h3>Coupe homme</h3><p>Classique ou moderne.</p></div>
+  <div class="s rv" style="--d:.06s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><h3>Taille de barbe</h3><p>Contours nets, ligne précise.</p></div>
+  <div class="s rv" style="--d:.12s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><h3>Rasage traditionnel</h3><p>Serviette chaude et lame.</p></div>
+  <div class="s rv" style="--d:.18s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><h3>Coupe enfant</h3><p>Pour les plus jeunes.</p></div>
+ </div>
+ <div class="qs"><figure class="q rv"><blockquote>« Ça fonctionne comme une usine, et on a le temps de rigoler :) »</blockquote><figcaption>Avis Google</figcaption></figure><figure class="q rv" style="--d:.1s"><blockquote>« Le prix est raisonnable et l'attente n'est pas trop pire. »</blockquote><figcaption>Avis Google</figcaption></figure></div>
+</div></section>
+
+<section id="heures" style="padding-top:0"><div class="wrap vis">
+ <div class="rv"><span class="eye">Heures du salon</span><h2>La chaise <em>vous attend</em>.</h2><div class="st" data-status>Heures</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="eye">Adresse</span><h3>4 Rue d'Orléans</h3><p style="margin:0;color:var(--mu)">Gatineau, QC J8T 5V1</p><div class="ctas" style="margin-top:12px"><a class="btn b sm" href="tel:+18192057535">819 205-7535</a><a class="btn o sm" href="https://www.google.com/maps?cid=5654482093913080372" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><div class="ab">Le Barbier de l'Outaouais</div><p>© Le Barbier de l'Outaouais · Gatineau · 819 205-7535</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [540, 1080], "6": [540, 1020], "0": null, "1": [540, 1080], "2": [540, 1080], "3": [540, 1080], "4": [540, 1080]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [540, 1080], "6": [540, 1020], "0": null, "1": [540, 1080], "2": [540, 1080], "3": [540, 1080], "4": [540, 1080]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const S={c:'Coupe classique',b:'Taille de barbe',q:'Adulte'};
+document.querySelectorAll('.ch').forEach(g=>g.querySelectorAll('button').forEach(b=>b.onclick=()=>{S[g.dataset.g]=b.dataset.v;g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));draw()}));
+function draw(){const it=[];if(S.c)it.push([S.q==='Enfant'?'Coupe enfant':S.c,'Ciseaux et tondeuse']);if(S.b&&S.q!=='Enfant')it.push([S.b,S.b.startsWith('Rasage')?'Serviette chaude, lame':'Contours nets']);
+ const tt=document.getElementById('tt');tt.textContent=it.length?(it.length>1?'Le combo complet':'Une visite rapide'):'Juste une jasette ?';
+ document.getElementById('tl').innerHTML=it.length?it.map(i=>'<li><b>'+i[0]+'</b><span>'+i[1]+'</span></li>').join(''):'<li><b>Passez quand même dire bonjour</b><span>☺</span></li>';
+ document.getElementById('tn').textContent=S.b.startsWith('Rasage')&&S.q!=='Enfant'?'Le rasage traditionnel prend un peu plus de temps : appelez avant de passer.':'Appelez pour connaître l\'attente du moment.'}
+draw();
+</script>
+
+</body>
+</html>

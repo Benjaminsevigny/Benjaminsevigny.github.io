@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Demo · Rideau River Animal Hospital · Riverside Park, Ottawa</title>
+<meta name="description" content="Caring veterinary medicine for cats and dogs in Riverside Park, Ottawa: wellness exams, dental care, chronic care like diabetes, and surgery.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Gaegu:wght@700&display=swap" rel="stylesheet">
+<style>
+/* Clinique au bord de la rivière : sarcelle du logo, vagues douces, pêche ; calculateur d'âge « en années humaines » */
+:root{--bg:#F3F8F7;--teal:#1E8A80;--teal-d:#14665F;--river:#CFE8E4;--peach:#F6C79F;--ink:#12302D;--mu:#56706C;--ln:rgba(18,48,45,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.03rem/1.65 Manrope,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.gg{font-family:Gaegu,cursive}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0}
+.logo{text-decoration:none;display:flex;align-items:center;gap:10px}.logo svg{width:40px;height:40px}.logo b{font:800 1.15rem Manrope;color:var(--teal)}.logo small{display:block;font-size:.74rem;color:var(--mu)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600}nav ul a{text-decoration:none}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:14px;font-weight:800;text-decoration:none;transition:.2s;border:2px solid var(--teal)}
+.btn.t{background:var(--teal);color:#fff}.btn.t:hover{background:var(--teal-d)}.btn.o{color:var(--teal);background:#fff}.btn.sm{padding:10px 16px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;padding:30px 0 40px}
+.eye{font-weight:800;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+h1{font:800 clamp(2.8rem,6.2vw,5.2rem)/1 Manrope;letter-spacing:-.045em;margin:12px 0 18px}h1 .gg{color:var(--teal);font-size:1.15em;letter-spacing:0}
+.lead{font-size:1.12rem;color:var(--mu);max-width:42ch;margin:0 0 24px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.pic{position:relative}.pic .ph{aspect-ratio:1;border-radius:46% 54% 50% 50%/55% 45% 55% 45%;overflow:hidden;border:8px solid #fff;box-shadow:0 30px 60px -30px rgba(18,48,45,.5)}.pic img{width:100%;height:100%;object-fit:cover}
+.pic .chip{position:absolute;right:-6px;bottom:40px;background:#fff;border-radius:16px;padding:12px 16px;box-shadow:0 14px 30px -14px rgba(0,0,0,.3);font-weight:800}.pic .chip small{display:block;font-weight:600;color:var(--mu)}
+.river{display:block;width:100%;height:80px}
+.river path{animation:fl 8s ease-in-out infinite alternate}@keyframes fl{to{transform:translateX(-60px)}}
+section{padding:80px 0}
+h2{font:800 clamp(2.2rem,4.8vw,3.6rem)/1.05 Manrope;letter-spacing:-.04em;margin:10px 0 0}h2 .gg{color:var(--teal);letter-spacing:0}
+/* âge */
+.age{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:36px;align-items:center}
+.f{background:#fff;border-radius:24px;padding:28px;border:1px solid var(--ln)}
+.tg{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.tg button{font:800 .95rem Manrope;padding:10px 16px;border-radius:12px;border:2px solid var(--ln);background:#fff;color:var(--ink);cursor:pointer}
+.tg button[aria-pressed=true]{background:var(--teal);border-color:var(--teal);color:#fff}
+.f label{font-weight:800;display:block;margin-bottom:6px}.f input{width:100%;accent-color:var(--teal)}.f .yv{font:800 2rem Manrope}
+.res{text-align:center;background:var(--river);border-radius:24px;padding:34px}
+.res .n{font:800 6rem/1 Manrope;letter-spacing:-.05em;color:var(--teal)}.res .gg{font-size:1.7rem}.res p{color:var(--mu);margin:12px auto 18px;max-width:34ch}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.s{background:#fff;border-radius:22px;overflow:hidden;border:1px solid var(--ln)}.s .ph{aspect-ratio:4/3;overflow:hidden}.s img{width:100%;height:100%;object-fit:cover}
+.s .in{padding:18px}.s .eye{font-size:.7rem}.s h3{margin:4px 0;font-size:1.15rem}.s p{margin:0;color:var(--mu);font-size:.93rem}
+.dr{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;background:#fff;border-radius:24px;padding:30px;margin-top:30px;border:1px solid var(--ln)}
+.dr .gg{font-size:3.4rem;color:var(--peach);line-height:1}.dr blockquote{margin:0;font:800 1.4rem/1.35 Manrope;letter-spacing:-.02em}.dr p{margin:6px 0 0;color:var(--mu)}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0;background:#fff;border-radius:18px;border:1px solid var(--ln)}.hrs li{display:flex;justify-content:space-between;padding:10px 18px;border-bottom:1px solid var(--ln)}.hrs li:last-child{border:0}.hrs li.td{background:var(--river);font-weight:800}
+.st{display:inline-block;margin-top:14px;font-weight:800;padding:6px 14px;border-radius:999px;background:#e2ebe9}.st.on{background:var(--teal);color:#fff}
+.box{background:#fff;border-radius:24px;padding:30px;border:1px solid var(--ln);display:grid;gap:8px;align-content:start}.box h3{margin:0;font-size:1.5rem;letter-spacing:-.03em}
+footer{padding:40px 0 26px;text-align:center;border-top:1px solid var(--ln)}footer b{font:800 clamp(1.6rem,4.4vw,2.8rem) Manrope;letter-spacing:-.04em;color:var(--teal)}footer p{color:var(--mu);font-size:.85rem}
+@media (max-width:900px){nav ul{display:none}.hero,.age,.vis{grid-template-columns:minmax(0,1fr)}.pic{width:min(84%,360px);margin:0 auto}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}.dr{grid-template-columns:minmax(0,1fr)}section{padding:64px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DEMO</b>Example made for Rideau River Animal Hospital<span class="long"> · not the business's official website</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><a class="logo" href="#"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#CFE8E4"/><path d="M8 26c4-3 8-3 12 0s8 3 12 0" stroke="#1E8A80" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M14 18c0-5 3-9 6-9s6 4 6 9" stroke="#1E8A80" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg><span><b>Rideau River</b><small>Animal Hospital</small></span></a><ul><li><a href="#age">Pet age</a></li><li><a href="#care">Care</a></li><li><a href="#visit">Visit</a></li></ul><a class="btn t sm" href="tel:+16137379663">613 737-9663</a></nav>
+<header class="hero">
+ <div><span class="eye">Cats &amp; dogs · Riverside Park</span><h1>Care for your <span class="gg">furry friend</span>.</h1>
+ <p class="lead">From yearly check-ups to chronic conditions like diabetes, our team follows your pet closely, visit after visit.</p>
+ <div class="ctas"><a class="btn t" href="tel:+16137379663">Request an appointment</a><a class="btn o" href="#age">How old is my pet?</a></div></div>
+ <div class="pic"><div class="ph"><img src="img/1.jpg" alt="A vet caring for a pet"></div><div class="chip">★ 4.3 on Google<small>68 reviews</small></div></div>
+</header></div>
+<svg class="river" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M-60 40 C 180 10 360 70 600 40 S 1020 10 1260 40 S 1500 60 1560 40 V80 H-60Z" fill="#CFE8E4"/></svg>
+
+<section id="age" style="background:var(--river);padding-top:30px"><div class="wrap">
+ <div class="rv"><span class="eye">Just for fun (and health)</span><h2>How old is your pet in <span class="gg">human years</span>?</h2></div>
+ <div class="age">
+  <div class="f rv"><div class="tg" role="group" aria-label="Type of pet"><button data-t="cat" aria-pressed="false">Cat</button><button data-t="s" aria-pressed="true">Small dog</button><button data-t="m" aria-pressed="false">Medium dog</button><button data-t="l" aria-pressed="false">Large dog</button></div>
+   <label for="py">Age in years</label><div class="yv" id="yv"></div><input type="range" id="py" min="1" max="18" value="7"></div>
+  <div class="res rv" style="--d:.1s" aria-live="polite"><span class="gg">That's about</span><div class="n" id="hn"></div><span class="gg">in human years</span><p id="hp"></p><a class="btn t" href="tel:+16137379663">Book a check-up</a></div>
+ </div></div></section>
+
+<section id="care"><div class="wrap">
+ <div class="rv"><span class="eye">Our care</span><h2>Every stage of <span class="gg">their life</span>.</h2></div>
+ <div class="svc">
+  <div class="s rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><div class="in"><span class="eye">Prevention</span><h3>Wellness exams</h3><p>Yearly check-ups and vaccines.</p></div></div>
+  <div class="s rv" style="--d:.06s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><div class="in"><span class="eye">Dental</span><h3>Dental care</h3><p>Cleanings and oral health.</p></div></div>
+  <div class="s rv" style="--d:.12s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><div class="in"><span class="eye">Ongoing</span><h3>Chronic care</h3><p>Diabetes and long-term follow-up.</p></div></div>
+  <div class="s rv" style="--d:.18s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><div class="in"><span class="eye">Surgery</span><h3>Surgery</h3><p>Spay, neuter and more.</p></div></div>
+ </div>
+ <div class="dr rv"><span class="gg">“</span><div><blockquote>Highly recommend to bring your furry friend under the care of Dr. Laidlaw.</blockquote><p>Google review · 4.3 ★ · 68 reviews</p></div></div>
+</div></section>
+
+<section id="visit" style="padding-top:0"><div class="wrap vis">
+ <div class="rv"><span class="eye">Hospital hours</span><h2>We're <span class="gg">here</span> for them.</h2><div class="st" data-status>Hours</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="eye">Find us</span><h3>3987 Riverside Dr. #2</h3><p style="margin:0;color:var(--mu)">Ottawa, ON K1V 1C1</p><div class="ctas" style="margin-top:12px"><a class="btn t sm" href="tel:+16137379663">613 737-9663</a><a class="btn o sm" href="https://www.google.com/maps?cid=3619723451733774200" target="_blank" rel="noopener">Directions ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><b>Rideau River Animal Hospital</b><p>© Rideau River Animal Hospital · Riverside Park, Ottawa · 613 737-9663</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [480, 1020], "6": null, "0": null, "1": [480, 1080], "2": [480, 1080], "3": [480, 1080], "4": [480, 1080]}, "en") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [480, 1020], "6": null, "0": null, "1": [480, 1080], "2": [480, 1080], "3": [480, 1080], "4": [480, 1080]},EN="en"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+let t='s';const py=document.getElementById('py'),inc={cat:4,s:4,m:5,l:6.5};
+function calc(){const y=+py.value;document.getElementById('yv').textContent=y+(y>1?' years':' year');const h=y===1?15:y===2?24:Math.round(24+(y-2)*inc[t]);document.getElementById('hn').textContent=h;
+ const sen=(t==='l'&&y>=6)||(t==='m'&&y>=7)||(y>=8);document.getElementById('hp').textContent=sen?'A senior! Twice-yearly check-ups help catch things like kidney disease or diabetes early.':y<=1?'Still a baby: vaccines and a first wellness exam set them up for life.':'In their prime. A yearly exam keeps them that way.'}
+document.querySelectorAll('.tg button').forEach(b=>b.onclick=()=>{t=b.dataset.t;document.querySelectorAll('.tg button').forEach(x=>x.setAttribute('aria-pressed',x===b));calc()});py.oninput=calc;calc();
+</script>
+
+</body>
+</html>

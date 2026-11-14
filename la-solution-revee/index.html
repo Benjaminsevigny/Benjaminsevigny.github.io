@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Fleuriste La Solution Rêvée · Saint-Nicolas, Lévis</title>
+<meta name="description" content="Fleuriste artisanal à Saint-Nicolas qui privilégie les fleurs d'ici : bouquets, mariages, plantes, ballons et cadeaux.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Lato:wght@400;700&family=Homemade+Apple&display=swap" rel="stylesheet">
+<style>
+/* Atelier floral : vert feuille, pivoine, papier de soie, petite carte à message qu'on écrit soi-même */
+:root{--bg:#F8F5EE;--leaf:#3F7A25;--leaf-d:#2D5A1A;--peony:#E36C8F;--blush:#F9DDE5;--sage:#DCE7D2;--ink:#1F2A1C;--mu:#5E6A58;--ln:rgba(31,42,28,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.03rem/1.65 Lato,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.gd{font-family:"Gilda Display",serif}.hw{font-family:"Homemade Apple",cursive}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0}
+.logo{text-decoration:none;line-height:1.1}.logo b{font:400 1.45rem "Gilda Display"}.logo small{display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--leaf)}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}nav ul a{text-decoration:none}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;transition:.25s;border:1.5px solid var(--leaf)}
+.btn.l{background:var(--leaf);color:#fff}.btn.l:hover{background:var(--leaf-d)}.btn.o{color:var(--leaf)}.btn.o:hover{background:#fff}.btn.sm{padding:10px 18px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding:20px 0 80px}
+.eye{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--peony);font-weight:700}
+h1{font:400 clamp(3rem,6.8vw,5.8rem)/1 "Gilda Display";margin:14px 0 20px}h1 em{color:var(--leaf)}
+.lead{font-size:1.15rem;color:var(--mu);max-width:42ch;margin:0 0 26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.bq{position:relative;justify-self:center;width:min(100%,440px);aspect-ratio:4/5}
+.bq .ph{position:absolute;inset:0;border-radius:50% 50% 46% 54%/40% 40% 60% 60%;overflow:hidden;box-shadow:0 40px 70px -40px rgba(45,90,26,.6)}
+.bq img{width:100%;height:100%;object-fit:cover}
+.leafsvg{position:absolute;width:120px;animation:sway 6s ease-in-out infinite;transform-origin:bottom center}
+.lf1{left:-50px;bottom:40px}.lf2{right:-40px;top:20px;transform:scaleX(-1);animation-delay:-3s}
+@keyframes sway{50%{rotate:8deg}}
+.local{position:absolute;right:-14px;bottom:30px;background:#fff;border-radius:999px;padding:10px 18px;font-weight:700;box-shadow:0 14px 30px -14px rgba(0,0,0,.3)}.local span{color:var(--leaf)}
+section{padding:96px 0}
+h2{font:400 clamp(2.3rem,4.8vw,4rem)/1.03 "Gilda Display";margin:10px 0 0}h2 em{color:var(--leaf)}
+/* occasion + carte */
+.occ{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:40px;align-items:start}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{font:700 .95rem Lato;padding:10px 18px;border-radius:999px;border:1.5px solid var(--ln);background:#fff;color:var(--ink);cursor:pointer;transition:.2s}
+.chips button[aria-pressed=true]{background:var(--peony);border-color:var(--peony);color:#fff}
+.sug{margin-top:22px;background:var(--sage);border-radius:22px;padding:26px}
+.sug h3{font:400 1.9rem/1.1 "Gilda Display";margin:4px 0 8px}.sug p{margin:0;color:var(--mu)}
+.sug .pal{display:flex;gap:8px;margin-top:14px}.sug .pal i{width:28px;height:28px;border-radius:50%;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.15)}
+.cardw label{display:block;font-weight:700;margin-bottom:8px}
+.cardw textarea{width:100%;min-height:90px;font:400 1rem Lato;padding:12px;border-radius:12px;border:1.5px solid var(--ln);resize:vertical;background:#fff}
+.card{margin-top:18px;background:#FFFDF8;border-radius:6px;padding:30px 30px 34px;box-shadow:0 20px 40px -24px rgba(0,0,0,.35);transform:rotate(-2deg);position:relative;min-height:200px}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:10px;background:linear-gradient(90deg,var(--peony),var(--leaf))}
+.card .hw{font-size:1.15rem;line-height:1.9;color:#3A3550;white-space:pre-wrap;word-break:break-word}
+.card small{display:block;margin-top:14px;font-size:.78rem;color:var(--mu);letter-spacing:.12em;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.g .ph{aspect-ratio:3/4;overflow:hidden;border-radius:160px 160px 14px 14px}.g img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s}.g:hover img{transform:scale(1.06)}
+.g h3{font:400 1.45rem "Gilda Display";margin:12px 0 2px}.g p{margin:0;color:var(--mu);font-size:.93rem}
+.rev{background:var(--blush);border-radius:40px;margin:0 max(12px,1.5vw)}
+.qs{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}
+.q{margin:0;background:#fff;border-radius:24px;padding:30px}.q blockquote{margin:0;font:400 1.6rem/1.25 "Gilda Display"}.q figcaption{margin-top:10px;color:var(--mu);font-size:.88rem}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln)}.hrs li.td{color:var(--leaf);font-weight:700}
+.st{display:inline-block;margin-top:14px;font-weight:700;padding:6px 14px;border-radius:999px;background:#ece8de}.st.on{background:var(--leaf);color:#fff}
+.box{background:#fff;border-radius:26px;padding:32px;display:grid;gap:8px;align-content:start;border:1px solid var(--ln)}.box h3{font:400 1.9rem "Gilda Display";margin:0}
+footer{padding:44px 0 26px;text-align:center;border-top:1px solid var(--ln)}footer .gd{font-size:clamp(2rem,5.6vw,3.6rem)}footer p{color:var(--mu);font-size:.85rem}
+@media (max-width:900px){nav ul{display:none}.hero,.occ,.qs,.vis{grid-template-columns:minmax(0,1fr)}.bq{width:min(80%,340px);margin-top:20px}.lf1{left:-30px;width:90px}.lf2{right:-24px;width:90px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}section{padding:72px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Fleuriste La Solution Rêvée<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><a class="logo" href="#"><b>La Solution Rêvée</b><small>Fleuriste · Saint-Nicolas</small></a><ul><li><a href="#occasion">Une occasion</a></li><li><a href="#creations">Créations</a></li><li><a href="#visite">Boutique</a></li></ul><a class="btn l sm" href="tel:+14188312968">418 831-2968</a></nav>
+<header class="hero">
+ <div><span class="eye">Fleuriste artisanal · fleurs d'ici</span><h1>Des fleurs pour <em>chaque moment</em> de la vie.</h1>
+ <p class="lead">Bouquets faits à la main avec des fleurs d'ici, plantes, ballons et cadeaux. Mariages, fêtes, baptêmes, anniversaires ou deuils, on vous accompagne.</p>
+ <div class="ctas"><a class="btn l" href="tel:+14188312968">Commander un bouquet</a><a class="btn o" href="#occasion">Trouver l'idée</a></div>
+ <p style="margin-top:20px;color:var(--mu)">★ 4,5 · 53 avis Google</p></div>
+ <div class="bq"><svg class="leafsvg lf1" viewBox="0 0 120 160" aria-hidden="true"><path d="M60 158C60 100 30 60 8 30 50 40 70 80 60 158Z" fill="#3F7A25"/><path d="M60 158C66 96 92 56 116 20 76 36 56 84 60 158Z" fill="#6FA34B"/></svg><svg class="leafsvg lf2" viewBox="0 0 120 160" aria-hidden="true"><path d="M60 158C60 100 30 60 8 30 50 40 70 80 60 158Z" fill="#6FA34B"/></svg>
+ <div class="ph"><img src="img/1.jpg" alt="Un bouquet de fleurs fraîches"></div><div class="local"><span>Fleurs d'ici</span> en priorité</div></div>
+</header></div>
+
+<section id="occasion" style="padding-top:20px"><div class="wrap">
+ <div class="rv"><span class="eye">Pour quelle occasion ?</span><h2>On vous aide à <em>dire</em> les choses.</h2></div>
+ <div class="occ">
+  <div class="rv"><div class="chips" role="group" aria-label="Choisir une occasion"><button data-k="0">Anniversaire</button><button data-k="1">Amour</button><button data-k="2">Naissance</button><button data-k="3">Mariage</button><button data-k="4">Sympathie</button><button data-k="5">Juste comme ça</button></div>
+   <div class="sug" aria-live="polite"><span class="eye" id="se"></span><h3 id="sh"></h3><p id="sp"></p><div class="pal" id="pa"></div></div></div>
+  <div class="cardw rv" style="--d:.1s"><label for="msg">Votre mot sur la carte</label><textarea id="msg" maxlength="180"></textarea>
+   <div class="card"><div class="hw" id="cm"></div><small>Carte écrite à la main en boutique</small></div></div>
+ </div></div></section>
+
+<section id="creations" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="eye">Nos créations</span><h2>Fait à la main, <em>à Saint-Nicolas</em>.</h2></div>
+ <div class="grid">
+  <div class="g rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><h3>Bouquets</h3><p>Créations du jour, fleurs locales.</p></div>
+  <div class="g rv" style="--d:.06s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><h3>Mariages</h3><p>Bouquets, boutonnières et décor.</p></div>
+  <div class="g rv" style="--d:.12s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><h3>Plantes</h3><p>Pour la maison et le bureau.</p></div>
+  <div class="g rv" style="--d:.18s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><h3>Ballons et cadeaux</h3><p>Bijoux, ballons, petites attentions.</p></div>
+ </div></div></section>
+
+<section class="rev"><div class="wrap">
+ <div class="rv"><span class="eye">Avis Google · 4,5 ★ · 53 avis</span><h2>Un <em>incontournable</em> à Saint-Nicolas.</h2></div>
+ <div class="qs"><figure class="q rv"><blockquote>« Un incontournable à St-Nicolas pour vos bouquets et cadeaux. »</blockquote><figcaption>Avis Google</figcaption></figure><figure class="q rv" style="--d:.1s"><blockquote>« Service exceptionnel, personnel accueillant et souriant. »</blockquote><figcaption>Avis Google</figcaption></figure></div>
+</div></section>
+
+<section id="visite"><div class="wrap vis">
+ <div class="rv"><span class="eye">Heures de la boutique</span><h2>Venez <em>sentir</em> les fleurs.</h2><div class="st" data-status>Heures</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="eye">Adresse</span><h3>1810 Rte des Rivières Bloc 306</h3><p style="margin:0;color:var(--mu)">Lévis, QC G7A 2P6</p><div class="ctas" style="margin-top:12px"><a class="btn l sm" href="tel:+14188312968">418 831-2968</a><a class="btn o sm" href="https://www.google.com/maps?cid=16268583973903958407" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><div class="gd">La Solution Rêvée</div><p>© Fleuriste La Solution Rêvée · Lévis · 418 831-2968</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [570, 1080], "6": [540, 1020], "0": null, "1": [570, 1050], "2": [570, 1050], "3": [570, 1050], "4": [570, 1080]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [570, 1080], "6": [540, 1020], "0": null, "1": [570, 1050], "2": [570, 1050], "3": [570, 1050], "4": [570, 1080]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const O=[["Pour une fête","Un bouquet coloré et joyeux","Des fleurs vives, des tiges généreuses, et pourquoi pas un ballon pour compléter.",["#F4B942","#E36C8F","#F28C3A","#6FA34B"],"Bonne fête !\nQue cette année soit aussi belle que toi."],
+["Pour dire je t'aime","Des roses et des tons tendres","Rouges classiques ou roses poudrés : on compose selon votre histoire.",["#C2185B","#E36C8F","#F9DDE5","#3F7A25"],"Pour toi, simplement.\nJe t'aime."],
+["Pour un bébé","Un arrangement tout en douceur","Des teintes pâles, une plante qui dure ou un ballon pour la chambre.",["#F9DDE5","#CFE3F2","#FFF1B8","#DCE7D2"],"Bienvenue au monde, petit trésor !"],
+["Pour le grand jour","Bouquet, boutonnières et décor","On vous rencontre pour créer l'ensemble floral de votre mariage.",["#FFFFFF","#F9DDE5","#DCE7D2","#3F7A25"],"Félicitations aux nouveaux mariés !"],
+["Pour offrir du réconfort","Un arrangement sobre et lumineux","Des fleurs blanches et du feuillage, livrés avec délicatesse.",["#FFFFFF","#E9EDE4","#B7C9A8","#5E6A58"],"Toutes nos pensées vous accompagnent."],
+["Parce que ça fait du bien","Le bouquet du jour","Laissez-nous choisir les plus belles fleurs d'ici arrivées cette semaine.",["#F4B942","#E36C8F","#8E7CC3","#6FA34B"],"Juste pour te faire sourire :)"]];
+const bs=[...document.querySelectorAll('.chips button')],msg=document.getElementById('msg'),cm=document.getElementById('cm');let touched=false;
+function sel(k){bs.forEach(b=>b.setAttribute('aria-pressed',+b.dataset.k===k));const o=O[k];se.textContent=o[0];sh.textContent=o[1];sp.textContent=o[2];pa.innerHTML=o[3].map(c=>'<i style="background:'+c+'"></i>').join('');if(!touched){msg.value=o[4];cm.textContent=o[4]}}
+const se=document.getElementById('se'),sh=document.getElementById('sh'),sp=document.getElementById('sp'),pa=document.getElementById('pa');
+bs.forEach(b=>b.onclick=()=>sel(+b.dataset.k));msg.oninput=()=>{touched=true;cm.textContent=msg.value};sel(0);
+</script>
+
+</body>
+</html>

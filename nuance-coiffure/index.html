@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Nuance Coiffure · Mile End, Montréal</title>
+<meta name="description" content="Coiffure et barbier pour elle et lui sur l'avenue du Parc, dans le Mile End. Ouvert 7 jours, animaux bienvenus.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Noir et blanc comme leur site, une touche champagne ; interrupteur « elle / lui » qui change la page, animaux bienvenus */
+:root{--bk:#0E0E0E;--bk2:#181818;--wh:#F2EFEA;--ch:#D8C3A5;--mu:rgba(242,239,234,.62);--ln:rgba(242,239,234,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bk);color:var(--wh);font:300 1.05rem/1.75 Jost,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.tn{font-family:"Tenor Sans",sans-serif;font-weight:400}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:22px 0}
+.logo{text-decoration:none;display:flex;align-items:center;gap:12px;font:400 1.1rem "Tenor Sans";letter-spacing:.3em;text-transform:uppercase}.logo i{width:30px;height:30px;border-radius:50%;border:1px solid var(--wh);display:grid;place-items:center;font-style:normal;font-size:.8rem;letter-spacing:0}
+.sw{display:inline-flex;border:1px solid var(--ln);border-radius:999px;padding:4px}
+.sw button{font:400 .85rem "Tenor Sans";letter-spacing:.2em;text-transform:uppercase;padding:8px 18px;border-radius:999px;border:0;background:transparent;color:var(--mu);cursor:pointer;transition:.3s}
+.sw button[aria-pressed=true]{background:var(--wh);color:var(--bk)}
+.sw button:focus-visible{outline:1px solid var(--ch);outline-offset:3px}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 26px;font:400 .82rem "Tenor Sans";letter-spacing:.2em;text-transform:uppercase;text-decoration:none;transition:.3s;border:1px solid var(--wh)}
+.btn.w{background:var(--wh);color:var(--bk)}.btn.w:hover{background:var(--ch);border-color:var(--ch)}.btn.o:hover{background:rgba(255,255,255,.06)}.btn.sm{padding:10px 16px}
+.hero{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center;padding:20px 0 80px}
+.eye{font:400 .76rem "Tenor Sans";letter-spacing:.3em;text-transform:uppercase;color:var(--ch)}
+h1{font:400 clamp(3rem,7vw,6rem)/1 "Tenor Sans";margin:16px 0 20px;letter-spacing:-.01em}h1 em{font-style:normal;color:var(--ch)}
+.lead{font-size:1.12rem;color:var(--mu);max-width:40ch;margin:0 0 26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.port{position:relative;aspect-ratio:4/5;overflow:hidden}.port img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);transition:opacity .7s}
+.port img.off{opacity:0}
+.port .cap{position:absolute;left:0;right:0;bottom:0;padding:20px;background:linear-gradient(0deg,rgba(0,0,0,.75),transparent);font:400 .8rem "Tenor Sans";letter-spacing:.2em;text-transform:uppercase}
+.paw{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--ch);color:var(--ch);padding:8px 16px;border-radius:999px;font-size:.9rem;margin-top:22px}
+.paw svg{width:18px;height:18px;fill:var(--ch)}
+section{padding:100px 0}
+h2{font:400 clamp(2.4rem,5vw,4.2rem)/1.05 "Tenor Sans";margin:14px 0 0}h2 em{font-style:normal;color:var(--ch)}
+.menu{margin-top:44px;border-top:1px solid var(--ln)}
+.row{display:grid;grid-template-columns:60px 1fr auto;gap:24px;align-items:baseline;padding:24px 0;border-bottom:1px solid var(--ln);animation:fade .5s both}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}}
+.row span{font:400 .8rem "Tenor Sans";color:var(--ch);letter-spacing:.2em}.row b{font:400 clamp(1.5rem,3vw,2.2rem) "Tenor Sans"}.row p{margin:0;color:var(--mu);text-align:right}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:40px}.strip div{aspect-ratio:3/4;overflow:hidden}.strip img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:filter .6s,transform 1.2s}.strip div:hover img{filter:none;transform:scale(1.04)}
+.qs{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px}
+.q{margin:0;border-left:1px solid var(--ch);padding-left:24px}.q blockquote{margin:0;font:400 1.5rem/1.35 "Tenor Sans"}.q figcaption{margin-top:12px;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mu)}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.hrs{list-style:none;margin:20px 0 0;padding:0}.hrs li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--ln);color:var(--mu)}.hrs li.td{color:var(--wh)}
+.st{display:inline-block;margin-top:16px;font:400 .75rem "Tenor Sans";letter-spacing:.2em;text-transform:uppercase;padding:7px 14px;border:1px solid var(--ln)}.st.on{border-color:var(--ch);color:var(--ch)}
+.box{border:1px solid var(--ln);padding:36px;display:grid;gap:10px;align-content:start}.box h3{margin:0;font:400 1.9rem "Tenor Sans"}
+footer{padding:50px 0 28px;text-align:center;border-top:1px solid var(--ln)}footer .tn{font-size:clamp(2.4rem,8vw,6rem);letter-spacing:.2em;line-height:1}footer p{color:var(--mu);font-size:.8rem;letter-spacing:.1em}
+@media (max-width:900px){.hero,.qs,.vis{grid-template-columns:minmax(0,1fr)}.port{width:min(90%,400px)}.row{grid-template-columns:40px 1fr}.row p{grid-column:2;text-align:left}.logo span{display:none}section{padding:76px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Nuance Coiffure<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><a class="logo" href="#"><i>N</i><span>Nuance</span></a><div class="sw" role="group" aria-label="Pour elle ou pour lui"><button data-k="elle" aria-pressed="true">Elle</button><button data-k="lui" aria-pressed="false">Lui</button></div><a class="btn w sm" href="tel:+15142779347">Réserver</a></nav>
+<header class="hero">
+ <div><span class="eye">Mile End · avenue du Parc</span><h1 id="h1"></h1>
+ <p class="lead" id="ld"></p>
+ <div class="ctas"><a class="btn w" href="tel:+15142779347">Prendre rendez-vous</a><a class="btn o" href="#carte">Voir la carte</a></div>
+ <span class="paw"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="16" rx="5" ry="4"/><circle cx="5.5" cy="10" r="2"/><circle cx="9.5" cy="6" r="2"/><circle cx="14.5" cy="6" r="2"/><circle cx="18.5" cy="10" r="2"/></svg>Animaux bienvenus</span></div>
+ <div class="port"><img id="pa" src="img/1.jpg" alt="Coiffure au salon Nuance"><img id="pb" class="off" src="img/2.jpg" alt=""><div class="cap">★ 4,8 · 323 avis Google · ouvert 7 jours</div></div>
+</header></div>
+
+<section id="carte" style="padding-top:20px"><div class="wrap">
+ <div class="rv"><span class="eye">La carte</span><h2 id="h2"></h2></div>
+ <div class="menu" id="mn"></div>
+ <div class="strip rv"><div><img src="img/3.jpg" alt="" loading="lazy"></div><div><img src="img/4.jpg" alt="" loading="lazy"></div><div><img src="img/5.jpg" alt="" loading="lazy"></div></div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="eye">Avis Google · 4,8 ★ · 323 avis</span><h2>Un accueil <em>chaleureux</em>.</h2></div>
+ <div class="qs"><figure class="q rv"><blockquote>« Accueil chaleureux et attentionné et ambiance décontractée ! »</blockquote><figcaption>Avis Google</figcaption></figure><figure class="q rv" style="--d:.1s"><blockquote>« Elle est drôle, rayonnante et on voit tout de suite qu'elle adore son travail. »</blockquote><figcaption>Avis Google</figcaption></figure></div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap vis">
+ <div class="rv"><span class="eye">Heures</span><h2>Ouvert <em>7 jours</em>.</h2><div class="st" data-status>Heures</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="eye">Le salon</span><h3>5239 Av. du Parc</h3><p style="margin:0;color:var(--mu)">Montréal, QC H2V 4G3 · Mile End</p><div class="ctas" style="margin-top:14px"><a class="btn w sm" href="tel:+15142779347">514 277-9347</a><a class="btn o sm" href="https://www.google.com/maps?cid=126979829709261932" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><div class="tn">NUANCE</div><p>© Nuance Coiffure pour elle et lui · Mile End, Montréal · 514 277-9347</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [480, 1140], "6": [540, 1080], "0": [540, 1080], "1": [540, 1080], "2": [540, 1140], "3": [540, 1140], "4": [540, 1080]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [480, 1140], "6": [540, 1080], "0": [540, 1080], "1": [540, 1080], "2": [540, 1140], "3": [540, 1140], "4": [540, 1080]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const D={elle:{h:'Pour <em>elle</em>.',l:'Coupe, couleur, mise en plis et coiffure d\'événement, dans une ambiance décontractée où l\'équipe adore son travail.',h2:'Pour <em>elle</em>, avec soin.',m:[['Coupe femme','Coupe, mise en plis, brushing'],['Couleur','Balayage, mèches, coloration'],['Coiffure d\'événement','Mariage, bal, soirée']]},
+ lui:{h:'Pour <em>lui</em>.',l:'Coupe et barbier sur l\'avenue du Parc : contours nets, barbe taillée, et on prend le temps de jaser.',h2:'Pour <em>lui</em>, au millimètre.',m:[['Coupe homme','Classique ou moderne'],['Barbier','Taille et contours de barbe'],['Coupe et barbe','Le combo complet']]}};
+const bs=[...document.querySelectorAll('.sw button')],pa=document.getElementById('pa'),pb=document.getElementById('pb');
+function sw(k){const d=D[k];bs.forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===k));document.getElementById('h1').innerHTML=d.h;document.getElementById('ld').textContent=d.l;document.getElementById('h2').innerHTML=d.h2;
+ pa.classList.toggle('off',k!=='elle');pb.classList.toggle('off',k==='elle');
+ document.getElementById('mn').innerHTML=d.m.map((r,i)=>'<div class="row" style="animation-delay:'+(i*70)+'ms"><span>0'+(i+1)+'</span><b>'+r[0]+'</b><p>'+r[1]+'</p></div>').join('')}
+bs.forEach(b=>b.onclick=()=>sw(b.dataset.k));sw('elle');
+</script>
+
+</body>
+</html>

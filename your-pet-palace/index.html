@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Demo · Your Pet Palace · Dog grooming in Vanier</title>
+<meta name="description" content="Gentle, careful dog grooming on Olmstead Street in Vanier. Walk-ins welcome for nail trims and small grooming needs.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+/* Le palais : écusson royal, rouge et or, « menu du traitement royal » en ruban */
+:root{--cream:#FBF4E8;--red:#B3202A;--red-d:#8C1820;--gold:#D6A548;--gold-l:#F3DFAE;--ink:#2A1A16;--mu:#6E5A52;--ln:rgba(42,26,22,.14);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 1.03rem/1.6 Figtree,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.ys{font-family:"Young Serif",serif;font-weight:400}
+nav{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 0}
+.crest{display:flex;align-items:center;gap:12px;text-decoration:none}
+.crest svg{width:46px;height:52px;flex:none}
+.crest b{font:400 1.3rem "Young Serif";line-height:1}.crest small{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-top:3px}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:600}nav ul a{text-decoration:none}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;font-weight:800;text-decoration:none;transition:.25s;border:2px solid var(--red)}
+.btn.r{background:var(--red);color:#fff}.btn.r:hover{background:var(--red-d);transform:translateY(-2px)}
+.btn.o{color:var(--red)}.btn.o:hover{background:#fff}.btn.sm{padding:10px 18px;font-size:.92rem}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding:30px 0 80px}
+.tag{display:inline-flex;align-items:center;gap:8px;background:var(--gold-l);color:var(--ink);font-weight:800;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
+h1{font:400 clamp(3rem,6.5vw,5.6rem)/.98 "Young Serif";letter-spacing:-.02em;margin:18px 0 20px}
+h1 em{font-style:normal;color:var(--red)}
+.lead{font-size:1.15rem;color:var(--mu);max-width:42ch;margin:0 0 28px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.frame{position:relative;justify-self:center;width:min(100%,440px)}
+.frame .ph{aspect-ratio:4/5;border-radius:220px 220px 20px 20px;overflow:hidden;border:10px solid #fff;box-shadow:0 0 0 2px var(--gold),0 40px 70px -40px rgba(140,24,32,.6)}
+.frame .ph img{width:100%;height:100%;object-fit:cover}
+.crown{position:absolute;top:-34px;left:50%;transform:translateX(-50%) rotate(-6deg);width:110px;filter:drop-shadow(0 8px 10px rgba(0,0,0,.2));animation:tilt 4s ease-in-out infinite}
+@keyframes tilt{50%{transform:translateX(-50%) rotate(4deg) translateY(-6px)}}
+.seal{position:absolute;right:-24px;bottom:40px;width:128px;height:128px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;text-align:center;box-shadow:0 0 0 6px var(--cream),0 0 0 8px var(--gold)}
+.seal b{display:block;font:400 2rem/1 "Young Serif"}.seal span{font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.ribbon{background:var(--red);color:#fff;padding:16px 0;overflow:hidden}
+.ribbon div{display:flex;gap:36px;width:max-content;animation:mq 30s linear infinite;font:400 1.4rem "Young Serif";white-space:nowrap}
+.ribbon i{font-style:normal;color:var(--gold)}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:100px 0}
+h2{font:400 clamp(2.3rem,4.8vw,3.9rem)/1.02 "Young Serif";margin:10px 0 0;letter-spacing:-.01em}h2 em{font-style:normal;color:var(--red)}
+.k{font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.menu{margin-top:44px;background:#fff;border:2px solid var(--gold);border-radius:24px;padding:12px;position:relative}
+.menu::before{content:"";position:absolute;inset:6px;border:1px dashed var(--gold);border-radius:18px;pointer-events:none}
+.it{display:grid;grid-template-columns:110px 1fr auto;gap:24px;align-items:center;padding:22px 26px;border-bottom:1px solid var(--ln)}.it:last-child{border:0}
+.it .ph{width:110px;height:110px;border-radius:50%;overflow:hidden;border:4px solid var(--gold-l)}.it .ph img{width:100%;height:100%;object-fit:cover}
+.it h3{font:400 1.7rem/1.1 "Young Serif";margin:0 0 4px}.it p{margin:0;color:var(--mu)}
+.it .lbl{font-weight:800;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--red);border:2px solid var(--red);padding:6px 12px;border-radius:999px;white-space:nowrap}
+/* outil : passer ou appeler */
+.walk{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.q{display:grid;gap:10px;margin-top:26px}
+.q button{all:unset;cursor:pointer;display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;background:#fff;border:2px solid var(--ln);font-weight:700;transition:.2s}
+.q button::before{content:"";width:20px;height:20px;border-radius:50%;border:2px solid var(--mu);flex:none}
+.q button[aria-pressed=true]{border-color:var(--red)}.q button[aria-pressed=true]::before{border:6px solid var(--red)}
+.q button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.ans{background:var(--ink);color:var(--cream);border-radius:28px;padding:34px;position:sticky;top:20px}
+.ans .big{font:400 clamp(2rem,3.6vw,2.8rem)/1.05 "Young Serif";margin:8px 0 12px}
+.ans .big em{font-style:normal;color:var(--gold)}
+.ans p{color:rgba(251,244,232,.8);margin:0 0 20px}
+.ans .k{color:var(--gold)}
+.rev{background:var(--gold-l);border-radius:36px;margin:0 max(12px,1.5vw)}
+.qs{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+.qt{margin:0;background:#fff;border-radius:22px;padding:30px;position:relative}
+.qt::before{content:"♛";position:absolute;top:-20px;left:26px;font-size:1.8rem;color:var(--gold)}
+.qt blockquote{margin:0;font:400 1.45rem/1.3 "Young Serif"}.qt figcaption{margin-top:12px;color:var(--mu);font-size:.9rem}
+.score{display:flex;align-items:center;gap:14px;margin-top:10px}.score b{font:400 3.8rem/1 "Young Serif"}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.hrs{list-style:none;margin:20px 0 0;padding:0}.hrs li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px dashed var(--ln)}.hrs li.td{color:var(--red);font-weight:800}
+.st{display:inline-flex;gap:8px;align-items:center;font-weight:800;margin-top:16px;background:#fff;padding:8px 14px;border-radius:999px}.st::before{content:"";width:10px;height:10px;border-radius:50%;background:#bbb}.st.on::before{background:#2E9D5B}
+.card{background:#fff;border-radius:28px;overflow:hidden;border:2px solid var(--gold)}.card .ph{aspect-ratio:16/9;overflow:hidden}.card img{width:100%;height:100%;object-fit:cover}
+.card .in{padding:26px;display:grid;gap:10px}.card h3{font:400 1.7rem "Young Serif";margin:0}
+footer{background:var(--red);color:#fff;text-align:center;padding:56px 0 28px}
+footer .ys{font-size:clamp(2.4rem,7vw,5rem)}footer p{opacity:.8;font-size:.88rem}
+@media (max-width:900px){nav ul{display:none}.hero,.walk,.vis,.qs{grid-template-columns:minmax(0,1fr)}.frame{width:min(84%,360px);margin-top:30px}.seal{width:104px;height:104px;right:-10px}.it{grid-template-columns:70px 1fr}.it .ph{width:70px;height:70px}.it .lbl{grid-column:2;justify-self:start}section{padding:76px 0}.ans{position:static}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DEMO</b>Example made for Your Pet Palace<span class="long"> · not the business's official website</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><a class="crest" href="#"><svg viewBox="0 0 46 52" aria-hidden="true"><path d="M3 4h40v22c0 13-9 21-20 24C12 47 3 39 3 26z" fill="#B3202A" stroke="#D6A548" stroke-width="2.5"/><path d="M13 20l4 5 6-9 6 9 4-5-2 12H15z" fill="#D6A548"/></svg><span><b>Your Pet Palace</b><small>Dog grooming · Vanier</small></span></a>
+<ul><li><a href="#menu">Services</a></li><li><a href="#walkin">Walk-ins</a></li><li><a href="#reviews">Reviews</a></li></ul>
+<a class="btn r sm" href="tel:+16137476568">613 747-6568</a></nav>
+<header class="hero">
+ <div><span class="tag">♛ Walk-ins welcome</span>
+ <h1>Every dog gets the <em>royal</em> treatment.</h1>
+ <p class="lead">Gentle, careful grooming for dogs of every size, on Olmstead Street in Vanier. Fair prices and a calm place for nervous pups.</p>
+ <div class="ctas"><a class="btn r" href="tel:+16137476568">Book a groom</a><a class="btn o" href="#walkin">Can I just walk in?</a></div></div>
+ <div class="frame"><svg class="crown" viewBox="0 0 110 70" aria-hidden="true"><path d="M8 62 L4 16 L30 36 L55 6 L80 36 L106 16 L102 62 Z" fill="#D6A548" stroke="#8C6A2E" stroke-width="3"/><circle cx="55" cy="6" r="6" fill="#B3202A"/><circle cx="4" cy="16" r="5" fill="#B3202A"/><circle cx="106" cy="16" r="5" fill="#B3202A"/><rect x="8" y="54" width="94" height="10" fill="#C0902F"/></svg>
+ <div class="ph"><img src="img/1.jpg" alt="A freshly groomed white dog"></div>
+ <div class="seal"><div><b>4.5</b><span>★ Google<br>116 reviews</span></div></div></div>
+</header></div>
+<div class="ribbon" aria-hidden="true"><div><span>Full groom <i>♛</i> Bath &amp; brush <i>♛</i> Nail trims <i>♛</i> Puppy intro <i>♛</i> Walk-ins welcome <i>♛</i></span><span>Full groom <i>♛</i> Bath &amp; brush <i>♛</i> Nail trims <i>♛</i> Puppy intro <i>♛</i> Walk-ins welcome <i>♛</i></span></div></div>
+
+<section id="menu"><div class="wrap">
+ <div class="rv"><span class="k">The royal menu</span><h2>Baths, cuts, nails and ears, <em>done with care</em>.</h2></div>
+ <div class="menu rv">
+  <div class="it"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><div><h3>Full groom</h3><p>Bath, haircut, nails, ears and a fresh finish.</p></div><span class="lbl">Most popular</span></div>
+  <div class="it"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><div><h3>Bath &amp; brush</h3><p>A deep clean and a good brush-out between cuts.</p></div><span class="lbl">Quick</span></div>
+  <div class="it"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><div><h3>Nail trim</h3><p>Walk in for small grooming needs, no appointment needed.</p></div><span class="lbl">Walk-in</span></div>
+  <div class="it"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><div><h3>Puppy intro</h3><p>A short, gentle first visit to build confidence.</p></div><span class="lbl">First time</span></div>
+ </div></div></section>
+
+<section id="walkin" style="padding-top:0"><div class="wrap walk">
+ <div class="rv"><span class="k">Walk in or call?</span><h2>What does your dog <em>need today?</em></h2>
+  <div class="q" role="group" aria-label="What your dog needs">
+   <button data-k="0" aria-pressed="true">Just a nail trim</button><button data-k="1" aria-pressed="false">A quick bath and brush</button><button data-k="2" aria-pressed="false">A full haircut</button><button data-k="3" aria-pressed="false">It's my puppy's first time</button></div></div>
+ <div class="ans rv" style="--d:.1s" aria-live="polite"><span class="k" id="ak"></span><div class="big" id="ab"></div><p id="ap"></p><a class="btn r" href="tel:+16137476568">Call 613 747-6568</a></div>
+</div></section>
+
+<section class="rev" id="reviews"><div class="wrap">
+ <div class="rv"><span class="k">Google reviews</span><div class="score"><b>4.5</b><span>★★★★★<br>116 reviews</span></div></div>
+ <div class="qs"><figure class="qt rv"><blockquote>“I highly recommend this place, your dog will be in good hands.”</blockquote><figcaption>Google review</figcaption></figure>
+ <figure class="qt rv" style="--d:.1s"><blockquote>“Prices are reasonable and they also allow walk in for small grooming needs.”</blockquote><figcaption>Google review</figcaption></figure></div>
+</div></section>
+
+<section><div class="wrap vis">
+ <div class="rv"><span class="k">Opening hours</span><h2>Visit the <em>palace</em>.</h2><div class="st" data-status>Opening hours</div><ul class="hrs" data-hours></ul></div>
+ <div class="card rv" style="--d:.1s"><div class="ph"><img src="img/6.jpg" alt="" loading="lazy"></div><div class="in"><h3>264 Olmstead St</h3><p style="margin:0;color:var(--mu)">Vanier, ON K1L 7J8</p><div class="ctas"><a class="btn r sm" href="tel:+16137476568">613 747-6568</a><a class="btn o sm" href="https://www.google.com/maps?cid=3005910868975469842" target="_blank" rel="noopener">Directions ↗</a></div></div></div>
+</div></section>
+<footer><div class="wrap"><div class="ys">Your Pet Palace</div><p>© Your Pet Palace · Dog grooming in Vanier · 613 747-6568</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [480, 1020], "6": [480, 960], "0": null, "1": null, "2": [480, 1020], "3": [480, 1020], "4": [480, 1020]}, "en") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [480, 1020], "6": [480, 960], "0": null, "1": null, "2": [480, 1020], "3": [480, 1020], "4": [480, 1020]},EN="en"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const A=[["Walk right in","No appointment <em>needed</em>.","Nail trims and small grooming needs are welcome as walk-ins during opening hours."],
+["Usually quick","Call ahead, <em>or try your luck</em>.","A bath and brush is short. Give us a call to check how busy the table is today."],
+["Book a spot","A full groom <em>needs a booking</em>.","Haircuts take time to do right. Call us and we'll find a time that works for you and your dog."],
+["Welcome, little one","A gentle <em>first visit</em>.","We keep it short and calm so your puppy learns that grooming is a good thing. Call to book the puppy intro."]];
+const bs=[...document.querySelectorAll('.q button')];function pick(k){bs.forEach(b=>b.setAttribute('aria-pressed',+b.dataset.k===k));ak.textContent=A[k][0];ab.innerHTML=A[k][1];ap.textContent=A[k][2]}
+const ak=document.getElementById('ak'),ab=document.getElementById('ab'),ap=document.getElementById('ap');bs.forEach(b=>b.onclick=()=>pick(+b.dataset.k));pick(0);
+</script>
+
+</body>
+</html>

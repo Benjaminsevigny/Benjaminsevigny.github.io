@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Massothérapie chemin Sainte-Foy · Québec</title>
+<meta name="description" content="Massages thérapeutiques et de détente à Québec. Dos, sciatique, cou : nos massothérapeutes d'expérience vous aident rapidement. Ouvert jusqu'à 21 h en semaine.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--lin:#F3F0E9;--sand:#E6DCCB;--sage:#2F6B52;--sage-l:#CFDDCF;--mist:#E3EAE2;--ink:#1F2A24;--mu:#5F6A63;--ln:rgba(31,42,36,.13);--vh:100svh;color-scheme:light}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--lin);color:var(--ink);font:400 1.02rem/1.7 Manrope,system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(22px,env(safe-area-inset-left,0px))}
+.serif{font-family:"Cormorant Garamond",serif}
+.k{font-size:.74rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sage)}
+nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:22px 0}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:.92rem}
+nav ul a{text-decoration:none;color:var(--mu)}nav ul a:hover{color:var(--ink)}
+.logo{text-align:center;text-decoration:none;line-height:1}
+.logo b{display:block;font:600 1.6rem "Cormorant Garamond";letter-spacing:.01em}.logo small{font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--sage)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.95rem;transition:.3s;border:1px solid var(--sage)}
+.btn.f{background:var(--sage);color:#F3F0E9}.btn.f:hover{background:#245640}
+.btn.o{color:var(--sage)}.btn.o:hover{background:var(--sage);color:#fff}
+.btn.sm{padding:10px 20px;font-size:.88rem}
+nav .btn{justify-self:end}
+/* héros */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;min-height:calc(var(--vh) - 160px);padding:20px 0 60px}
+h1{font:500 clamp(3.2rem,6.8vw,6rem)/.95 "Cormorant Garamond";letter-spacing:-.02em;margin:20px 0 24px}
+h1 em{color:var(--sage)}
+.lead{font-size:1.12rem;color:var(--mu);max-width:42ch;margin:0 0 30px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.pic{position:relative;justify-self:end;width:min(100%,480px)}
+.pic .ph{aspect-ratio:4/5;border-radius:240px 240px 24px 24px;overflow:hidden}
+.pic .ph img{width:100%;height:100%;object-fit:cover}
+.breath{position:absolute;left:-60px;bottom:40px;width:170px;height:170px;display:grid;place-items:center}
+.breath .o{position:absolute;inset:0;border-radius:50%;background:rgba(243,240,233,.78);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 20px 40px -20px rgba(31,42,36,.4);transform:scale(.72);transition:transform 4s cubic-bezier(.45,0,.55,1)}
+.breath .o2{position:absolute;inset:-14px;border-radius:50%;border:1px solid var(--sage);opacity:.35;transform:scale(.72);transition:transform 4s cubic-bezier(.45,0,.55,1)}
+.breath.in .o,.breath.in .o2{transform:scale(1)}
+.breath span{position:relative;font:italic 500 1.5rem "Cormorant Garamond";color:var(--sage);text-align:center;line-height:1.1}
+.breath small{display:block;font:700 .62rem Manrope;letter-spacing:.2em;text-transform:uppercase;color:var(--mu);margin-top:4px}
+.strip{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 40px;padding:22px 0;border-block:1px solid var(--ln);font-size:.92rem;color:var(--mu)}
+.strip b{color:var(--ink)}.strip span::before{content:"✦";color:var(--sage);margin-right:10px;font-size:.8em}
+section{padding:120px 0}
+h2{font:500 clamp(2.5rem,5vw,4.3rem)/1 "Cormorant Garamond";letter-spacing:-.015em;margin:14px 0 0}
+h2 em{color:var(--sage)}
+/* carte du corps */
+.map{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center;margin-top:50px}
+.body{position:relative;justify-self:center;width:min(100%,330px)}
+.body svg{width:100%;height:auto}
+.body .part{fill:var(--sand);transition:fill .4s}
+.body .part.on{fill:var(--sage-l)}
+.spot{position:absolute;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;border:none;background:none;cursor:pointer;padding:0}
+.spot::before{content:"";position:absolute;inset:12px;border-radius:50%;background:var(--sage);transition:.3s}
+.spot::after{content:"";position:absolute;inset:4px;border-radius:50%;border:2px solid var(--sage);opacity:.5;animation:pulse 2.4s ease-out infinite}
+.spot[aria-pressed=true]::before{inset:8px;background:var(--ink)}
+@keyframes pulse{from{transform:scale(.6);opacity:.8}to{transform:scale(1.4);opacity:0}}
+.zones{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.zones button{font:600 .88rem Manrope;padding:9px 16px;border-radius:999px;border:1px solid var(--ln);background:transparent;color:var(--ink);cursor:pointer;transition:.25s}
+.zones button[aria-pressed=true]{background:var(--sage);color:#fff;border-color:var(--sage)}
+.rec{margin-top:30px;background:#FBFAF6;border-radius:24px;padding:30px;border:1px solid var(--ln);min-height:210px}
+.rec h3{font:600 2.1rem/1.05 "Cormorant Garamond";margin:6px 0 10px}.rec p{margin:0;color:var(--mu)}
+.rec .fade{animation:fade .5s ease}@keyframes fade{from{opacity:0;transform:translateY(8px)}}
+/* techniques */
+.tech{background:var(--ink);color:var(--lin);border-radius:36px;margin:0 max(12px,1.5vw)}
+.tech .k{color:var(--sage-l)}.tech h2 em{color:var(--sage-l)}
+.list{margin-top:50px;border-top:1px solid rgba(243,240,233,.15)}
+.li{display:grid;grid-template-columns:70px 1fr 1.2fr;gap:20px;align-items:baseline;padding:24px 0;border-bottom:1px solid rgba(243,240,233,.15);transition:padding .4s,background .4s}
+.li:hover{padding-left:16px;background:linear-gradient(90deg,rgba(207,221,207,.08),transparent)}
+.li span{font:italic 500 1.1rem "Cormorant Garamond";color:var(--sage-l)}
+.li b{font:500 clamp(1.7rem,3vw,2.5rem)/1 "Cormorant Garamond"}
+.li p{margin:0;color:rgba(243,240,233,.7)}
+/* avis */
+.quote{text-align:center;max-width:900px;margin:0 auto}
+.quote blockquote{margin:24px 0 0;font:italic 500 clamp(2rem,4vw,3.4rem)/1.12 "Cormorant Garamond"}
+.quote p{color:var(--mu);margin-top:20px}
+.minis{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:50px}
+.mini{background:#FBFAF6;border:1px solid var(--ln);border-radius:20px;padding:26px;text-align:left}
+.mini q{font:500 1.35rem/1.25 "Cormorant Garamond"}.mini small{display:block;margin-top:10px;color:var(--mu)}
+.score{display:inline-flex;align-items:center;gap:14px;margin-top:16px}.score b{font:500 3.6rem/1 "Cormorant Garamond"}.score span{text-align:left;font-size:.85rem;color:var(--mu)}
+/* visite */
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.vis .ph{border-radius:24px;overflow:hidden;aspect-ratio:5/4}.vis .ph img{width:100%;height:100%;object-fit:cover}
+.hrs{list-style:none;margin:26px 0;padding:0}
+.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln);color:var(--mu)}.hrs li.td{color:var(--ink);font-weight:700}
+.now{display:inline-flex;align-items:center;gap:10px;font-weight:700;margin-top:18px}.now i{width:10px;height:10px;border-radius:50%;background:#B8B3A8}.now.on i{background:var(--sage);box-shadow:0 0 0 5px rgba(47,107,82,.18)}
+footer{padding:50px 0 30px;border-top:1px solid var(--ln);text-align:center}
+footer .serif{font-size:clamp(2.4rem,6vw,4.6rem);line-height:1;font-weight:500}footer .serif em{color:var(--sage)}
+footer p{color:var(--mu);font-size:.88rem;margin-top:18px}
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1.1s cubic-bezier(.2,.7,.2,1),transform 1.1s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}
+:focus-visible{outline:2px solid var(--sage);outline-offset:3px}
+@media (max-width:900px){nav{grid-template-columns:1fr auto}nav ul{display:none}.logo{text-align:left}.hero,.map,.vis{grid-template-columns:minmax(0,1fr)}.pic{justify-self:center;width:min(86%,400px)}.body{width:min(62%,230px)}.breath{left:-26px;width:130px;height:130px}.breath span{font-size:1.2rem}
+ .li{grid-template-columns:40px 1fr}.li p{grid-column:2}.minis{grid-template-columns:minmax(0,1fr)}section{padding:84px 0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+html.shot .fade{animation:none}html.shot .rv{opacity:1;transform:none;transition:none}html.shot *{animation-play-state:paused!important}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Massothérapie chemin Sainte-Foy<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><ul><li><a href="#douleur">Votre douleur</a></li><li><a href="#massages">Massages</a></li><li><a href="#avis">Avis</a></li></ul>
+<a class="logo" href="#"><b>Massothérapie</b><small>chemin Sainte-Foy</small></a>
+<a class="btn f sm" href="tel:+15819869191">581 986-9191</a></nav>
+
+<header class="hero">
+ <div><span class="k">Massothérapie à Québec</span>
+ <h1>Le soulagement <em>commence ici.</em></h1>
+ <p class="lead">Mal de dos, sciatique, tensions au cou : nos massothérapeutes d'expérience adaptent chaque massage à votre douleur, et vous aident rapidement.</p>
+ <div class="ctas"><a class="btn f" href="tel:+15819869191">Prendre rendez-vous</a><a class="btn o" href="#douleur">Où avez-vous mal ?</a></div></div>
+ <div class="pic"><div class="ph"><img src="img/1.jpg" alt="Mains d'une massothérapeute sur le dos d'un client"></div>
+  <div class="breath" id="br" aria-hidden="true"><div class="o2"></div><div class="o"></div><span id="bt">Inspirez<small>4 secondes</small></span></div></div>
+</header>
+</div>
+<div class="strip"><span><b>Ouvert jusqu'à 21 h</b> en semaine</span><span>Reçus pour <b>assurances</b></span><span><b>4,7 ★</b> · 94 avis Google</span><span>1535, chemin Sainte-Foy, bureau 100</span></div>
+
+<section id="douleur"><div class="wrap">
+ <div class="rv" style="max-width:640px"><span class="k">Votre douleur</span><h2>Où avez-vous <em>mal</em> ?</h2><p style="color:var(--mu);margin-top:18px">Touchez une zone. On vous dit quel massage vous ferait le plus de bien.</p></div>
+ <div class="map">
+  <div class="body rv" id="body">
+   <svg viewBox="0 0 200 420" aria-hidden="true">
+    <ellipse class="part" data-z="0" cx="100" cy="40" rx="27" ry="31"/>
+    <rect class="part" data-z="0" x="88" y="66" width="24" height="20" rx="8"/>
+    <path class="part" data-z="1" d="M48 92 Q100 76 152 92 Q166 98 166 116 L160 180 Q100 192 40 180 L34 116 Q34 98 48 92 Z"/>
+    <path class="part" data-z="2" d="M42 184 Q100 196 158 184 L156 236 Q100 250 44 236 Z"/>
+    <path class="part" data-z="1" d="M34 104 Q22 112 20 140 L14 222 Q14 232 22 232 Q30 232 30 222 L38 150 Z"/>
+    <path class="part" data-z="1" d="M166 104 Q178 112 180 140 L186 222 Q186 232 178 232 Q170 232 170 222 L162 150 Z"/>
+    <path class="part" data-z="3" d="M46 240 Q72 250 98 246 L96 400 Q96 410 84 410 Q72 410 72 400 Z"/>
+    <path class="part" data-z="3" d="M154 240 Q128 250 102 246 L104 400 Q104 410 116 410 Q128 410 128 400 Z"/>
+   </svg>
+   <button class="spot" style="left:50%;top:15%" data-z="0" aria-label="Tête et cou"></button>
+   <button class="spot" style="left:70%;top:25%" data-z="1" aria-label="Épaules et haut du dos"></button>
+   <button class="spot" style="left:50%;top:51%" data-z="2" aria-label="Bas du dos et sciatique"></button>
+   <button class="spot" style="left:39%;top:75%" data-z="3" aria-label="Jambes"></button>
+  </div>
+  <div class="rv" style="--d:.1s">
+   <div class="zones" role="group" aria-label="Choisir une zone">
+    <button data-z="0">Tête et cou</button><button data-z="1">Épaules et dos</button><button data-z="2">Bas du dos, sciatique</button><button data-z="3">Jambes</button><button data-z="4">Stress, sommeil</button><button data-z="5">Grossesse</button>
+   </div>
+   <div class="rec" aria-live="polite"><div id="rec"></div></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="tech" id="massages"><div class="wrap">
+ <div class="rv"><span class="k">Nos massages</span><h2>Chaque technique, <em>pour une raison</em>.</h2></div>
+ <div class="list">
+  <div class="li rv"><span>01</span><b>Suédois thérapeutique</b><p>Pour dénouer les tensions et soulager les douleurs musculaires.</p></div>
+  <div class="li rv"><span>02</span><b>Tissus profonds</b><p>Pression ferme pour les noeuds tenaces et les douleurs chroniques.</p></div>
+  <div class="li rv"><span>03</span><b>Sportif</b><p>Avant ou après l'effort, pour récupérer et prévenir les blessures.</p></div>
+  <div class="li rv"><span>04</span><b>Femme enceinte</b><p>Positionnement adapté et confortable, pour le dos et les jambes.</p></div>
+  <div class="li rv"><span>05</span><b>Détente et californien</b><p>Mouvements enveloppants pour relâcher le stress et mieux dormir.</p></div>
+  <div class="li rv"><span>06</span><b>Thaïlandais et Amma</b><p>Étirements et pressions pour retrouver souplesse et énergie.</p></div>
+ </div>
+</div></section>
+
+<section id="avis"><div class="wrap">
+ <div class="quote rv"><span class="k">Avis Google</span>
+ <blockquote>« J'ai eu des soins de massothérapie avec Floriane et je suis plus que satisfaite. »</blockquote>
+ <div class="score"><b>4,7</b><span>★★★★★<br>94 avis Google</span></div></div>
+ <div class="minis"><div class="mini rv"><q>Service professionnel, attentionné et efficace.</q><small>Avis Google</small></div><div class="mini rv" style="--d:.1s"><q>C'est très bien et les prix sont très abordables.</q><small>Avis Google</small></div></div>
+</div></section>
+
+<section style="padding-top:20px"><div class="wrap vis">
+ <div class="ph rv"><img src="img/3.jpg" alt="" loading="lazy"></div>
+ <div class="rv" style="--d:.1s"><span class="k">Nous trouver</span><h2>Un moment <em>pour vous</em>.</h2>
+ <div class="now" id="now"><i></i><span>Heures d'ouverture</span></div>
+ <ul class="hrs" id="hrs"></ul>
+ <p style="margin:0 0 20px"><b>1535, chemin Sainte-Foy, bureau 100</b><br><span style="color:var(--mu)">Québec, QC G1S 2N7</span></p>
+ <div class="ctas"><a class="btn f" href="tel:+15819869191">581 986-9191</a><a class="btn o" href="https://www.google.com/maps?cid=6975906451854611925" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+
+<footer><div class="wrap"><div class="serif">Respirez. <em>On s'occupe du reste.</em></div><p>© Massothérapie chemin Sainte-Foy · Québec · 581 986-9191</p></div></footer>
+
+<script>
+(()=>{const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+// respiration guidée
+const br=document.getElementById('br'),bt=document.getElementById('bt');let inh=false;
+function cyc(){inh=!inh;br.classList.toggle('in',inh);bt.innerHTML=(inh?'Inspirez':'Expirez')+'<small>'+(inh?'4':'6')+' secondes</small>';const o=br.querySelectorAll('.o,.o2');o.forEach(e=>e.style.transitionDuration=(inh?4:6)+'s');setTimeout(cyc,inh?4000:6000)}
+if(sh){br.classList.add('in')}else if(!matchMedia('(prefers-reduced-motion:reduce)').matches)setTimeout(cyc,300);
+// carte du corps
+const Z=[["Tête et cou","Massage suédois thérapeutique","Pour les maux de tête de tension et le cou raide de l'écran. On travaille la nuque, les trapèzes et la base du crâne."],
+["Épaules et haut du dos","Massage thérapeutique ou tissus profonds","Les noeuds entre les omoplates et les épaules qui remontent : une pression adaptée pour vraiment les relâcher."],
+["Bas du dos et sciatique","Massage thérapeutique ciblé","La sciatique et le bas du dos, c'est notre quotidien. On soulage la tension autour du bassin et des fessiers, là où le nerf est souvent coincé."],
+["Jambes","Massage sportif","Jambes lourdes, mollets tendus après la course ou le ski : on aide les muscles à récupérer."],
+["Stress et sommeil","Massage de détente ou californien","Des mouvements lents et enveloppants pour faire tomber le stress et mieux dormir le soir même."],
+["Grossesse","Massage pour femme enceinte","Une position confortable et sécuritaire pour soulager le dos, les hanches et les jambes pendant la grossesse."]];
+const parts=[...document.querySelectorAll('.part')],spots=[...document.querySelectorAll('.spot')],zb=[...document.querySelectorAll('.zones button')],rec=document.getElementById('rec');
+function pick(z){parts.forEach(p=>p.classList.toggle('on',+p.dataset.z===z||z===4));spots.forEach(s=>s.setAttribute('aria-pressed',+s.dataset.z===z));zb.forEach(b=>b.setAttribute('aria-pressed',+b.dataset.z===z));
+ const x=Z[z];rec.innerHTML='<div class="fade"><span class="k">'+x[0]+'</span><h3>'+x[1]+'</h3><p>'+x[2]+'</p><p style="margin-top:16px"><a class="btn f sm" href="tel:+15819869191">Réserver ce massage</a></p></div>'}
+spots.concat(zb).forEach(b=>b.onclick=()=>pick(+b.dataset.z));pick(2);
+// heures
+const H={1:[540,1260],2:[540,1260],3:[540,1260],4:[540,1260],5:[540,1260],6:[540,1020],0:null},N=['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const f=m=>Math.floor(m/60)+' h'+(m%60?' '+String(m%60).padStart(2,'0'):'');const n=new Date(),d=n.getDay(),m=n.getHours()*60+n.getMinutes(),ul=document.getElementById('hrs');
+[1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';li.innerHTML='<span>'+N[k]+'</span><span>'+(H[k]?f(H[k][0])+' – '+f(H[k][1]):'Fermé')+'</span>';ul.appendChild(li)});
+const t=H[d],nw=document.getElementById('now');if(t&&m>=t[0]&&m<t[1]){nw.classList.add('on');nw.lastChild.textContent='Ouvert maintenant, jusqu\'à '+f(t[1])}else nw.lastChild.textContent='Fermé pour le moment';
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+})();
+</script>
+
+</body>
+</html>

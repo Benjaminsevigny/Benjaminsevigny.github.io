@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Toiture Tout Genre · Toits plats à Drummondville</title>
+<meta name="description" content="Spécialiste des toits plats pour résidences et petits commerces à Drummondville : réfection, membranes chauffées, déneigement de toitures et inspection, 7 jours sur 7.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+/* Hiver sur le toit plat : neige qui tombe, ardoise et orange chaleur (membrane chauffée), calculateur de charge de neige */
+:root{--slate:#1D2429;--slate2:#28323A;--snow:#F4F7FA;--heat:#F26B2A;--heat2:#FFB04A;--ice:#BFD9EA;--fg:#F2F4F5;--mu:rgba(242,244,245,.68);--ln:rgba(242,244,245,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--slate);color:var(--fg);font:400 1.03rem/1.6 "Nunito Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.os{font-family:Oswald,sans-serif;text-transform:uppercase}
+#snow{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0;position:relative;z-index:2}
+.logo{text-decoration:none;line-height:1}.logo b{font:700 1.4rem Oswald;text-transform:uppercase;letter-spacing:.02em}.logo b span{color:var(--heat)}.logo small{display:block;font-size:.72rem;color:var(--mu)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600}nav ul a{text-decoration:none;color:var(--mu)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:6px;font:700 1rem Oswald;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;transition:.2s;border:2px solid var(--heat)}
+.btn.h{background:linear-gradient(135deg,var(--heat2),var(--heat));color:#1A0E06}.btn.h:hover{filter:brightness(1.08)}.btn.o{color:var(--fg);border-color:var(--ln)}.btn.sm{padding:9px 14px}
+.hero{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;padding:30px 0 90px;z-index:2}
+.eye{font:700 .85rem Oswald;letter-spacing:.14em;text-transform:uppercase;color:var(--heat2)}
+h1{font:700 clamp(3rem,7.4vw,6.2rem)/.92 Oswald;text-transform:uppercase;margin:12px 0 18px}h1 span{color:var(--heat)}
+.lead{font-size:1.12rem;color:var(--mu);max-width:44ch;margin:0 0 24px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.roof{position:relative}
+.roof .ph{aspect-ratio:4/3;border-radius:10px;overflow:hidden}.roof img{width:100%;height:100%;object-fit:cover}
+.roof .layer{position:absolute;left:-14px;right:-14px;bottom:-22px;height:44px;border-radius:6px;background:repeating-linear-gradient(90deg,#3B444B 0 50px,#333B41 50px 52px);box-shadow:0 -6px 0 var(--heat),0 20px 30px -10px rgba(0,0,0,.5)}
+.roof .t{position:absolute;right:16px;top:16px;background:rgba(29,36,41,.85);border:1px solid var(--heat);border-radius:8px;padding:8px 12px;font:700 1.4rem Oswald}.roof .t small{display:block;font:600 .7rem "Nunito Sans";color:var(--mu);text-transform:none}
+section{padding:90px 0;position:relative;z-index:2}
+h2{font:700 clamp(2.4rem,5vw,4.2rem)/.95 Oswald;text-transform:uppercase;margin:10px 0 0}h2 span{color:var(--heat)}
+/* neige */
+.load{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px;align-items:center}
+.ctl{background:var(--slate2);border-radius:14px;padding:28px;border:1px solid var(--ln)}
+.ctl label{font-weight:800;display:block;margin-bottom:6px}.ctl .v{font:700 3.4rem/1 Oswald}
+.ctl input{width:100%;accent-color:var(--heat);margin:10px 0 18px}
+.ty{display:flex;flex-wrap:wrap;gap:8px}.ty button{font:700 .95rem "Nunito Sans";padding:9px 14px;border-radius:999px;border:1.5px solid var(--ln);background:transparent;color:var(--fg);cursor:pointer}.ty button[aria-pressed=true]{background:var(--ice);color:var(--slate);border-color:var(--ice)}
+.vis2{position:relative;height:300px;border-radius:14px;overflow:hidden;background:linear-gradient(180deg,#2E3A44,#1D2429)}
+.vis2 .pile{position:absolute;left:8%;right:8%;bottom:70px;background:linear-gradient(180deg,#fff,var(--ice));border-radius:20px 20px 0 0;transition:height .5s;box-shadow:inset 0 -10px 20px rgba(0,0,0,.08)}
+.vis2 .deck{position:absolute;left:4%;right:4%;bottom:46px;height:24px;background:#3B444B;border-top:5px solid var(--heat)}
+.vis2 .out{position:absolute;left:0;right:0;bottom:6px;text-align:center;font:700 1rem Oswald;letter-spacing:.06em}
+.res{margin-top:16px;border-radius:12px;padding:20px;border:1px solid var(--ln)}.res b{display:block;font:700 1.6rem Oswald;text-transform:uppercase}.res.ok b{color:#7EE2A8}.res.warn b{color:var(--heat2)}.res.bad b{color:#FF6B5C}.res p{margin:6px 0 0;color:var(--mu)}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.s{background:var(--slate2);border-radius:12px;overflow:hidden;border:1px solid var(--ln)}.s .ph{aspect-ratio:4/3;overflow:hidden}.s img{width:100%;height:100%;object-fit:cover}
+.s .in{padding:18px}.s .eye{font-size:.72rem}.s h3{font:700 1.4rem Oswald;text-transform:uppercase;margin:4px 0}.s p{margin:0;color:var(--mu);font-size:.93rem}
+.band{background:linear-gradient(135deg,var(--heat2),var(--heat));color:#1A0E06;padding:60px 0;position:relative;z-index:2}.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.band b{font:700 clamp(1.8rem,4vw,3rem)/1 Oswald;text-transform:uppercase}
+.band .btn{background:var(--slate);color:var(--fg);border-color:var(--slate)}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln);color:var(--mu)}.hrs li.td{color:var(--heat2);font-weight:800}
+.st{display:inline-block;margin-top:14px;font:700 .9rem Oswald;text-transform:uppercase;padding:6px 12px;border-radius:6px;border:1px solid var(--ln)}.st.on{border-color:var(--heat);color:var(--heat2)}
+.box{background:var(--slate2);border-radius:12px;padding:30px;border:1px solid var(--ln);display:grid;gap:8px;align-content:start}.box h3{margin:0;font:700 1.6rem Oswald;text-transform:uppercase}
+footer{padding:40px 0 26px;text-align:center;border-top:1px solid var(--ln);position:relative;z-index:2}footer .os{font-weight:700;font-size:clamp(2rem,6vw,3.6rem)}footer .os span{color:var(--heat)}footer p{color:var(--mu);font-size:.85rem}
+@media (max-width:900px){nav ul{display:none}.hero,.load,.vis{grid-template-columns:minmax(0,1fr)}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Toiture Tout Genre<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<canvas id="snow" aria-hidden="true"></canvas>
+<div class="wrap">
+<nav><a class="logo" href="#"><b>Toiture <span>Tout Genre</span></b><small>Toits plats · Drummondville</small></a><ul><li><a href="#neige">Neige sur le toit</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li></ul><a class="btn h sm" href="tel:+18194731275">819 473-1275</a></nav>
+<header class="hero">
+ <div><span class="eye">Résidentiel et petits commerces</span><h1>Le toit plat, <span>notre affaire</span>.</h1>
+ <p class="lead">Réfection, réparation et entretien de toits plats à Drummondville. Membranes chauffées pour une étanchéité durable, et déneigement de toitures pour éviter les surcharges. 7 jours sur 7.</p>
+ <div class="ctas"><a class="btn h" href="tel:+18194731275">Demander une soumission</a><a class="btn o" href="#neige">Trop de neige sur mon toit ?</a></div>
+ <p style="margin-top:18px;color:var(--mu)">★ 4,8 · 41 avis Google</p></div>
+ <div class="roof"><div class="ph"><img src="img/1.jpg" alt="Travaux sur un toit plat"></div><div class="t">7 / 7<small>ouvert tous les jours</small></div><div class="layer" aria-hidden="true"></div></div>
+</header></div>
+
+<section id="neige"><div class="wrap">
+ <div class="rv"><span class="eye">Calculateur d'hiver</span><h2>Combien pèse la neige <span>sur votre toit</span> ?</h2></div>
+ <div class="load">
+  <div class="ctl rv"><label for="sd">Épaisseur de neige</label><div class="v" id="sv"></div><input type="range" id="sd" min="10" max="150" step="5" value="60">
+   <label>Type de neige</label><div class="ty" role="group" aria-label="Type de neige"><button data-d="100" aria-pressed="false">Neige fraîche</button><button data-d="300" aria-pressed="true">Neige tassée</button><button data-d="450" aria-pressed="false">Neige mouillée ou glacée</button></div>
+   <div class="res" id="rs" aria-live="polite"><b></b><p></p></div></div>
+  <div class="vis2 rv" style="--d:.1s" aria-hidden="true"><div class="pile" id="pl"></div><div class="deck"></div><div class="out" id="po"></div></div>
+ </div></div></section>
+
+<section id="services" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="eye">Nos services</span><h2>Au-dessus <span>de vos têtes</span>.</h2></div>
+ <div class="svc">
+  <div class="s rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><div class="in"><span class="eye">Spécialité</span><h3>Toits plats</h3><p>Réfection et réparation.</p></div></div>
+  <div class="s rv" style="--d:.06s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><div class="in"><span class="eye">Technique</span><h3>Membranes chauffées</h3><p>Étanchéité durable.</p></div></div>
+  <div class="s rv" style="--d:.12s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><div class="in"><span class="eye">Hiver</span><h3>Déneigement</h3><p>Pour éviter les surcharges.</p></div></div>
+  <div class="s rv" style="--d:.18s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><div class="in"><span class="eye">Prévention</span><h3>Inspection</h3><p>Avant achat ou après tempête.</p></div></div>
+ </div></div></section>
+<div class="band"><div class="wrap"><b class="rv">★ 4,8 sur Google · 41 avis</b><a class="btn rv" href="tel:+18194731275">819 473-1275</a></div></div>
+
+<section id="contact"><div class="wrap vis">
+ <div class="rv"><span class="eye">Heures</span><h2>Ouvert <span>7 jours sur 7</span>.</h2><div class="st" data-status>Heures</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="eye">On se déplace</span><h3>Drummondville et environs</h3><p style="margin:0;color:var(--mu)">Service à domicile, résidences et petits commerces.</p><div class="ctas" style="margin-top:12px"><a class="btn h sm" href="tel:+18194731275">819 473-1275</a><a class="btn o sm" href="https://www.google.com/maps?cid=7743403373331614002" target="_blank" rel="noopener">Fiche Google ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><div class="os">Toiture <span>Tout Genre</span></div><p>© Toiture Tout Genre · toits plats · Drummondville · 819 473-1275</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [420, 1080], "6": [420, 1080], "0": [420, 1080], "1": [420, 1080], "2": [420, 1080], "3": [420, 1080], "4": [420, 1080]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [420, 1080], "6": [420, 1080], "0": [420, 1080], "1": [420, 1080], "2": [420, 1080], "3": [420, 1080], "4": [420, 1080]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+let den=300;const sd=document.getElementById('sd');
+function calc(){const cm=+sd.value,kg=Math.round(cm/100*den);document.getElementById('sv').textContent=cm+' cm';document.getElementById('pl').style.height=Math.min(200,cm*1.3)+'px';document.getElementById('po').textContent='≈ '+kg+' kg par mètre carré';
+ const rs=document.getElementById('rs');let c,b,p;if(kg<120){c='ok';b='Ça va pour l\'instant';p='Surveillez après les prochaines bordées, surtout si la neige se tasse ou mouille.'}else if(kg<220){c='warn';b='À surveiller';p='Sur un toit plat, l\'eau et la glace s\'accumulent. Pensez à faire déneiger avant la pluie.'}else{c='bad';b='Faites déneiger';p='C\'est beaucoup de poids. Ne montez pas vous-même : appelez-nous pour un déneigement sécuritaire.'}
+ rs.className='res '+c;rs.querySelector('b').textContent=b;rs.querySelector('p').textContent=p}
+sd.oninput=calc;document.querySelectorAll('.ty button').forEach(x=>x.onclick=()=>{den=+x.dataset.d;document.querySelectorAll('.ty button').forEach(y=>y.setAttribute('aria-pressed',y===x));calc()});calc();
+const cv=document.getElementById('snow'),c=cv.getContext('2d');let F=[];function rs(){cv.width=innerWidth;cv.height=innerHeight;F=Array.from({length:Math.round(innerWidth/12)},()=>({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*2+.6,v:Math.random()*.8+.3,w:Math.random()*6}))}rs();addEventListener('resize',rs);
+(function dr(){c.clearRect(0,0,cv.width,cv.height);c.fillStyle='rgba(255,255,255,.75)';F.forEach(f=>{f.y+=f.v;f.x+=Math.sin(f.y/40+f.w)*.3;if(f.y>cv.height){f.y=-5;f.x=Math.random()*cv.width}c.beginPath();c.arc(f.x,f.y,f.r,0,7);c.fill()});if(!L.shot&&!matchMedia('(prefers-reduced-motion:reduce)').matches)requestAnimationFrame(dr)})();
+</script>
+
+</body>
+</html>

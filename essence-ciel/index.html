@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · L'Essence Ciel · Boutique de mieux-être à Gatineau</title>
+<meta name="description" content="Pierres, cristaux, bijoux, livres et objets de mieux-être sur la rue Jacques-Cartier à Gatineau. Un lieu de paix pour se ressourcer.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Ciel de nuit étoilé : violet profond, or doux, cristal facetté, « quelle pierre pour vous ? » */
+:root{--night:#150F2B;--night2:#21173F;--violet:#8E6BD8;--lav:#C9B6F2;--gold:#E7C980;--fg:#F2EDFB;--mu:rgba(242,237,251,.7);--ln:rgba(242,237,251,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--night);color:var(--fg);font:400 1.03rem/1.7 "Nunito Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.mc{font-family:Marcellus,serif}
+#sky{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:20px 0}
+.logo{text-decoration:none;font:400 1.4rem Marcellus;letter-spacing:.04em}.logo span{color:var(--gold)}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:.9rem}nav ul a{text-decoration:none;color:var(--mu)}nav ul a:hover{color:var(--fg)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none;transition:.3s;border:1px solid var(--gold)}
+.btn.g{background:var(--gold);color:var(--night)}.btn.g:hover{box-shadow:0 0 30px rgba(231,201,128,.5)}.btn.o{color:var(--gold)}.btn.o:hover{background:rgba(231,201,128,.1)}.btn.sm{padding:10px 18px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px 0 90px}
+.eye{font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+h1{font:400 clamp(3rem,6.8vw,5.8rem)/1 Marcellus;margin:16px 0 20px}h1 em{font-style:normal;background:linear-gradient(90deg,var(--lav),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.15rem;color:var(--mu);max-width:42ch;margin:0 0 28px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.gem{position:relative;justify-self:center;width:min(100%,430px);aspect-ratio:1}
+.gem .ph{position:absolute;inset:10%;clip-path:polygon(50% 0,92% 24%,92% 76%,50% 100%,8% 76%,8% 24%);overflow:hidden}
+.gem img{width:100%;height:100%;object-fit:cover}
+.gem svg{position:absolute;inset:0;width:100%;height:100%;animation:turn 40s linear infinite}
+.gem::after{content:"";position:absolute;inset:18%;border-radius:50%;background:radial-gradient(circle,rgba(142,107,216,.5),transparent 70%);filter:blur(40px);z-index:-1}
+@keyframes turn{to{transform:rotate(360deg)}}
+section{padding:96px 0}
+h2{font:400 clamp(2.3rem,4.8vw,3.9rem)/1.05 Marcellus;margin:12px 0 0}h2 em{font-style:normal;color:var(--gold)}
+/* pierre pour vous */
+.pick{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:40px;align-items:center}
+.int{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.int button{all:unset;cursor:pointer;padding:22px 18px;border-radius:18px;border:1px solid var(--ln);background:rgba(255,255,255,.03);text-align:center;font:400 1.25rem Marcellus;transition:.3s}
+.int button small{display:block;font:600 .78rem "Nunito Sans";color:var(--mu);margin-top:4px}
+.int button[aria-pressed=true]{border-color:var(--gold);background:rgba(231,201,128,.08);box-shadow:0 0 30px -8px rgba(231,201,128,.5)}
+.int button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.stone{text-align:center;padding:36px;border-radius:30px;background:var(--night2);border:1px solid var(--ln)}
+.orb{width:150px;height:150px;margin:0 auto 20px;border-radius:50%;background:radial-gradient(circle at 32% 28%,#fff 0,var(--c1) 22%,var(--c2) 70%,#0c0820 100%);box-shadow:0 0 60px -6px var(--c1);transition:background .6s,box-shadow .6s;animation:float 5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.stone h3{font:400 2.4rem Marcellus;margin:0}.stone p{color:var(--mu);margin:10px auto 0;max-width:36ch}
+.stone small{display:block;margin-top:16px;color:var(--mu);font-size:.78rem}
+.tre{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.t{border-radius:200px 200px 18px 18px;overflow:hidden;background:var(--night2);border:1px solid var(--ln)}.t .ph{aspect-ratio:3/4;overflow:hidden}.t img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s}.t:hover img{transform:scale(1.06)}
+.t .in{padding:18px;text-align:center}.t h3{font:400 1.4rem Marcellus;margin:0}.t p{margin:4px 0 0;color:var(--mu);font-size:.92rem}
+.q{text-align:center;max-width:820px;margin:0 auto}.q blockquote{margin:16px 0 0;font:400 clamp(1.8rem,3.6vw,2.8rem)/1.25 Marcellus}.q p{color:var(--mu)}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln);color:var(--mu)}.hrs li.td{color:var(--gold);font-weight:700}
+.st{display:inline-block;margin-top:14px;padding:6px 14px;border-radius:999px;border:1px solid var(--ln);font-size:.85rem}.st.on{border-color:var(--gold);color:var(--gold)}
+.box{border-radius:26px;padding:34px;background:var(--night2);border:1px solid var(--ln);display:grid;gap:10px;align-content:start}.box h3{font:400 1.9rem Marcellus;margin:0}
+footer{padding:44px 0 26px;text-align:center;border-top:1px solid var(--ln)}footer .mc{font-size:2.6rem}footer .mc span{color:var(--gold)}footer p{color:var(--mu);font-size:.85rem}
+@media (max-width:900px){nav ul{display:none}.hero,.pick,.vis{grid-template-columns:minmax(0,1fr)}.tre{grid-template-columns:repeat(2,minmax(0,1fr))}section{padding:72px 0}.gem{width:min(80%,340px)}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Librairie L&#x27;Essence Ciel<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<canvas id="sky" aria-hidden="true"></canvas>
+<div class="wrap">
+<nav><a class="logo" href="#">L'Essence <span>Ciel</span></a><ul><li><a href="#pierre">Votre pierre</a></li><li><a href="#tresors">Trésors</a></li><li><a href="#visite">Visite</a></li></ul><a class="btn g sm" href="tel:+18195682643">819 568-2643</a></nav>
+<header class="hero">
+ <div><span class="eye">Librairie · boutique de mieux-être · Gatineau</span><h1>Un lieu de <em>paix</em> pour se ressourcer.</h1>
+ <p class="lead">Pierres, cristaux, bijoux, livres et objets de mieux-être. Un personnel souriant pour vous guider discrètement, à votre rythme.</p>
+ <div class="ctas"><a class="btn g" href="#pierre">Trouver ma pierre</a><a class="btn o" href="#visite">Venir à la boutique</a></div>
+ <p style="margin-top:22px;color:var(--mu)">★ 4,8 · 178 avis Google</p></div>
+ <div class="gem"><svg viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="#E7C980" stroke-width=".6" opacity=".7"><polygon points="100,6 186,52 186,148 100,194 14,148 14,52"/><polygon points="100,20 172,60 172,140 100,180 28,140 28,60" opacity=".5"/><path d="M100 6V194M14 52l172 96M186 52 14 148" opacity=".25"/></g><g fill="#E7C980"><circle cx="100" cy="6" r="2.5"/><circle cx="186" cy="52" r="2"/><circle cx="14" cy="148" r="2"/></g></svg><div class="ph"><img src="img/1.jpg" alt="Pierres et cristaux de la boutique"></div></div>
+</header></div>
+
+<section id="pierre" style="padding-top:20px"><div class="wrap">
+ <div class="rv"><span class="eye">Votre pierre</span><h2>De quoi avez-vous <em>besoin</em> en ce moment ?</h2></div>
+ <div class="pick">
+  <div class="int rv" role="group" aria-label="Choisir une intention">
+   <button data-k="0">Calme<small>apaiser l'esprit</small></button><button data-k="1">Amour<small>douceur et lien</small></button><button data-k="2">Protection<small>se sentir ancré</small></button><button data-k="3">Énergie<small>confiance et élan</small></button><button data-k="4">Intuition<small>écouter sa voix</small></button><button data-k="5">Clarté<small>y voir clair</small></button></div>
+  <div class="stone rv" style="--d:.1s" aria-live="polite"><div class="orb" id="ob"></div><h3 id="sn"></h3><p id="sp"></p><small>Selon la tradition des pierres. Venez la choisir en boutique : chacune est unique.</small></div>
+ </div></div></section>
+
+<section id="tresors" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="eye">Les trésors de la boutique</span><h2>Des objets qui font <em>du bien</em>.</h2></div>
+ <div class="tre">
+  <div class="t rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><div class="in"><h3>Pierres et cristaux</h3><p>Améthyste, quartz, labradorite et plus.</p></div></div>
+  <div class="t rv" style="--d:.06s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><div class="in"><h3>Bijoux</h3><p>Pièces uniques en pierres naturelles.</p></div></div>
+  <div class="t rv" style="--d:.12s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><div class="in"><h3>Livres</h3><p>Spiritualité, mieux-être, développement personnel.</p></div></div>
+  <div class="t rv" style="--d:.18s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><div class="in"><h3>Encens et bougies</h3><p>Pour une ambiance apaisante.</p></div></div>
+ </div></div></section>
+
+<section style="padding-top:0"><div class="wrap q rv"><span class="eye">Avis Google · 4,8 ★ · 178 avis</span><blockquote>« J'adore cette boutique, c'est apaisant d'aller voir ces trésors. »</blockquote><p>« Un lieu de paix et un excellent accueil. »</p></div></section>
+
+<section id="visite" style="padding-top:0"><div class="wrap vis">
+ <div class="rv"><span class="eye">Heures de la boutique</span><h2>Ouvert même <em>le dimanche</em>.</h2><div class="st" data-status>Heures</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="eye">Adresse</span><h3>867 Rue Jacques-Cartier</h3><p style="margin:0;color:var(--mu)">Gatineau, QC J8T 2W3</p><div class="ctas" style="margin-top:12px"><a class="btn g sm" href="tel:+18195682643">819 568-2643</a><a class="btn o sm" href="https://www.google.com/maps?cid=22402007863530097" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><div class="mc">L'Essence <span>Ciel</span></div><p>© Librairie L'Essence Ciel · Gatineau · 819 568-2643</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [600, 1080], "6": [600, 960], "0": [600, 960], "1": [600, 960], "2": null, "3": null, "4": null}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [600, 1080], "6": [600, 960], "0": [600, 960], "1": [600, 960], "2": null, "3": null, "4": null},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const S=[["Améthyste","Pour apaiser le mental, favoriser le calme et un sommeil plus serein.","#B48BF0","#5B2D9E"],["Quartz rose","La pierre de l'amour et de la douceur, envers les autres et envers soi.","#F7B6C8","#B8577A"],["Tourmaline noire","Pierre d'ancrage, réputée pour protéger des énergies lourdes.","#6E6E80","#121218"],["Citrine","Associée à la joie, à la confiance et à l'abondance.","#FFD36B","#C77D0B"],["Labradorite","La pierre des intuitions, aux reflets bleus qui changent avec la lumière.","#7FD1E8","#2A4F7A"],["Cristal de roche","Le « maître guérisseur », associé à la clarté et à la concentration.","#F2F4FF","#8A95B8"]];
+const bs=[...document.querySelectorAll('.int button')],ob=document.getElementById('ob');function sel(k){bs.forEach(b=>b.setAttribute('aria-pressed',+b.dataset.k===k));const s=S[k];
+ document.getElementById('sn').textContent=s[0];document.getElementById('sp').textContent=s[1];ob.style.setProperty('--c1',s[2]);ob.style.setProperty('--c2',s[3])}
+bs.forEach(b=>b.onclick=()=>sel(+b.dataset.k));sel(0);
+const cv=document.getElementById('sky'),x=cv.getContext('2d');let st=[];function rs(){cv.width=innerWidth;cv.height=innerHeight;st=Array.from({length:Math.round(innerWidth*innerHeight/6000)},()=>({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*1.3+.2,p:Math.random()*6}))}
+rs();addEventListener('resize',rs);let t=0;(function dr(){x.clearRect(0,0,cv.width,cv.height);st.forEach(s=>{x.globalAlpha=.35+.45*Math.sin(t+s.p);x.fillStyle=s.r>1.2?'#E7C980':'#fff';x.beginPath();x.arc(s.x,s.y,s.r,0,7);x.fill()});t+=.02;if(!L.shot&&!matchMedia('(prefers-reduced-motion:reduce)').matches)requestAnimationFrame(dr)})();
+</script>
+
+</body>
+</html>

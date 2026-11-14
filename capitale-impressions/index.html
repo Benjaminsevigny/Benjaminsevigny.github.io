@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Capitale Impressions · Impression numérique à Québec</title>
+<meta name="description" content="Impression numérique, copies, reliure, affiches et cartes d'affaires pour les entreprises et les particuliers de Québec. Comptoir de service rapide.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;600;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Comptoir de service rapide : feuille qui sort de l'imprimante, vert du logo et orange, vérificateur de fichier « prêt à imprimer » */
+:root{--bg:#F5F6F2;--green:#3A8F44;--green-d:#2B6E33;--orange:#E2733C;--ink:#1A2118;--mu:#5E665B;--ln:rgba(26,33,24,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.03rem/1.6 "Albert Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.mono{font-family:"DM Mono",monospace;font-size:.8rem}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0}
+.logo{text-decoration:none;display:flex;align-items:center;gap:8px;font:800 1.35rem "Albert Sans";letter-spacing:-.03em}.logo i{display:inline-block;width:12px;height:22px;background:var(--green);border-radius:3px;transform:skew(-12deg)}.logo span{color:var(--green)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600}nav ul a{text-decoration:none}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:10px;font-weight:800;text-decoration:none;transition:.2s;border:2px solid var(--green)}
+.btn.g{background:var(--green);color:#fff}.btn.g:hover{background:var(--green-d)}.btn.o{color:var(--green);background:#fff}.btn.sm{padding:10px 16px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding:30px 0 80px}
+.eye{font:500 .8rem "DM Mono";color:var(--orange);text-transform:uppercase}
+h1{font:800 clamp(3rem,7vw,6rem)/.95 "Albert Sans";letter-spacing:-.05em;margin:12px 0 20px}h1 span{color:var(--green)}
+.lead{font-size:1.15rem;color:var(--mu);max-width:42ch;margin:0 0 26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.printer{position:relative;justify-self:center;width:min(100%,460px);padding-top:30px}
+.pr{position:relative;z-index:2;height:110px;border-radius:22px 22px 14px 14px;background:linear-gradient(180deg,#3B4238,#232921);box-shadow:0 20px 30px -20px rgba(0,0,0,.6)}
+.pr::before{content:"";position:absolute;left:12%;right:12%;bottom:16px;height:10px;border-radius:5px;background:#0E120D}
+.pr::after{content:"";position:absolute;right:26px;top:24px;width:12px;height:12px;border-radius:50%;background:#56E36A;box-shadow:0 0 10px #56E36A}
+.pr .mono{position:absolute;left:24px;top:22px;color:#cfd6cb}
+.sheet{position:relative;z-index:1;margin:-30px auto 0;width:84%;background:#fff;padding:14px 14px 22px;box-shadow:0 20px 40px -20px rgba(0,0,0,.35);animation:out 3.5s cubic-bezier(.3,.8,.3,1) both}
+@keyframes out{from{transform:translateY(-70%)}}
+.sheet .ph{aspect-ratio:4/3;overflow:hidden}.sheet img{width:100%;height:100%;object-fit:cover}
+.sheet .row{display:flex;justify-content:space-between;margin-top:12px}.sheet .row b{font-weight:800}
+section{padding:96px 0}
+h2{font:800 clamp(2.3rem,5vw,4rem)/1 "Albert Sans";letter-spacing:-.045em;margin:10px 0 0}h2 span{color:var(--green)}
+/* vérificateur */
+.chk{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;margin-top:40px;align-items:start}
+.items{display:grid;gap:10px}
+.items label{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;padding:16px 18px;background:#fff;border:2px solid var(--ln);border-radius:12px;cursor:pointer}
+.items input{width:22px;height:22px;accent-color:var(--green);margin-top:2px}
+.items b{display:block}.items small{color:var(--mu)}
+.items label:has(input:checked){border-color:var(--green)}
+.meter{background:#fff;border-radius:18px;padding:28px;border:2px solid var(--ln);position:sticky;top:20px}
+.ring{width:170px;height:170px;margin:0 auto 16px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--c,var(--orange)) calc(var(--p,0)*1%),#E8EBE5 0);transition:background .4s}
+.ring div{width:132px;height:132px;border-radius:50%;background:#fff;display:grid;place-items:center;font:800 2.4rem "Albert Sans"}
+.meter h3{text-align:center;margin:0 0 6px;font-size:1.3rem}.meter p{text-align:center;color:var(--mu);margin:0 0 18px}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.s{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--ln)}.s .ph{aspect-ratio:4/3;overflow:hidden}.s img{width:100%;height:100%;object-fit:cover}
+.s .in{padding:18px}.s .mono{color:var(--orange)}.s h3{margin:6px 0 4px;font-size:1.15rem}.s p{margin:0;color:var(--mu);font-size:.93rem}
+.band{background:var(--green);color:#fff;padding:60px 0}.band .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center}.band b{font:800 clamp(1.8rem,4vw,3rem)/1 "Albert Sans";letter-spacing:-.04em}
+.band .btn{background:#fff;color:var(--green);border-color:#fff}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0;font-family:"DM Mono",monospace;font-size:.9rem}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln)}.hrs li.td{color:var(--green);font-weight:500}
+.st{display:inline-block;margin-top:14px;font:500 .8rem "DM Mono";padding:6px 12px;border-radius:6px;background:#e5e8e1}.st.on{background:var(--green);color:#fff}
+.box{background:#fff;border-radius:18px;padding:30px;border:1px solid var(--ln);display:grid;gap:8px;align-content:start}.box h3{margin:0;font-size:1.6rem;letter-spacing:-.03em}
+footer{padding:40px 0 26px;text-align:center;border-top:1px solid var(--ln)}footer b{font:800 clamp(2rem,6vw,3.6rem)/1 "Albert Sans";letter-spacing:-.05em}footer b span{color:var(--green)}footer p{color:var(--mu);font-size:.85rem}
+@media (max-width:900px){nav ul{display:none}.hero,.chk,.vis{grid-template-columns:minmax(0,1fr)}.meter{position:static}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}section{padding:72px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Capitale Impressions<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><a class="logo" href="#"><i aria-hidden="true"></i>Capitale<span>Impressions</span></a><ul><li><a href="#fichier">Mon fichier</a></li><li><a href="#services">Services</a></li><li><a href="#heures">Heures</a></li></ul><a class="btn g sm" href="tel:+14186481911">418 648-1911</a></nav>
+<header class="hero">
+ <div><span class="eye">Comptoir de service rapide · Sainte-Foy</span><h1>Imprimé <span>rapidement</span>, bien fait.</h1>
+ <p class="lead">Impression numérique, copies, reliure, affiches et cartes d'affaires. Peu importe l'envergure de votre projet, on vous conseille selon votre situation.</p>
+ <div class="ctas"><a class="btn g" href="tel:+14186481911">Envoyer mon projet</a><a class="btn o" href="#fichier">Mon fichier est-il prêt ?</a></div>
+ <p class="mono" style="margin-top:20px">★ 4,3 · 87 avis Google</p></div>
+ <div class="printer" aria-hidden="true"><div class="pr"><span class="mono">CAPITALE · PRÊT</span></div><div class="sheet"><div class="ph"><img src="img/1.jpg" alt=""></div><div class="row"><b>Votre projet</b><span class="mono">1 / 250</span></div></div></div>
+</header></div>
+
+<section id="fichier" style="padding-top:10px"><div class="wrap">
+ <div class="rv"><span class="eye">Vérificateur de fichier</span><h2>Votre fichier est-il <span>prêt à imprimer</span> ?</h2></div>
+ <div class="chk">
+  <div class="items rv">
+   <label><input type="checkbox" checked><span><b>C'est un PDF</b><small>Le format le plus sûr : ce que vous voyez est ce qui s'imprime.</small></span></label>
+   <label><input type="checkbox" checked><span><b>Images à 300 ppp</b><small>En dessous, les photos risquent d'être floues.</small></span></label>
+   <label><input type="checkbox"><span><b>Fond perdu de 1/8 po (3 mm)</b><small>Si le fond va jusqu'au bord, prolongez-le un peu au-delà.</small></span></label>
+   <label><input type="checkbox"><span><b>Texte loin des bords</b><small>Gardez au moins 1/8 po de marge à l'intérieur.</small></span></label>
+   <label><input type="checkbox"><span><b>Couleurs en CMJN</b><small>Les couleurs à l'écran (RVB) changent un peu à l'impression.</small></span></label>
+  </div>
+  <div class="meter rv" style="--d:.1s" aria-live="polite"><div class="ring" id="rg"><div id="rp">0 %</div></div><h3 id="rh"></h3><p id="rt"></p><a class="btn g" href="tel:+14186481911" style="width:100%;justify-content:center">Appeler le comptoir</a></div>
+ </div></div></section>
+
+<section id="services" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="eye">Services</span><h2>Des copies aux <span>affiches</span>.</h2></div>
+ <div class="svc">
+  <div class="s rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><div class="in"><span class="mono">Rapide</span><h3>Copies et impressions</h3><p>Noir et blanc ou couleur.</p></div></div>
+  <div class="s rv" style="--d:.06s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><div class="in"><span class="mono">Fini</span><h3>Reliure</h3><p>Rapports et documents.</p></div></div>
+  <div class="s rv" style="--d:.12s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><div class="in"><span class="mono">Grand format</span><h3>Affiches</h3><p>Pour vos événements.</p></div></div>
+  <div class="s rv" style="--d:.18s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><div class="in"><span class="mono">Affaires</span><h3>Cartes d'affaires</h3><p>Classiques et soignées.</p></div></div>
+ </div></div></section>
+<div class="band"><div class="wrap"><b class="rv">★ 4,3 sur Google, 87 avis.</b><a class="btn rv" href="tel:+14186481911">418 648-1911</a></div></div>
+
+<section id="heures"><div class="wrap vis">
+ <div class="rv"><span class="eye">Heures du comptoir</span><h2>On ouvre <span>à midi</span>.</h2><div class="st" data-status>HEURES</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="eye">Adresse</span><h3>830 Rte du Vallon</h3><p style="margin:0;color:var(--mu)">Québec, QC G1V 4T1</p><div class="ctas" style="margin-top:12px"><a class="btn g sm" href="tel:+14186481911">418 648-1911</a><a class="btn o sm" href="https://www.google.com/maps?cid=10978346084212769863" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><b>Capitale <span>Impressions</span></b><p>© Capitale Impressions · Québec · 418 648-1911</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [720, 1020], "6": null, "0": null, "1": [720, 1020], "2": [720, 1020], "3": [720, 1020], "4": [720, 1020]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [720, 1020], "6": null, "0": null, "1": [720, 1020], "2": [720, 1020], "3": [720, 1020], "4": [720, 1020]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const cb=[...document.querySelectorAll('.items input')],rg=document.getElementById('rg');
+function calc(){const n=cb.filter(c=>c.checked).length,p=Math.round(n/cb.length*100);rg.style.setProperty('--p',p);rg.style.setProperty('--c',p===100?'#3A8F44':p>=60?'#E2B23C':'#E2733C');document.getElementById('rp').textContent=p+' %';
+ document.getElementById('rh').textContent=p===100?'Prêt à imprimer !':p>=60?'Presque prêt':'On peut vous aider';
+ document.getElementById('rt').textContent=p===100?'Envoyez-le, on s\'en occupe.':'Pas de panique : apportez votre fichier, on vérifie et on ajuste avec vous.'}
+cb.forEach(c=>c.onchange=calc);calc();
+</script>
+
+</body>
+</html>

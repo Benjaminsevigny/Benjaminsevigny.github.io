@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Demo · C &amp; N Electric and Plumbing · Manotick since 1961</title>
+<meta name="description" content="Serving Manotick and Ottawa since 1961: electrical, plumbing, pumps and water treatment for homes, businesses and farms.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;700&family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+/* Panneau électrique : disjoncteurs qu'on enclenche, jaune C&N et noir, ligne du temps depuis 1961, détecteur de problème d'eau */
+:root{--yel:#F4C20D;--bk:#161616;--steel:#2B2D30;--red:#D72E2E;--bg:#F7F5EF;--ink:#161616;--mu:#5E5E5E;--ln:rgba(22,22,22,.14);--water:#1F7FC2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.03rem/1.6 Archivo,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.an{font-family:"Archivo Narrow",sans-serif;text-transform:uppercase;letter-spacing:.04em}
+.top{background:var(--yel)}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 0}
+.logo{text-decoration:none;display:flex;align-items:center;gap:10px}.logo .m{font:800 1.8rem/1 Archivo;letter-spacing:-.04em;background:var(--bk);color:var(--yel);padding:6px 10px;border-radius:6px}.logo small{display:block;font:700 .78rem "Archivo Narrow";text-transform:uppercase;letter-spacing:.06em}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font:700 .95rem "Archivo Narrow";text-transform:uppercase}nav ul a{text-decoration:none}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:6px;font:700 1rem "Archivo Narrow";text-transform:uppercase;letter-spacing:.04em;text-decoration:none;transition:.2s;border:2px solid var(--bk)}
+.btn.k{background:var(--bk);color:var(--yel)}.btn.k:hover{background:var(--red);border-color:var(--red);color:#fff}.btn.o{background:transparent}.btn.y{background:var(--yel)}.btn.sm{padding:9px 14px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:30px 0 70px}
+h1{font:800 clamp(3rem,7.4vw,6.4rem)/.92 Archivo;letter-spacing:-.05em;margin:12px 0 18px}
+.lead{font-size:1.15rem;max-width:44ch;margin:0 0 24px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.panel{background:var(--steel);border-radius:14px;padding:18px;box-shadow:0 30px 50px -30px rgba(0,0,0,.7);border:4px solid #3C3F44}
+.panel .lbl{display:flex;justify-content:space-between;color:#C9CCD1;font:700 .78rem "Archivo Narrow";text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px}
+.brk{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.br{all:unset;cursor:pointer;display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;background:#1E2023;border-radius:8px;padding:10px;color:#E8E8E8;font:700 .85rem "Archivo Narrow";text-transform:uppercase}
+.sw{width:44px;height:26px;border-radius:5px;background:#0E0F10;position:relative;border:2px solid #44484E}
+.sw::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:3px;background:#777;transition:.25s}
+.br[aria-pressed=true] .sw::after{left:20px;background:var(--yel);box-shadow:0 0 10px var(--yel)}
+.br em{font-style:normal;font-size:.7rem;color:#888}.br[aria-pressed=true] em{color:var(--yel)}
+.br:focus-visible{outline:2px solid var(--yel);outline-offset:2px}
+.panel .ph{margin-top:12px;border-radius:8px;overflow:hidden;aspect-ratio:16/8}.panel img{width:100%;height:100%;object-fit:cover;filter:brightness(.55) saturate(.8);transition:filter .5s}
+.panel.lit img{filter:none}
+section{padding:90px 0}
+h2{font:800 clamp(2.3rem,5vw,4rem)/.95 Archivo;letter-spacing:-.045em;margin:10px 0 0}h2 span{background:var(--yel);padding:0 .15em}
+.k{font:700 .85rem "Archivo Narrow";text-transform:uppercase;letter-spacing:.1em;color:var(--red)}
+/* ligne du temps */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:40px;border-top:4px solid var(--bk);position:relative}
+.tl div{padding:22px 18px 0 0;position:relative}.tl div::before{content:"";position:absolute;top:-12px;left:0;width:20px;height:20px;border-radius:50%;background:var(--yel);border:4px solid var(--bk)}
+.tl b{font:800 2.4rem/1 Archivo;letter-spacing:-.04em}.tl p{margin:6px 0 0;color:var(--mu)}
+/* eau */
+.wt{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px;align-items:start}
+.wo{display:grid;gap:10px}
+.wo button{all:unset;cursor:pointer;padding:16px 18px;border-radius:10px;background:#fff;border:2px solid var(--ln);font-weight:600;display:flex;gap:12px;align-items:center}
+.wo button::before{content:"";width:14px;height:14px;border-radius:50%;border:3px solid var(--water);flex:none}
+.wo button[aria-pressed=true]{border-color:var(--water)}.wo button[aria-pressed=true]::before{background:var(--water)}
+.wo button:focus-visible{outline:3px solid var(--yel);outline-offset:2px}
+.wa{background:var(--water);color:#fff;border-radius:14px;padding:30px;position:relative;overflow:hidden}
+.wa::after{content:"";position:absolute;left:-10%;right:-10%;bottom:-60px;height:120px;background:rgba(255,255,255,.12);border-radius:45%;animation:wv 7s linear infinite}
+@keyframes wv{to{transform:rotate(360deg)}}
+.wa .an{font-weight:700;opacity:.85}.wa h3{font:800 1.9rem/1.05 Archivo;margin:8px 0 10px;letter-spacing:-.03em}.wa p{margin:0 0 18px;opacity:.92;position:relative;z-index:1}
+.wa .btn{background:#fff;border-color:#fff;position:relative;z-index:1}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.s{background:#fff;border-radius:12px;overflow:hidden;border:2px solid var(--bk)}.s .ph{aspect-ratio:4/3;overflow:hidden}.s img{width:100%;height:100%;object-fit:cover}
+.s .in{padding:16px}.s h3{margin:0 0 4px;font:800 1.2rem Archivo}.s p{margin:0;color:var(--mu);font-size:.93rem}.s .an{font-size:.75rem;font-weight:700;color:var(--red)}
+.qs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:34px}
+.q{margin:0;padding:28px;border-radius:12px;background:var(--bk);color:#fff}.q blockquote{margin:0;font:600 1.3rem/1.35 Archivo}.q figcaption{margin-top:10px;color:var(--yel);font:700 .8rem "Archivo Narrow";text-transform:uppercase}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:2px solid var(--ln)}.hrs li.td{font-weight:800;background:linear-gradient(90deg,var(--yel),transparent)}
+.st{display:inline-block;margin-top:14px;font:700 .9rem "Archivo Narrow";text-transform:uppercase;padding:6px 12px;border-radius:6px;background:#e3e1da}.st.on{background:var(--yel)}
+.box{background:#fff;border:2px solid var(--bk);border-radius:12px;padding:30px;display:grid;gap:8px;align-content:start}.box h3{margin:0;font:800 1.6rem Archivo;letter-spacing:-.03em}
+footer{background:var(--bk);color:#fff;padding:40px 0 26px;text-align:center}footer b{font:800 clamp(2rem,6vw,3.6rem)/1 Archivo;letter-spacing:-.05em;color:var(--yel)}footer p{opacity:.7;font-size:.85rem}
+@media (max-width:900px){nav ul{display:none}.hero,.wt,.qs,.vis{grid-template-columns:minmax(0,1fr)}.tl{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:30px}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}.brk{grid-template-columns:minmax(0,1fr)}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DEMO</b>Example made for C &amp; N Electric and Plumbing<span class="long"> · not the business's official website</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="top"><div class="wrap">
+<nav><a class="logo" href="#"><span class="m">C&amp;N</span><small>Electric &amp; Plumbing<br>Manotick · since 1961</small></a><ul><li><a href="#water">Water problems</a></li><li><a href="#services">Services</a></li><li><a href="#hours">Hours</a></li></ul><a class="btn k sm" href="tel:+16136923284">613 692-3284</a></nav>
+<header class="hero">
+ <div><span class="an" style="font-weight:700">Homes · businesses · farms</span><h1>Local experts since 1961.</h1>
+ <p class="lead">A full-service electrical, plumbing, pumps and water treatment contractor for Manotick and the Ottawa area, with knowledgeable staff in the office and on every call.</p>
+ <div class="ctas"><a class="btn k" href="tel:+16136923284">Book a service call</a><a class="btn o" href="#water">Problem with my water?</a></div>
+ <p style="margin-top:18px;font-weight:700">★ 4.5 · 54 Google reviews</p></div>
+ <div class="panel" id="pn"><div class="lbl"><span>Service panel · C&amp;N</span><span id="pc">0 / 4 on</span></div>
+  <div class="brk" role="group" aria-label="Switch on a service">
+   <button class="br" data-k="0" aria-pressed="false"><span class="sw"></span>Electrical<em>Licensed</em></button>
+   <button class="br" data-k="1" aria-pressed="false"><span class="sw"></span>Plumbing<em>Full service</em></button>
+   <button class="br" data-k="2" aria-pressed="false"><span class="sw"></span>Pumps<em>Well &amp; sump</em></button>
+   <button class="br" data-k="3" aria-pressed="false"><span class="sw"></span>Water<em>Treatment</em></button>
+  </div><div class="ph"><img src="img/1.jpg" alt="A C&amp;N technician on a service call"></div></div>
+</header></div></div>
+
+<section><div class="wrap">
+ <div class="rv"><span class="k">Our story</span><h2>Six decades of <span>service calls</span>.</h2></div>
+ <div class="tl">
+  <div class="rv"><b>1961</b><p>C&amp;N opens in Manotick, serving homes and farms.</p></div>
+  <div class="rv" style="--d:.08s"><b>Homes</b><p>Service calls, panel upgrades, renovations and plumbing repairs.</p></div>
+  <div class="rv" style="--d:.16s"><b>Businesses</b><p>Commercial and industrial electrical and plumbing work.</p></div>
+  <div class="rv" style="--d:.24s"><b>Farms</b><p>Well pumps, water treatment and rural power needs.</p></div>
+ </div></div></section>
+
+<section id="water" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="k">Water problem finder</span><h2>What's going on <span>with your water</span>?</h2></div>
+ <div class="wt">
+  <div class="wo rv" role="group" aria-label="Choose a water problem"><button data-k="0">White spots and scale on taps</button><button data-k="1">It smells like rotten eggs</button><button data-k="2">Low water pressure</button><button data-k="3">No water at all (well)</button><button data-k="4">Water in the basement</button></div>
+  <div class="wa rv" style="--d:.1s" aria-live="polite"><span class="an" id="wk"></span><h3 id="wh"></h3><p id="wp"></p><a class="btn" href="tel:+16136923284">Call 613 692-3284</a></div>
+ </div></div></section>
+
+<section id="services" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="k">Services</span><h2>One call, <span>four trades</span>.</h2></div>
+ <div class="svc">
+  <div class="s rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><div class="in"><span class="an">Licensed</span><h3>Electrical</h3><p>Panels, wiring, generators.</p></div></div>
+  <div class="s rv" style="--d:.06s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><div class="in"><span class="an">Full service</span><h3>Plumbing</h3><p>Repairs, renovations, new builds.</p></div></div>
+  <div class="s rv" style="--d:.12s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><div class="in"><span class="an">Rural</span><h3>Pumps</h3><p>Well and sump pumps.</p></div></div>
+  <div class="s rv" style="--d:.18s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><div class="in"><span class="an">Clean water</span><h3>Water treatment</h3><p>Softeners, filters, UV.</p></div></div>
+ </div>
+ <div class="qs"><figure class="q rv"><blockquote>“Very professional and knowledgeable staff in the office and on the service call.”</blockquote><figcaption>Google review · 4.5 ★ · 54 reviews</figcaption></figure><figure class="q rv" style="--d:.1s"><blockquote>“Fast friendly service done by professionals.”</blockquote><figcaption>Google review</figcaption></figure></div>
+</div></section>
+
+<section id="hours" style="padding-top:0"><div class="wrap vis">
+ <div class="rv"><span class="k">Office hours</span><h2>Call the <span>office</span>.</h2><div class="st" data-status>Hours</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="k">Office</span><h3>5640 Manotick Main St</h3><p style="margin:0;color:var(--mu)">Manotick, ON K4M 0T6</p><div class="ctas" style="margin-top:12px"><a class="btn k sm" href="tel:+16136923284">613 692-3284</a><a class="btn y sm" href="https://www.google.com/maps?cid=5206283530673176652" target="_blank" rel="noopener">Directions ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><b>C&amp;N Electric &amp; Plumbing</b><p>© C &amp; N Electric Ltd. · Manotick since 1961 · 613 692-3284</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [420, 960], "6": null, "0": null, "1": [450, 990], "2": [450, 990], "3": [450, 990], "4": [450, 990]}, "en") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [420, 960], "6": null, "0": null, "1": [450, 990], "2": [450, 990], "3": [450, 990], "4": [450, 990]},EN="en"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const bs=[...document.querySelectorAll('.br')],pn=document.getElementById('pn');function upd(){const n=bs.filter(b=>b.getAttribute('aria-pressed')==='true').length;document.getElementById('pc').textContent=n+' / 4 on';pn.classList.toggle('lit',n>0)}
+bs.forEach(b=>b.onclick=()=>{b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')!=='true');upd()});
+if(L.shot){bs.forEach((b,i)=>b.setAttribute('aria-pressed',i<3));upd()}else bs.forEach((b,i)=>setTimeout(()=>{b.setAttribute('aria-pressed','true');upd()},600+i*450));
+const W=[["Hard water","A water softener","Minerals in your water leave scale on taps, kettles and your water heater. A softener protects your pipes and appliances."],["Sulphur smell","A filter or treatment system","That rotten-egg smell usually comes from sulphur in well water. The right filter makes it disappear."],["Pressure","A pump or pressure tank check","Low pressure on a well often means the pressure tank or pump needs attention."],["Urgent","A well pump service call","No water at all usually means the well pump or its controls. Call us right away."],["Basement water","A sump pump","A sump pump that works (with a backup) keeps your basement dry when the snow melts."]];
+const wb=[...document.querySelectorAll('.wo button')];function sel(k){wb.forEach(b=>b.setAttribute('aria-pressed',+b.dataset.k===k));const w=W[k];document.getElementById('wk').textContent=w[0];document.getElementById('wh').textContent='You may need: '+w[1];document.getElementById('wp').textContent=w[2]}
+wb.forEach(b=>b.onclick=()=>sel(+b.dataset.k));sel(0);
+</script>
+
+</body>
+</html>

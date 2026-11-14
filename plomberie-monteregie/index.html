@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Plomberie Montérégie · Longueuil et Rive-Sud</title>
+<meta name="description" content="Plombier à Longueuil : débouchage, inspection par caméra, chauffe-eau, clapets antiretour et inspection préachat. Minutieux et propre.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* Inspection par caméra : écran de caméra dans le tuyau (REC, distance), bleu eau, triage d'urgence */
+:root{--bg:#F2F6F9;--deep:#0A2540;--water:#0B6FB8;--aqua:#36C1E0;--ink:#0D1B2A;--mu:#566577;--ln:rgba(13,27,42,.13);--red:#E5484D}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.02rem/1.6 Sora,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.mono{font-family:"JetBrains Mono",monospace}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 0}
+.logo{text-decoration:none;display:flex;align-items:center;gap:10px;font-weight:800}.logo svg{width:30px;height:38px}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600;font-size:.95rem}nav ul a{text-decoration:none}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:800;text-decoration:none;transition:.2s;border:2px solid var(--water)}
+.btn.w{background:var(--water);color:#fff}.btn.w:hover{background:var(--deep);border-color:var(--deep)}.btn.o{color:var(--water);background:#fff}.btn.r{background:var(--red);border-color:var(--red);color:#fff}.btn.sm{padding:9px 14px}
+.hero{display:grid;grid-template-columns:1fr 1.05fr;gap:44px;align-items:center;padding:30px 0 80px}
+.eye{font:600 .8rem "JetBrains Mono";color:var(--water);text-transform:uppercase;letter-spacing:.08em}
+h1{font:800 clamp(2.8rem,6.4vw,5.4rem)/.98 Sora;letter-spacing:-.04em;margin:12px 0 20px}h1 span{color:var(--water)}
+.lead{font-size:1.1rem;color:var(--mu);max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.cam{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/3;background:#000;box-shadow:0 30px 60px -30px rgba(10,37,64,.7)}
+.cam img{width:100%;height:100%;object-fit:cover;filter:saturate(.7) contrast(1.15) brightness(.85);animation:push 14s ease-in-out infinite alternate}
+@keyframes push{to{transform:scale(1.18)}}
+.cam::before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(circle,transparent 45%,rgba(0,0,0,.75) 85%),repeating-linear-gradient(0deg,rgba(255,255,255,.04) 0 1px,transparent 1px 3px)}
+.hud{position:absolute;inset:0;z-index:2;color:#D8FFF4;font:600 .78rem "JetBrains Mono";padding:16px;display:grid;grid-template-rows:auto 1fr auto}
+.hud .r1,.hud .r3{display:flex;justify-content:space-between}
+.rec{display:flex;align-items:center;gap:8px}.rec i{width:10px;height:10px;border-radius:50%;background:var(--red);animation:bl 1s steps(2) infinite}@keyframes bl{50%{opacity:0}}
+.cross{place-self:center;width:90px;height:90px;border:1.5px solid rgba(216,255,244,.7);border-radius:50%;position:relative}
+.cross::before,.cross::after{content:"";position:absolute;background:rgba(216,255,244,.7)}.cross::before{left:50%;top:-14px;bottom:-14px;width:1.5px}.cross::after{top:50%;left:-14px;right:-14px;height:1.5px}
+.dist{font-size:1.4rem}
+section{padding:96px 0}
+h2{font:800 clamp(2.3rem,4.8vw,3.9rem)/1 Sora;letter-spacing:-.035em;margin:10px 0 0}h2 span{color:var(--water)}
+/* triage */
+.tri{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px;align-items:start}
+.opts{display:grid;gap:10px}
+.opts button{all:unset;cursor:pointer;display:flex;gap:14px;align-items:center;padding:16px 18px;border-radius:14px;background:#fff;border:2px solid var(--ln);font-weight:600}
+.opts button .d{width:36px;height:36px;border-radius:10px;background:var(--bg);display:grid;place-items:center;flex:none;font:600 .95rem "JetBrains Mono";color:var(--water)}
+.opts button[aria-pressed=true]{border-color:var(--water);box-shadow:0 8px 20px -12px rgba(11,111,184,.6)}
+.opts button:focus-visible{outline:3px solid var(--aqua);outline-offset:2px}
+.out{border-radius:20px;padding:30px;background:var(--deep);color:#fff;position:sticky;top:20px}
+.lvl{display:inline-block;font:600 .78rem "JetBrains Mono";padding:5px 10px;border-radius:6px;text-transform:uppercase}
+.lvl.u{background:var(--red)}.lvl.s{background:#F2B33D;color:var(--ink)}.lvl.c{background:var(--aqua);color:var(--ink)}
+.out h3{font:800 1.8rem/1.1 Sora;margin:12px 0 10px;letter-spacing:-.02em}
+.out ol{margin:0 0 20px;padding-left:20px;display:grid;gap:6px;opacity:.9}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.s{background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--ln)}.s .ph{aspect-ratio:4/3;overflow:hidden}.s img{width:100%;height:100%;object-fit:cover}
+.s .in{padding:18px}.s span{font:600 .72rem "JetBrains Mono";text-transform:uppercase;color:var(--water)}.s h3{font:800 1.15rem Sora;margin:4px 0}.s p{margin:0;color:var(--mu);font-size:.9rem}
+.more{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.more span{background:#fff;border:1px solid var(--ln);padding:8px 14px;border-radius:999px;font-size:.9rem;font-weight:600}
+.clean{background:var(--water);color:#fff;padding:80px 0}.clean .g{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.clean blockquote{margin:0;font:800 clamp(1.8rem,3.4vw,2.8rem)/1.1 Sora;letter-spacing:-.03em}.clean p{opacity:.85}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0;font-family:"JetBrains Mono",monospace;font-size:.9rem}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln)}.hrs li.td{color:var(--water);font-weight:600}
+.st{display:inline-block;margin-top:14px;font:600 .8rem "JetBrains Mono";padding:6px 12px;border-radius:6px;background:#dfe7ee}.st.on{background:var(--aqua)}
+.box{background:#fff;border-radius:20px;padding:30px;border:1px solid var(--ln);display:grid;gap:8px;align-content:start}.box h3{font:800 1.6rem Sora;margin:0}
+footer{padding:40px 0 24px;text-align:center;border-top:1px solid var(--ln)}footer b{font:800 clamp(1.8rem,5vw,3rem) Sora;letter-spacing:-.04em}footer p{color:var(--mu);font-size:.85rem}
+@media (max-width:900px){nav ul{display:none}.hero,.tri,.clean .g,.vis{grid-template-columns:minmax(0,1fr)}.out{position:static}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}section{padding:72px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Plomberie Montérégie<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><a class="logo" href="#"><svg viewBox="0 0 30 38" aria-hidden="true"><path d="M15 1C15 1 2 16 2 24a13 13 0 0 0 26 0C28 16 15 1 15 1Z" fill="#0B6FB8"/><path d="M9 24a6 6 0 0 0 6 6" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>Plomberie Montérégie</a><ul><li><a href="#urgence">Urgence</a></li><li><a href="#services">Services</a></li><li><a href="#heures">Heures</a></li></ul><a class="btn w sm" href="tel:+15147464584">514 746-4584</a></nav>
+<header class="hero">
+ <div><span class="eye">Plombier · Longueuil · Rive-Sud</span><h1>On voit le problème <span>avant de creuser</span>.</h1>
+ <p class="lead">Installation et réparation de plomberie de tout genre, inspection par caméra, débouchage, chauffe-eau et clapets antiretour. Minutieux, et on laisse tout propre.</p>
+ <div class="ctas"><a class="btn w" href="tel:+15147464584">Appeler un plombier</a><a class="btn o" href="#urgence">J'ai un dégât d'eau</a></div>
+ <p class="mono" style="margin-top:18px;font-size:.85rem">★ 4,4 · 45 avis Google</p></div>
+ <div class="cam"><img src="img/1.jpg" alt="Vue d'une inspection de plomberie"><div class="hud" aria-hidden="true"><div class="r1"><span class="rec"><i></i>REC · CAM-01</span><span id="clk">00:00:00</span></div><div class="cross"></div><div class="r3"><span>DRAIN PRINCIPAL</span><span class="dist" id="ds">0,0 m</span></div></div></div>
+</header></div>
+
+<section id="urgence" style="padding-top:10px"><div class="wrap">
+ <div class="rv"><span class="eye">Triage</span><h2>Qu'est-ce qui se passe <span>chez vous</span> ?</h2></div>
+ <div class="tri">
+  <div class="opts rv" role="group" aria-label="Choisir le problème">
+   <button data-k="0"><span class="d">≈</span>De l'eau coule et je ne peux pas l'arrêter</button>
+   <button data-k="1"><span class="d">◎</span>Le drain ou la toilette est bouché</button>
+   <button data-k="2"><span class="d">°C</span>Je n'ai plus d'eau chaude</button>
+   <button data-k="3"><span class="d">↥</span>L'eau remonte au sous-sol quand il pleut</button>
+   <button data-k="4"><span class="d">⌂</span>J'achète une maison</button>
+  </div>
+  <div class="out rv" style="--d:.1s" aria-live="polite"><span class="lvl" id="lv"></span><h3 id="oh"></h3><ol id="ol"></ol><a class="btn" id="ob" href="tel:+15147464584">Appeler : 514 746-4584</a></div>
+ </div></div></section>
+
+<section id="services" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="eye">Services</span><h2>De tout genre, <span>fait proprement</span>.</h2></div>
+ <div class="svc">
+  <div class="s rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><div class="in"><span>Urgence</span><h3>Débouchage</h3><p>Drains et égouts, rapidement.</p></div></div>
+  <div class="s rv" style="--d:.06s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><div class="in"><span>Diagnostic</span><h3>Inspection par caméra</h3><p>On voit le problème avant de creuser.</p></div></div>
+  <div class="s rv" style="--d:.12s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><div class="in"><span>Confort</span><h3>Chauffe-eau</h3><p>Remplacement et installation.</p></div></div>
+  <div class="s rv" style="--d:.18s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><div class="in"><span>Prévention</span><h3>Clapet antiretour</h3><p>Installation et inspection (DAR).</p></div></div>
+ </div>
+ <div class="more rv"><span>Inspection préachat</span><span>Dispositifs antirefoulement</span><span>Rénovations</span><span>Ouvert le samedi</span></div>
+</div></section>
+
+<div class="clean"><div class="wrap g"><blockquote class="rv">« Prend le temps qu'il faut pour réparer, minutieux, laisse le tout très propre. »</blockquote><p class="rv" style="--d:.1s">« Travail bien fait et très bon prix. »<br><span class="mono" style="font-size:.85rem">Avis Google · 4,4 ★ · 45 avis</span></p></div></div>
+
+<section id="heures"><div class="wrap vis">
+ <div class="rv"><span class="eye">Heures d'ouverture</span><h2>Ouvert <span>le samedi</span>.</h2><div class="st" data-status>Heures</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="eye">Bureau</span><h3>212 Rue Verreau</h3><p style="margin:0;color:var(--mu)">Longueuil, QC J4L 1C4</p><div class="ctas" style="margin-top:12px"><a class="btn w sm" href="tel:+15147464584">514 746-4584</a><a class="btn o sm" href="https://www.google.com/maps?cid=17622333063266814013" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><b>Plomberie Montérégie</b><p>© Plomberie Montérégie · Longueuil · 514 746-4584</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [420, 1020], "6": [480, 900], "0": null, "1": [420, 1020], "2": [420, 1020], "3": [420, 1020], "4": [420, 1020]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [420, 1020], "6": [480, 900], "0": null, "1": [420, 1020], "2": [420, 1020], "3": [420, 1020], "4": [420, 1020]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const T=[["u","Urgent : fermez l'eau","Fermez l'entrée d'eau principale (souvent au sous-sol, près du compteur).","Coupez l'électricité près de l'eau si c'est sécuritaire.","Appelez-nous tout de suite."],
+["s","Bloqué : on débouche","Arrêtez d'utiliser l'évier, la douche ou la toilette concernés.","Évitez les produits chimiques, ils abîment les tuyaux.","On débouche et on regarde à la caméra si ça revient souvent."],
+["s","Pas d'eau chaude","Vérifiez le disjoncteur du chauffe-eau.","S'il fuit par le bas ou a plus de 10 ans, il est peut-être temps de le changer.","On le répare ou on en installe un nouveau."],
+["u","Refoulement : vérifiez le clapet","Ne descendez pas dans l'eau s'il y a des prises électriques proches.","Un clapet antiretour bloqué ou absent est souvent en cause.","On l'inspecte et on l'installe selon les normes."],
+["c","Inspection préachat","Avant de signer, faites passer la caméra dans le drain principal.","On repère racines, affaissements et vieux tuyaux.","Vous négociez en sachant à quoi vous attendre."]];
+const bs=[...document.querySelectorAll('.opts button')];function sel(k){bs.forEach(b=>b.setAttribute('aria-pressed',+b.dataset.k===k));const t=T[k],lv=document.getElementById('lv');
+ lv.className='lvl '+t[0];lv.textContent=t[0]==='u'?'Urgent':t[0]==='s'?'Aujourd\'hui':'Planifié';document.getElementById('oh').textContent=t[1];document.getElementById('ol').innerHTML=t.slice(2).map(x=>'<li>'+x+'</li>').join('');document.getElementById('ob').className='btn '+(t[0]==='u'?'r':'w')}
+bs.forEach(b=>b.onclick=()=>sel(+b.dataset.k));sel(1);
+let s=0,dm=0;const ck=document.getElementById('clk'),ds=document.getElementById('ds');function tk(){s++;dm+=.3;ck.textContent=new Date(s*1000).toISOString().slice(11,19);ds.textContent=(dm%30).toFixed(1).replace('.',',')+' m'}
+if(L.shot){s=47;dm=12.6;tk()}else setInterval(tk,1000);
+</script>
+
+</body>
+</html>

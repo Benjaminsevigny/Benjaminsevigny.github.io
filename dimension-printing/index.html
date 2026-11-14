@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Demo · Dimension Printing · Rush printing in Montréal</title>
+<meta name="description" content="All-in-one print shop near the Palais des congrès in Montréal. Rush jobs welcome: posters, banners, business cards and conference materials.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* Imprimeur d'urgence : grand compte à rebours avant la fermeture, titre « mal repéré » cyan/magenta */
+:root{--bg:#F5F7F8;--ink:#0D1114;--cy:#00A3E0;--mg:#E6007E;--ye:#FFD400;--mu:#5A646B;--ln:rgba(13,17,20,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.02rem/1.6 "Space Grotesk",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.mono{font-family:"Space Mono",monospace}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0}
+.logo{text-decoration:none;font:700 1.3rem "Space Grotesk";letter-spacing:-.03em}.logo span{color:var(--mg)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500}nav ul a{text-decoration:none}
+.btn{white-space:nowrap;display:inline-flex;gap:8px;align-items:center;padding:14px 24px;border-radius:10px;font-weight:700;text-decoration:none;transition:.2s;border:2px solid var(--ink)}
+.btn.k{background:var(--ink);color:#fff}.btn.k:hover{background:var(--mg);border-color:var(--mg)}.btn.o:hover{background:#fff}.btn.sm{padding:10px 16px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:40px 0 70px}
+.urg{display:inline-flex;align-items:center;gap:10px;font:700 .8rem "Space Mono";text-transform:uppercase;background:var(--ye);padding:6px 12px;border-radius:6px}
+.urg i{width:9px;height:9px;border-radius:50%;background:var(--mg);animation:bl 1s steps(2) infinite}@keyframes bl{50%{opacity:0}}
+h1{font:700 clamp(3.2rem,8.4vw,7.6rem)/.88 "Space Grotesk";letter-spacing:-.05em;margin:18px 0 22px;text-shadow:-4px 0 rgba(0,163,224,.85),4px 0 rgba(230,0,126,.8)}
+.lead{font-size:1.15rem;color:var(--mu);max-width:42ch;margin:0 0 28px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.clock{background:var(--ink);color:#fff;border-radius:22px;padding:28px;display:grid;gap:12px;box-shadow:12px 12px 0 var(--cy)}
+.clock .mono{font-size:.78rem;opacity:.7;text-transform:uppercase}
+.digits{font:700 clamp(3rem,7vw,5.2rem)/1 "Space Mono";letter-spacing:-.02em;color:var(--ye);font-variant-numeric:tabular-nums}
+.clock .ph{border-radius:12px;overflow:hidden;aspect-ratio:16/9}.clock img{width:100%;height:100%;object-fit:cover}
+.strip{display:flex;overflow:hidden;background:var(--ink);color:#fff;padding:14px 0}
+.strip div{display:flex;gap:30px;width:max-content;animation:mq 22s linear infinite;font:700 1.3rem "Space Mono";text-transform:uppercase;white-space:nowrap}.strip b{color:var(--mg)}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:96px 0}
+.kk{font:700 .8rem "Space Mono";text-transform:uppercase;color:var(--mg)}
+h2{font:700 clamp(2.3rem,5vw,4.2rem)/.95 "Space Grotesk";letter-spacing:-.04em;margin:10px 0 0}
+/* outil délai */
+.dl{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px}
+.grp{display:grid;gap:8px;margin-bottom:22px}.grp b{font-size:.92rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{font:600 .95rem "Space Grotesk";padding:10px 16px;border-radius:999px;border:2px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--ink);color:#fff}
+.out{border-radius:22px;padding:30px;background:#fff;border:2px solid var(--ink);display:grid;gap:12px;align-content:start}
+.out .v{font:700 2.2rem/1 "Space Grotesk";letter-spacing:-.03em}.out .v.ok{color:#0A8F5A}.out .v.go{color:var(--mg)}
+.out p{margin:0;color:var(--mu)}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.s{border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--ln)}.s .ph{aspect-ratio:4/3;overflow:hidden}.s img{width:100%;height:100%;object-fit:cover}
+.s .in{padding:18px}.s .mono{font-size:.72rem;color:var(--cy);text-transform:uppercase}.s h3{margin:6px 0 4px;font:700 1.25rem "Space Grotesk"}.s p{margin:0;color:var(--mu);font-size:.93rem}
+.qs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px}
+.q{margin:0;padding:30px;border-radius:20px;background:var(--ink);color:#fff}.q:nth-child(2){background:var(--cy);color:var(--ink)}
+.q blockquote{margin:0;font:700 1.45rem/1.25 "Space Grotesk";letter-spacing:-.02em}.q figcaption{margin-top:12px;font:400 .8rem "Space Mono";opacity:.75}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:20px 0 0;padding:0;font-family:"Space Mono",monospace;font-size:.9rem}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln)}.hrs li.td{color:var(--mg);font-weight:700}
+.st{display:inline-block;margin-top:14px;font:700 .8rem "Space Mono";padding:6px 12px;border-radius:6px;background:#e5e8ea}.st.on{background:var(--ye)}
+.box{border-radius:22px;padding:32px;background:#fff;border:2px solid var(--ink);display:grid;gap:10px;align-content:start}.box h3{font:700 1.8rem "Space Grotesk";margin:0}
+footer{padding:40px 0 26px;border-top:1px solid var(--ln)}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}footer b{font:700 2rem "Space Grotesk";letter-spacing:-.04em}footer b span{color:var(--mg)}
+@media (max-width:900px){nav ul{display:none}.hero,.dl,.qs,.vis{grid-template-columns:minmax(0,1fr)}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}section{padding:72px 0}.clock{box-shadow:8px 8px 0 var(--cy)}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DEMO</b>Example made for Dimension Printing<span class="long"> · not the business's official website</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><a class="logo" href="#">Dimension<span>.</span>Printing</a><ul><li><a href="#rush">Rush jobs</a></li><li><a href="#print">What we print</a></li><li><a href="#visit">Visit</a></li></ul><a class="btn k sm" href="tel:+15149980987">514 998-0987</a></nav>
+<header class="hero">
+ <div><span class="urg"><i></i>Emergency printing available</span>
+ <h1>Need it today?</h1>
+ <p class="lead">All-in-one print shop steps from the Palais des congrès. Posters, banners, business cards and conference materials, printed fast and done right.</p>
+ <div class="ctas"><a class="btn k" href="tel:+15149980987">Call about a rush job</a><a class="btn o" href="#rush">Check my deadline</a></div></div>
+ <div class="clock"><span class="mono" id="cl">Time left before we close today</span><div class="digits" id="dg">--:--:--</div><div class="ph"><img src="img/1.jpg" alt="Large-format printer at work"></div><span class="mono">★ 4.3 · 42 Google reviews</span></div>
+</header></div>
+<div class="strip" aria-hidden="true"><div><span>Rush jobs welcome <b>●</b> Conference posters <b>●</b> Banners <b>●</b> Business cards <b>●</b> Near the Palais des congrès <b>●</b></span><span>Rush jobs welcome <b>●</b> Conference posters <b>●</b> Banners <b>●</b> Business cards <b>●</b> Near the Palais des congrès <b>●</b></span></div></div>
+
+<section id="rush"><div class="wrap">
+ <div class="rv"><span class="kk">Deadline check</span><h2>Can you make it in time?</h2></div>
+ <div class="dl">
+  <div class="rv"><div class="grp"><b>What do you need?</b><div class="chips" data-g="w"><button data-v="0" aria-pressed="true">Conference poster</button><button data-v="1" aria-pressed="false">Business cards</button><button data-v="2" aria-pressed="false">Banner</button><button data-v="3" aria-pressed="false">Flyers</button></div></div>
+  <div class="grp"><b>When do you need it?</b><div class="chips" data-g="t"><button data-v="0" aria-pressed="false">Today</button><button data-v="1" aria-pressed="true">Tomorrow</button><button data-v="2" aria-pressed="false">This week</button></div></div></div>
+  <div class="out rv" style="--d:.1s" aria-live="polite"><span class="kk" id="ok"></span><div class="v" id="ov"></div><p id="op"></p><a class="btn k" href="tel:+15149980987" style="justify-self:start">Call 514 998-0987</a></div>
+ </div></div></section>
+
+<section id="print" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="kk">What we print</span><h2>Big, small, and fast.</h2></div>
+ <div class="svc">
+  <div class="s rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><div class="in"><span class="mono">Emergency</span><h3>Rush printing</h3><p>Same-day jobs when you're on a deadline.</p></div></div>
+  <div class="s rv" style="--d:.06s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><div class="in"><span class="mono">Events</span><h3>Conference posters</h3><p>Large-format posters for events at the Palais.</p></div></div>
+  <div class="s rv" style="--d:.12s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><div class="in"><span class="mono">Classic</span><h3>Business cards</h3><p>Sharp, clean and quick.</p></div></div>
+  <div class="s rv" style="--d:.18s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><div class="in"><span class="mono">Large format</span><h3>Banners &amp; signs</h3><p>Indoor and outdoor displays.</p></div></div>
+ </div></div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="kk">Google reviews · 4.3 ★ · 42 reviews</span><h2>Saved by the deadline.</h2></div>
+ <div class="qs"><figure class="q rv"><blockquote>“He was the only one in taking such rush job and delivered a great work in time!”</blockquote><figcaption>Google review</figcaption></figure><figure class="q rv" style="--d:.1s"><blockquote>“Very helpful, friendly service, very fast, good quality.”</blockquote><figcaption>Google review</figcaption></figure></div>
+</div></section>
+
+<section id="visit" style="padding-top:0"><div class="wrap vis">
+ <div class="rv"><span class="kk">Opening hours</span><h2>Drop by the shop.</h2><div class="st" data-status>Hours</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="kk">Address</span><h3>1008 Rue Clark Ste 206</h3><p style="margin:0;color:var(--mu)">Montréal, QC H2Z 1J9<br>Near the Palais des congrès</p><div class="ctas" style="margin-top:12px"><a class="btn k sm" href="tel:+15149980987">514 998-0987</a><a class="btn o sm" href="https://www.google.com/maps?cid=12033131725548344570" target="_blank" rel="noopener">Directions ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><b>Dimension<span>.</span>Printing</b><span class="mono" style="font-size:.8rem;color:var(--mu)">© Dimension Printing · Montréal · 514 998-0987</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [630, 1080], "6": [630, 1080], "0": null, "1": [630, 1080], "2": [630, 1080], "3": [630, 1080], "4": [630, 1080]}, "en") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [630, 1080], "6": [630, 1080], "0": null, "1": [630, 1080], "2": [630, 1080], "3": [630, 1080], "4": [630, 1080]},EN="en"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const dg=document.getElementById('dg'),cl=document.getElementById('cl');
+function tick(){const n=new Date(),t=L.H&&L.H[n.getDay()],m=n.getHours()*60+n.getMinutes();
+ if(t&&m>=t[0]&&m<t[1]){const s=(t[1]*60)-(m*60+n.getSeconds());cl.textContent='Time left before we close today';dg.textContent=[Math.floor(s/3600),Math.floor(s%3600/60),s%60].map(x=>String(x).padStart(2,'0')).join(':')}
+ else{cl.textContent='We are closed right now';const s=L.status();dg.textContent='CLOSED';dg.title=s.txt;cl.textContent=s.txt||'We are closed right now'}}
+tick();if(!L.shot)setInterval(tick,1000);
+const S={w:0,t:1},W=['conference poster','set of business cards','banner','batch of flyers'];
+document.querySelectorAll('.chips').forEach(g=>g.querySelectorAll('button').forEach(b=>b.onclick=()=>{S[g.dataset.g]=+b.dataset.v;g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));out()}));
+function out(){const w=W[S.w];let k,v,p,c;
+ if(S.t===0){const o=L.status().on;k='Rush job';v=o?'Call right now':'Call first thing';c='go';p=o?'Same-day jobs are what we do. Call now with your file ready and we\'ll tell you right away if your '+w+' can be ready today.':'We\'re closed at the moment. Call when we open and send your file as early as possible.'}
+ else if(S.t===1){k='Tomorrow';v='Very doable';c='ok';p='Send your file today and your '+w+' can be ready tomorrow. Call to confirm the size and paper.'}
+ else{k='This week';v='No stress';c='ok';p='Plenty of time. We can review your file, suggest the best paper and print a proof if you want one.'}
+ document.getElementById('ok').textContent=k;const ov=document.getElementById('ov');ov.textContent=v;ov.className='v '+c;document.getElementById('op').textContent=p}
+out();
+</script>
+
+</body>
+</html>

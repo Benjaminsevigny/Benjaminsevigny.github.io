@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Demo · Fauna · Food + bar on Bank Street</title>
+<meta name="description" content="Rustic, stylish restaurant on Bank Street in Ottawa serving locally sourced New Canadian small plates. Private room for 25, main floor for 60.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+/* Salle tamisée : bois sombre, lueur de chandelle, gravures d'animaux en trait fin, planificateur de soirée pour groupes */
+:root{--bk:#14110E;--wood:#231C16;--cand:#E9B872;--sage:#7E8B67;--fg:#EFE7DC;--mu:rgba(239,231,220,.62);--ln:rgba(239,231,220,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bk);color:var(--fg);font:300 1.04rem/1.75 "Work Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.pf{font-family:"Playfair Display",serif}
+nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;padding:22px 0}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase}nav ul a{text-decoration:none;color:var(--mu)}nav ul a:hover{color:var(--fg)}
+.logo{text-decoration:none;text-align:center;line-height:1}.logo b{font:italic 400 2.2rem "Playfair Display"}.logo small{display:block;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mu)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 26px;font-size:.78rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;transition:.3s;border:1px solid var(--cand)}
+.btn.c{background:var(--cand);color:var(--bk)}.btn.c:hover{background:#F3CB8E}.btn.o{color:var(--cand)}.btn.o:hover{background:rgba(233,184,114,.08)}.btn.sm{padding:10px 16px}
+nav .btn{justify-self:end}
+.hero{position:relative;min-height:min(86vh,760px);display:grid;place-items:center;text-align:center;overflow:hidden;isolation:isolate;border-radius:4px}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:brightness(.42) sepia(.2)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse 40% 50% at 50% 55%,rgba(233,184,114,.25),transparent 70%);animation:fl 4s ease-in-out infinite alternate}
+@keyframes fl{to{opacity:.6}}
+.icons{display:grid;grid-template-columns:repeat(4,38px);gap:16px;justify-content:center;margin-bottom:26px}
+.icons svg{width:38px;height:38px;fill:none;stroke:var(--fg);stroke-width:1.2;opacity:.85}
+h1{font:italic 400 clamp(4rem,12vw,9rem)/.9 "Playfair Display";margin:0}
+.sub{font-size:.85rem;letter-spacing:.34em;text-transform:uppercase;margin:12px 0 26px}
+.hero p{max-width:46ch;margin:0 auto 26px;color:var(--mu)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;padding:30px 0;border-bottom:1px solid var(--ln)}
+.facts b{display:block;font:italic 400 2rem "Playfair Display";color:var(--cand)}.facts span{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mu)}
+section{padding:100px 0}
+.k{font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--cand)}
+h2{font:400 clamp(2.4rem,5vw,4.2rem)/1.05 "Playfair Display";margin:14px 0 0}h2 i{color:var(--cand)}
+.plates{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:16px;margin-top:44px}
+.pl .ph{overflow:hidden;aspect-ratio:3/4}.pl:first-child .ph{aspect-ratio:auto;height:100%;min-height:420px}.pl img{width:100%;height:100%;object-fit:cover;filter:brightness(.85);transition:transform 1.4s,filter .6s}.pl:hover img{transform:scale(1.05);filter:none}
+.pl{display:grid;grid-template-rows:1fr auto;gap:12px}.pl h3{font:italic 400 1.6rem "Playfair Display";margin:0}.pl p{margin:0;color:var(--mu);font-size:.95rem}
+/* planificateur */
+.party{background:var(--wood);border:1px solid var(--ln);padding:50px;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.party label{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mu)}.party .n{font:italic 400 6rem/1 "Playfair Display";color:var(--cand)}
+.party input{width:100%;accent-color:var(--cand)}
+.room{border-left:1px solid var(--cand);padding-left:30px}.room h3{font:italic 400 2.2rem/1.1 "Playfair Display";margin:6px 0 10px}.room p{color:var(--mu);margin:0 0 20px}
+.seats{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:20px}.seats i{width:12px;height:12px;border-radius:50%;border:1px solid var(--cand)}.seats i.f{background:var(--cand)}
+.qs{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px}
+.q{margin:0;border-top:1px solid var(--cand);padding-top:24px}.q blockquote{margin:0;font:italic 400 1.7rem/1.3 "Playfair Display"}.q figcaption{margin-top:12px;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mu)}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.hrs{list-style:none;margin:20px 0 0;padding:0}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln);color:var(--mu)}.hrs li.td{color:var(--cand)}
+.st{display:inline-block;margin-top:16px;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;padding:7px 14px;border:1px solid var(--ln)}.st.on{border-color:var(--cand);color:var(--cand)}
+.box{border:1px solid var(--ln);padding:36px;display:grid;gap:10px;align-content:start;text-align:center}.box h3{font:italic 400 2rem "Playfair Display";margin:0}
+footer{padding:50px 0 28px;text-align:center;border-top:1px solid var(--ln)}footer .pf{font-style:italic;font-size:3rem}footer p{color:var(--mu);font-size:.8rem;letter-spacing:.1em}
+@media (max-width:900px){nav{grid-template-columns:1fr auto}nav ul{display:none}.logo{text-align:left}.plates,.party,.qs,.vis{grid-template-columns:minmax(0,1fr)}.pl:first-child .ph{min-height:300px}.party{padding:28px}.room{border-left:0;border-top:1px solid var(--cand);padding:24px 0 0}.facts b{font-size:1.4rem}section{padding:76px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DEMO</b>Example made for Fauna<span class="long"> · not the business's official website</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><ul><li><a href="#plates">Menu</a></li><li><a href="#private">Private dining</a></li><li><a href="#visit">Visit</a></li></ul><a class="logo" href="#"><b>fauna</b><small>food + bar</small></a><a class="btn c sm" href="tel:+16135632862">Reserve</a></nav>
+<header class="hero"><img src="img/1.jpg" alt="The dining room at Fauna">
+ <div><div class="icons" aria-hidden="true">
+  <svg viewBox="0 0 38 38"><path d="M6 24c4-8 10-12 18-12 4 0 8 2 8 6s-4 6-8 6H6zM24 12l2-6M28 13l3-5"/><circle cx="27" cy="17" r="1"/></svg>
+  <svg viewBox="0 0 38 38"><path d="M4 19c6-8 16-8 22 0-6 8-16 8-22 0zM26 19l8-6v12z"/><circle cx="11" cy="17" r="1"/></svg>
+  <svg viewBox="0 0 38 38"><path d="M19 32V14M19 14c-6 0-10-4-10-10 6 0 10 4 10 10zM19 14c6 0 10-4 10-10-6 0-10 4-10 10zM12 32h14"/></svg>
+  <svg viewBox="0 0 38 38"><path d="M8 30c0-10 4-18 11-22 7 4 11 12 11 22zM14 30v-6h10v6"/><path d="M19 8V4"/></svg></div>
+ <h1>fauna</h1><div class="sub">food + bar · Bank Street</div>
+ <p>Rustic, stylish and built around local ingredients. New Canadian small plates made to share, great drinks and a classy room.</p>
+ <div class="ctas"><a class="btn c" href="tel:+16135632862">Reserve a table</a><a class="btn o" href="#private">Plan a group dinner</a></div></div>
+</header>
+<div class="facts"><div><b>7 nights</b><span>From 5:30 p.m.</span></div><div><b>4.5 ★</b><span>1,146 Google reviews</span></div><div><b>Local</b><span>Sourced plates</span></div></div>
+</div>
+
+<section id="plates"><div class="wrap">
+ <div class="rv"><span class="k">The menu</span><h2>Small plates, <i>big flavour</i>.</h2></div>
+ <div class="plates">
+  <div class="pl rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><div><h3>Small plates</h3><p>Seasonal, local and made to share.</p></div></div>
+  <div class="pl rv" style="--d:.08s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><div><h3>Steak frites</h3><p>Cooked to perfection, crunchy fries, spicy mayo.</p></div></div>
+  <div class="pl rv" style="--d:.16s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><div><h3>Cocktails</h3><p>Crafted at the bar.</p></div></div>
+ </div></div></section>
+
+<section id="private" style="padding-top:0"><div class="wrap">
+ <div class="party rv">
+  <div><span class="k">Plan your evening</span><h2 style="font-size:clamp(2rem,4vw,3rem)">How many <i>guests</i>?</h2><label for="pg" style="display:block;margin-top:24px">Party size</label><div class="n" id="pn"></div><input type="range" id="pg" min="2" max="80" value="18"></div>
+  <div class="room" aria-live="polite"><span class="k" id="rk"></span><h3 id="rh"></h3><p id="rp"></p><div class="seats" id="ss" aria-hidden="true"></div><a class="btn c" href="tel:+16135632862">Call to book · 613 563-2862</a></div>
+ </div></div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="k">Google reviews · 4.5 ★ · 1,146 reviews</span></div>
+ <div class="qs"><figure class="q rv"><blockquote>“Food was excellent, steak cooked to perfection, fries crunchy, good spicy mayo.”</blockquote><figcaption>Google review</figcaption></figure><figure class="q rv" style="--d:.1s"><blockquote>“Great service and drinks, atmosphere is classy.”</blockquote><figcaption>Google review</figcaption></figure></div>
+</div></section>
+
+<section id="visit" style="padding-top:0"><div class="wrap vis">
+ <div class="rv"><span class="k">Hours</span><h2>Dinner, <i>every night</i>.</h2><div class="st" data-status>Hours</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="k">Find us</span><h3>425 Bank St</h3><p style="margin:0;color:var(--mu)">Ottawa, ON K2P 1Y7</p><div class="ctas" style="margin-top:14px"><a class="btn c sm" href="tel:+16135632862">613 563-2862</a><a class="btn o sm" href="https://www.google.com/maps?cid=7578293233376747943" target="_blank" rel="noopener">Directions ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><div class="pf">fauna</div><p>© Fauna food + bar · Bank Street, Ottawa · 613 563-2862</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [1050, 1410], "6": [1050, 1440], "0": [1050, 1260], "1": [1050, 1290], "2": [1050, 1290], "3": [1050, 1290], "4": [1050, 1320]}, "en") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [1050, 1410], "6": [1050, 1440], "0": [1050, 1260], "1": [1050, 1290], "2": [1050, 1290], "3": [1050, 1290], "4": [1050, 1320]},EN="en"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const pg=document.getElementById('pg');
+function draw(){const n=+pg.value;document.getElementById('pn').textContent=n;let k,h,p,cap;
+ if(n<=8){k='A table';h='The main dining room';p='Reserve a table and settle in for small plates and cocktails.';cap=8}
+ else if(n<=25){k='Private room';h='The private room';p='Our private room seats up to 25 guests: perfect for birthdays, team dinners and celebrations.';cap=25}
+ else if(n<=60){k='Main floor';h='The main floor, all yours';p='For larger events, the main floor seats up to 60. Call us to plan the menu and the evening.';cap=60}
+ else{k='Big event';h='Let\'s talk';p='More than 60 guests? Give us a call and we\'ll find the best way to host your event.';cap=n}
+ document.getElementById('rk').textContent=k;document.getElementById('rh').textContent=h;document.getElementById('rp').textContent=p;
+ document.getElementById('ss').innerHTML=Array.from({length:Math.min(cap,80)},(_,i)=>'<i class="'+(i<n?'f':'')+'"></i>').join('')}
+pg.oninput=draw;draw();
+</script>
+
+</body>
+</html>

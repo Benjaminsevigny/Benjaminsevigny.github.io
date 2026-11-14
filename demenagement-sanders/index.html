@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Déménagement Sanders · Estrie</title>
+<meta name="description" content="Déménagement local et longue distance en Estrie, entreposage et emballage. Christine et son équipe s'occupent de tout. La fidélité au rendez-vous.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Jaune boîte et noir : calculateur de boîtes par pièce qui empile les boîtes, « la fidélité au rendez-vous » */
+:root{--yel:#F2B705;--bk:#121212;--blue:#2B4BD6;--bg:#FFFBEE;--ink:#121212;--mu:#5F5A4C;--ln:rgba(18,18,18,.14);--kraft:#D2A86E}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.03rem/1.6 Rubik,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.rm{font-family:"Rubik Mono One",sans-serif;font-weight:400}
+.hdr{background:var(--bk);color:#fff}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 0}
+.logo{text-decoration:none;font:400 1.15rem "Rubik Mono One";color:var(--yel)}.logo small{display:block;font:500 .72rem Rubik;color:#bbb;letter-spacing:.1em;text-transform:uppercase}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500}nav ul a{text-decoration:none;color:#ccc}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:8px;font-weight:700;text-decoration:none;transition:.2s;border:2px solid var(--yel)}
+.btn.y{background:var(--yel);color:var(--bk)}.btn.y:hover{transform:translateY(-2px)}.btn.o{color:var(--yel)}.btn.k{background:var(--bk);color:var(--yel);border-color:var(--bk)}.btn.sm{padding:9px 14px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:40px 0 80px}
+.check{display:inline-flex;align-items:center;gap:10px;color:var(--yel);font-weight:700}.check::before{content:"✓";display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#1F9D55;color:#fff}
+h1{font:400 clamp(2.4rem,5.8vw,4.8rem)/1 "Rubik Mono One";margin:16px 0 18px;letter-spacing:-.03em}h1 span{color:var(--yel)}
+.lead{font-size:1.12rem;color:#cfcfcf;max-width:44ch;margin:0 0 24px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.pile{position:relative;height:420px}
+.bx{position:absolute;background:linear-gradient(160deg,#E2BE86,var(--kraft));border:2px solid #9C7445;border-radius:4px;display:grid;place-items:center;font:400 .8rem "Rubik Mono One";color:#4A3418}
+.bx::before{content:"";position:absolute;left:0;right:0;top:44%;height:14%;background:rgba(242,183,5,.85)}
+.bx span{position:relative}
+.p1{left:0;bottom:0;width:48%;height:40%}.p2{left:50%;bottom:0;width:48%;height:40%}.p3{left:14%;bottom:41%;width:46%;height:32%}.p4{left:62%;bottom:41%;width:30%;height:26%;overflow:hidden;padding:0}.p4::before{display:none}.p4 img{width:100%;height:100%;object-fit:cover}
+.p5{left:26%;bottom:74%;width:34%;height:24%}
+section{padding:90px 0}
+h2{font:400 clamp(1.9rem,4.4vw,3.4rem)/1.05 "Rubik Mono One";margin:10px 0 0;letter-spacing:-.03em}h2 span{background:var(--yel);padding:0 .15em}
+.k{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;color:var(--blue)}
+/* calculateur */
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px;align-items:start}
+.rooms{display:grid;gap:10px}
+.room{display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px;background:#fff;border:2px solid var(--ln);border-radius:10px;padding:12px 14px}
+.room b{font-weight:700}.room small{display:block;color:var(--mu);font-size:.85rem}
+.ct{display:flex;align-items:center;gap:8px}.ct button{width:38px;height:38px;border-radius:8px;border:2px solid var(--bk);background:#fff;font:700 1.2rem Rubik;cursor:pointer;color:var(--bk)}.ct output{min-width:22px;text-align:center;font-weight:700;font-size:1.1rem}
+.res{background:var(--bk);color:#fff;border-radius:14px;padding:30px;position:sticky;top:20px}
+.res .n{font:400 4rem/1 "Rubik Mono One";color:var(--yel)}.res p{color:#ccc;margin:6px 0 16px}
+.stack{display:flex;flex-wrap:wrap-reverse;gap:3px;min-height:60px;margin-bottom:18px}.stack i{width:18px;height:14px;background:var(--kraft);border:1px solid #9C7445;border-radius:2px}
+.res ul{margin:0 0 20px;padding:0;list-style:none;display:grid;gap:6px}.res li{display:flex;justify-content:space-between;border-bottom:1px dashed #333;padding-bottom:6px}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.s{background:#fff;border-radius:12px;overflow:hidden;border:2px solid var(--bk)}.s .ph{aspect-ratio:4/3;overflow:hidden;border-bottom:2px solid var(--bk)}.s img{width:100%;height:100%;object-fit:cover}
+.s .in{padding:16px}.s .k{font-size:.72rem}.s h3{margin:4px 0;font-size:1.2rem}.s p{margin:0;color:var(--mu);font-size:.93rem}
+.chris{background:var(--yel);padding:70px 0}.chris .g{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.chris blockquote{margin:0;font:400 clamp(1.4rem,2.8vw,2.2rem)/1.2 "Rubik Mono One";letter-spacing:-.03em}.chris p{margin:0}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:2px solid var(--ln)}.hrs li.td{font-weight:700;color:var(--blue)}
+.st{display:inline-block;margin-top:14px;font-weight:700;padding:6px 12px;border-radius:6px;background:#eee}.st.on{background:var(--yel)}
+.box{background:#fff;border:2px solid var(--bk);border-radius:12px;padding:30px;display:grid;gap:8px;align-content:start}.box h3{margin:0;font:400 1.3rem "Rubik Mono One"}
+footer{background:var(--bk);color:#fff;padding:40px 0 26px;text-align:center}footer .rm{color:var(--yel);font-size:clamp(1.6rem,5vw,3rem)}footer p{opacity:.7;font-size:.85rem}
+@media (max-width:900px){nav ul{display:none}.hero,.calc,.chris .g,.vis{grid-template-columns:minmax(0,1fr)}.pile{height:300px}h1{font-size:clamp(1.6rem,8vw,2.4rem)}.res{position:static}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Déménagement Sanders<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="hdr"><div class="wrap">
+<nav><a class="logo" href="#">Sanders<small>Déménagement · Estrie</small></a><ul><li><a href="#boites">Combien de boîtes</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li></ul><a class="btn y sm" href="tel:+18195620931">819 562-0931</a></nav>
+<header class="hero">
+ <div><span class="check">La fidélité au rendez-vous</span><h1>Déménager, <span>agréablement</span>.</h1>
+ <p class="lead">Déménagement local et longue distance partout en Estrie, entreposage et emballage. Christine et son équipe planifient avec vous, du premier appel à la dernière boîte.</p>
+ <div class="ctas"><a class="btn y" href="tel:+18195620931">Demander une soumission</a><a class="btn o" href="#boites">Combien de boîtes ?</a></div>
+ <p style="margin-top:18px;color:#ccc">★ 4,6 · 42 avis Google</p></div>
+ <div class="pile" aria-hidden="true"><div class="bx p1"><span>CUISINE</span></div><div class="bx p2"><span>LIVRES</span></div><div class="bx p3"><span>SALON</span></div><div class="bx p4"><img src="img/1.jpg" alt=""></div><div class="bx p5"><span>FRAGILE</span></div></div>
+</header></div></div>
+
+<section id="boites"><div class="wrap">
+ <div class="rv"><span class="k">Estimateur</span><h2>Combien de <span>boîtes</span> ?</h2><p style="color:var(--mu);max-width:56ch;margin-top:14px">Indiquez vos pièces. On vous donne une estimation de départ pour acheter vos boîtes.</p></div>
+ <div class="calc">
+  <div class="rooms rv" id="rooms"></div>
+  <div class="res rv" style="--d:.1s" aria-live="polite"><span class="k" style="color:#9DB0FF">Estimation</span><div class="n" id="tn"></div><p>boîtes environ</p><div class="stack" id="stk" aria-hidden="true"></div><ul id="tl"></ul><a class="btn y" href="tel:+18195620931">Réserver avec Christine</a></div>
+ </div></div></section>
+
+<section id="services" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="k">Services</span><h2>De Sherbrooke <span>à ailleurs</span>.</h2></div>
+ <div class="svc">
+  <div class="s rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><div class="in"><span class="k">Estrie</span><h3>Local</h3><p>Sherbrooke et toute l'Estrie.</p></div></div>
+  <div class="s rv" style="--d:.06s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><div class="in"><span class="k">Province</span><h3>Longue distance</h3><p>Partout au Québec et ailleurs.</p></div></div>
+  <div class="s rv" style="--d:.12s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><div class="in"><span class="k">Sécuritaire</span><h3>Entreposage</h3><p>Court ou long terme.</p></div></div>
+  <div class="s rv" style="--d:.18s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><div class="in"><span class="k">Option</span><h3>Emballage</h3><p>Matériel et main-d'oeuvre.</p></div></div>
+ </div></div></section>
+<div class="chris"><div class="wrap g"><blockquote class="rv">« Merci à Christine et à toute son équipe pour leur professionnalisme. »</blockquote><p class="rv" style="--d:.1s">« Nous avons été très satisfaits de notre déménagement d'hier. »<br><b>Avis Google · 4,6 ★ · 42 avis</b></p></div></div>
+
+<section id="contact"><div class="wrap vis">
+ <div class="rv"><span class="k">Heures du bureau</span><h2>On <span>planifie</span> ensemble.</h2><div class="st" data-status>Heures</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="k">Bureau</span><h3>5866 Chem. de la Rivière</h3><p style="margin:0;color:var(--mu)">Ascot Corner, QC J0B 1A0</p><div class="ctas" style="margin-top:12px"><a class="btn k sm" href="tel:+18195620931">819 562-0931</a><a class="btn y sm" href="https://www.google.com/maps?cid=13367915977635672232" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><div class="rm">Déménagement Sanders</div><p>© Déménagement Sanders · Ascot Corner, Estrie · 819 562-0931</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [540, 1020], "6": [540, 960], "0": null, "1": [540, 1020], "2": [540, 1020], "3": [540, 1020], "4": [540, 1020]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [540, 1020], "6": [540, 960], "0": null, "1": [540, 1020], "2": [540, 1020], "3": [540, 1020], "4": [540, 1020]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const R=[["Cuisine","vaisselle, chaudrons, garde-manger",12,1],["Salon","livres, déco, électronique",8,1],["Chambre","vêtements, literie",8,2],["Salle de bain","serviettes, produits",3,1],["Bureau","papiers, livres",6,0],["Sous-sol / rangement","outils, décorations",10,0]];
+const c=R.map(r=>r[3]),rooms=document.getElementById('rooms');
+rooms.innerHTML=R.map((r,i)=>'<div class="room"><div><b>'+r[0]+'</b><small>'+r[1]+'</small></div><div class="ct"><button type="button" data-i="'+i+'" data-d="-1" aria-label="Moins de '+r[0]+'">−</button><output id="o'+i+'">'+c[i]+'</output><button type="button" data-i="'+i+'" data-d="1" aria-label="Plus de '+r[0]+'">+</button></div></div>').join('');
+rooms.onclick=e=>{const b=e.target.closest('button');if(!b)return;const i=+b.dataset.i;c[i]=Math.max(0,Math.min(6,c[i]+ +b.dataset.d));document.getElementById('o'+i).textContent=c[i];calc()};
+function calc(){let t=0;const li=[];R.forEach((r,i)=>{if(c[i]){const n=r[2]*c[i];t+=n;li.push('<li><span>'+r[0]+(c[i]>1?' × '+c[i]:'')+'</span><b>'+n+'</b></li>')}});
+ document.getElementById('tn').textContent=t;document.getElementById('tl').innerHTML=li.join('');document.getElementById('stk').innerHTML='<i></i>'.repeat(Math.min(t,120))}
+calc();
+</script>
+
+</body>
+</html>

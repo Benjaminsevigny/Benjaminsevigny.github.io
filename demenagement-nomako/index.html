@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Déménagement NoMaKo et fils · Marieville</title>
+<meta name="description" content="Déménagement local ou longue distance, résidentiel ou commercial, depuis Marieville. Meubles protégés avec des couvertures propres. Piano, billard, voiture. Joignable 24/7.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;0,700;0,800;1,700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Camion de nuit, 24/7 : marine et rouge NoMaKo, couverture matelassée, « vos objets spéciaux » */
+:root{--navy:#10141C;--navy2:#1A2130;--red:#D7263D;--red-d:#AE1C30;--quilt:#2E5BA8;--fg:#F2F4F7;--mu:rgba(242,244,247,.68);--ln:rgba(242,244,247,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:var(--fg);font:400 1.03rem/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.kn{font-family:Kanit,sans-serif}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 0}
+.logo{text-decoration:none;font:800 italic 1.6rem Kanit;color:var(--red);letter-spacing:-.02em}.logo small{display:block;font:500 .72rem Inter;color:var(--mu);font-style:normal;letter-spacing:.1em;text-transform:uppercase}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500}nav ul a{text-decoration:none;color:var(--mu)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:8px;font:700 1rem Kanit;text-decoration:none;transition:.2s;border:2px solid var(--red)}
+.btn.r{background:var(--red);color:#fff}.btn.r:hover{background:var(--red-d)}.btn.o{color:var(--fg);border-color:var(--ln)}.btn.sm{padding:9px 14px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:40px 0 80px}
+.clock{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--ln);border-radius:999px;padding:6px 16px 6px 6px}
+.clock b{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--red);font:800 .95rem Kanit}
+h1{font:800 clamp(3rem,7.4vw,6.2rem)/.92 Kanit;letter-spacing:-.03em;margin:16px 0 18px}h1 i{color:var(--red)}
+.lead{font-size:1.12rem;color:var(--mu);max-width:44ch;margin:0 0 24px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.truck{position:relative}.truck .ph{aspect-ratio:4/3;border-radius:14px;overflow:hidden}.truck img{width:100%;height:100%;object-fit:cover}
+.quilt{position:absolute;left:-20px;bottom:-24px;width:56%;height:90px;border-radius:10px;background:var(--quilt);background-image:linear-gradient(45deg,rgba(255,255,255,.12) 25%,transparent 25% 75%,rgba(255,255,255,.12) 75%),linear-gradient(-45deg,rgba(255,255,255,.12) 25%,transparent 25% 75%,rgba(255,255,255,.12) 75%);background-size:24px 24px;box-shadow:0 20px 30px -14px #000;display:grid;place-items:center;font:700 1rem Kanit;transform:rotate(-3deg)}
+section{padding:90px 0}
+.k{font:700 .85rem Kanit;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+h2{font:800 clamp(2.3rem,5vw,4rem)/.98 Kanit;letter-spacing:-.03em;margin:8px 0 0}h2 i{color:var(--red)}
+/* objets */
+.obj{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:36px}
+.ob{all:unset;cursor:pointer;background:var(--navy2);border:2px solid var(--ln);border-radius:14px;padding:20px;display:grid;gap:8px;transition:.2s}
+.ob svg{width:42px;height:42px;fill:none;stroke:var(--fg);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ob b{font:700 1.2rem Kanit}.ob span{color:var(--mu);font-size:.9rem}
+.ob[aria-pressed=true]{border-color:var(--red);background:#2A1620}.ob[aria-pressed=true] svg{stroke:var(--red)}
+.ob:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.plan{margin-top:16px;border-radius:14px;padding:24px;background:var(--fg);color:var(--navy);display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}
+.plan b{font:800 1.4rem Kanit}.plan p{margin:4px 0 0;color:#4A5262}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.s{background:var(--navy2);border-radius:14px;overflow:hidden;border:1px solid var(--ln)}.s .ph{aspect-ratio:4/3;overflow:hidden}.s img{width:100%;height:100%;object-fit:cover}
+.s .in{padding:18px}.s h3{font:700 1.3rem Kanit;margin:4px 0}.s p{margin:0;color:var(--mu);font-size:.93rem}
+.qs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+.q{margin:0;padding:30px;border-radius:14px;background:var(--red)}.q:nth-child(2){background:var(--quilt)}.q blockquote{margin:0;font:700 1.4rem/1.3 Kanit}.q figcaption{margin-top:10px;opacity:.85;font-size:.88rem}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0}.hrs li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--ln)}.hrs li.td{color:var(--red);font-weight:700}
+.st{display:inline-block;margin-top:14px;font:700 .9rem Kanit;padding:6px 14px;border-radius:999px;border:1px solid var(--ln)}.st.on{background:var(--red);border-color:var(--red)}
+.box{background:var(--navy2);border-radius:14px;padding:30px;border:1px solid var(--ln);display:grid;gap:8px;align-content:start}.box h3{margin:0;font:700 1.6rem Kanit}
+footer{padding:40px 0 26px;text-align:center;border-top:1px solid var(--ln)}footer .kn{font:800 italic clamp(2.4rem,7vw,4.6rem) Kanit;color:var(--red)}footer p{color:var(--mu);font-size:.85rem}
+@media (max-width:900px){nav ul{display:none}.hero,.qs,.vis{grid-template-columns:minmax(0,1fr)}.obj{grid-template-columns:repeat(2,minmax(0,1fr))}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}.plan{grid-template-columns:minmax(0,1fr)}.quilt{left:8px}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Déménagement NoMaKo et fils<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><a class="logo" href="#">NoMaKo<small>Déménagement &amp; fils</small></a><ul><li><a href="#objets">Objets spéciaux</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li></ul><a class="btn r sm" href="tel:+15149618640">514 961-8640</a></nav>
+<header class="hero">
+ <div><span class="clock"><b>24/7</b>Joignable jour et nuit</span><h1>Minutieux, <i>du début à la fin</i>.</h1>
+ <p class="lead">Déménagement local ou longue distance, résidentiel ou commercial. Tous vos meubles et électroménagers sont protégés avec des couvertures propres, et on respecte les délais.</p>
+ <div class="ctas"><a class="btn r" href="tel:+15149618640">Soumission en ligne ou par téléphone</a><a class="btn o" href="#objets">J'ai un piano</a></div>
+ <p style="margin-top:18px;color:var(--mu)">★ 4,9 · 98 avis Google</p></div>
+ <div class="truck"><div class="ph"><img src="img/1.jpg" alt="Déménageurs au travail"></div><div class="quilt" aria-hidden="true">Couvertures propres ✓</div></div>
+</header></div>
+
+<section id="objets"><div class="wrap">
+ <div class="rv"><span class="k">Objets spéciaux</span><h2>Qu'est-ce qui vous <i>inquiète</i> ?</h2></div>
+ <div class="obj" role="group" aria-label="Choisir un objet">
+  <button class="ob rv" data-k="0" aria-pressed="true"><svg viewBox="0 0 42 42"><path d="M6 32V14a8 8 0 0 1 8-8h14a8 8 0 0 1 8 8v18zM6 24h30M10 32v4M32 32v4M12 24v-6M17 24v-6M22 24v-6M27 24v-6"/></svg><b>Piano</b><span>Droit ou à queue</span></button>
+  <button class="ob rv" data-k="1" aria-pressed="false" style="--d:.05s"><svg viewBox="0 0 42 42"><rect x="4" y="12" width="34" height="18" rx="3"/><circle cx="8" cy="16" r="1.5"/><circle cx="34" cy="16" r="1.5"/><circle cx="8" cy="26" r="1.5"/><circle cx="34" cy="26" r="1.5"/><circle cx="21" cy="21" r="2.5"/><path d="M8 30v6M34 30v6"/></svg><b>Table de billard</b><span>Ardoise lourde et fragile</span></button>
+  <button class="ob rv" data-k="2" aria-pressed="false" style="--d:.1s"><svg viewBox="0 0 42 42"><path d="M5 26l4-9a4 4 0 0 1 4-3h16a4 4 0 0 1 4 3l4 9v6H5z"/><circle cx="12" cy="32" r="3"/><circle cx="30" cy="32" r="3"/></svg><b>Voiture</b><span>Transport de véhicule</span></button>
+  <button class="ob rv" data-k="3" aria-pressed="false"><svg viewBox="0 0 42 42"><rect x="10" y="4" width="22" height="34" rx="2"/><path d="M10 16h22M14 9v3M14 20v6"/></svg><b>Électroménagers</b><span>Frigo, laveuse, sécheuse</span></button>
+  <button class="ob rv" data-k="4" aria-pressed="false" style="--d:.05s"><svg viewBox="0 0 42 42"><path d="M6 30h30M9 30V18h24v12M9 18c0-6 5-10 12-10s12 4 12 10"/></svg><b>Antiquités</b><span>Meubles de famille</span></button>
+  <button class="ob rv" data-k="5" aria-pressed="false" style="--d:.1s"><svg viewBox="0 0 42 42"><rect x="6" y="12" width="30" height="20" rx="2"/><path d="M6 18h30M17 12V8h8v4"/></svg><b>Bureau complet</b><span>Commercial</span></button>
+ </div>
+ <div class="plan rv" aria-live="polite"><div><b id="pb"></b><p id="pp"></p></div><a class="btn r" href="tel:+15149618640">Appeler</a></div>
+</div></section>
+
+<section id="services" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="k">Services</span><h2>Résidentiel ou <i>commercial</i>.</h2></div>
+ <div class="svc">
+  <div class="s rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><div class="in"><span class="k">Familles</span><h3>Résidentiel</h3><p>Maisons, appartements, condos.</p></div></div>
+  <div class="s rv" style="--d:.06s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><div class="in"><span class="k">Entreprises</span><h3>Commercial</h3><p>Bureaux et commerces.</p></div></div>
+  <div class="s rv" style="--d:.12s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><div class="in"><span class="k">Province</span><h3>Longue distance</h3><p>Partout au Québec.</p></div></div>
+  <div class="s rv" style="--d:.18s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><div class="in"><span class="k">Option</span><h3>Entreposage</h3><p>Vos biens, en sécurité.</p></div></div>
+ </div>
+ <div class="qs"><figure class="q rv"><blockquote>« Sympathiques, des gars agréables, efficaces, minutieux. »</blockquote><figcaption>Avis Google · 4,9 ★ · 98 avis</figcaption></figure><figure class="q rv" style="--d:.1s"><blockquote>« La job a été bien faite et dans des délais raisonnables. »</blockquote><figcaption>Avis Google</figcaption></figure></div>
+</div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap vis">
+ <div class="rv"><span class="k">Disponibilité</span><h2>On répond <i>24 h sur 24</i>.</h2><div class="st" data-status>24/7</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="k">Bureau</span><h3>1172 Rue Joseph Crevier</h3><p style="margin:0;color:var(--mu)">Marieville, QC J3M 1B2</p><div class="ctas" style="margin-top:12px"><a class="btn r sm" href="tel:+15149618640">514 961-8640</a><a class="btn o sm" href="https://www.google.com/maps?cid=14299163243747935788" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><div class="kn">NoMaKo</div><p>© Déménagement NoMaKo &amp; Fils inc. · Marieville · 514 961-8640</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ("24h", "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H="24h",EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const O=[["Votre piano, entre bonnes mains","Équipement adapté, sangles et couvertures : on le déplace sans le cogner, même dans un escalier."],["Le billard, en morceaux maîtrisés","L'ardoise est lourde et fragile. On la protège et on la déplace avec soin."],["On s'occupe aussi de l'auto","Déménagement de voiture possible : demandez-nous les détails pour votre trajet."],["Électros protégés","Frigo, laveuse et sécheuse sont enveloppés dans des couvertures propres et attachés dans le camion."],["Les meubles qui ont une histoire","Chaque coin est protégé. On prend le temps qu'il faut."],["Un bureau, sans arrêter vos affaires","On planifie le déménagement commercial pour minimiser l'arrêt de vos activités."]];
+const bs=[...document.querySelectorAll('.ob')];function sel(k){bs.forEach(b=>b.setAttribute('aria-pressed',+b.dataset.k===k));document.getElementById('pb').textContent=O[k][0];document.getElementById('pp').textContent=O[k][1]}
+bs.forEach(b=>b.onclick=()=>sel(+b.dataset.k));sel(0);
+</script>
+
+</body>
+</html>

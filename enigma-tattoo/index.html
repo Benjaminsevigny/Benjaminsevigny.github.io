@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Enigma Tattoo · Saint-Jean-sur-Richelieu</title>
+<meta name="description" content="Tatouages et perçages personnalisés depuis 2002 dans le Vieux-Saint-Jean. Sur rendez-vous, consultation gratuite.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* L'énigme : lettres qui se décodent, dégradé lavande du site actuel sur noir, fiche de projet pour la consultation */
+:root{--bk:#0B0A0F;--bk2:#15131D;--lav:#B9A6E6;--lav2:#E7DFFB;--vio:#6B5BA8;--fg:#EEEAF6;--mu:rgba(238,234,246,.62);--ln:rgba(238,234,246,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bk);color:var(--fg);font:400 1.03rem/1.6 "Space Grotesk",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.sy{font-family:Syne,sans-serif}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0}
+.logo{text-decoration:none;font:800 1.3rem Syne;letter-spacing:.06em}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:.92rem}nav ul a{text-decoration:none;color:var(--mu)}nav ul a:hover{color:var(--fg)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none;transition:.25s;border:1.5px solid var(--lav)}
+.btn.l{background:linear-gradient(120deg,var(--lav2),var(--lav));color:var(--bk)}.btn.l:hover{box-shadow:0 0 30px rgba(185,166,230,.5)}.btn.o{color:var(--lav)}.btn.sm{padding:10px 18px}
+.hero{position:relative;padding:40px 0 70px;overflow:hidden}
+.grad{position:absolute;inset:0 0 30% 0;background:linear-gradient(180deg,#B8A9DA 0%,#8D7EC0 40%,transparent 100%);opacity:.22;z-index:-1;filter:blur(20px)}
+.big{font:800 clamp(3.2rem,11.2vw,10rem)/.82 Syne;letter-spacing:-.04em;margin:30px 0 0;background:linear-gradient(180deg,var(--lav2),var(--lav) 50%,var(--vio));-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
+.under{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-top:26px}
+.under .ph{aspect-ratio:16/10;border-radius:20px;overflow:hidden;filter:grayscale(.3)}.under img{width:100%;height:100%;object-fit:cover}
+.lead{font-size:1.15rem;color:var(--mu);max-width:42ch;margin:0 0 24px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}.meta span{border:1px solid var(--ln);border-radius:999px;padding:6px 14px;font-size:.88rem}
+section{padding:96px 0}
+.k{font:700 .8rem Syne;letter-spacing:.2em;text-transform:uppercase;color:var(--lav)}
+h2{font:800 clamp(2.4rem,5vw,4.2rem)/.98 Syne;letter-spacing:-.03em;margin:10px 0 0}h2 em{font-style:normal;color:var(--lav)}
+/* fiche de projet */
+.proj{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;margin-top:40px;align-items:start}
+.grp{margin-bottom:22px}.grp b{display:block;margin-bottom:10px;font-size:.9rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{font:500 .95rem "Space Grotesk";padding:10px 16px;border-radius:999px;border:1.5px solid var(--ln);background:transparent;color:var(--fg);cursor:pointer;transition:.2s}
+.chips button[aria-pressed=true]{background:var(--lav);border-color:var(--lav);color:var(--bk)}
+.sz{width:100%;accent-color:var(--lav)}
+.card{background:var(--lav2);color:var(--bk);border-radius:24px;padding:30px;position:sticky;top:20px;overflow:hidden}
+.card::after{content:"?";position:absolute;right:-10px;bottom:-60px;font:800 14rem/1 Syne;color:rgba(107,91,168,.15)}
+.card .sy{font-weight:800;font-size:1.8rem;line-height:1.05;margin:6px 0 16px}
+.card dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:0 0 20px;position:relative;z-index:1}.card dt{color:#6B6280;font-size:.88rem}.card dd{margin:0;font-weight:700}
+.card .btn{background:var(--bk);color:var(--fg);border-color:var(--bk);position:relative;z-index:1}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:40px}
+.gal div{aspect-ratio:3/4;overflow:hidden;border-radius:14px;position:relative}.gal img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transition:filter .6s,transform 1.2s}.gal div:hover img{filter:grayscale(0);transform:scale(1.05)}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--ln);border:1px solid var(--ln);border-radius:18px;overflow:hidden;margin-top:40px}
+.s{background:var(--bk2);padding:26px}.s span{font:700 .72rem Syne;letter-spacing:.16em;text-transform:uppercase;color:var(--lav)}.s h3{font:800 1.3rem Syne;margin:8px 0 6px}.s p{margin:0;color:var(--mu);font-size:.95rem}
+.qs{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:34px}
+.q{margin:0;padding:30px;border-radius:20px;background:var(--bk2);border:1px solid var(--ln)}.q blockquote{margin:0;font:700 1.4rem/1.3 Syne}.q figcaption{margin-top:12px;color:var(--mu);font-size:.85rem}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln);color:var(--mu)}.hrs li.td{color:var(--lav);font-weight:700}
+.st{display:inline-block;margin-top:14px;padding:6px 14px;border-radius:999px;border:1px solid var(--ln);font-size:.85rem}.st.on{border-color:var(--lav);color:var(--lav)}
+.box{border-radius:22px;padding:30px;background:var(--bk2);border:1px solid var(--ln);display:grid;gap:8px;align-content:start}.box h3{font:800 1.6rem Syne;margin:0}
+footer{padding:40px 0 26px;text-align:center;border-top:1px solid var(--ln)}footer .sy{font-weight:800;font-size:clamp(3rem,12vw,8rem);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(185,166,230,.4)}footer p{color:var(--mu);font-size:.85rem}
+@media (max-width:900px){nav ul{display:none}.under,.proj,.qs,.vis{grid-template-columns:minmax(0,1fr)}.card{position:relative;top:auto}.gal,.svc{grid-template-columns:repeat(2,minmax(0,1fr))}section{padding:72px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Enigma Tattoo<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="hero"><div class="grad" aria-hidden="true"></div><div class="wrap">
+<nav><a class="logo" href="#">ENIGMA</a><ul><li><a href="#projet">Mon projet</a></li><li><a href="#travail">Travail</a></li><li><a href="#studio">Studio</a></li></ul><a class="btn l sm" href="tel:+15142884400">514 288-4400</a></nav>
+<h1 class="big" id="bg" aria-label="Enigma Tattoo">ENIGMA</h1>
+<div class="under">
+ <div><div class="meta"><span>Depuis 2002</span><span>Sur rendez-vous</span><span>★ 4,7 · 216 avis</span></div>
+ <p class="lead">Tatouages et perçages personnalisés dans le Vieux-Saint-Jean. Un artiste perfectionniste qui adore créer des pièces uniques, avec une hygiène irréprochable.</p>
+ <div class="ctas"><a class="btn l" href="#projet">Préparer mon projet</a><a class="btn o" href="tel:+15142884400">Prendre rendez-vous</a></div></div>
+ <div class="ph"><img src="img/1.jpg" alt="Un tatoueur au travail"></div>
+</div></div></div>
+
+<section id="projet"><div class="wrap">
+ <div class="rv"><span class="k">Consultation gratuite</span><h2>Décrivez <em>votre idée</em>.</h2><p style="color:var(--mu);max-width:56ch">Remplissez votre fiche de projet. Apportez-la à la consultation : on part de là pour dessiner une pièce unique.</p></div>
+ <div class="proj">
+  <div class="rv">
+   <div class="grp"><b>Où ?</b><div class="chips" data-g="o"><button data-v="Avant-bras" aria-pressed="true">Avant-bras</button><button data-v="Bras" aria-pressed="false">Bras</button><button data-v="Épaule" aria-pressed="false">Épaule</button><button data-v="Dos" aria-pressed="false">Dos</button><button data-v="Jambe" aria-pressed="false">Jambe</button><button data-v="Côtes" aria-pressed="false">Côtes</button><button data-v="Main" aria-pressed="false">Main</button></div></div>
+   <div class="grp"><b>Le style</b><div class="chips" data-g="s"><button data-v="Fineline" aria-pressed="false">Fineline</button><button data-v="Noir et gris" aria-pressed="true">Noir et gris</button><button data-v="Couleur" aria-pressed="false">Couleur</button><button data-v="Lettrage" aria-pressed="false">Lettrage</button><button data-v="Je ne sais pas encore" aria-pressed="false">Je ne sais pas encore</button></div></div>
+   <div class="grp"><b>La taille : <span id="zv"></span></b><input class="sz" type="range" id="sz" min="1" max="4" value="2" aria-label="Taille du tatouage"></div>
+   <div class="grp"><b>C'est un…</b><div class="chips" data-g="t"><button data-v="Nouveau tatouage" aria-pressed="true">Nouveau tatouage</button><button data-v="Retouche" aria-pressed="false">Retouche d'un ancien</button><button data-v="Recouvrement" aria-pressed="false">Recouvrement</button></div></div>
+  </div>
+  <div class="card rv" style="--d:.1s" aria-live="polite"><span class="k" style="color:var(--vio)">Fiche de projet</span><div class="sy" id="ct"></div><dl id="cd"></dl><a class="btn" href="tel:+15142884400">Réserver ma consultation</a></div>
+ </div></div></section>
+
+<section id="travail" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="k">Le travail</span><h2>Des pièces <em>uniques</em>.</h2></div>
+ <div class="gal rv"><div><img src="img/2.jpg" alt="" loading="lazy"></div><div><img src="img/3.jpg" alt="" loading="lazy"></div><div><img src="img/4.jpg" alt="" loading="lazy"></div><div><img src="img/5.jpg" alt="" loading="lazy"></div></div>
+ <div class="svc rv"><div class="s"><span>Personnalisé</span><h3>Tatouage sur mesure</h3><p>Votre idée, dessinée pour vous.</p></div><div class="s"><span>Restauration</span><h3>Retouches</h3><p>Redonner vie à un vieux tatouage.</p></div><div class="s"><span>Piercing</span><h3>Perçage</h3><p>Bijoux de qualité, technique soignée.</p></div><div class="s"><span>Gratuite</span><h3>Consultation</h3><p>Pour planifier votre projet.</p></div></div>
+ <div class="qs"><figure class="q rv"><blockquote>« Il est perfectionniste et talentueux, il adore créer des pièces uniques. »</blockquote><figcaption>Avis Google · 4,7 ★ · 216 avis</figcaption></figure><figure class="q rv" style="--d:.1s"><blockquote>« Super accueil, bonne ambiance, travail soigné, hygiène irréprochable. »</blockquote><figcaption>Avis Google</figcaption></figure></div>
+</div></section>
+
+<section id="studio" style="padding-top:0"><div class="wrap vis">
+ <div class="rv"><span class="k">Heures du studio</span><h2>Sur <em>rendez-vous</em>.</h2><div class="st" data-status>Heures</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="k">Le studio</span><h3>300 Rue Saint-Hubert</h3><p style="margin:0;color:var(--mu)">Saint-Jean-sur-Richelieu, QC J3B 1P4</p><div class="ctas" style="margin-top:12px"><a class="btn l sm" href="tel:+15142884400">514 288-4400</a><a class="btn o sm" href="https://www.google.com/maps?cid=5372307168838421313" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><div class="sy">ENIGMA</div><p>© Enigma Tattoo · depuis 2002 · Saint-Jean-sur-Richelieu · 514 288-4400</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [660, 1260], "6": [660, 1080], "0": [660, 1080], "1": [660, 1080], "2": [660, 1080], "3": [660, 1080], "4": [660, 1260]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [660, 1260], "6": [660, 1080], "0": [660, 1080], "1": [660, 1080], "2": [660, 1080], "3": [660, 1080], "4": [660, 1260]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const bg=document.getElementById('bg'),W='ENIGMA',G='ΔΞ#%&?§@ΩΣ';let f=0;
+if(!L.shot&&!matchMedia('(prefers-reduced-motion:reduce)').matches){const iv=setInterval(()=>{bg.textContent=W.split('').map((c,i)=>i<f/3?c:G[Math.floor(Math.random()*G.length)]).join('');if(++f>W.length*3+2){clearInterval(iv);bg.textContent=W}},55)}
+const S={o:'Avant-bras',s:'Noir et gris',t:'Nouveau tatouage'},Z=['','Petit (moins de 5 cm)','Moyen (une paume)','Grand (une main ouverte)','Très grand (pièce complète)'],sz=document.getElementById('sz');
+document.querySelectorAll('.chips').forEach(g=>g.querySelectorAll('button').forEach(b=>b.onclick=()=>{S[g.dataset.g]=b.dataset.v;g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));draw()}));
+function draw(){const z=Z[+sz.value];document.getElementById('zv').textContent=z;document.getElementById('ct').textContent=S.t+', '+S.s.toLowerCase();
+ document.getElementById('cd').innerHTML=[['Endroit',S.o],['Style',S.s],['Taille',z],['Séances',+sz.value>=4?'Probablement plusieurs':'Souvent une seule']].map(r=>'<dt>'+r[0]+'</dt><dd>'+r[1]+'</dd>').join('')}
+sz.oninput=draw;draw();
+</script>
+
+</body>
+</html>

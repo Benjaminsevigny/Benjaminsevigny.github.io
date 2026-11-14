@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Paul Patates · Pointe-Saint-Charles</title>
+<meta name="description" content="Casse-croûte à l'ancienne de Pointe-Saint-Charles : poutines, burgers, hot-dogs steamés et la fameuse bière d'épinette, dans une salle vintage.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Diner des années 50 : plancher en damier, menton chromé, tableau à lettres en feutre où l'on compose sa commande */
+:root{--cream:#FFF4DC;--red:#C8281E;--mint:#9ED8C6;--mint-d:#3C8C78;--ink:#2B1608;--mu:#6C5643;--ln:rgba(43,22,8,.15);--felt:#1A1A1A}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 1.04rem/1.6 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.sk{font-family:Shrikhand,cursive;font-weight:400}.an{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 0}
+.logo{text-decoration:none;font:400 2rem Shrikhand;color:var(--red);text-shadow:2px 2px 0 var(--mint)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-weight:700}nav ul a{text-decoration:none}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none;transition:.2s;border:3px solid var(--ink)}
+.btn.r{background:var(--red);color:#fff}.btn.r:hover{transform:translateY(-2px)}.btn.m{background:var(--mint)}.btn.sm{padding:9px 14px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;padding:30px 0 70px}
+.since{display:inline-block;background:var(--mint);border:3px solid var(--ink);border-radius:999px;padding:4px 14px;font-weight:700}
+h1{font:400 clamp(3rem,7vw,6rem)/.95 Shrikhand;margin:16px 0 18px;color:var(--red);text-shadow:4px 4px 0 var(--ink)}
+.lead{font-size:1.12rem;color:var(--mu);max-width:42ch;margin:0 0 24px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.booth{position:relative}.booth .ph{aspect-ratio:1;border-radius:50%;overflow:hidden;border:10px solid var(--red);box-shadow:0 0 0 6px var(--cream),0 0 0 10px var(--ink)}.booth img{width:100%;height:100%;object-fit:cover}
+.bottle{position:absolute;right:-6px;bottom:0;width:90px;animation:tip 4s ease-in-out infinite}@keyframes tip{50%{transform:rotate(-8deg)}}
+.check{height:46px;background:conic-gradient(var(--ink) 25%,var(--cream) 0 50%,var(--ink) 0 75%,var(--cream) 0) 0 0/46px 46px;border-block:4px solid var(--red)}
+section{padding:90px 0}
+h2{font:400 clamp(2.4rem,5vw,4rem)/1 Shrikhand;margin:8px 0 0;color:var(--red)}
+.k{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;color:var(--mint-d)}
+/* tableau à lettres */
+.lb{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:36px;align-items:start}
+.felt{background:var(--felt);border:14px solid #6B4426;border-radius:8px;padding:22px;min-height:300px;box-shadow:0 30px 50px -30px rgba(0,0,0,.7);background-image:repeating-linear-gradient(180deg,#1A1A1A 0 6px,#222 6px 8px)}
+.felt .line{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;min-height:42px;margin-bottom:6px}
+.felt i{font:400 1.7rem/1 Anton;font-style:normal;color:#F5F2EA;min-width:.5em;text-align:center;text-shadow:0 2px 0 rgba(0,0,0,.6);animation:in .3s both}
+.felt i.r{color:#FF6B5E}
+@keyframes in{from{transform:translateY(-8px);opacity:0}}
+.ctl label{font-weight:700;display:block;margin-bottom:8px}
+.ctl input{width:100%;font:400 1.2rem Anton;text-transform:uppercase;letter-spacing:.06em;padding:12px 14px;border:3px solid var(--ink);border-radius:10px;background:#fff}
+.quick{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 20px}.quick button{font:700 .95rem "DM Sans";padding:9px 14px;border-radius:999px;border:2px solid var(--ink);background:var(--mint);cursor:pointer;color:var(--ink)}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.s{text-align:center}.s .ph{aspect-ratio:1;border-radius:50%;overflow:hidden;border:6px solid var(--mint);margin:0 auto 12px;width:86%}.s img{width:100%;height:100%;object-fit:cover}
+.s .an{font-size:1.5rem}.s p{margin:2px 0 0;color:var(--mu);font-size:.95rem}.s small{display:inline-block;margin-top:8px;background:var(--red);color:#fff;font-weight:700;padding:3px 10px;border-radius:999px;font-size:.75rem}
+.spr{background:var(--mint);border-block:4px solid var(--ink);padding:70px 0}.spr .g{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.spr blockquote{margin:0;font:400 clamp(1.8rem,3.6vw,2.8rem)/1.15 Shrikhand;color:var(--ink)}
+.qs{display:grid;grid-template-columns:1fr;gap:12px}.qs p{margin:0;font-weight:700;font-size:1.1rem}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0;background:#fff;border:3px solid var(--ink);border-radius:14px}.hrs li{display:flex;justify-content:space-between;padding:10px 16px;border-bottom:2px dashed var(--ln)}.hrs li:last-child{border:0}.hrs li.td{background:var(--mint);font-weight:700}
+.st{display:inline-block;margin-top:14px;font:400 1.1rem Shrikhand;padding:4px 14px;border:3px solid var(--ink);border-radius:999px;background:#eee;color:#999}.st.on{background:var(--red);color:#fff}
+.box{background:#fff;border:3px solid var(--ink);border-radius:14px;padding:28px;display:grid;gap:8px;align-content:start}.box h3{margin:0;font:400 1.6rem Anton;text-transform:uppercase}
+footer{padding:40px 0 26px;text-align:center;background:var(--ink);color:var(--cream)}footer .sk{font-size:clamp(2.4rem,7vw,4.6rem);color:var(--red);text-shadow:3px 3px 0 var(--mint)}footer p{opacity:.75;font-size:.85rem}
+@media (max-width:900px){nav ul{display:none}.hero,.lb,.spr .g,.vis{grid-template-columns:minmax(0,1fr)}.booth{width:min(80%,330px);margin:0 auto}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}.felt i{font-size:1.3rem}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Paul Patates<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><a class="logo" href="#">Paul Patates</a><ul><li><a href="#tableau">Ma commande</a></li><li><a href="#menu">Le menu</a></li><li><a href="#heures">Heures</a></li></ul><a class="btn r sm" href="tel:+15149372751">514 937-2751</a></nav>
+<header class="hero">
+ <div><span class="since">Pointe-Saint-Charles · au coin de la rue</span><h1>Une institution vintage.</h1>
+ <p class="lead">Poutines, burgers, hot-dogs steamés comme dans le temps et la fameuse bière d'épinette, dans une salle à l'ancienne confortable. L'équipe est super sympa.</p>
+ <div class="ctas"><a class="btn r" href="#tableau">Composer ma commande</a><a class="btn m" href="https://www.google.com/maps?cid=1058132990631533912" target="_blank" rel="noopener">Y aller ↗</a></div>
+ <p style="margin-top:18px;font-weight:700">★ 4,6 · 847 avis Google</p></div>
+ <div class="booth"><div class="ph"><img src="img/1.jpg" alt="Un burger et une poutine"></div>
+ <svg class="bottle" viewBox="0 0 60 150" aria-hidden="true"><path d="M24 4h12v26c0 6 12 12 12 26v84a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6V56c0-14 12-20 12-26z" fill="#6B3A1E" stroke="#2B1608" stroke-width="3"/><rect x="12" y="70" width="36" height="40" fill="#FFF4DC" stroke="#2B1608" stroke-width="2"/><text x="30" y="88" text-anchor="middle" font-family="Anton" font-size="10" fill="#C8281E">BIÈRE</text><text x="30" y="101" text-anchor="middle" font-family="Anton" font-size="8" fill="#2B1608">D'ÉPINETTE</text><rect x="22" y="0" width="16" height="8" rx="2" fill="#C8281E"/></svg></div>
+</header></div>
+<div class="check" aria-hidden="true"></div>
+
+<section id="tableau"><div class="wrap">
+ <div class="rv"><span class="k">Le tableau du comptoir</span><h2>Écris ta commande.</h2></div>
+ <div class="lb">
+  <div class="felt rv" id="felt" aria-live="polite"></div>
+  <div class="ctl rv" style="--d:.1s"><label for="ord">Ta commande</label><input id="ord" maxlength="60" value="1 poutine + 1 bière d'épinette">
+   <div class="quick"><button type="button" data-o="2 hot-dogs steamés">2 hot-dogs steamés</button><button type="button" data-o="1 burger + frites">1 burger + frites</button><button type="button" data-o="La grosse poutine">La grosse poutine</button></div>
+   <p style="color:var(--mu);margin:0 0 16px">Appelle-nous pour la commander, ou passe la chercher au comptoir.</p><a class="btn r" href="tel:+15149372751">Appeler : 514 937-2751</a></div>
+ </div></div></section>
+
+<section id="menu" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="k">Le menu</span><h2>Les classiques d'antan.</h2></div>
+ <div class="svc">
+  <div class="s rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><span class="an">Poutine</span><p>Frites, sauce et fromage en grains.</p><small>Classique</small></div>
+  <div class="s rv" style="--d:.06s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><span class="an">Burger</span><p>Sur le grill, à l'ancienne.</p><small>Favori</small></div>
+  <div class="s rv" style="--d:.12s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><span class="an">Hot-dogs</span><p>Steamés, comme dans le temps.</p><small>Vintage</small></div>
+  <div class="s rv" style="--d:.18s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><span class="an">Bière d'épinette</span><p>La boisson de la maison.</p><small>Signature</small></div>
+ </div></div></section>
+<div class="spr"><div class="wrap g"><blockquote class="rv">« Merveilleux, j'adore la bière d'épinette. »</blockquote><div class="qs rv" style="--d:.1s"><p>« Burger et poutine au top, l'ambiance vintage est cool et l'équipe super sympa. »</p><span>Avis Google · 4,6 ★ · 847 avis</span></div></div></div>
+
+<section id="heures"><div class="wrap vis">
+ <div class="rv"><span class="k">Heures</span><h2>Le comptoir est ouvert.</h2><div class="st" data-status>Ouvert</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="k">Au coin de la rue</span><h3>760 Rue Charlevoix</h3><p style="margin:0;color:var(--mu)">Montréal, QC H3K 2Y2</p><div class="ctas" style="margin-top:12px"><a class="btn r sm" href="tel:+15149372751">514 937-2751</a><a class="btn m sm" href="https://www.google.com/maps?cid=1058132990631533912" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><div class="sk">Paul Patates</div><p>© Paul Patates · Pointe-Saint-Charles, Montréal · 514 937-2751</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [660, 1200], "6": [660, 1200], "0": null, "1": [660, 1140], "2": [660, 1140], "3": [660, 1140], "4": [660, 1200]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [660, 1200], "6": [660, 1200], "0": null, "1": [660, 1140], "2": [660, 1140], "3": [660, 1140], "4": [660, 1200]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const felt=document.getElementById('felt'),ord=document.getElementById('ord');
+function draw(){const lines=['PAUL PATATES','— COMMANDE —'].concat((ord.value||'').toUpperCase().match(/.{1,16}(\s|$)|\S+/g)||[]).slice(0,6);
+ felt.replaceChildren();lines.forEach((l,j)=>{const d=document.createElement('div');d.className='line';[...l.trim()].forEach((c,i)=>{const t=document.createElement('i');t.textContent=c===' '?' ':c;if(j===0)t.className='r';t.style.animationDelay=(i*18)+'ms';d.appendChild(t)});felt.appendChild(d)})}
+ord.oninput=draw;document.querySelectorAll('.quick button').forEach(b=>b.onclick=()=>{ord.value=b.dataset.o;draw()});draw();
+</script>
+
+</body>
+</html>

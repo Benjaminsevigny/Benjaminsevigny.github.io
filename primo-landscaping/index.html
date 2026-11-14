@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Demo · Primo Landscaping · Ottawa garden care</title>
+<meta name="description" content="Family-owned Ottawa landscaping and garden care. Lawn care, garden care, spring and fall cleanups, and senior services to help you stay in your home.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* Pensé pour les aînés : police très lisible, bouton « texte plus gros », gros contrastes ; calendrier des saisons */
+:root{--bg:#F5F9EF;--green:#3F7D0F;--green-d:#2D5C0A;--lime:#A6D86B;--red:#C9302C;--ink:#16240C;--mu:#4A5A40;--ln:rgba(22,36,12,.15);--fs:1.08rem}
+html.big{--fs:1.3rem}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--fs)/1.65 "Atkinson Hyperlegible",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.bar{background:var(--green);color:#fff}.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:8px;flex-wrap:wrap;font-size:.92em}
+.size{display:flex;gap:6px;align-items:center}.size button{font:700 1rem "Atkinson Hyperlegible";padding:4px 12px;border-radius:8px;border:2px solid #fff;background:transparent;color:#fff;cursor:pointer}.size button[aria-pressed=true]{background:#fff;color:var(--green)}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 0}
+.logo{text-decoration:none;display:flex;align-items:center;gap:10px}.logo .p{background:var(--red);color:#fff;font:700 1.5rem "Atkinson Hyperlegible";padding:4px 12px;border-radius:10px;border:3px solid #fff;box-shadow:0 0 0 2px var(--red)}.logo small{display:block;font-weight:700;color:var(--green)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:700}nav ul a{text-decoration:none}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:16px 26px;border-radius:12px;font-weight:700;text-decoration:none;transition:.2s;border:3px solid var(--green);font-size:1.05em}
+.btn.g{background:var(--green);color:#fff}.btn.g:hover{background:var(--green-d)}.btn.o{color:var(--green);background:#fff}.btn.sm{padding:10px 16px;font-size:.95em}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding:24px 0 70px}
+h1{font:700 clamp(2.6rem,6vw,5rem)/1.04 "Atkinson Hyperlegible";letter-spacing:-.02em;margin:12px 0 18px}h1 span{color:var(--green)}
+.tag{display:inline-block;background:var(--lime);font-weight:700;padding:6px 14px;border-radius:999px}
+.lead{font-size:1.1em;color:var(--mu);max-width:44ch;margin:0 0 24px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.yard{position:relative}.yard .ph{aspect-ratio:4/3;border-radius:28px;overflow:hidden;border:6px solid #fff;box-shadow:0 30px 60px -30px rgba(22,36,12,.5)}.yard img{width:100%;height:100%;object-fit:cover}
+.yard .dom{position:absolute;left:-20px;bottom:-24px;background:#fff;border-radius:18px;padding:16px 18px;max-width:280px;box-shadow:0 16px 30px -16px rgba(0,0,0,.3)}.yard .dom b{color:var(--green)}
+.big3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.big3 div{background:#fff;border-radius:20px;padding:22px;border:2px solid var(--ln)}.big3 b{display:block;font-size:1.3em;color:var(--green)}
+section{padding:80px 0}
+h2{font:700 clamp(2.1rem,4.6vw,3.6rem)/1.08 "Atkinson Hyperlegible";margin:8px 0 0;letter-spacing:-.02em}h2 span{color:var(--green)}
+.k{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.8em;color:var(--red)}
+/* calendrier */
+.seas{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
+.seas button{font:700 1.05em "Atkinson Hyperlegible";padding:12px 20px;border-radius:12px;border:3px solid var(--ln);background:#fff;color:var(--ink);cursor:pointer}
+.seas button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:#fff}
+.seas button:focus-visible{outline:4px solid var(--red);outline-offset:2px}
+.cal{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;margin-top:22px;align-items:center}
+.cal .ph{aspect-ratio:4/3;border-radius:22px;overflow:hidden}.cal img{width:100%;height:100%;object-fit:cover}
+.tasks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.tasks li{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:16px;padding:16px 18px;border:2px solid var(--ln)}
+.tasks li::before{content:"✓";flex:none;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--lime);font-weight:700}
+.sen{background:var(--green);color:#fff;border-radius:36px;padding:50px;margin:0 max(12px,1.5vw)}
+.sen .g{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.sen h2{color:#fff}.sen h2 span{color:var(--lime)}.sen ul{margin:16px 0 0;padding-left:22px;display:grid;gap:8px}
+.sen .ph{aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid var(--lime)}.sen img{width:100%;height:100%;object-fit:cover}
+.qs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+.q{margin:0;background:#fff;border-radius:22px;padding:28px;border:3px solid var(--lime)}.q blockquote{margin:0;font-size:1.2em;font-weight:700;line-height:1.4}.q figcaption{margin-top:10px;color:var(--mu);font-size:.9em}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.hrs{list-style:none;margin:18px 0 0;padding:0;background:#fff;border-radius:18px;border:2px solid var(--ln)}.hrs li{display:flex;justify-content:space-between;padding:12px 18px;border-bottom:1px solid var(--ln)}.hrs li:last-child{border:0}.hrs li.td{background:var(--lime);font-weight:700}
+.st{display:inline-block;margin-top:14px;font-weight:700;padding:8px 16px;border-radius:999px;background:#e5eadd}.st.on{background:var(--green);color:#fff}
+.box{background:#fff;border-radius:22px;padding:30px;border:2px solid var(--ln);display:grid;gap:8px;align-content:start}.box h3{margin:0;font-size:1.6em}
+footer{padding:40px 0 26px;text-align:center;border-top:2px solid var(--ln)}footer b{font-size:clamp(1.8rem,5vw,3rem);color:var(--green)}footer p{color:var(--mu);font-size:.9em}
+@media (max-width:900px){nav ul{display:none}.hero,.cal,.sen .g,.qs,.vis{grid-template-columns:minmax(0,1fr)}.big3{grid-template-columns:minmax(0,1fr)}.yard .dom{left:8px}.sen{padding:28px}.sen .ph{width:min(70%,260px);margin:0 auto}section{padding:64px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DEMO</b>Example made for Primo Landscaping<span class="long"> · not the business's official website</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="bar"><div class="wrap"><span>Family-owned · Ottawa · ★ 4.8 (46 reviews)</span><div class="size" role="group" aria-label="Text size"><span>Text size</span><button data-s="" aria-pressed="true">A</button><button data-s="big" aria-pressed="false">A+</button></div></div></div>
+<div class="wrap">
+<nav><a class="logo" href="#"><span class="p">PRIMO</span><small>Landscaping<br>&amp; garden care</small></a><ul><li><a href="#seasons">Seasons</a></li><li><a href="#seniors">Seniors</a></li><li><a href="#contact">Contact</a></li></ul><a class="btn g sm" href="tel:+16137621838">613 762-1838</a></nav>
+<header class="hero">
+ <div><span class="tag">Senior specialists</span><h1>A yard you're proud of, <span>without the work</span>.</h1>
+ <p class="lead">Family-owned Ottawa landscaping and garden care. Dominic and his team keep your yard looking great all season, and help you stay in your home as long as possible.</p>
+ <div class="ctas"><a class="btn g" href="tel:+16137621838">Call Dominic</a><a class="btn o" href="#seasons">What's needed this season?</a></div></div>
+ <div class="yard"><div class="ph"><img src="img/1.jpg" alt="A well-kept garden"></div><div class="dom"><b>“Friendly, reliable and great quality service.”</b><br>Google review</div></div>
+</header>
+<div class="big3"><div><b>Weekly</b>Lawn mowing and edging</div><div><b>Spring &amp; fall</b>Full yard cleanups</div><div><b>Seniors</b>Help to stay home longer</div></div>
+</div>
+
+<section id="seasons"><div class="wrap">
+ <div class="rv"><span class="k">Garden calendar</span><h2>What your yard needs <span>this season</span>.</h2></div>
+ <div class="seas" role="group" aria-label="Choose a season"><button data-k="0">Spring</button><button data-k="1">Summer</button><button data-k="2">Fall</button><button data-k="3">Winter</button></div>
+ <div class="cal"><div class="ph rv"><img id="ci" src="img/2.jpg" alt=""></div><ul class="tasks rv" style="--d:.1s" id="ct" aria-live="polite"></ul></div>
+</div></section>
+
+<section id="seniors" style="padding-top:0"><div class="sen"><div class="wrap g">
+ <div class="rv"><span class="k" style="color:var(--lime)">Senior services</span><h2>Stay in the home <span>you love</span>.</h2>
+ <ul><li>One local, family-owned team you get to know</li><li>We handle the heavy work: mowing, raking, beds and branches</li><li>Help to stay in your home as long as possible</li><li>Family members can call us to set things up</li></ul>
+ <p style="margin-top:20px"><a class="btn o" href="tel:+16137621838">Call 613 762-1838</a></p></div>
+ <div class="ph rv" style="--d:.1s"><img src="img/3.jpg" alt="" loading="lazy"></div>
+</div></div></section>
+
+<section><div class="wrap">
+ <div class="rv"><span class="k">Google reviews · 4.8 ★ · 46 reviews</span><h2>Our <span>neighbours</span> say it best.</h2></div>
+ <div class="qs"><figure class="q rv"><blockquote>“Dominic and his team are friendly, reliable and offer a great quality service.”</blockquote><figcaption>Google review</figcaption></figure><figure class="q rv" style="--d:.1s"><blockquote>“I received excellent service and support from Dominic at Primo Landscaping.”</blockquote><figcaption>Google review</figcaption></figure></div>
+</div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap vis">
+ <div class="rv"><span class="k">Office hours</span><h2>Give us <span>a call</span>.</h2><div class="st" data-status>Hours</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="k">Find us</span><h3>1285 Brookline Ave</h3><p style="margin:0;color:var(--mu)">Ottawa, ON K1V 6S4</p><div class="ctas" style="margin-top:12px"><a class="btn g sm" href="tel:+16137621838">613 762-1838</a><a class="btn o sm" href="https://www.google.com/maps?cid=2934873346761135600" target="_blank" rel="noopener">Directions ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><b>Primo Landscaping</b><p>© Primo Landscaping · family-owned · Ottawa · 613 762-1838</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [450, 1020], "6": [450, 780], "0": null, "1": [450, 1020], "2": [450, 1020], "3": [450, 1020], "4": [450, 1020]}, "en") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [450, 1020], "6": [450, 780], "0": null, "1": [450, 1020], "2": [450, 1020], "3": [450, 1020], "4": [450, 1020]},EN="en"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const sz=[...document.querySelectorAll('.size button')];sz.forEach(b=>b.onclick=()=>{sz.forEach(x=>x.setAttribute('aria-pressed',x===b));document.documentElement.classList.toggle('big',b.dataset.s==='big');try{localStorage.setItem('primo-size',b.dataset.s)}catch(e){}});
+try{if(localStorage.getItem('primo-size')==='big')sz[1].click()}catch(e){}
+const S=[["img/2.jpg",["Spring cleanup: leaves, branches and winter debris","Edge and refresh the garden beds","First mow when the grass reaches about 3 inches","Fresh mulch to keep weeds down"]],["img/4.jpg",["Weekly mowing and edging","Weeding and deadheading the flowers","Water deeply, early in the morning","Trim shrubs after they bloom"]],["img/5.jpg",["Leaf raking and removal","Cut back perennials and clean the beds","Last mow, a little shorter","Protect shrubs before the first snow"]],["img/6.jpg",["Rest for the lawn (and you)","Book next spring's cleanup early","Plan new beds or changes with Dominic","Watch for heavy snow on shrubs"]]];
+const sb=[...document.querySelectorAll('.seas button')];function sel(k){sb.forEach(b=>b.setAttribute('aria-pressed',+b.dataset.k===k));document.getElementById('ci').src=S[k][0];document.getElementById('ct').innerHTML=S[k][1].map(t=>'<li>'+t+'</li>').join('')}
+sb.forEach(b=>b.onclick=()=>sel(+b.dataset.k));const mo=new Date().getMonth();sel(mo>=2&&mo<=4?0:mo>=5&&mo<=7?1:mo>=8&&mo<=10?2:3);
+</script>
+
+</body>
+</html>

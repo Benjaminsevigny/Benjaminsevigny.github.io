@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Imprimerie Daniel · Longueuil depuis 1951</title>
+<meta name="description" content="Imprimerie familiale à Longueuil depuis 1951 : cartes d'affaires, dépliants, affiches, papeterie et grand format, servis avec le sourire.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Épreuve d'imprimeur : papier blanc, traits de coupe, pastilles CMJN, guide des formats à l'échelle */
+:root{--paper:#FAFAF7;--ink:#141414;--red:#D7262B;--c:#00A6E2;--m:#E4007C;--y:#FFE100;--mu:#5E5E5E;--ln:rgba(20,20,20,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.02rem/1.6 Archivo,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.mono{font-family:"IBM Plex Mono",monospace;font-size:.76rem;letter-spacing:.04em}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0;border-bottom:2px solid var(--ink)}
+.logo{text-decoration:none;display:flex;align-items:center;gap:10px;font:900 1.25rem Archivo;letter-spacing:-.02em;text-transform:uppercase}.logo i{display:grid;grid-template-columns:repeat(2,9px);gap:2px}.logo i b{width:9px;height:9px;border-radius:50%}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:600}nav ul a{text-decoration:none}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 22px;font-weight:800;text-decoration:none;border:2px solid var(--ink);transition:.2s;box-shadow:4px 4px 0 var(--ink)}
+.btn.r{background:var(--red);color:#fff}.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}.btn.w{background:#fff}.btn.sm{padding:10px 16px;box-shadow:3px 3px 0 var(--ink)}
+.hero{position:relative;padding:70px 0 80px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.crop{position:absolute;width:30px;height:30px;border-color:var(--ink);border-style:solid;border-width:0}
+.crop.a{top:20px;left:-10px;border-top-width:1px;border-left-width:1px}.crop.b{top:20px;right:-10px;border-top-width:1px;border-right-width:1px}.crop.c{bottom:20px;left:-10px;border-bottom-width:1px;border-left-width:1px}.crop.d{bottom:20px;right:-10px;border-bottom-width:1px;border-right-width:1px}
+.reg{position:absolute;top:8px;left:50%;width:26px;height:26px;transform:translateX(-50%)}
+h1{font:900 clamp(3rem,8vw,7rem)/.86 Archivo;letter-spacing:-.045em;margin:14px 0 22px;text-transform:uppercase}
+h1 span{display:block}h1 .s{color:transparent;-webkit-text-stroke:2px var(--ink)}h1 .rd{color:var(--red)}
+.lead{font-size:1.15rem;max-width:44ch;color:var(--mu);margin:0 0 28px}
+.ctas{display:flex;flex-wrap:wrap;gap:14px}
+.sheet{position:relative;aspect-ratio:4/5;background:#fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);transform:rotate(3deg);padding:14px;border:1px solid var(--ln)}
+.sheet img{width:100%;height:76%;object-fit:cover}
+.sheet .bar{display:flex;gap:0;margin-top:12px;height:22px}.sheet .bar b{flex:1}
+.sheet .mono{position:absolute;bottom:14px;left:14px;right:14px;display:flex;justify-content:space-between}
+.stamp{position:absolute;top:-26px;right:-18px;width:120px;height:120px;border-radius:50%;border:3px solid var(--red);color:var(--red);display:grid;place-items:center;text-align:center;transform:rotate(-12deg);background:rgba(250,250,247,.9);font-weight:900;line-height:1}
+.stamp b{font-size:2rem;display:block}.stamp span{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase}
+.cmyk{display:flex;height:12px}.cmyk b{flex:1}
+section{padding:96px 0}
+.k{font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:var(--red)}
+h2{font:900 clamp(2.4rem,5vw,4.2rem)/.92 Archivo;letter-spacing:-.04em;margin:10px 0 0;text-transform:uppercase}
+/* guide des formats */
+.fmt{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;margin-top:40px;align-items:center}
+.opts{display:grid;gap:10px}
+.opts button{all:unset;cursor:pointer;display:grid;grid-template-columns:1fr auto;gap:10px;padding:16px 18px;border:2px solid var(--ink);background:#fff;font-weight:800}
+.opts button span{font-family:"IBM Plex Mono",monospace;font-weight:400;font-size:.82rem;color:var(--mu)}
+.opts button[aria-pressed=true]{background:var(--ink);color:#fff}.opts button[aria-pressed=true] span{color:#ccc}
+.opts button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.stage{position:relative;height:440px;border:1px dashed var(--ln);background:repeating-linear-gradient(0deg,transparent 0 39px,rgba(20,20,20,.05) 39px 40px),repeating-linear-gradient(90deg,transparent 0 39px,rgba(20,20,20,.05) 39px 40px);display:grid;place-items:end center;padding:20px;overflow:hidden}
+.paper{background:#fff;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--red);transition:width .6s cubic-bezier(.3,1.2,.4,1),height .6s cubic-bezier(.3,1.2,.4,1);display:grid;place-items:center;font-family:"IBM Plex Mono",monospace;font-size:.8rem;position:relative;z-index:1}
+.person{position:absolute;bottom:20px;right:30px;height:var(--ph);width:auto;opacity:.75;transition:height .6s}
+.dim{font-family:"IBM Plex Mono",monospace;margin-top:14px;font-size:.9rem}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);border:2px solid var(--ink);margin-top:44px}
+.s{padding:24px;border-right:2px solid var(--ink);background:#fff}.s:last-child{border-right:0}
+.s .ph{aspect-ratio:1;overflow:hidden;margin-bottom:14px}.s img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.1);transition:filter .4s}.s:hover img{filter:none}
+.s h3{font:900 1.3rem/1 Archivo;text-transform:uppercase;margin:0 0 6px}.s p{margin:0;color:var(--mu);font-size:.95rem}
+.fam{background:var(--ink);color:#fff;padding:90px 0}
+.fam .g{display:grid;grid-template-columns:auto 1fr;gap:50px;align-items:center}
+.fam .yr{font:900 clamp(6rem,16vw,13rem)/.8 Archivo;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:2px #fff}
+.fam p{font-size:1.2rem;opacity:.85;max-width:50ch}
+.fam .q{margin-top:24px;font:800 1.5rem/1.2 Archivo}.fam .q small{display:block;font:400 .8rem "IBM Plex Mono";opacity:.7;margin-top:8px}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:20px 0 0;padding:0;font-family:"IBM Plex Mono",monospace;font-size:.9rem}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln)}.hrs li.td{font-weight:500;color:var(--red)}
+.st{display:inline-block;margin-top:14px;font:500 .8rem "IBM Plex Mono";border:2px solid var(--ink);padding:6px 12px}.st.on{background:var(--ink);color:#fff}
+.box{border:2px solid var(--ink);padding:32px;background:#fff;box-shadow:8px 8px 0 var(--ink);display:grid;gap:10px;align-content:start}.box h3{font:900 1.8rem/1 Archivo;text-transform:uppercase;margin:0}
+footer{border-top:2px solid var(--ink);padding:40px 0 26px}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:end}footer b{font:900 clamp(2rem,6vw,4rem)/1 Archivo;text-transform:uppercase;letter-spacing:-.04em}
+@media (max-width:900px){nav ul{display:none}.hero,.fmt,.vis,.fam .g{grid-template-columns:minmax(0,1fr)}.sheet{width:min(78%,320px);margin:20px auto 0}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}.s:nth-child(2){border-right:0}.s:nth-child(-n+2){border-bottom:2px solid var(--ink)}.stage{height:340px}section{padding:72px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Imprimerie Daniel<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><a class="logo" href="#"><i aria-hidden="true"><b style="background:var(--c)"></b><b style="background:var(--m)"></b><b style="background:var(--y)"></b><b style="background:var(--ink)"></b></i>Imprimerie Daniel</a><ul><li><a href="#formats">Formats</a></li><li><a href="#services">Services</a></li><li><a href="#visite">Nous joindre</a></li></ul><a class="btn r sm" href="tel:+14506747763">450 674-7763</a></nav>
+<header class="hero">
+ <span class="crop a"></span><span class="crop b"></span><span class="crop c"></span><span class="crop d"></span>
+ <svg class="reg" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="7" fill="none" stroke="#141414"/><path d="M13 0v26M0 13h26" stroke="#141414"/></svg>
+ <div><span class="k">Épreuve n° 1951 · Longueuil</span>
+ <h1><span>Imprimé</span><span class="s">avec soin,</span><span class="rd">depuis 1951.</span></h1>
+ <p class="lead">Une des plus anciennes imprimeries de Longueuil, toujours familiale. Cartes d'affaires, dépliants, affiches, papeterie et grand format, servis avec le sourire.</p>
+ <div class="ctas"><a class="btn r" href="tel:+14506747763">Demander un prix</a><a class="btn w" href="#formats">Voir les formats</a></div></div>
+ <div class="sheet"><img src="img/1.jpg" alt="Presse d'imprimerie en marche"><div class="bar"><b style="background:var(--c)"></b><b style="background:var(--m)"></b><b style="background:var(--y)"></b><b style="background:var(--ink)"></b><b style="background:#888"></b><b style="background:#ccc"></b></div><div class="mono"><span>BON À TIRER</span><span>4,9 ★ · 67 avis</span></div>
+ <div class="stamp"><div><b>1951</b><span>Familiale</span></div></div></div>
+</header></div>
+<div class="cmyk" aria-hidden="true"><b style="background:var(--c)"></b><b style="background:var(--m)"></b><b style="background:var(--y)"></b><b style="background:var(--ink)"></b></div>
+
+<section id="formats"><div class="wrap">
+ <div class="rv"><span class="k">Guide des formats</span><h2>Quelle grandeur, au juste ?</h2><p style="color:var(--mu);max-width:56ch">Choisissez un produit : on vous montre son format standard à l'échelle, à côté d'une personne de 1,70 m.</p></div>
+ <div class="fmt">
+  <div class="opts rv" role="group" aria-label="Choisir un produit">
+   <button data-k="0">Carte d'affaires <span>3,5 × 2 po</span></button><button data-k="1">Dépliant <span>8,5 × 11 po</span></button><button data-k="2">Affiche <span>11 × 17 po</span></button><button data-k="3">Affiche grand format <span>24 × 36 po</span></button><button data-k="4">Bannière <span>3 × 6 pi</span></button></div>
+  <div class="rv" style="--d:.1s"><div class="stage" id="stage"><svg class="person" id="pp" viewBox="0 0 40 120" aria-hidden="true"><circle cx="20" cy="12" r="10" fill="#141414"/><path d="M6 30q14-8 28 0l-2 46h-6l-2 44h-8l-2-44H8z" fill="#141414"/></svg><div class="paper" id="pa"></div></div><div class="dim" id="dm" aria-live="polite"></div></div>
+ </div></div></section>
+
+<section id="services" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="k">Ce qu'on imprime</span><h2>Du petit au très grand.</h2></div>
+ <div class="svc rv">
+  <div class="s"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><h3>Cartes d'affaires</h3><p>Classiques ou avec fini spécial.</p></div>
+  <div class="s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><h3>Dépliants et affiches</h3><p>Pour vos promotions et événements.</p></div>
+  <div class="s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><h3>Papeterie</h3><p>Enveloppes, en-têtes, formulaires.</p></div>
+  <div class="s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><h3>Grand format</h3><p>Bannières et affiches qui se voient.</p></div>
+ </div></div></section>
+
+<div class="fam"><div class="wrap g"><div class="yr rv" aria-hidden="true">1951</div><div class="rv" style="--d:.1s"><span class="k" style="color:#ff8a8d">Une affaire de famille</span><p>Chez nous, le client passe d'abord. On vous conseille sur le papier, le format et le budget, du premier essai jusqu'à la livraison. Les techniques ont changé depuis 1951. Le sourire, lui, est resté.</p>
+<div class="q">« Super sympa et gentil. Excellent service. »<small>Avis Google · 4,9 ★ sur 67 avis</small></div></div></div></div>
+
+<section id="visite"><div class="wrap vis">
+ <div class="rv"><span class="k">Heures d'ouverture</span><h2>Passez nous voir.</h2><div class="st" data-status>HEURES</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="k">Adresse</span><h3>863 Chem. du Coteau-Rouge</h3><p style="margin:0;color:var(--mu)">Longueuil, QC J4K 1V4</p><div class="ctas" style="margin-top:14px"><a class="btn r sm" href="tel:+14506747763">450 674-7763</a><a class="btn w sm" href="https://www.google.com/maps?cid=16887657607367155258" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><b>Imprimerie Daniel</b><span class="mono">© Depuis 1951 · Longueuil · 450 674-7763</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [540, 1020], "6": null, "0": null, "1": [540, 1020], "2": [540, 1020], "3": [540, 1020], "4": [540, 1020]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [540, 1020], "6": null, "0": null, "1": [540, 1020], "2": [540, 1020], "3": [540, 1020], "4": [540, 1020]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const F=[[3.5,2,"po","Carte d'affaires","3,5 × 2 po (8,9 × 5,1 cm)"],[8.5,11,"po","Dépliant","8,5 × 11 po (format lettre)"],[11,17,"po","Affiche","11 × 17 po (format tabloïd)"],[24,36,"po","Affiche grand format","24 × 36 po (61 × 91 cm)"],[36,72,"po","Bannière","3 × 6 pi (91 × 183 cm)"]];
+const bs=[...document.querySelectorAll('.opts button')],st=document.getElementById('stage'),pa=document.getElementById('pa'),pp=document.getElementById('pp');
+function sel(k){bs.forEach(b=>b.setAttribute('aria-pressed',+b.dataset.k===k));const f=F[k],H=st.clientHeight-50,s=H/67;/* 67 po = 1,70 m */
+ const w=Math.max(f[0]*s,6),h=Math.max(f[1]*s,4);pa.style.width=w+'px';pa.style.height=h+'px';pa.textContent=w>60?f[3]:'';pp.style.setProperty('--ph',(67*s)+'px');
+ document.getElementById('dm').textContent=f[3]+' · '+f[4]}
+bs.forEach(b=>b.onclick=()=>sel(+b.dataset.k));sel(2);addEventListener('resize',()=>sel(bs.findIndex(b=>b.getAttribute('aria-pressed')==='true')));
+</script>
+
+</body>
+</html>

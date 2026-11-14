@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Mandarine et Ciboulette · Saint-Jean-sur-Richelieu</title>
+<meta name="description" content="Micro-épicerie de quartier à Iberville : plats cuisinés, boîtes à lunch corporatives, cocktails dînatoires, produits, bières et vins du Québec.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+/* Étals de micro-épicerie : étiquettes kraft suspendues, orange mandarine et vert ciboulette, calculateur de bouchées */
+:root{--bg:#FBF6EE;--man:#E8732A;--man-l:#FCE3CF;--chi:#4F7F2E;--chi-l:#DCEACB;--kraft:#D9B98C;--ink:#22201C;--mu:#625C52;--ln:rgba(34,32,28,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.03rem/1.65 "Nunito Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left,0px))}
+.cb{font-family:Corben,serif}
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 0}
+.logo{text-decoration:none;display:flex;align-items:center;gap:10px}.logo i{width:44px;height:44px;border:2px solid var(--ink);display:grid;place-items:center;font:700 1rem Corben;font-style:normal}.logo b{font:700 1.2rem Corben}.logo b span{color:var(--man)}.logo b em{font-style:normal;color:var(--chi)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600}nav ul a{text-decoration:none}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;font-weight:800;text-decoration:none;transition:.2s;border:2px solid var(--ink)}
+.btn.m{background:var(--man);border-color:var(--man);color:#fff}.btn.m:hover{filter:brightness(1.06)}.btn.o:hover{background:#fff}.btn.sm{padding:10px 18px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;padding:24px 0 80px}
+h1{font:700 clamp(2.8rem,6.4vw,5.4rem)/1 Corben;margin:14px 0 18px}h1 .m{color:var(--man)}h1 .c{color:var(--chi)}
+.lead{font-size:1.12rem;color:var(--mu);max-width:42ch;margin:0 0 24px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.shelf{position:relative}.shelf .ph{aspect-ratio:1;border-radius:30px;overflow:hidden}.shelf img{width:100%;height:100%;object-fit:cover}
+.tagk{position:absolute;background:var(--kraft);color:var(--ink);padding:10px 16px 10px 26px;font:700 1rem Corben;clip-path:polygon(16px 0,100% 0,100% 100%,16px 100%,0 50%);box-shadow:0 8px 16px -8px rgba(0,0,0,.4);transform-origin:left center;animation:sw 4s ease-in-out infinite}
+.tagk::before{content:"";position:absolute;left:8px;top:50%;width:6px;height:6px;border-radius:50%;background:var(--bg);transform:translateY(-50%)}
+.t1{left:-24px;top:24px;transform:rotate(-6deg)}.t2{right:-10px;top:44%;animation-delay:-1.5s;background:var(--chi-l)}.t3{left:10%;bottom:-14px;animation-delay:-3s;background:var(--man-l)}
+@keyframes sw{50%{rotate:3deg}}
+.strip{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 34px;padding:16px;background:var(--ink);color:var(--bg);font-weight:700}
+.strip span::before{content:"●";margin-right:10px;color:var(--man)}.strip span:nth-child(even)::before{color:#A7D07E}
+section{padding:90px 0}
+h2{font:700 clamp(2.2rem,4.8vw,3.8rem)/1.05 Corben;margin:8px 0 0}h2 span{color:var(--man)}
+.k{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;color:var(--chi)}
+/* calculateur */
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px;align-items:center}
+.in label{font-weight:800;display:block}.in .n{font:700 4rem/1 Corben;color:var(--man);margin:6px 0}.in input{width:100%;accent-color:var(--man)}
+.opt{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.opt button{font:700 .95rem "Nunito Sans";padding:10px 16px;border-radius:999px;border:2px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer}
+.opt button[aria-pressed=true]{background:var(--chi);border-color:var(--chi);color:#fff}
+.tray{background:#fff;border-radius:30px;padding:30px;border:2px solid var(--ln)}
+.dots{display:grid;grid-template-columns:repeat(auto-fill,minmax(14px,1fr));gap:5px;margin:14px 0;max-height:150px;overflow:hidden}
+.dots i{aspect-ratio:1;border-radius:50%;background:var(--man)}.dots i:nth-child(3n){background:var(--chi)}.dots i:nth-child(5n){background:var(--kraft)}
+.tray .cb{font-size:2.4rem;line-height:1}.tray p{color:var(--mu);margin:6px 0 18px}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.s .ph{aspect-ratio:4/5;border-radius:24px;overflow:hidden}.s img{width:100%;height:100%;object-fit:cover;transition:transform 1s}.s:hover img{transform:scale(1.05)}
+.s .lb{display:inline-block;margin-top:12px;background:var(--kraft);font:700 .8rem "Nunito Sans";padding:3px 10px;border-radius:4px}
+.s h3{font:700 1.3rem Corben;margin:6px 0 2px}.s p{margin:0;color:var(--mu);font-size:.95rem}
+.qs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+.q{margin:0;padding:30px;border-radius:26px;background:var(--man-l)}.q:nth-child(2){background:var(--chi-l)}.q blockquote{margin:0;font:700 1.35rem/1.3 Corben}.q figcaption{margin-top:10px;color:var(--mu);font-size:.88rem}
+.vis{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.hrs{list-style:none;margin:18px 0 0;padding:0}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--ln)}.hrs li.td{color:var(--man);font-weight:800}
+.st{display:inline-block;margin-top:14px;font-weight:800;padding:6px 14px;border-radius:999px;background:#eee8dd}.st.on{background:var(--chi);color:#fff}
+.box{background:#fff;border-radius:26px;padding:30px;border:2px solid var(--ln);display:grid;gap:8px;align-content:start}.box h3{margin:0;font:700 1.6rem Corben}
+footer{padding:40px 0 26px;text-align:center;border-top:1px solid var(--ln)}footer .cb{font-weight:700;font-size:clamp(1.8rem,5vw,3.2rem)}footer .cb span{color:var(--man)}footer .cb em{font-style:normal;color:var(--chi)}footer p{color:var(--mu);font-size:.85rem}
+@media (max-width:900px){nav ul{display:none}.hero,.calc,.qs,.vis{grid-template-columns:minmax(0,1fr)}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}.t1{left:-6px}.t2{right:-4px}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Mandarine et Ciboulette<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+
+<div class="wrap">
+<nav><a class="logo" href="#"><i>M&amp;C</i><b><span>Mandarine</span> et <em>Ciboulette</em></b></a><ul><li><a href="#cocktail">Cocktail dînatoire</a></li><li><a href="#epicerie">L'épicerie</a></li><li><a href="#heures">Heures</a></li></ul><a class="btn m sm" href="tel:+15147077175">514 707-7175</a></nav>
+<header class="hero">
+ <div><span class="k">Micro-épicerie et traiteur · Iberville</span><h1>Bon, frais, <span class="m">d'ici</span> et <span class="c">fait maison</span>.</h1>
+ <p class="lead">Des plats cuisinés chaque jour, des boîtes à lunch pour vos réunions, des cocktails dînatoires et une belle sélection de produits, bières et vins du Québec.</p>
+ <div class="ctas"><a class="btn m" href="tel:+15147077175">Commander</a><a class="btn o" href="#cocktail">Planifier un cocktail</a></div>
+ <p style="margin-top:18px;font-weight:600">★ 4,9 · 41 avis Google</p></div>
+ <div class="shelf"><div class="ph"><img src="img/1.jpg" alt="Bouchées préparées pour un cocktail dînatoire"></div><span class="tagk t1">Plats du jour</span><span class="tagk t2">Bières d'ici</span><span class="tagk t3">Boîtes à lunch</span></div>
+</header></div>
+<div class="strip"><span>Plats cuisinés</span><span>Boîtes à lunch corporatives</span><span>Cocktails dînatoires</span><span>Bières et vins du Québec</span></div>
+
+<section id="cocktail"><div class="wrap">
+ <div class="rv"><span class="k">Votre événement</span><h2>Combien de <span>bouchées</span> ?</h2></div>
+ <div class="calc">
+  <div class="in rv"><label for="gv">Nombre d'invités</label><div class="n" id="gn"></div><input type="range" id="gv" min="10" max="150" step="5" value="30">
+   <div class="opt" role="group" aria-label="Type de réception"><button data-b="6" aria-pressed="false">Apéro (1 h)</button><button data-b="10" aria-pressed="true">Cocktail (2 h)</button><button data-b="15" aria-pressed="false">Remplace le repas</button></div></div>
+  <div class="tray rv" style="--d:.1s" aria-live="polite"><span class="k">Notre suggestion</span><div class="cb" id="tb"></div><div class="dots" id="dt" aria-hidden="true"></div><p id="tp"></p><a class="btn m" href="tel:+15147077175">Demander un menu</a></div>
+ </div></div></section>
+
+<section id="epicerie" style="padding-top:0"><div class="wrap">
+ <div class="rv"><span class="k">L'épicerie</span><h2>Sur nos <span>tablettes</span>.</h2></div>
+ <div class="svc">
+  <div class="s rv"><div class="ph"><img src="img/2.jpg" alt="" loading="lazy"></div><span class="lb">Chaque jour</span><h3>Plats cuisinés</h3><p>Prêts à réchauffer.</p></div>
+  <div class="s rv" style="--d:.06s"><div class="ph"><img src="img/3.jpg" alt="" loading="lazy"></div><span class="lb">Corporatif</span><h3>Boîtes à lunch</h3><p>Pour vos réunions.</p></div>
+  <div class="s rv" style="--d:.12s"><div class="ph"><img src="img/4.jpg" alt="" loading="lazy"></div><span class="lb">Traiteur</span><h3>Cocktails dînatoires</h3><p>Bouchées pour vos événements.</p></div>
+  <div class="s rv" style="--d:.18s"><div class="ph"><img src="img/5.jpg" alt="" loading="lazy"></div><span class="lb">Local</span><h3>Épicerie fine</h3><p>Produits, bières et vins du Québec.</p></div>
+ </div>
+ <div class="qs"><figure class="q rv"><blockquote>« Boîte à lunch variée et honnêtement délicieuse. »</blockquote><figcaption>Avis Google · 4,9 ★ · 41 avis</figcaption></figure><figure class="q rv" style="--d:.1s"><blockquote>« Super bonne bouffe et aussi vin et bière québécoise. »</blockquote><figcaption>Avis Google</figcaption></figure></div>
+</div></section>
+
+<section id="heures" style="padding-top:0"><div class="wrap vis">
+ <div class="rv"><span class="k">Heures</span><h2>Passez faire <span>votre tour</span>.</h2><div class="st" data-status>Heures</div><ul class="hrs" data-hours></ul></div>
+ <div class="box rv" style="--d:.1s"><span class="k">L'épicerie</span><h3>398 Rue Jean-Talon</h3><p style="margin:0;color:var(--mu)">Saint-Jean-sur-Richelieu, QC J2W 1M8</p><div class="ctas" style="margin-top:12px"><a class="btn m sm" href="tel:+15147077175">514 707-7175</a><a class="btn o sm" href="https://www.google.com/maps?cid=12488680897991208420" target="_blank" rel="noopener">Itinéraire ↗</a></div></div>
+</div></section>
+<footer><div class="wrap"><div class="cb"><span>Mandarine</span> et <em>Ciboulette</em></div><p>© Mandarine et Ciboulette · Saint-Jean-sur-Richelieu · 514 707-7175</p></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"5": [480, 1080], "6": [540, 900], "0": null, "1": [480, 960], "2": [480, 1080], "3": [480, 1080], "4": [480, 1080]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"5": [480, 1080], "6": [540, 900], "0": null, "1": [480, 960], "2": [480, 1080], "3": [480, 1080], "4": [480, 1080]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+const gv=document.getElementById('gv');let per=10;
+function calc(){const n=+gv.value,t=n*per;document.getElementById('gn').textContent=n+' invités';document.getElementById('tb').textContent=t+' bouchées';
+ document.getElementById('dt').innerHTML='<i></i>'.repeat(Math.min(t,300));
+ document.getElementById('tp').textContent='Environ '+per+' bouchées par personne, '+(per>=15?'avec des bouchées plus consistantes pour remplacer le repas.':per<=6?'parfait pour un apéro avant le souper.':'un bon équilibre entre salé et sucré pour deux heures.')}
+gv.oninput=calc;document.querySelectorAll('.opt button').forEach(b=>b.onclick=()=>{per=+b.dataset.b;document.querySelectorAll('.opt button').forEach(x=>x.setAttribute('aria-pressed',x===b));calc()});calc();
+</script>
+
+</body>
+</html>
