@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Restaurant Patachou · Poutine et déjeuners à Trois-Rivières depuis 1971</title>
+<meta name="description" content="Restaurant familial Patachou à Trois-Rivières depuis 1971 : plus de 14 poutines, déjeuners, menu du jour, coin enfants.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--r:#D7261E;--r2:#B51C15;--y:#FFD200;--ink:#141414;--pap:#FFF8E6;--mu:#5d5648;--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--pap);color:var(--ink);font:500 1.03rem/1.6 Nunito,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.bang{font-family:Bangers,Impact,sans-serif;letter-spacing:.03em;font-weight:400}
+.dots{background-image:radial-gradient(rgba(20,20,20,.14) 1.4px,transparent 1.6px);background-size:12px 12px}
+nav{position:sticky;top:0;z-index:30;background:var(--y);border-bottom:4px solid var(--ink)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:10px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo b{font:2rem/1 Bangers;color:var(--r);-webkit-text-stroke:1.5px var(--ink);letter-spacing:.04em}
+.logo small{font-weight:900;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-weight:900}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--r)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:1.25rem/1 Bangers;letter-spacing:.06em;text-decoration:none;padding:13px 22px;border:3px solid var(--ink);border-radius:12px;box-shadow:5px 5px 0 var(--ink);transition:.15s;cursor:pointer;background:var(--r);color:#fff}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}
+.btn.y{background:var(--y);color:var(--ink)}.btn.w{background:#fff;color:var(--ink)}
+/* héros BD */
+.hero{background:var(--r);border-bottom:4px solid var(--ink);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 72% 45%,rgba(255,255,255,.09) 0 8deg,transparent 8deg 16deg)}
+.hgrid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-block:70px 80px}
+.since{display:inline-block;background:var(--ink);color:var(--y);font:1.2rem Bangers;letter-spacing:.08em;padding:6px 14px;transform:rotate(-2deg)}
+h1{margin:16px 0 14px;font:clamp(3.6rem,9.5vw,7.6rem)/.88 Bangers;color:#fff;-webkit-text-stroke:3px var(--ink);text-shadow:6px 6px 0 var(--ink);letter-spacing:.02em}
+h1 em{font-style:normal;color:var(--y)}
+.lead{color:#fff;font-size:1.2rem;font-weight:700;max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;flex-wrap:wrap;gap:14px}
+.panel{background:#fff;border:4px solid var(--ink);box-shadow:10px 10px 0 var(--ink);transform:rotate(2deg);position:relative}
+.panel img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-bottom:4px solid var(--ink)}
+.panel p{margin:0;padding:12px 16px;font-weight:900}
+.pow{position:absolute;top:-34px;right:-22px;width:150px;height:150px;display:grid;place-items:center;text-align:center;font:1.5rem/1 Bangers;color:var(--ink);background:var(--y);clip-path:polygon(50% 0,61% 22%,85% 10%,78% 36%,100% 45%,79% 58%,92% 84%,64% 76%,52% 100%,40% 77%,13% 90%,22% 62%,0 50%,21% 38%,9% 12%,36% 22%);transform:rotate(10deg);animation:pop 2.4s ease-in-out infinite}
+@keyframes pop{50%{transform:rotate(4deg) scale(1.07)}}
+.bulle{display:inline-block;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:10px 16px;font-weight:900;position:relative;margin-bottom:14px}
+.bulle::after{content:"";position:absolute;left:30px;bottom:-14px;border:12px solid transparent;border-top-color:var(--ink);border-bottom:0}
+section{padding:96px 0}
+h2{font:clamp(2.6rem,6vw,4.4rem)/.95 Bangers;letter-spacing:.03em;margin:0 0 10px}
+h2 em{font-style:normal;color:var(--r)}
+.sub{color:var(--mu);max-width:60ch;font-size:1.08rem;margin:0}
+/* outil : qu'est-ce qu'on mange */
+.tool{background:var(--y);border-block:4px solid var(--ink)}
+.tgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}
+.picker{background:#fff;border:4px solid var(--ink);border-radius:18px;box-shadow:8px 8px 0 var(--ink);padding:24px}
+.days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin:10px 0 16px}
+.days button{font:900 .85rem Nunito;border:3px solid var(--ink);border-radius:10px;background:#fff;padding:9px 0;cursor:pointer}
+.days button[aria-pressed=true]{background:var(--r);color:#fff}
+.days button:disabled{opacity:.35;cursor:not-allowed;text-decoration:line-through}
+label.l{font-weight:900;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em}
+input[type=range]{width:100%;accent-color:var(--r);height:30px}
+.clock{font:2.4rem Bangers;letter-spacing:.04em}
+.ans{margin-top:16px;border:3px dashed var(--ink);border-radius:14px;padding:16px 18px;background:var(--pap);min-height:120px}
+.ans b{font:1.9rem/1 Bangers;letter-spacing:.04em;color:var(--r);display:block;margin-bottom:6px}
+.ans p{margin:0;font-weight:700}
+/* cases du menu */
+.cases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:40px}
+.case{background:#fff;border:4px solid var(--ink);box-shadow:7px 7px 0 var(--ink);display:flex;flex-direction:column}
+.case:nth-child(2n){transform:rotate(-1deg)}.case:nth-child(3n){transform:rotate(1deg)}
+.case img{width:100%;aspect-ratio:16/11;object-fit:cover;border-bottom:4px solid var(--ink)}
+.case div{padding:16px 18px 20px}.case h3{font:1.8rem/1 Bangers;letter-spacing:.04em;margin:0 0 6px}.case p{margin:0;color:var(--mu)}
+.big14{display:flex;gap:26px;align-items:center;margin-top:46px;background:var(--ink);color:#fff;border-radius:20px;padding:26px 30px}
+.big14 b{font:6rem/.8 Bangers;color:var(--y)}.big14 p{margin:0;font-size:1.15rem;font-weight:700}
+/* avis */
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:40px}
+.q{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:22px;position:relative;font-weight:700}
+.q::after{content:"";position:absolute;left:36px;bottom:-16px;border:14px solid transparent;border-top-color:var(--ink);border-bottom:0}
+.q b{display:block;font:1.6rem Bangers;letter-spacing:.04em;color:var(--r);margin-bottom:4px}
+.note{display:inline-flex;gap:10px;align-items:center;margin-top:44px;font-weight:900}
+.note span{background:var(--y);border:3px solid var(--ink);border-radius:10px;padding:4px 10px;font:1.4rem Bangers}
+/* contact */
+.contact{background:var(--r);color:#fff;border-top:4px solid var(--ink)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.card{background:#fff;color:var(--ink);border:4px solid var(--ink);border-radius:18px;box-shadow:8px 8px 0 var(--ink);padding:26px}
+.card h3{font:2rem Bangers;letter-spacing:.04em;margin:0 0 10px}
+[data-hours]{list-style:none;margin:0;padding:0}[data-hours] li{display:flex;justify-content:space-between;padding:7px 0;border-bottom:2px dotted #c9c0aa;font-weight:700}
+[data-hours] li.td{color:var(--r);font-weight:900}
+.st{display:inline-flex;align-items:center;gap:8px;font-weight:900;margin-bottom:12px}.st::before{content:"";width:12px;height:12px;border-radius:50%;background:#aaa;border:2px solid var(--ink)}
+[data-open].on .st::before,.st.on::before{background:#2BC24A}
+.contact h2{color:#fff;-webkit-text-stroke:2px var(--ink);text-shadow:4px 4px 0 var(--ink)}
+.contact .lines p{margin:0 0 6px;font-weight:700;font-size:1.1rem}
+footer{background:var(--ink);color:#bdb5a3;padding:28px 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:900px){nav ul{display:none}.hgrid,.tgrid,.cgrid{grid-template-columns:minmax(0,1fr)}.cases,.quotes{grid-template-columns:minmax(0,1fr)}.panel{transform:none;margin:20px 8px 0 0}.pow{width:116px;height:116px;font-size:1.15rem;right:-6px;top:-30px}section{padding:70px 0}.big14{flex-direction:column;align-items:flex-start}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Patachou<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top"><b>PATACHOU</b><small>Restaurant familial<br>depuis 1971</small></a>
+<ul><li><a href="#manger">Quoi manger</a></li><li><a href="#menu">Menu</a></li><li><a href="#avis">Avis</a></li><li><a href="#nous">Nous trouver</a></li></ul>
+<a class="btn y" href="tel:+18193769242">819 376-9242</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="since">Trois-Rivières · depuis 1971</span>
+<h1>La meilleure <em>poutine</em> en ville !</h1>
+<p class="lead">Plus de 14 poutines, plusieurs sauces, les fameux déjeuners Patachou et un menu du jour, dans un resto familial plein de bandes dessinées.</p>
+<div class="ctas"><a class="btn y" href="#manger">On mange quoi ?</a><a class="btn w" href="https://www.google.com/maps/search/?api=1&query=Restaurant+Patachou+5725+Boul+Gene-H.-Kruger%2C+Trois-Rivi%C3%A8res%2C+QC+G9A+4N9" target="_blank" rel="noopener">Itinéraire</a></div></div>
+<div class="panel rv"><div class="pow">14+ poutines !</div><img src="img/1.jpg" alt="Poutine"><p>Fromage en grains frais du jour. Sauce maison.</p></div>
+</div></header>
+
+<section class="tool dots" id="manger"><div class="wrap tgrid">
+<div class="rv"><span class="bulle">Déjeuner ou menu du jour ?</span>
+<h2>Qu'est-ce qu'on mange <em>à cette heure-là ?</em></h2>
+<p class="sub">Choisis le jour et l'heure de ta visite : on te dit ce qui est servi. Pratique pour savoir si tu arrives à temps pour le déjeuner.</p></div>
+<div class="picker rv">
+<label class="l">Le jour</label>
+<div class="days" id="days"></div>
+<label class="l" for="hr">L'heure</label>
+<div class="clock" id="clk">12 h</div>
+<input type="range" id="hr" min="420" max="1230" step="15" value="720" aria-label="Heure de la visite">
+<div class="ans" id="ans" aria-live="polite"></div>
+</div></div></section>
+
+<section id="menu"><div class="wrap">
+<h2 class="rv">Notre spécialité, <em>notre fierté</em></h2>
+<p class="sub rv">Les grands comme les petits trouvent leur bonheur : déjeuners, poutines, paninis, clubs et salades. Le menu complet est affiché au resto.</p>
+<div class="cases">
+<div class="case rv"><img src="img/2.jpg" alt="Déjeuner"><div><h3>Déjeuner Patachou</h3><p>Nos fameux déjeuners, plusieurs variétés disponibles.</p></div></div>
+<div class="case rv" style="--d:.1s"><img src="img/3.jpg" alt="Poutine"><div><h3>Nos poutines</h3><p>Plus de 14 choix et plusieurs sauces. Vous allez en raffoler !</p></div></div>
+<div class="case rv" style="--d:.2s"><img src="img/4.jpg" alt="Panini"><div><h3>Paninis</h3><p>Des choix pour tous les goûts.</p></div></div>
+<div class="case rv"><img src="img/6.jpg" alt="Club sandwich"><div><h3>Club sandwich</h3><p>Assiette avec salade de chou et frites.</p></div></div>
+<div class="case rv" style="--d:.1s"><img src="img/5.jpg" alt="Assiette"><div><h3>Menu du jour</h3><p>Une assiette complète avec potage, dessert et breuvage, du mercredi au vendredi.</p></div></div>
+<div class="case rv" style="--d:.2s"><div style="padding:22px"><h3>Nos salades</h3><p>Poulet, césar, la colorée Patachou et plus.</p><h3 style="margin-top:18px">Pour les familles</h3><p>Coin enfants avec jeux vidéo, service aux tables et permis d'alcool pour les parents. Aussi pour emporter.</p><p style="margin-top:14px"><a class="btn" href="tel:+18193769242">Commander</a></p></div></div>
+</div>
+<div class="big14 rv"><b>14+</b><p>sortes de poutines, avec du fromage en grains frais du jour. Demandez les grosseurs disponibles à votre serveuse !</p></div>
+</div></section>
+
+<section id="avis" class="dots" style="border-top:4px solid var(--ink)"><div class="wrap">
+<h2 class="rv">Ce que les clients <em>en disent</em></h2>
+<div class="quotes">
+<div class="q rv"><b>Meilleure poutine !</b>Service aux tables rapide et courtois. Beau décor avec bandes dessinées. Meilleure poutine de Trois-Rivières !</div>
+<div class="q rv" style="--d:.1s"><b>Poutine mmmm !</b>La sauce est incroyable et le fromage en grains frais du jour. L'endroit est très propre.</div>
+<div class="q rv" style="--d:.2s"><b>WOW !</b>J'adore les bandes dessinées et la nourriture est vraiment bonne.</div>
+</div>
+<p class="note rv"><span>4,5 ★</span> sur Google, selon 747 avis</p>
+</div></section>
+
+<section class="contact" id="nous"><div class="wrap">
+<h2 class="rv">Viens nous voir !</h2>
+<div class="cgrid">
+<div class="card rv" data-open><h3>Heures</h3><div class="st" data-status></div><ul data-hours></ul></div>
+<div class="lines rv"><p>5725 Boul Gene-H.-Kruger</p><p>Trois-Rivières, QC G9A 4N9</p><p><a href="tel:+18193769242">819 376-9242</a> · <a href="mailto:info@patachou.ca">info@patachou.ca</a></p>
+<p style="margin-top:22px;display:flex;gap:14px;flex-wrap:wrap"><a class="btn y" href="https://www.google.com/maps/search/?api=1&query=Restaurant+Patachou+5725+Boul+Gene-H.-Kruger%2C+Trois-Rivi%C3%A8res%2C+QC+G9A+4N9" target="_blank" rel="noopener">Itinéraire</a><a class="btn w" href="tel:+18193769242">Appeler</a></p></div>
+</div></div></section>
+<footer><div class="wrap"><span>© Restaurant Patachou · Trois-Rivières</span><span>Toujours Patachou :)</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"3": [450, 1200], "4": [450, 1200], "5": [450, 1200], "6": [450, 1200], "0": [450, 1200]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"3": [450, 1200], "4": [450, 1200], "5": [450, 1200], "6": [450, 1200], "0": [450, 1200]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const H=L.H,DN=['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'],order=[3,4,5,6,0,1,2];
+const days=document.getElementById('days'),hr=document.getElementById('hr'),clk=document.getElementById('clk'),ans=document.getElementById('ans');
+let day=H[L.today]?L.today:3;
+[1,2,3,4,5,6,0].forEach(k=>{const b=document.createElement('button');b.type='button';b.textContent=DN[k];b.dataset.k=k;if(!H[k])b.disabled=true;b.onclick=()=>{day=k;draw()};days.appendChild(b)});
+if(H[L.today]){const m=Math.min(1230,Math.max(420,Math.round(L.mins/15)*15));hr.value=m}
+hr.oninput=draw;
+function f(m){return Math.floor(m/60)+' h'+(m%60?' '+String(m%60).padStart(2,'0'):'')}
+function draw(){[...days.children].forEach(b=>b.setAttribute('aria-pressed',+b.dataset.k===day));
+ const m=+hr.value;clk.textContent=f(m);const we=day===6||day===0;let t,p;
+ if(m<450||m>=1200){t='Fermé à cette heure-là';p='On est ouverts de 7 h 30 à 20 h, du mercredi au dimanche.'}
+ else if(we&&m<840){t='Déjeuner !';p='Les fins de semaine, le déjeuner est servi de 7 h 30 à 14 h. Coin enfants avec jeux vidéo.'}
+ else if(!we&&m<690){t='Déjeuner !';p='En semaine, le déjeuner est servi de 7 h 30 à 11 h 30.'}
+ else if(!we&&m>=660&&m<1140){t=m<690?'Déjeuner ou menu du jour':'Menu du jour';p='Le menu du jour est servi de 11 h à 19 h, du mercredi au vendredi, avec service aux tables. Ou une poutine, évidemment.'}
+ else{t='Poutines, paninis, clubs…';p='Le menu régulier est servi jusqu\'à la fermeture à 20 h. Aussi pour emporter : 819 376-9242.'}
+ ans.innerHTML='<b>'+t+'</b><p>'+p+'</p>'}
+draw()})();
+</script>
+
+</body>
+</html>

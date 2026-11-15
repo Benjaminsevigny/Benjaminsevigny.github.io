@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Photomania · Photos scolaires et d'événements à Gatineau</title>
+<meta name="description" content="Photomania, entreprise de Gatineau spécialisée en photos scolaires (primaire, secondaire, garderie) et en photos d'événements. Commandez vos photos en ligne avec votre code d'accès.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--sky:#5BB6E6;--sky2:#2F8FC4;--co:#FF7A6B;--sun:#FFD25E;--cr:#FFFBF5;--ink:#22303A;--mu:#5f6d77;--ln:rgba(34,48,58,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cr);color:var(--ink);font:400 1.03rem/1.65 "Nunito Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.fr{font-family:Fredoka,system-ui,sans-serif}
+nav{position:sticky;top:0;z-index:30;background:rgba(255,251,245,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 1.45rem Fredoka;color:var(--sky2)}
+.logo .lens{width:36px;height:36px;border-radius:50%;background:conic-gradient(var(--sky),var(--co),var(--sun),var(--sky));display:grid;place-items:center}
+.logo .lens::after{content:"";width:16px;height:16px;border-radius:50%;background:var(--ink)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:700;font-size:.94rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--co)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 1rem Fredoka;text-decoration:none;padding:13px 22px;border-radius:14px;background:var(--co);color:#fff;border:2px solid var(--co);transition:.2s;cursor:pointer;box-shadow:0 6px 0 #d95a4c}
+.btn:hover{transform:translateY(-2px)}.btn.o{background:#fff;color:var(--ink);border-color:var(--ln);box-shadow:0 6px 0 rgba(34,48,58,.1)}
+.hero{padding:50px 0 90px;position:relative;overflow:hidden}
+.hgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+h1{font:700 clamp(2.8rem,6.6vw,5.2rem)/1 Fredoka;margin:14px 0 18px}
+h1 em{font-style:normal;color:var(--co)}
+.lead{font-size:1.14rem;color:var(--mu);max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.tag{display:inline-flex;gap:8px;align-items:center;background:#fff;border:1.5px solid var(--ln);border-radius:999px;padding:6px 14px;font-weight:700;font-size:.88rem}
+.polas{position:relative;height:460px}
+.pola{position:absolute;background:#fff;padding:12px 12px 44px;box-shadow:0 24px 40px -24px rgba(34,48,58,.5);border-radius:4px}
+.pola img{width:100%;height:100%;object-fit:cover}
+.pola span{position:absolute;left:0;right:0;bottom:12px;text-align:center;font:600 1rem Fredoka;color:var(--mu)}
+.p1{left:2%;top:4%;width:56%;height:62%;transform:rotate(-6deg)}.p2{right:0;top:18%;width:50%;height:56%;transform:rotate(5deg)}.p3{left:22%;bottom:0;width:44%;height:44%;transform:rotate(-1deg)}
+section{padding:90px 0}
+h2{font:700 clamp(2.2rem,5vw,3.6rem)/1.05 Fredoka;margin:0 0 14px}
+h2 em{font-style:normal;color:var(--co)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.05rem}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:36px}
+.stp{background:#fff;border-radius:22px;padding:24px;border:1.5px solid var(--ln);position:relative}
+.stp b{position:absolute;top:-18px;left:22px;width:40px;height:40px;border-radius:12px;background:var(--sky);color:#fff;display:grid;place-items:center;font:700 1.3rem Fredoka}
+.stp:nth-child(2) b{background:var(--co)}.stp:nth-child(3) b{background:var(--sun);color:var(--ink)}
+.stp h3{font:600 1.35rem Fredoka;margin:14px 0 6px}.stp p{margin:0;color:var(--mu)}
+.faq{background:#EAF6FC}
+.fgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:46px;align-items:start}
+.search{width:100%;padding:16px 18px;border-radius:16px;border:2px solid var(--sky);font:600 1.05rem "Nunito Sans";background:#fff;margin:18px 0 12px}
+.search:focus{outline:3px solid rgba(91,182,230,.35)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{border:1.5px solid var(--ln);background:#fff;border-radius:999px;padding:8px 14px;font:700 .9rem "Nunito Sans";cursor:pointer}
+.chips button:hover{border-color:var(--sky)}
+.qa{display:flex;flex-direction:column;gap:10px}
+.qa details{background:#fff;border-radius:16px;border:1.5px solid var(--ln);padding:4px 18px}
+.qa summary{cursor:pointer;font:600 1.08rem Fredoka;padding:12px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.qa summary::after{content:"+";color:var(--co);font-size:1.4rem;line-height:1}
+.qa details[open] summary::after{content:"–"}
+.qa p{margin:0 0 14px;color:var(--mu)}
+.none{color:var(--mu);padding:16px;background:#fff;border-radius:16px}
+.ev{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.ev img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:24px}
+.contact{background:var(--ink);color:#e6edf2}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact h2{color:#fff}
+footer{background:#18232b;color:#90a0ab;padding:24px 0;font-size:.88rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.fgrid,.ev,.cgrid{grid-template-columns:minmax(0,1fr)}.steps{grid-template-columns:minmax(0,1fr);gap:28px}.polas{height:360px}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Photomania<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top"><span class="lens"></span>Photomania</a>
+<ul><li><a href="#commander">Commander</a></li><li><a href="#faq">Questions</a></li><li><a href="#evenements">Événements</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn" href="https://www.photomania.ca/" target="_blank" rel="noopener">Mes photos</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="tag">Gatineau · photos scolaires</span>
+<h1>Le sourire de la <em>rentrée</em>, en souvenir.</h1>
+<p class="lead">Photos scolaires au primaire, au secondaire et à la garderie, et photos d'événements de tous genres. Avec votre code d'accès, vous voyez et commandez les photos de votre enfant en ligne.</p>
+<div class="ctas"><a class="btn" href="https://www.photomania.ca/" target="_blank" rel="noopener">Voir et commander mes photos</a><a class="btn o" href="#faq">J'ai une question</a></div></div>
+<div class="polas rv"><div class="pola p1"><img src="img/1.jpg" alt="Studio photo"><span>Jour de photo</span></div><div class="pola p2"><img src="img/2.jpg" alt="Décor"><span>Choix des décors</span></div><div class="pola p3"><img src="img/3.jpg" alt="Photographe"><span>Souvenir</span></div></div>
+</div></header>
+
+<section id="commander"><div class="wrap">
+<h2 class="rv">Commander, <em>c'est simple</em></h2>
+<div class="steps">
+<div class="stp rv"><b>1</b><h3>Votre code d'accès</h3><p>Il est remis par l'école. Il donne accès aux photos de votre enfant.</p></div>
+<div class="stp rv" style="--d:.1s"><b>2</b><h3>Choisissez</h3><p>Ensembles, décors, fichiers numériques et produits dérivés. Les promotions s'ajoutent en ligne.</p></div>
+<div class="stp rv" style="--d:.2s"><b>3</b><h3>Livraison</h3><p>À l'école, avant Noël pour les commandes faites à temps.</p></div>
+</div></div></section>
+
+<section class="faq" id="faq"><div class="wrap fgrid">
+<div class="rv"><h2>Une <em>question ?</em></h2><p class="sub">Tapez un mot (reprise, date limite, fratrie…) : la réponse apparaît tout de suite.</p>
+<input class="search" id="q" type="search" placeholder="Ex. : date limite" aria-label="Chercher une question">
+<div class="chips" id="chips"><button type="button">reprise</button><button type="button">date limite</button><button type="button">enfants</button><button type="button">promotion</button><button type="button">livraison</button></div></div>
+<div class="qa rv" id="qa" aria-live="polite"></div>
+</div></section>
+
+<section id="evenements"><div class="wrap ev">
+<img class="rv" src="img/4.jpg" alt="Photographe d'événement">
+<div class="rv"><h2>Et vos <em>événements</em></h2><p class="sub">Photomania photographie aussi des événements de tous genres. Écrivez-nous pour en parler.</p>
+<p style="margin-top:22px"><a class="btn" href="mailto:studio@photomania.ca?subject=Photos%20pour%20un%20%C3%A9v%C3%A9nement">Parler de mon événement</a></p></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Nous <em>joindre</em></h2><p style="font:600 1.4rem/1.3 Fredoka;margin:0 0 8px">368 Rue Saint-André<br>Gatineau, QC J8P 4E7</p><p><a href="tel:+18196631400">819 663-1400</a> · <a href="mailto:studio@photomania.ca">studio@photomania.ca</a></p></div>
+<div class="rv"><p style="margin:0 0 16px;color:#b8c6d0">Notre studio n'est pas ouvert au public : les commandes se font en ligne et sont livrées à l'école ou à la maison.</p><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="https://www.photomania.ca/" target="_blank" rel="noopener">Commander en ligne</a><a class="btn o" href="tel:+18196631400">Appeler</a></p></div>
+</div></section>
+<footer><div class="wrap"><span>© Photomania · Gatineau</span><span>Photos scolaires et événements</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const F=[
+['Est-il possible de commander après la date limite ?','Oui, votre code d\'accès est valide une année scolaire supplémentaire. Les frais de livraison et de manutention s\'ajoutent alors à la facture. Allouez 4 à 8 semaines pour la livraison.','date limite retard commander après'],
+['Comment commander après la date limite ?','Nous vous recommandons de faire votre commande sur notre site internet. L\'école n\'accepte plus d\'enveloppes après la date limite.','date limite commander enveloppe'],
+['Puis-je récupérer ma commande à votre bureau ?','Malheureusement, nous ne sommes pas un studio ouvert au public. Il n\'est pas possible de venir chercher votre commande en personne.','livraison bureau récupérer studio'],
+['Puis-je commander les photos de mes enfants en même temps ?','Vous devez passer une commande par code d\'accès.','enfants fratrie code même temps'],
+['La photo de fratrie est-elle gratuite si je commande pour 2 enfants ?','Le rabais pour le 3e enfant (voir le verso de l\'enveloppe) s\'applique aux photos individuelles seulement et n\'est pas offert en ligne.','enfants fratrie rabais gratuit'],
+['Puis-je jumeler les photos de mes deux enfants dans une collection ?','Nos collections sont créées pour la prise de photos d\'un seul enfant. Il n\'est pas possible de jumeler deux codes d\'accès dans une collection.','enfants jumeler collection'],
+['Offrez-vous des reprises au primaire ?','Oui ! Pour 2026-2027, il faut prendre rendez-vous pour le CSSPO, le CSS des Draveurs, le CSSCV et Western Quebec. La reprise est sans frais pour les écoles primaires que nous desservons.','reprise rendez-vous primaire frais'],
+['Quelles sont les promotions en cours ?','Deux promotions sont offertes, en ligne seulement : des items exclusifs à très faible coût (avec un achat au prix régulier) et des produits dérivés à prix réduit selon le montant d\'achat. Il n\'y a pas de limite au nombre de promotions.','promotion rabais prix'],
+['Vais-je recevoir les photos avant les fêtes ?','Oui : avec le code d\'accès remis, vous commandez sur notre site, et les photos sont livrées à l\'école avant Noël.','livraison noël fêtes délai']];
+const q=document.getElementById('q'),qa=document.getElementById('qa'),chips=document.getElementById('chips');
+const norm=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+function draw(){const t=norm(q.value.trim());const r=F.filter(f=>!t||t.split(/\s+/).every(w=>norm(f.join(' ')).includes(w)));
+ qa.innerHTML=r.length?r.map((f,i)=>'<details'+(t&&i===0?' open':'')+'><summary>'+f[0]+'</summary><p>'+f[1]+'</p></details>').join(''):'<div class="none">Pas de réponse pour ça. Écrivez-nous : <a href="mailto:studio@photomania.ca">studio@photomania.ca</a></div>'}
+q.oninput=draw;[...chips.children].forEach(b=>b.onclick=()=>{q.value=b.textContent;draw()});draw()})();
+</script>
+
+</body>
+</html>

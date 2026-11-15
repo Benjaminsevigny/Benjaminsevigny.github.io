@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Esthétique L'Expérience Beauté · Saint-Jérôme</title>
+<meta name="description" content="Esthétique L'Expérience Beauté à Saint-Jérôme : soins du visage Intraceuticals à l'oxygène, microtrolyse et électrolyse, épilation à la cire, manucure, pédicure, lash lift et maquillage. Catherine Desjardins, esthéticienne-électrolyste.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--lv:#8E7CC3;--lv2:#6F5DA6;--mist:#F3F0FA;--pe:#FCE9DF;--ink:#2A2438;--mu:#736c84;--ln:rgba(42,36,56,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--ink);font:300 1.04rem/1.7 Outfit,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}b,strong{font-weight:600}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+nav .btn{white-space:nowrap;padding:11px 18px}nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;font:italic 500 1.3rem "Playfair Display";line-height:1.1}.logo small{display:block;font:400 .7rem Outfit;letter-spacing:.2em;text-transform:uppercase;color:var(--mu);font-style:normal}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:400;font-size:.95rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--lv2)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:500 .95rem Outfit;text-decoration:none;padding:13px 24px;border-radius:999px;background:var(--lv2);color:#fff;border:1.5px solid var(--lv2);transition:.25s;cursor:pointer}
+.btn:hover{background:var(--ink);border-color:var(--ink)}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero{background:linear-gradient(160deg,var(--mist),var(--pe));position:relative;overflow:hidden}
+.hgrid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding-block:60px 90px}
+.bub{position:absolute;border-radius:50%;background:rgba(255,255,255,.55);animation:up linear infinite}
+@keyframes up{from{transform:translateY(120px);opacity:0}20%{opacity:1}to{transform:translateY(-700px);opacity:0}}
+.cat{font-size:.9rem;letter-spacing:.14em;text-transform:uppercase;color:var(--lv2);font-weight:500}
+h1{font:500 clamp(2.8rem,6.6vw,5.4rem)/1.04 "Playfair Display";margin:14px 0 18px}
+h1 i{color:var(--lv2)}
+.lead{font-size:1.12rem;color:var(--mu);max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.oval{width:100%;max-width:420px;aspect-ratio:3/4;object-fit:cover;border-radius:50%;justify-self:center;border:10px solid #fff;box-shadow:0 30px 50px -30px rgba(42,36,56,.5)}
+section{padding:90px 0}
+h2{font:500 clamp(2.2rem,4.8vw,3.6rem)/1.08 "Playfair Display";margin:0 0 14px}
+h2 i{color:var(--lv2)}
+.sub{color:var(--mu);max-width:58ch;margin:0}
+.time{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:center;margin-top:30px}
+.dial{position:relative;max-width:320px;margin:0 auto}
+.dial svg{width:100%;height:auto;transform:rotate(-90deg)}
+.dial .tr{fill:none;stroke:var(--mist);stroke-width:14}.dial .ar{fill:none;stroke:var(--lv);stroke-width:14;stroke-linecap:round;transition:stroke-dasharray .5s}
+.dial .in{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.dial .in b{font:500 3rem/1 "Playfair Display"}.dial .in span{color:var(--mu)}
+.opts{display:grid;gap:10px}
+.opts button{display:flex;justify-content:space-between;align-items:center;gap:12px;text-align:left;font:inherit;color:inherit;background:#fff;border:1.5px solid var(--ln);border-radius:16px;padding:16px 18px;cursor:pointer;transition:.2s}
+.opts button b{font:500 1.3rem "Playfair Display"}.opts button small{display:block;color:var(--mu)}
+.opts button .d{font-weight:600;color:var(--lv2);white-space:nowrap}
+.opts button[aria-pressed=true]{background:var(--mist);border-color:var(--lv)}
+.desc{background:var(--pe);border-radius:18px;padding:18px 20px;margin-top:14px}
+.oth{background:var(--mist)}
+.og{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:36px}
+.o{background:#fff;border-radius:18px;padding:22px}
+.o svg{color:var(--lv2)}.o b{display:block;font:500 1.25rem "Playfair Display";margin:8px 0 2px}.o span{color:var(--mu);font-size:.94rem}
+.me{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.me img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:22px}
+.contact{background:var(--ink);color:#d9d4e6}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:46px}
+.contact h2{color:#fff}.contact h2 i{color:#c9bbf2}
+[data-hours]{list-style:none;margin:0;padding:0}[data-hours] li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+[data-hours] li.td{color:#fff;font-weight:600}
+.st{display:inline-flex;align-items:center;gap:8px;font-weight:500;margin-bottom:12px}.st::before{content:"";width:9px;height:9px;border-radius:50%;background:#777}
+[data-open].on .st::before{background:#9be3b0}
+.tip{display:flex;gap:10px;font-size:.92rem;margin-top:14px;opacity:.85}
+.contact .btn{background:#fff;color:var(--ink);border-color:#fff}.contact .btn.o{background:transparent;color:#fff}
+footer{background:#1d1828;color:#948daa;padding:24px 0;font-size:.86rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.time,.me,.cgrid{grid-template-columns:minmax(0,1fr)}.og{grid-template-columns:repeat(2,minmax(0,1fr))}.oval{max-width:280px}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour L&#x27;Expérience Beauté<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top">L'Expérience Beauté<small>Esthétique · Saint-Jérôme</small></a>
+<ul><li><a href="#soins">Mon soin</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Rendez-vous</a></li></ul>
+<a class="btn" href="tel:+14385034265">Rendez-vous</a></div></nav>
+
+<header class="hero" id="top"><div id="bubs" aria-hidden="true"></div><div class="wrap hgrid">
+<div><span class="cat">Esthéticienne-électrolyste</span>
+<h1>Prenez le temps de vous <i>chouchouter.</i></h1>
+<p class="lead">Un endroit chaleureux où votre bien-être est la priorité. Soins du visage à l'oxygène, microtrolyse et électrolyse, et tout ce qui vous fait du bien.</p>
+<div class="ctas"><a class="btn" href="#soins">Choisir mon soin</a><a class="btn o" href="tel:+14385034265">Appeler</a></div></div>
+<img class="oval rv" src="img/1.jpg" alt="Soin du visage">
+</div></header>
+
+<section id="soins"><div class="wrap">
+<h2 class="rv">Combien de temps <i>pour vous ?</i></h2>
+<p class="sub rv">Nos soins du visage utilisent la technologie d'oxygénation Intraceuticals, une gamme australienne sans parabènes, non testée sur les animaux. Choisissez selon le temps que vous avez.</p>
+<div class="time">
+<div class="dial rv"><svg viewBox="0 0 200 200"><circle class="tr" cx="100" cy="100" r="80"/><circle class="ar" id="ar" cx="100" cy="100" r="80" stroke-dasharray="0 503"/></svg><div class="in"><b id="dur"></b><span id="dn"></span></div></div>
+<div class="rv"><div class="opts" id="opts">
+<button type="button"><span><b>Le Douceur</b><small>Une douceur dans votre journée</small></span><span class="d">1 h 15</span></button>
+<button type="button"><span><b>Le Bonheur</b><small>Offrez-vous un petit bonheur</small></span><span class="d">1 h 30</span></button>
+<button type="button"><span><b>Le Somptueux</b><small>Parce que vous ne méritez que la somptuosité</small></span><span class="d">2 h</span></button>
+<button type="button"><span><b>L'Étudiant</b><small>Le même soin, un prix étudiant</small></span><span class="d">Preuve d'études</span></button>
+</div><div class="desc" id="desc"></div><p style="margin-top:16px"><a class="btn" id="send" href="tel:+14385034265">Réserver ce soin</a></p></div>
+</div></div></section>
+
+<section class="oth" id="services"><div class="wrap">
+<h2 class="rv">Nos autres <i>soins</i></h2>
+<div class="og">
+<div class="o rv"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M6 9l6-6 6 6"/></svg><b>Microtrolyse</b><span>Et électrolyse.</span></div>
+<div class="o rv"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 16c4-6 12-6 16 0"/><path d="M4 16h16"/></svg><b>Épilation</b><span>À la cire.</span></div>
+<div class="o rv"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="3" width="8" height="12" rx="4"/><path d="M12 15v6"/></svg><b>Manucure</b><span>Et pédicure.</span></div>
+<div class="o rv"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12c3-4 15-4 18 0M6 10l-1-3M10 9V6M14 9V6M18 10l1-3"/></svg><b>Lash lift</b><span>Un regard ouvert.</span></div>
+<div class="o rv"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 21l3-9h4l3 9M10 12V5l4-2v9"/></svg><b>Maquillage</b><span>Événementiel, à domicile ou sur place.</span></div>
+<div class="o rv"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg><b>Coola</b><span>Une de nos gammes de produits.</span></div>
+<div class="o rv"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/><path d="M9 15c2 1.5 4 1.5 6 0"/></svg><b>Facials</b><span>Intraceuticals, à l'oxygène.</span></div>
+<div class="o rv"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-5-7-11a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 6-7 11-7 11z"/></svg><b>Chouchoutage</b><span>Votre moment à vous.</span></div>
+</div></div></section>
+
+<section><div class="wrap me">
+<img class="rv" src="img/2.jpg" alt="Catherine Desjardins">
+<div class="rv"><h2>Bonjour, je suis <i>Catherine</i></h2><p class="sub">Esthéticienne-électrolyste et fondatrice, diplômée depuis 2021. On se critique bien trop souvent : que ce soit pour vous débarrasser de ce qui vous dérange ou pour vous chouchouter, il me fera plaisir de vous offrir L'Expérience Beauté.</p></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Au plaisir de vous <i>chouchouter</i></h2><p style="font:500 1.3rem/1.4 'Playfair Display';color:#fff;margin:0 0 8px">905, boul. Grignon, local 103<br>Saint-Jérôme, QC J7Y 4X3</p><p><a href="tel:+14385034265">438 503-4265</a> · <a href="mailto:catherine.katou@hotmail.com">catherine.katou@hotmail.com</a><br><span style="opacity:.75">4,9 ★ sur Google · 57 avis</span></p>
+<p class="tip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex:none;margin-top:3px"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Deuxième étage, entrée du côté droit de l'édifice. Stationnement avec parcomètre, 3 h, sur le boulevard de Martigny.</p>
+<p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px"><a class="btn" href="tel:+14385034265">Appeler</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Esth%C3%A9tique+L%27Exp%C3%A9rience+Beaut%C3%A9+-Microtrolyse%2F%C3%89lectrolyse%2FSoins+personnalis%C3%A9s-+905+Bd+Grignon+local+103%2C+Saint-J%C3%A9r%C3%B4me%2C+QC+J7Y+4X3" target="_blank" rel="noopener">Itinéraire</a></p></div>
+<div class="rv" data-open><div class="st" data-status></div><ul data-hours></ul></div>
+</div></section>
+<footer><div class="wrap"><span>© Esthétique L'Expérience Beauté · Saint-Jérôme</span><span>Catherine Desjardins, esthéticienne-électrolyste</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"1": [540, 1200], "2": [540, 1200], "3": [540, 1200], "4": [540, 1200], "5": [540, 1080], "6": [540, 900]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"1": [540, 1200], "2": [540, 1200], "3": [540, 1200], "4": [540, 1200], "5": [540, 1080], "6": [540, 900]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const S=[[75,'1 h 15','Un soin qui priorise la santé de votre peau, avec la technologie d\'oxygénation.'],[90,'1 h 30','Un soin qui souligne votre bien-être et la santé de votre peau.'],[120,'2 h','Notre soin le plus complet, avec une attention particulière à votre détente.'],[75,'Prix étudiant','Le même soin de qualité, à un prix qui permet aux étudiants de prendre soin d\'eux. Sur présentation d\'une preuve d\'études.']];let k=1;
+const opts=document.getElementById('opts'),ar=document.getElementById('ar');
+[...opts.children].forEach((b,i)=>b.onclick=()=>{k=i;draw()});
+function draw(){[...opts.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===k));const s=S[k];
+ ar.setAttribute('stroke-dasharray',(503*s[0]/120).toFixed(0)+' 503');document.getElementById('dur').textContent=k===3?'Étudiant':s[1];document.getElementById('dn').textContent=opts.children[k].querySelector('b').textContent;document.getElementById('desc').textContent=s[2]}
+draw();
+const bb=document.getElementById('bubs');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)for(let i=0;i<14;i++){const e=document.createElement('i');e.className='bub';const z=8+Math.random()*28;Object.assign(e.style,{width:z+'px',height:z+'px',left:Math.random()*100+'%',bottom:'-40px',animationDuration:8+Math.random()*10+'s',animationDelay:-Math.random()*16+'s'});bb.appendChild(e)}})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Demo · Di Rienzo Grocery & Deli · Famous sandwiches in Ottawa's Little Italy</title>
+<meta name="description" content="Di Rienzo Grocery & Deli, 111 Beech St in Little Italy: Ottawa's famous sandwiches, homemade pasta, meals to go, catering trays and pastries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cr:#F6F0E2;--cr2:#EDE3CC;--gr:#1F5E3A;--gr2:#174A2D;--rd:#C8312B;--ink:#1E1B16;--mu:#6B6253;--ln:rgba(30,27,22,.14);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cr);color:var(--ink);font:400 1.02rem/1.62 "Work Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.serif{font-family:"DM Serif Display",Georgia,serif;font-weight:400}
+.flag{height:6px;background:linear-gradient(90deg,var(--gr) 0 33.3%,#fff 33.3% 66.6%,var(--rd) 66.6%)}
+nav{position:sticky;top:0;z-index:30;background:rgba(246,240,226,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.logo{text-decoration:none;line-height:1}.logo b{font:1.7rem "DM Serif Display";color:var(--gr)}.logo small{display:block;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rd);font-weight:700;margin-top:4px}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:600;font-size:.95rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--rd)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 .98rem "Work Sans";text-decoration:none;padding:13px 22px;border-radius:999px;border:2px solid var(--gr);background:var(--gr);color:#fff;transition:.2s;cursor:pointer}
+.btn:hover{background:var(--gr2);transform:translateY(-2px)}.btn.o{background:transparent;color:var(--gr)}.btn.o:hover{background:var(--gr);color:#fff}
+.btn.r{background:var(--rd);border-color:var(--rd)}
+/* héros */
+.hero{padding:56px 0 80px}
+.hgrid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.kick{display:inline-flex;gap:10px;align-items:center;font-weight:700;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rd)}
+.kick::before{content:"";width:34px;height:2px;background:var(--rd)}
+h1{font:clamp(3rem,7vw,5.8rem)/.95 "DM Serif Display";margin:16px 0 18px;color:var(--gr)}
+h1 em{color:var(--rd)}
+.lead{font-size:1.15rem;color:var(--mu);max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.stats{display:flex;gap:34px;margin-top:36px;flex-wrap:wrap}
+.stats b{display:block;font:2.4rem/1 "DM Serif Display";color:var(--gr)}.stats span{font-size:.85rem;color:var(--mu)}
+.photo{position:relative}
+.photo img{width:100%;aspect-ratio:4/4.6;object-fit:cover;border-radius:220px 220px 18px 18px}
+.tag{position:absolute;left:-26px;bottom:40px;background:var(--rd);color:#fff;border-radius:50%;width:150px;height:150px;display:grid;place-items:center;text-align:center;transform:rotate(-10deg);box-shadow:0 20px 40px -18px rgba(0,0,0,.5)}
+.tag b{font:2.6rem/1 "DM Serif Display"}.tag span{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+/* tableau noir */
+.board{background:#22261F;color:#EDE6D3;padding:96px 0;position:relative}
+.board::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 20%,rgba(255,255,255,.06),transparent 60%)}
+.bgrid{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.board h2{color:#fff}
+h2{font:clamp(2.4rem,5vw,3.8rem)/1 "DM Serif Display";margin:10px 0 14px;color:var(--gr)}
+h2 em{color:var(--rd)}
+.board .kick{color:#E7C66B}.board .kick::before{background:#E7C66B}
+.menu-list{list-style:none;margin:0;padding:0}
+.menu-list li{display:flex;align-items:baseline;gap:10px;padding:14px 0;border-bottom:1px dashed rgba(237,230,211,.25)}
+.menu-list li b{font:1.45rem "DM Serif Display";color:#fff}.menu-list li i{flex:1;border-bottom:2px dotted rgba(237,230,211,.3);transform:translateY(-5px)}
+.menu-list li span{font-weight:600;color:#E7C66B;white-space:nowrap}
+.menu-list li p{flex-basis:100%;margin:2px 0 0;color:#BDB6A3;font-size:.95rem}
+.menu-list li{flex-wrap:wrap}
+/* outil commande */
+.order{padding:100px 0}
+.ogrid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;margin-top:36px}
+.sheet{background:#fff;border-radius:18px;padding:26px;box-shadow:0 30px 60px -40px rgba(30,27,22,.5);border:1px solid var(--ln)}
+.sheet h3{font:1.6rem "DM Serif Display";margin:0 0 4px;color:var(--gr)}
+.sheet .hint{margin:0 0 14px;color:var(--mu);font-size:.92rem}
+.row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 0;border-top:1px solid var(--ln)}
+.row b{font-weight:600}.row small{display:block;color:var(--mu)}
+.step{display:inline-flex;align-items:center;border:1px solid var(--ln);border-radius:999px;overflow:hidden}
+.step button{width:38px;height:38px;border:0;background:var(--cr);font:600 1.2rem "Work Sans";cursor:pointer;color:var(--gr)}
+.step button:hover{background:var(--cr2)}.step output{min-width:34px;text-align:center;font-weight:700}
+.trays{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.trays label{cursor:pointer}.trays input{position:absolute;opacity:0}
+.trays span{display:inline-block;padding:9px 14px;border-radius:999px;border:1.5px solid var(--ln);font-weight:600;font-size:.92rem;transition:.15s}
+.trays input:checked+span{background:var(--rd);border-color:var(--rd);color:#fff}
+.trays input:focus-visible+span{outline:2px solid var(--gr);outline-offset:2px}
+.recap{background:var(--gr);color:#fff;border-radius:18px;padding:26px;position:sticky;top:90px;align-self:start}
+.recap h3{font:1.6rem "DM Serif Display";margin:0 0 12px}
+.recap ul{list-style:none;margin:0 0 16px;padding:0;min-height:70px}.recap li{padding:6px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.recap .empty{color:rgba(255,255,255,.65)}
+.recap label{display:block;font-size:.85rem;margin:10px 0 6px;color:rgba(255,255,255,.8)}
+.recap select{width:100%;padding:11px;border-radius:10px;border:0;font:500 1rem "Work Sans"}
+.recap .btn{background:#fff;color:var(--gr);border-color:#fff;margin-top:14px;width:100%;justify-content:center}
+.recap .btn.o{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+/* sucré */
+.sweet{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px;padding-bottom:100px}
+.sw{border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--ln)}
+.sw img{width:100%;aspect-ratio:4/3;object-fit:cover}.sw div{padding:18px 20px}
+.sw h3{font:1.45rem "DM Serif Display";margin:0 0 4px;color:var(--gr)}.sw p{margin:0;color:var(--mu)}
+/* visite */
+.visit{background:var(--cr2);padding:96px 0}
+.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:46px}
+[data-hours]{list-style:none;margin:0;padding:0}[data-hours] li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln)}
+[data-hours] li.td{font-weight:700;color:var(--rd)}
+.st{display:inline-flex;align-items:center;gap:8px;font-weight:600;margin-bottom:14px}.st::before{content:"";width:10px;height:10px;border-radius:50%;background:#aaa}
+[data-open].on .st::before{background:#27A04F;box-shadow:0 0 0 4px rgba(39,160,79,.2)}
+.addr{font:1.8rem/1.2 "DM Serif Display";color:var(--gr);margin:0 0 10px}
+footer{background:var(--gr2);color:#cfe0d4;padding:26px 0;font-size:.9rem}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:900px){nav ul{display:none}.hgrid,.bgrid,.ogrid,.vgrid{grid-template-columns:minmax(0,1fr)}.sweet{grid-template-columns:minmax(0,1fr)}.tag{left:auto;right:10px;bottom:-20px;width:120px;height:120px}.tag b{font-size:2rem}.recap{position:static}.row{grid-template-columns:minmax(0,1fr)}.row>div:last-child{justify-content:flex-start!important}.photo{margin-bottom:20px}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DEMO</b>Example made for Di Rienzo&#x27;s Grocery<span class="long"> · not the business's official website</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<div class="flag"></div>
+<nav><div class="wrap"><a class="logo" href="#top"><b>Di Rienzo</b><small>Grocery &amp; Deli</small></a>
+<ul><li><a href="#menu">Menu</a></li><li><a href="#order">Meals &amp; catering</a></li><li><a href="#sweet">Pastries</a></li><li><a href="#visit">Visit</a></li></ul>
+<a class="btn" href="tel:+16137294037">(613) 729-4037</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="kick">Little Italy · Ottawa</span>
+<h1>From our kitchen <em>to yours.</em></h1>
+<p class="lead">Home of the famous Di Rienzo sandwiches, homemade pasta from old-world recipes, deli meats, sausages and cheeses on Beech Street.</p>
+<div class="ctas"><a class="btn r" href="#order">Plan an order</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Di+Rienzo%27s+Grocery+111+Beech+St%2C+Ottawa%2C+ON+K1S+4P1" target="_blank" rel="noopener">Get directions</a></div>
+<div class="stats"><div><b>4.8★</b><span>2,493 Google reviews</span></div><div><b>18</b><span>classic sandwiches</span></div><div><b>$10</b><span>each, tax included</span></div></div></div>
+<div class="photo rv"><img src="img/1.jpg" alt="Italian sandwich"><div class="tag"><div><b>$10</b><br><span>Classic sandwich<br>tax in</span></div></div></div>
+</div></header>
+
+<section class="board" id="menu"><div class="wrap bgrid">
+<div class="rv"><span class="kick">It only takes one</span><h2>Make it a <em style="color:#E7C66B">Di Rienzo</em> day.</h2>
+<p style="color:#BDB6A3;max-width:42ch">Sandwiches and pasta made with the freshest ingredients and recipes handed down through generations. Ask at the counter for today's specials.</p>
+<img src="img/2.jpg" alt="Sandwich" style="border-radius:14px;margin-top:26px;aspect-ratio:16/10;object-fit:cover;width:100%"></div>
+<ul class="menu-list rv">
+<li><b>Classic sandwiches</b><i></i><span>$10 tax in</span><p>Pick from one of our 18 classics.</p></li>
+<li><b>Custom sandwiches</b><i></i><span>Your way</span><p>Feel like a little something different? Pick one of our custom sandwiches.</p></li>
+<li><b>Daily sandwich special</b><i></i><span>Today</span><p>A little something special, changing every day.</p></li>
+<li><b>Daily pasta special</b><i></i><span>Homemade</span><p>Fresh homemade pasta, made from old-world recipes.</p></li>
+<li><b>Deli counter</b><i></i><span>By weight</span><p>Deli meats, sausages and cheeses.</p></li>
+</ul></div></section>
+
+<section class="order" id="order"><div class="wrap">
+<span class="kick rv">Bring home dinner tonight</span>
+<h2 class="rv">Plan your <em>meals &amp; trays</em></h2>
+<p class="rv" style="color:var(--mu);max-width:60ch;margin:0">Choose your meals to go and catering trays, then send the list to the deli by email or call to confirm. Put your order in for the weekend!</p>
+<div class="ogrid">
+<div class="sheet rv">
+<h3>Meals to go</h3><p class="hint">Homemade meals for one or a family of four.</p>
+<div id="meals"></div>
+<h3 style="margin-top:26px">Catering trays</h3><p class="hint">Same quality ingredients you find in the store.</p>
+<div class="trays" id="trays"></div>
+</div>
+<aside class="recap rv"><h3>Your list</h3><ul id="list"><li class="empty">Nothing yet. Add a meal or a tray.</li></ul>
+<label for="when">For when?</label><select id="when"><option>Today</option><option>Tomorrow</option><option>This weekend</option><option>An event (date in the email)</option></select>
+<a class="btn" id="send" href="mailto:dirienzodeli@gmail.com">Email this list to the deli</a><a class="btn o" href="tel:+16137294037">Or call (613) 729-4037</a></aside>
+</div></div></section>
+
+<div class="wrap" id="sweet"><span class="kick rv">Feel like something sweet?</span><h2 class="rv">Cannoli, pastries <em>&amp; pizza slabs</em></h2></div>
+<div class="wrap sweet">
+<div class="sw rv"><img src="img/4.jpg" alt="Italian deli"><div><h3>Homemade cannoli</h3><p>Why not try a delicious homemade cannoli?</p></div></div>
+<div class="sw rv" style="--d:.1s"><img src="img/5.jpg" alt="Pizza slab"><div><h3>Italian pizza slabs</h3><p>Authentic, delivered right from Montreal.</p></div></div>
+<div class="sw rv" style="--d:.2s"><img src="img/6.jpg" alt="Pastries"><div><h3>Pastries</h3><p>Order ahead from our pastry menu.</p></div></div>
+</div>
+
+<section class="visit" id="visit"><div class="wrap vgrid">
+<div class="rv"><span class="kick">We're in Little Italy</span><p class="addr" style="margin-top:14px">111 Beech St<br>Ottawa, ON K1S 4P1</p>
+<p><a href="tel:+16137294037">(613) 729-4037</a><br><a href="mailto:dirienzodeli@gmail.com">dirienzodeli@gmail.com</a></p>
+<p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Di+Rienzo%27s+Grocery+111+Beech+St%2C+Ottawa%2C+ON+K1S+4P1" target="_blank" rel="noopener">Get directions</a><a class="btn o" href="tel:+16137294037">Call</a></p></div>
+<div class="rv" data-open><h2 style="font-size:2rem;margin-top:0">Hours</h2><div class="st" data-status></div><ul data-hours></ul></div>
+</div></section>
+<footer><div class="wrap"><span>© Di Rienzo Grocery &amp; Deli · Ottawa</span><span>From our kitchen to yours</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"1": [510, 1140], "2": [510, 1140], "3": [510, 1140], "4": [510, 1140], "5": [510, 1140], "6": [600, 1140], "0": [600, 1020]}, "en") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"1": [510, 1140], "2": [510, 1140], "3": [510, 1140], "4": [510, 1140], "5": [510, 1140], "6": [600, 1140], "0": [600, 1020]},EN="en"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const M=['Roast beef with roasted potatoes, vegetables and sauce','Chicken parmesan with spaghetti','Eggplant parmesan with spaghetti','Roast pork with roasted potatoes, vegetables and gravy'];
+const T=['Meat & cheese','Vegetables','Fresh cut fruit','Lasagna','Tortellini','Penne','Dessert'];
+const q=M.map(()=>({one:0,fam:0})),sel=new Set();
+const meals=document.getElementById('meals'),trays=document.getElementById('trays'),list=document.getElementById('list'),send=document.getElementById('send'),when=document.getElementById('when');
+M.forEach((m,i)=>{const r=document.createElement('div');r.className='row';
+ r.innerHTML='<div><b>'+m+'</b><small>For one · Family of four</small></div><div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end">'+['one','fam'].map(k=>'<span class="step" title="'+(k==='one'?'For one':'Family of four')+'"><button type="button" data-i="'+i+'" data-k="'+k+'" data-v="-1" aria-label="Less">−</button><output id="o'+i+k+'">0</output><button type="button" data-i="'+i+'" data-k="'+k+'" data-v="1" aria-label="More">+</button></span>').join('')+'</div>';meals.appendChild(r)});
+meals.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const o=q[b.dataset.i];o[b.dataset.k]=Math.max(0,Math.min(20,o[b.dataset.k]+ +b.dataset.v));document.getElementById('o'+b.dataset.i+b.dataset.k).textContent=o[b.dataset.k];draw()});
+T.forEach(t=>{const l=document.createElement('label');l.innerHTML='<input type="checkbox" value="'+t+'"><span>'+t+'</span>';trays.appendChild(l)});
+trays.addEventListener('change',e=>{e.target.checked?sel.add(e.target.value):sel.delete(e.target.value);draw()});when.onchange=draw;
+function draw(){const L=[];q.forEach((o,i)=>{if(o.one)L.push(o.one+' × '+M[i]+' (for one)');if(o.fam)L.push(o.fam+' × '+M[i]+' (family of four)')});sel.forEach(t=>L.push('Catering tray: '+t));
+ list.innerHTML=L.length?L.map(x=>'<li>'+x+'</li>').join(''):'<li class="empty">Nothing yet. Add a meal or a tray.</li>';
+ send.href='mailto:dirienzodeli@gmail.com?subject='+encodeURIComponent('Order for '+when.value)+'&body='+encodeURIComponent('Hi Di Rienzo,\n\nI would like to order ('+when.value+'):\n- '+(L.join('\n- ')||'...')+'\n\nName:\nPhone:\n\nThank you!')}
+draw()})();
+</script>
+
+</body>
+</html>

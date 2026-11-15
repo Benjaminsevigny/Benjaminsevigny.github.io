@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · En passant... Comptoir santé · Mets congelés santé à Saint-Jean-sur-Richelieu</title>
+<meta name="description" content="En passant... Comptoir santé, boulevard Saint-Luc à Saint-Jean-sur-Richelieu : mets congelés complets, sains et savoureux, de la soupe au dessert. Un repas pour toute la famille en 30 minutes. Menu des fêtes 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--gr:#4F8A3C;--gr2:#3C6C2D;--tom:#E2573B;--cr:#FBF7EE;--mint:#E6F1DD;--ink:#22301C;--mu:#64705d;--ln:rgba(34,48,28,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cr);color:var(--ink);font:400 1.03rem/1.64 "Nunito Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.fr{font-family:Fraunces,Georgia,serif}
+.fest{background:var(--tom);color:#fff;text-align:center;padding:9px 16px;font-weight:800;font-size:.92rem}
+nav{position:sticky;top:0;z-index:30;background:rgba(251,247,238,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;font:800 1.35rem/1 Fraunces;color:var(--gr2)}.logo small{display:block;font:600 .74rem "Nunito Sans";color:var(--mu);margin-top:3px}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:800;font-size:.94rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--gr)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:800 .95rem "Nunito Sans";text-decoration:none;padding:13px 22px;border-radius:14px;background:var(--gr);color:#fff;border:2px solid var(--gr);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--gr2);transform:translateY(-2px)}.btn.t{background:var(--tom);border-color:var(--tom)}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero{padding:50px 0 80px}
+.hgrid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
+.timer{display:inline-flex;align-items:center;gap:10px;background:var(--mint);border-radius:999px;padding:6px 14px 6px 6px;font-weight:800}
+.timer i{width:34px;height:34px;border-radius:50%;background:conic-gradient(var(--gr) 0 180deg,#fff 0);border:3px solid #fff;animation:tm 4s linear infinite}
+@keyframes tm{to{transform:rotate(360deg)}}
+h1{font:800 clamp(2.8rem,6.6vw,5.4rem)/1 Fraunces;margin:16px 0 18px;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--gr)}
+.lead{font-size:1.12rem;color:var(--mu);max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.tray{position:relative}.tray img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:30px}
+.tray span{position:absolute;right:-12px;bottom:24px;background:#fff;border-radius:16px;padding:12px 16px;font-weight:800;box-shadow:0 16px 30px -18px rgba(0,0,0,.4)}
+.tray span b{display:block;font:800 1.8rem Fraunces;color:var(--tom)}
+section{padding:90px 0}
+h2{font:800 clamp(2.2rem,4.8vw,3.6rem)/1.04 Fraunces;margin:0 0 14px;letter-spacing:-.02em}
+h2 em{font-style:normal;color:var(--gr)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.05rem}
+.week{background:#fff;border-block:1px solid var(--ln)}
+.wgrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;align-items:start}
+.menu{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.menu button{border:1.5px solid var(--ln);background:var(--cr);border-radius:12px;padding:10px 14px;font:600 .93rem "Nunito Sans";cursor:pointer;text-align:left}
+.menu button:hover{border-color:var(--gr)}
+.plan{background:var(--mint);border-radius:24px;padding:24px}
+.day{display:grid;grid-template-columns:90px minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px dashed rgba(34,48,28,.18)}
+.day b{font:800 1rem Fraunces}.day span{color:var(--mu)}.day span.f{color:var(--ink);font-weight:600}
+.day button{border:0;background:transparent;color:var(--tom);font-weight:800;cursor:pointer;font-size:1.1rem}
+.cnt{font-weight:800;margin:12px 0 14px}
+.contact{background:var(--gr2);color:#e9f2e3}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:46px}
+.contact h2{color:#fff}.contact h2 em{color:#c9e6b5}
+[data-hours]{list-style:none;margin:0;padding:0}[data-hours] li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+[data-hours] li.td{color:#c9e6b5;font-weight:800}
+.st{display:inline-flex;align-items:center;gap:8px;font-weight:800;margin-bottom:12px}.st::before{content:"";width:10px;height:10px;border-radius:50%;background:#aaa}
+[data-open].on .st::before{background:#c9e6b5}
+footer{background:#2b4a21;color:#b3c7a8;padding:24px 0;font-size:.88rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.wgrid,.cgrid{grid-template-columns:minmax(0,1fr)}.tray span{right:8px}.day{grid-template-columns:70px minmax(0,1fr) auto}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour En Passant<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<div class="fest">Menu des fêtes 2026 : les réservations sont ouvertes !</div>
+<nav><div class="wrap"><a class="logo" href="#top">En passant...<small>Comptoir santé</small></a>
+<ul><li><a href="#semaine">Ma semaine</a></li><li><a href="#contact">Heures</a></li></ul>
+<a class="btn" href="tel:+14503491750">450 349-1750</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="timer"><i aria-hidden="true"></i>Prêt en 30 minutes</span>
+<h1>Bien manger, <em>sans la vaisselle.</em></h1>
+<p class="lead">De la soupe au dessert, un vaste choix de mets congelés complets, sains et savoureux. En 30 minutes, toute la famille déguste un repas complet, et vous êtes libéré de la corvée de vaisselle.</p>
+<div class="ctas"><a class="btn" href="#semaine">Planifier ma semaine</a><a class="btn t" href="tel:+14503491750">Réserver le menu des fêtes</a></div></div>
+<div class="tray rv"><img src="img/1.jpg" alt="Repas santé"><span><b>30 min</b>et c'est servi</span></div>
+</div></header>
+
+<section class="week" id="semaine"><div class="wrap wgrid">
+<div class="rv"><h2>Ma semaine, <em>réglée</em></h2><p class="sub">Touchez les plats offerts en ce moment en boutique : ils s'ajoutent à votre semaine. Apportez votre liste au comptoir, ou envoyez-la-nous.</p>
+<div class="menu" id="menu"></div></div>
+<div class="plan rv"><div id="days"></div><p class="cnt" id="cnt"></p><a class="btn" id="send" href="mailto:sophie.tougas@enpassant.ca">Envoyer ma liste</a></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Passez <em>en passant</em></h2><p style="font:800 1.3rem/1.35 Fraunces;margin:0 0 8px">378 Bd Saint-Luc<br>Saint-Jean-sur-Richelieu, QC J2W 2A3</p><p><a href="tel:+14503491750">450 349-1750</a> · <a href="mailto:sophie.tougas@enpassant.ca">sophie.tougas@enpassant.ca</a><br><span style="opacity:.8">4,7 ★ sur Google · 56 avis</span></p>
+<p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px"><a class="btn t" href="tel:+14503491750">Appeler</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=En+Passant+Comptoir+Sant%C3%A9+378+Bd+Saint-Luc%2C+Saint-Jean-sur-Richelieu%2C+QC+J2W+2A3" target="_blank" rel="noopener">Itinéraire</a></p></div>
+<div class="rv" data-open><div class="st" data-status></div><ul data-hours></ul></div>
+</div></section>
+<footer><div class="wrap"><span>© En passant... Comptoir santé · Saint-Jean-sur-Richelieu</span><span>Cuisine saine et savoureuse</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"2": [600, 1140], "3": [600, 1140], "4": [600, 1140], "5": [600, 1140], "6": [600, 1020], "0": [600, 1020]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"2": [600, 1140], "3": [600, 1140], "4": [600, 1140], "5": [600, 1140], "6": [600, 1020], "0": [600, 1020]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const M=['Burrito saucisse et champignon','Soupe légumes et orge','Soupe poulet et nouilles','Soupe-repas mexicaine','Kouftés de veau','Salade tiède de quinoa et tofu','Spaghetti, sauce à la viande','Rotolos portobello, sauce ricotta et poivrons','Rigatonis aux saucisses et pesto','Poulet safran et orange','Gâteau carotte et poire'];
+const D=['Lundi','Mardi','Mercredi','Jeudi','Vendredi'],plan=Array(5).fill(null);
+const menu=document.getElementById('menu'),days=document.getElementById('days'),cnt=document.getElementById('cnt'),send=document.getElementById('send');
+M.forEach(m=>{const b=document.createElement('button');b.type='button';b.textContent=m;b.onclick=()=>{const i=plan.indexOf(null);if(i>=0){plan[i]=m;draw()}};menu.appendChild(b)});
+days.addEventListener('click',e=>{const b=e.target.closest('button');if(b){plan[+b.dataset.i]=null;draw()}});
+function draw(){days.innerHTML=D.map((d,i)=>'<div class="day"><b>'+d+'</b>'+(plan[i]?'<span class="f">'+plan[i]+'</span><button type="button" data-i="'+i+'" aria-label="Retirer">×</button>':'<span>Choisissez un plat</span><span></span>')+'</div>').join('');
+ const n=plan.filter(Boolean).length;cnt.textContent=n?n+' repas sur 5. Plus de vaisselle les soirs de semaine !':'Votre semaine est vide.';
+ send.href='mailto:sophie.tougas@enpassant.ca?subject='+encodeURIComponent('Ma liste de repas')+'&body='+encodeURIComponent('Bonjour,\n\nJ\'aimerais :\n'+D.map((d,i)=>'- '+d+' : '+(plan[i]||'...')).join('\n')+'\n\nNom :\nTéléphone :\n\nMerci !')}
+draw()})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Centre de Copie Papillon · Impression sur le Plateau Mont-Royal</title>
+<meta name="description" content="Centre de Copie Papillon, avenue Papineau sur le Plateau Mont-Royal depuis 1994 : produits et services d'impression pour entreprises et particuliers. Envoi de fichiers en ligne.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--c:#00A3E0;--m:#E6007E;--y:#FFE500;--k:#1A1A1A;--pa:#FFFFFF;--gy:#F4F4F2;--mu:#606060;--ln:rgba(26,26,26,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--pa);color:var(--k);font:400 1.02rem/1.62 Inter,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.cmyk{height:6px;background:linear-gradient(90deg,var(--c) 0 25%,var(--m) 25% 50%,var(--y) 50% 75%,var(--k) 75%)}
+nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 1.25rem/1 Fredoka}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500;font-size:.95rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--m)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 .95rem Inter;text-decoration:none;padding:13px 22px;border-radius:999px;background:var(--k);color:#fff;border:2px solid var(--k);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--m);border-color:var(--m);transform:translateY(-2px)}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero{padding:56px 0 80px;position:relative;overflow:hidden}
+.hgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.since{font:500 1rem Fredoka;color:var(--m)}
+h1{font:700 clamp(2.8rem,7vw,5.8rem)/.98 Fredoka;margin:10px 0 18px}
+h1 .c{color:var(--c)}h1 .m{color:var(--m)}h1 .y{color:#d6b800}
+.lead{font-size:1.12rem;color:var(--mu);max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.fly{position:relative;height:380px}
+.fly svg{position:absolute}
+.w1{left:10%;top:10%;width:46%;animation:fl 6s ease-in-out infinite}.w2{right:4%;top:44%;width:34%;animation:fl 5s ease-in-out -2s infinite}.w3{left:30%;bottom:0;width:24%;animation:fl 7s ease-in-out -4s infinite}
+@keyframes fl{50%{transform:translate(8px,-14px) rotate(4deg)}}
+section{padding:90px 0}
+h2{font:700 clamp(2.2rem,5vw,3.8rem)/1 Fredoka;margin:0 0 14px}
+h2 span{color:var(--m)}
+.sub{color:var(--mu);max-width:58ch;margin:0}
+.send{background:var(--gy)}
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:start;margin-top:34px}
+.chk{display:grid;gap:10px}
+.chk label{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:16px;padding:16px;cursor:pointer;border:2px solid transparent}
+.chk input{width:22px;height:22px;accent-color:var(--m);flex:none;margin-top:2px}
+.chk label:has(input:checked){border-color:var(--m)}
+.chk b{display:block}.chk small{color:var(--mu)}
+.meter{background:#fff;border-radius:20px;padding:26px;position:sticky;top:90px}
+.bar{height:16px;border-radius:999px;background:var(--gy);overflow:hidden;margin:12px 0 8px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--c),var(--m),var(--y));transition:width .4s}
+.meter .p{font:700 2.6rem/1 Fredoka}
+.meter textarea{width:100%;min-height:76px;border:2px solid var(--ln);border-radius:12px;padding:12px;font:500 1rem Inter;margin:14px 0}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.ab img{width:100%;aspect-ratio:4/3.2;object-fit:cover;border-radius:20px}
+.duo{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}.duo span{background:var(--gy);border-radius:999px;padding:8px 16px;font-weight:600}
+.contact{background:var(--k);color:#ddd}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:46px}
+.contact h2{color:#fff}.contact h2 span{color:var(--y)}
+[data-hours]{list-style:none;margin:0;padding:0}[data-hours] li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+[data-hours] li.td{color:var(--y);font-weight:600}
+.st{display:inline-flex;align-items:center;gap:8px;font-weight:600;margin-bottom:12px}.st::before{content:"";width:10px;height:10px;border-radius:50%;background:#777}
+[data-open].on .st::before{background:#6be38f}
+.contact .btn{background:#fff;color:var(--k);border-color:#fff}.contact .btn.o{background:transparent;color:#fff}
+footer{background:#000;color:#888;padding:24px 0;font-size:.86rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.sg,.ab,.cgrid{grid-template-columns:minmax(0,1fr)}.fly{height:240px}.meter{position:static}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Copie Papillon<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<div class="cmyk" aria-hidden="true"></div>
+<nav><div class="wrap"><a class="logo" href="#top"><svg width="30" height="24" viewBox="0 0 30 24" aria-hidden="true"><path d="M15 12C10 0 0 2 2 10s9 4 13 2z" fill="#00A3E0"/><path d="M15 12C20 0 30 2 28 10s-9 4-13 2z" fill="#E6007E"/><path d="M15 12c-4 2-9 4-8 9s7 1 8-9z" fill="#FFE500"/><path d="M15 12c4 2 9 4 8 9s-7 1-8-9z" fill="#1A1A1A"/></svg>Copie Papillon</a>
+<ul><li><a href="#envoi">Envoyer un fichier</a></li><li><a href="#apropos">À propos</a></li><li><a href="#contact">Heures</a></li></ul>
+<a class="btn" href="tel:+15145261177">514 526-1177</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="since">Sur le Plateau depuis 1994</span>
+<h1>Imprimez <span class="c">vos</span> <span class="m">idées</span> <span class="y">en couleur.</span></h1>
+<p class="lead">Une grande gamme de produits et services d'impression, pour les entreprises et les particuliers. Avenue Papineau, coin Marie-Anne.</p>
+<div class="ctas"><a class="btn" href="#envoi">Préparer mon fichier</a><a class="btn o" href="tel:+15145261177">Appeler</a></div></div>
+<div class="fly rv" aria-hidden="true">
+<svg class="w1" viewBox="0 0 30 24"><path d="M15 12C10 0 0 2 2 10s9 4 13 2z" fill="#00A3E0"/><path d="M15 12C20 0 30 2 28 10s-9 4-13 2z" fill="#E6007E"/><path d="M15 12c-4 2-9 4-8 9s7 1 8-9z" fill="#FFE500"/><path d="M15 12c4 2 9 4 8 9s-7 1-8-9z" fill="#1A1A1A"/></svg>
+<svg class="w2" viewBox="0 0 30 24"><path d="M15 12C10 0 0 2 2 10s9 4 13 2z" fill="#E6007E"/><path d="M15 12C20 0 30 2 28 10s-9 4-13 2z" fill="#FFE500"/><path d="M15 12c-4 2-9 4-8 9s7 1 8-9z" fill="#00A3E0"/><path d="M15 12c4 2 9 4 8 9s-7 1-8-9z" fill="#00A3E0"/></svg>
+<svg class="w3" viewBox="0 0 30 24"><path d="M15 12C10 0 0 2 2 10s9 4 13 2z" fill="#FFE500"/><path d="M15 12C20 0 30 2 28 10s-9 4-13 2z" fill="#00A3E0"/><path d="M15 12c-4 2-9 4-8 9s7 1 8-9z" fill="#E6007E"/><path d="M15 12c4 2 9 4 8 9s-7 1-8-9z" fill="#E6007E"/></svg>
+</div>
+</div></header>
+
+<section class="send" id="envoi"><div class="wrap">
+<h2 class="rv">Votre fichier est-il <span>prêt&nbsp;?</span></h2>
+<p class="sub rv">Cochez ce qui est fait : plus votre fichier est prêt, plus votre impression va vite. Ensuite, envoyez-le-nous.</p>
+<div class="sg">
+<div class="chk rv" id="chk">
+<label><input type="checkbox"><span><b>En PDF</b><small>Le format le plus sûr pour que tout reste en place.</small></span></label>
+<label><input type="checkbox"><span><b>Les polices sont incluses</b><small>Ou converties en contours.</small></span></label>
+<label><input type="checkbox"><span><b>Images en haute résolution</b><small>Environ 300 ppp à la taille d'impression.</small></span></label>
+<label><input type="checkbox"><span><b>Fond perdu</b><small>Si la couleur va jusqu'au bord, ajoutez-en un peu au-delà de la coupe.</small></span></label>
+<label><input type="checkbox"><span><b>Relu et sans fautes</b><small>Un dernier coup d'œil avant d'imprimer.</small></span></label>
+</div>
+<div class="meter rv" aria-live="polite"><span style="font-weight:600">Votre fichier est prêt à</span><div class="p" id="pc">0 %</div><div class="bar"><i id="br" style="width:0"></i></div><span id="pm" style="color:var(--mu)"></span>
+<textarea id="tx" placeholder="Quantité, format, papier, date voulue" aria-label="Détails de l'impression"></textarea>
+<a class="btn" id="send" href="mailto:copiepapillon@videotron.ca">Envoyer mon fichier</a></div>
+</div></div></section>
+
+<section id="apropos"><div class="wrap ab">
+<img class="rv" src="img/1.jpg" alt="Impression">
+<div class="rv"><h2>Les Papillon, <span>à votre service</span></h2><p class="sub">Établi au cœur du Plateau Mont-Royal depuis 1994, le Centre de Copie Papillon offre plusieurs produits et services d'impression, avec plus de 20 ans dans l'industrie.</p>
+<div class="duo"><span>Benoît Papillon, propriétaire</span><span>Stéphane Papillon, directeur</span></div></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Coin <span>Marie-Anne</span></h2><p style="font:700 1.4rem/1.3 Fredoka;color:#fff;margin:0 0 8px">4360 Av. Papineau<br>Montréal, QC H2H 1T5</p><p><a href="tel:+15145261177">514 526-1177</a> · <a href="mailto:copiepapillon@videotron.ca">copiepapillon@videotron.ca</a><br><span style="opacity:.75">4,6 ★ sur Google · 209 avis</span></p>
+<p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px"><a class="btn" href="tel:+15145261177">Appeler</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Centre+De+Copie+Papillon+4360+Av.+Papineau%2C+Montr%C3%A9al%2C+QC+H2H+1T5" target="_blank" rel="noopener">Itinéraire</a></p></div>
+<div class="rv" data-open><div class="st" data-status></div><ul data-hours></ul></div>
+</div></section>
+<footer><div class="wrap"><span>© Centre de Copie Papillon · Montréal</span><span>Plateau Mont-Royal depuis 1994</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"1": [600, 1050], "2": [600, 1050], "3": [600, 1050], "4": [600, 1050], "5": [600, 1050]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"1": [600, 1050], "2": [600, 1050], "3": [600, 1050], "4": [600, 1050], "5": [600, 1050]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const chk=document.getElementById('chk'),tx=document.getElementById('tx'),send=document.getElementById('send');const C=[...chk.querySelectorAll('input')];
+C.forEach(c=>c.onchange=draw);tx.oninput=draw;
+function draw(){const n=C.filter(c=>c.checked).length,p=Math.round(n/C.length*100);document.getElementById('pc').textContent=p+' %';document.getElementById('br').style.width=p+'%';
+ document.getElementById('pm').textContent=p===100?'Parfait, envoyez-le !':p>=60?'Presque ! Il reste quelques détails.':'Pas de stress : on peut vous aider à le préparer.';
+ send.href='mailto:copiepapillon@videotron.ca?subject='+encodeURIComponent('Envoi de fichier pour impression')+'&body='+encodeURIComponent('Bonjour,\n\nDétails : '+(tx.value||'...')+'\n\n(Fichier en pièce jointe)\n\nNom :\nTéléphone :\n\nMerci !')}
+draw()})();
+</script>
+
+</body>
+</html>

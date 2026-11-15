@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Demo · Precision Auto Tech · Auto repair and warranty work in Ottawa</title>
+<meta name="description" content="Precision Auto Tech in Ottawa: preventative maintenance, oil changes, A/C repair, suspension, tires, brakes and warranty-approved repairs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--nv:#0B1626;--nv2:#13233A;--cy:#2EC4F1;--cy2:#1AA6D2;--rd:#E63946;--wh:#EEF3F8;--mu:#93A3B8;--ln:rgba(238,243,248,.1);--vh:100svh;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--nv);color:var(--wh);font:400 1.02rem/1.62 Manrope,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.mi{font-family:Michroma,sans-serif}
+nav{position:sticky;top:0;z-index:30;background:rgba(11,22,38,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;font:1.05rem/1.1 Michroma;letter-spacing:.24em;text-transform:uppercase}.logo span{display:block;color:var(--cy);font-size:.78rem;letter-spacing:.5em}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500;font-size:.94rem;color:var(--mu)}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--wh)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:800 .92rem Manrope;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:13px 22px;border-radius:6px;background:var(--cy);color:#04121c;border:2px solid var(--cy);transition:.2s;cursor:pointer}
+.btn:hover{background:#5ad3f6;transform:translateY(-2px)}.btn.o{background:transparent;color:var(--wh);border-color:var(--ln)}.btn.o:hover{border-color:var(--cy)}
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:brightness(.4) saturate(.8)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,var(--nv) 15%,rgba(11,22,38,.4) 70%)}
+.hgrid{min-height:min(680px,calc(var(--vh) - 66px));display:flex;flex-direction:column;justify-content:center;padding-block:60px;max-width:640px}
+h1{font:clamp(2.2rem,5.6vw,4.4rem)/1.08 Michroma;margin:16px 0 20px;letter-spacing:-.01em}
+h1 span{color:var(--cy)}
+.lead{font-size:1.14rem;color:#c3cfdc;max-width:46ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.k{font:800 .74rem Manrope;letter-spacing:.24em;text-transform:uppercase;color:var(--cy)}
+section{padding:90px 0}
+h2{font:clamp(1.8rem,4vw,3rem)/1.12 Michroma;margin:0 0 14px}
+h2 span{color:var(--cy)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.05rem}
+.svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}
+.s{background:var(--nv2);border:1px solid var(--ln);border-radius:14px;padding:24px;position:relative;overflow:hidden}
+.s::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--cy);transform:scaleY(0);transform-origin:top;transition:.4s}
+.s:hover::before{transform:none}
+.s h3{font:800 1.2rem Manrope;margin:0 0 6px}.s p{margin:0;color:var(--mu);font-size:.96rem}
+.oil{background:linear-gradient(180deg,var(--nv2),var(--nv))}
+.ogrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+.gauge{background:#08111e;border:1px solid var(--ln);border-radius:20px;padding:26px}
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin-bottom:16px}
+.row label{display:block;font:800 .72rem Manrope;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);margin-bottom:6px}
+.row input,.row select{width:100%;padding:12px;border-radius:10px;border:1px solid var(--ln);background:var(--nv2);color:var(--wh);font:600 1rem Manrope}
+.dial{display:flex;align-items:center;gap:22px;margin-top:8px}
+.dial svg{width:150px;height:auto;flex:none}
+#arc{transition:stroke-dashoffset 1s cubic-bezier(.2,.8,.2,1)}
+.dial b{font:1.6rem/1.2 Michroma;display:block;color:var(--cy)}.dial p{margin:4px 0 0;color:#c3cfdc}
+.fine{font-size:.85rem;color:var(--mu);margin:14px 0 0}
+.war{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.war img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px}
+.contact{border-top:1px solid var(--ln)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.big{font:1.6rem/1.3 Michroma;margin:10px 0}
+footer{border-top:1px solid var(--ln);color:#6f8095;padding:24px 0;font-size:.88rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.ogrid,.war,.cgrid{grid-template-columns:minmax(0,1fr)}.svc{grid-template-columns:minmax(0,1fr)}.row{grid-template-columns:minmax(0,1fr)}.dial{flex-direction:column;align-items:flex-start}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DEMO</b>Example made for Precision Auto Tech<span class="long"> · not the business's official website</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top">Precision<span>Auto Tech</span></a>
+<ul><li><a href="#services">Services</a></li><li><a href="#oil">Oil change planner</a></li><li><a href="#warranty">Warranty work</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn" href="tel:+16137236943">(613) 723-6943</a></div></nav>
+
+<header class="hero" id="top"><img src="img/1.jpg" alt="Mechanic at work"><div class="wrap"><div class="hgrid">
+<span class="k">Auto repair · Ottawa</span>
+<h1>Maintenance to keep you <span>moving.</span> Repairs when it's late.</h1>
+<p class="lead">Our technicians spot small problems before they become expensive ones. Maintenance, A/C, suspension, tires, brakes and warranty-approved repairs.</p>
+<div class="ctas"><a class="btn" href="tel:+16137236943">Book service</a><a class="btn o" href="#oil">When's my next oil change?</a></div></div></div></header>
+
+<section id="services"><div class="wrap">
+<span class="k rv">What we do</span><h2 class="rv">Full-service <span>care</span></h2>
+<div class="svc">
+<div class="s rv"><h3>Preventative maintenance</h3><p>We catch small difficulties before they turn into big bills.</p></div>
+<div class="s rv" style="--d:.06s"><h3>Air conditioning</h3><p>Stay cool in Ottawa's humid summers, even if a conversion kit is needed.</p></div>
+<div class="s rv" style="--d:.12s"><h3>Oil changes</h3><p>We can even set up a schedule for you.</p></div>
+<div class="s rv"><h3>Suspension</h3><p>Expert suspension repairs for a more comfortable ride.</p></div>
+<div class="s rv" style="--d:.06s"><h3>Tires</h3><p>A proper grip on the road, in summer and in winter.</p></div>
+<div class="s rv" style="--d:.12s"><h3>Brakes</h3><p>Avoid brake failure. Come in for an inspection and get peace of mind.</p></div>
+</div></div></section>
+
+<section class="oil" id="oil"><div class="wrap ogrid">
+<div class="rv"><span class="k">Oil change planner</span><h2>When's your <span>next one?</span></h2><p class="sub">Enter your last oil change and how you drive. You'll get an estimate, then we can set up a schedule that fits your car exactly.</p></div>
+<div class="gauge rv">
+<div class="row"><div><label for="last">Last oil change</label><input type="date" id="last"></div><div><label for="km">Km per week</label><select id="km"><option value="150">About 150 km</option><option value="300" selected>About 300 km</option><option value="500">About 500 km</option><option value="800">800 km or more</option></select></div></div>
+<div class="row"><div><label for="oilt">Oil type</label><select id="oilt"><option value="5000">Conventional</option><option value="8000" selected>Synthetic</option></select></div><div><label for="cond">Driving</label><select id="cond"><option value="1">Mostly highway</option><option value=".8" selected>City, short trips</option><option value=".7">Towing, dusty roads</option></select></div></div>
+<div class="dial"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="none" stroke="#13233A" stroke-width="12"/><circle id="arc" cx="60" cy="60" r="50" fill="none" stroke="#2EC4F1" stroke-width="12" stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="314" transform="rotate(-90 60 60)"/><text id="pc" x="60" y="66" text-anchor="middle" fill="#EEF3F8" font-family="Michroma" font-size="16">0%</text></svg>
+<div aria-live="polite"><b id="next">--</b><p id="msg"></p></div></div>
+<p class="fine">General estimate only. Your owner's manual and our technicians have the final word.</p>
+<p style="margin:14px 0 0"><a class="btn" href="tel:+16137236943">Book my oil change</a></p>
+</div></div></section>
+
+<section id="warranty"><div class="wrap war">
+<img class="rv" src="img/2.jpg" alt="Technician">
+<div class="rv"><span class="k">Warranty &amp; insurance</span><h2>Warranty-approved <span>repairs</span></h2><p class="sub">New car warranty or used car warranty: skip the impersonal dealership service centres and get your warranty work done by our skilled technicians. Insurance services too.</p></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><span class="k">Visit us</span><p class="big">25 Cleopatra Dr<br>Ottawa, ON K2G 0B6</p><p><a href="tel:+16137236943">(613) 723-6943</a> · <a href="mailto:sales@precisionautotech.net">sales@precisionautotech.net</a><br><span style="color:var(--mu)">4.8 ★ on Google · 157 reviews</span></p></div>
+<div class="rv"><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="tel:+16137236943">Call to book</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Precision+Auto+Tech+25+Cleopatra+Dr%2C+Ottawa%2C+ON+K2G+0B6" target="_blank" rel="noopener">Directions</a></p></div>
+</div></section>
+<footer><div class="wrap"><span>© Precision Auto Tech · Ottawa</span><span>Repairs done right</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "en") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="en"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const last=document.getElementById('last'),km=document.getElementById('km'),oilt=document.getElementById('oilt'),cond=document.getElementById('cond'),arc=document.getElementById('arc'),pc=document.getElementById('pc'),next=document.getElementById('next'),msg=document.getElementById('msg');
+const d=new Date();d.setMonth(d.getMonth()-3);last.value=d.toISOString().slice(0,10);
+function draw(){const l=new Date(last.value+'T12:00');if(isNaN(l)){next.textContent='--';return}
+ const int=+oilt.value*+cond.value,wk=Math.min(int/+km.value,26),due=new Date(l.getTime()+wk*7*864e5),now=new Date(),used=Math.max(0,Math.min(1,(now-l)/(due-l)));
+ arc.setAttribute('stroke-dashoffset',314*(1-used));arc.setAttribute('stroke',used>=1?'#E63946':used>.8?'#FFB020':'#2EC4F1');pc.textContent=Math.round(used*100)+'%';
+ next.textContent=due.toLocaleDateString('en-CA',{month:'long',day:'numeric',year:'numeric'});
+ msg.textContent=used>=1?'You\'re past due. Give us a call this week.':used>.8?'Coming up soon. Good time to book.':'About every '+Math.round(int/1000)+',000 km for you, or 6 months, whichever comes first.'}
+[last,km,oilt,cond].forEach(e=>e.onchange=draw);draw()})();
+</script>
+
+</body>
+</html>

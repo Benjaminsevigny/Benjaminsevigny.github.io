@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Massothérapie Descansa · Relaxer depuis 2002 au Trait-Carré de Charlesbourg</title>
+<meta name="description" content="Massothérapie Descansa, dans une maison ancestrale du Trait-Carré de Charlesbourg à Québec. Massages suédois, thérapeutiques, pierres chaudes, femme enceinte et plus, depuis 2002.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--li:#F5EFE3;--li2:#EBE1CF;--oc:#D9962A;--oc2:#B87A17;--bm:#3E5B3A;--bm2:#2D4429;--ink:#2B2620;--mu:#776d5f;--ln:rgba(43,38,32,.13);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--li);color:var(--ink);font:400 1.03rem/1.7 Mulish,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.cg{font-family:"Cormorant Garamond",Georgia,serif}
+.promo{background:var(--bm);color:#EFE7D6;text-align:center;font-size:.92rem;padding:9px 16px}.promo b{color:#F4C46A}
+nav{position:sticky;top:0;z-index:30;background:rgba(245,239,227,.93);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.logo{text-decoration:none;line-height:1}.logo b{font:600 1.7rem "Cormorant Garamond";letter-spacing:.02em}.logo small{display:block;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--oc2);margin-top:4px;font-weight:700}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:600;font-size:.95rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--oc2)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .92rem Mulish;letter-spacing:.04em;text-decoration:none;padding:14px 24px;border-radius:2px;background:var(--bm);color:#fff;border:1.5px solid var(--bm);transition:.25s;cursor:pointer}
+.btn:hover{background:var(--bm2);transform:translateY(-2px)}.btn.o{background:transparent;color:var(--ink);border-color:var(--ink)}.btn.oc{background:var(--oc);border-color:var(--oc);color:#2b1d05}
+/* héros */
+.hero{position:relative;min-height:min(760px,calc(var(--vh) - 90px));display:grid;place-items:center;text-align:center;overflow:hidden;color:#fff;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;animation:zoom 22s ease-out both}
+@keyframes zoom{from{transform:scale(1.12)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at center,rgba(30,25,18,.45),rgba(30,25,18,.72))}
+.hero .since{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;font-weight:700;color:#F4C46A}
+h1{font:500 clamp(3.4rem,9vw,7.4rem)/.95 "Cormorant Garamond";margin:14px 0 16px}
+h1 em{font-style:italic;color:#F4C46A}
+.hero p{max-width:46ch;margin:0 auto 28px;font-size:1.15rem;color:#EFE7D6}
+.breath{width:12px;height:12px;border-radius:50%;background:#F4C46A;margin:26px auto 0;animation:br 6s ease-in-out infinite;box-shadow:0 0 0 0 rgba(244,196,106,.5)}
+@keyframes br{50%{transform:scale(2.2);box-shadow:0 0 0 18px rgba(244,196,106,0)}}
+.hero small{display:block;margin-top:10px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#d9cfbd}
+section{padding:100px 0}
+h2{font:500 clamp(2.5rem,5.4vw,4rem)/1.02 "Cormorant Garamond";margin:0 0 14px}
+h2 em{font-style:italic;color:var(--oc2)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.08rem}
+.kick{font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;font-weight:700;color:var(--oc2)}
+/* maison */
+.house{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.house img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.rooms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:26px}
+.rooms div{border:1px solid var(--ln);padding:16px 18px;background:#fff}
+.rooms b{font:italic 500 1.45rem "Cormorant Garamond"}.rooms span{display:block;font-size:.82rem;color:var(--mu)}
+/* outil prix */
+.price{background:var(--bm);color:#EFE7D6}
+.pgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.price h2{color:#fff}.price .sub{color:#cfd7c5}.price .kick{color:#F4C46A}
+.dial{background:var(--li);color:var(--ink);padding:34px;position:relative}
+.durs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:14px 0 26px}
+.durs button{border:1.5px solid var(--ln);background:#fff;padding:14px 0;font:700 1rem Mulish;cursor:pointer;transition:.15s}
+.durs button small{display:block;font-weight:600;font-size:.7rem;color:var(--mu)}
+.durs button[aria-pressed=true]{background:var(--oc);border-color:var(--oc)}
+.durs button[aria-pressed=true] small{color:#3b2a08}
+.total{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.total b{font:600 4.4rem/1 "Cormorant Garamond"}.total span{color:var(--mu);padding-bottom:12px}
+.ring{height:8px;background:var(--li2);border-radius:99px;overflow:hidden;margin:18px 0 10px}.ring i{display:block;height:100%;background:linear-gradient(90deg,var(--oc),var(--bm));transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.per{font-size:.9rem;color:var(--mu)}
+/* types */
+.types{columns:3;column-gap:30px;margin-top:36px}
+.types li{break-inside:avoid;list-style:none;padding:11px 0;border-bottom:1px solid var(--ln);font:500 1.3rem "Cormorant Garamond"}
+.types li::before{content:"·";color:var(--oc2);margin-right:10px;font-weight:700}
+.types ul{margin:0;padding:0}
+/* avis */
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:40px}
+.q p{font:italic 500 1.45rem/1.35 "Cormorant Garamond";margin:0 0 12px}.q span{font-size:.85rem;color:var(--mu);font-weight:700;letter-spacing:.06em}
+.q{border-top:2px solid var(--oc);padding-top:20px}
+/* contact */
+.contact{background:var(--li2)}
+.cgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.big{font:500 2rem/1.25 "Cormorant Garamond";margin:0 0 12px}
+.side img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%}
+footer{background:var(--ink);color:#bfb4a2;padding:26px 0;font-size:.9rem}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:900px){nav ul{display:none}.house,.pgrid,.cgrid{grid-template-columns:minmax(0,1fr)}.types{columns:1}.quotes{grid-template-columns:minmax(0,1fr)}.durs{grid-template-columns:repeat(3,minmax(0,1fr))}.side{max-width:280px}section{padding:72px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Descansa<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<div class="promo">Vendredi fou · <b>nous payons les taxes sur tous nos massages</b>, tout le mois de novembre</div>
+<nav><div class="wrap"><a class="logo" href="#top"><b>Descansa</b><small>Massothérapie</small></a>
+<ul><li><a href="#maison">La maison</a></li><li><a href="#prix">Nos prix</a></li><li><a href="#soins">Les soins</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn" href="tel:+14189328429">418 932-8429</a></div></nav>
+
+<header class="hero" id="top"><img src="img/1.jpg" alt="Massage">
+<div class="wrap"><span class="since">Québec · depuis 2002</span>
+<h1>Ici, on vous aide <em>à relaxer.</em></h1>
+<p>« Descansa » vient de l'espagnol <i>descansar</i> : se reposer. C'est toute notre mission, dans une maison ancestrale du Trait-Carré de Charlesbourg.</p>
+<a class="btn oc" href="tel:+14189328429">Prendre rendez-vous</a>
+<div class="breath" aria-hidden="true"></div><small>Inspirez… expirez</small></div></header>
+
+<section id="maison"><div class="wrap house">
+<img class="rv" src="img/2.jpg" alt="Salle de massage">
+<div class="rv"><span class="kick">Un endroit unique et chaleureux</span>
+<h2>Une maison <em>ancestrale</em> pour déposer vos tensions</h2>
+<p class="sub">Le centre est situé dans l'arrondissement historique du Trait-Carré de Charlesbourg. Son cachet en fait un endroit propice à la détente. Nos massothérapeutes sont tous diplômés, choisis pour leurs compétences et leur personnalité : vous vivez toujours l'expérience Descansa.</p>
+<div class="rooms"><div><b>L'Africaine</b><span>Salle de soins</span></div><div><b>L'Amérindienne</b><span>Salle de soins</span></div><div><b>La Tibétaine</b><span>Salle de soins</span></div><div><b>La Zen</b><span>Salle de soins</span></div></div></div>
+</div></section>
+
+<section class="price" id="prix"><div class="wrap pgrid">
+<div class="rv"><span class="kick">Nos prix, taxes incluses</span><h2>Combien de temps <em style="color:#F4C46A">pour vous ?</em></h2>
+<p class="sub">Choisissez une durée pour voir le prix. Pour le suédois (détente ou thérapeutique), le drainage lymphatique, l'amma, le reiki, la réflexologie, le shiatsu, le momentum et le massage pour femme enceinte.</p></div>
+<div class="dial rv">
+<span class="kick" style="color:var(--mu)">Durée du soin</span>
+<div class="durs" id="durs"></div>
+<div class="total"><b id="tot">114,97 $</b><span>taxes incluses</span></div>
+<div class="ring"><i id="bar" style="width:66%"></i></div>
+<p class="per" id="per"></p>
+<p style="margin:20px 0 0;display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="tel:+14189328429">Réserver ce soin</a><a class="btn o" href="mailto:info@descansa.ca">Écrire</a></p>
+<p class="per" style="margin-top:14px">Les autres types de massages (pierres chaudes, quatre mains, etc.) ont leur propre tarif : demandez-nous.</p>
+</div></div></section>
+
+<section id="soins"><div class="wrap">
+<span class="kick rv">Types de massages</span><h2 class="rv">Un soin pour <em>chaque besoin</em></h2>
+<div class="types rv"><ul>
+<li>Massage suédois</li><li>Massage aux pierres chaudes</li><li>Massage à quatre mains</li><li>Massage pour femme enceinte</li><li>Massage sportif</li><li>Massage aux ventouses</li><li>Drainage lymphatique</li><li>Kinésithérapie</li><li>Orthothérapie</li><li>Réflexologie</li><li>Massage Shiatsu</li><li>Massage Amma</li><li>Massage Lomi-Lomi</li><li>Massage Tui-Na</li><li>Massage Momentum</li><li>Jikiden Reiki</li><li>Bars d'Access</li>
+</ul></div></div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<span class="kick rv">Pourquoi Descansa ?</span><h2 class="rv">Nos clients <em>répondent</em></h2>
+<div class="quotes">
+<div class="q rv"><p>« Parce que vos massages sont toujours sublimes et tellement efficaces ! »</p><span>Régine</span></div>
+<div class="q rv" style="--d:.1s"><p>« J'ai une bonne distance pour m'y rendre mais ça en vaut la peine. C'est mon choix #1. »</p><span>Monique</span></div>
+<div class="q rv" style="--d:.2s"><p>« Vous êtes à l'écoute de nos besoins et très professionnels ! »</p><span>Marie</span></div>
+</div>
+<p class="rv" style="margin-top:34px;font-weight:700">4,9 ★ sur Google · 106 avis</p></div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><span class="kick">Venez relaxer</span><p class="big" style="margin-top:12px">7745 1re Av.<br>Québec, QC G1H 2Y1</p>
+<p><a href="tel:+14189328429">418 932-8429</a> · <a href="mailto:info@descansa.ca">info@descansa.ca</a></p>
+<p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px"><a class="btn" href="tel:+14189328429">Prendre rendez-vous</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Massotherapie+Descansa+7745+1re+Av.%2C+Qu%C3%A9bec%2C+QC+G1H+2Y1" target="_blank" rel="noopener">Itinéraire</a></p></div>
+<div class="side rv"><img src="img/3.jpg" alt="Détente"></div>
+</div></section>
+<footer><div class="wrap"><span>© Massothérapie Descansa · Québec</span><span>Nous vous aidons à relaxer depuis 2002</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const P=[[30,86.23],[45,97.73],[60,114.97],[75,137.97],[90,149.47]];let k=2;
+const d=document.getElementById('durs'),tot=document.getElementById('tot'),bar=document.getElementById('bar'),per=document.getElementById('per');
+P.forEach(([m],i)=>{const b=document.createElement('button');b.type='button';b.innerHTML=m+'<small>min</small>';b.onclick=()=>{k=i;draw()};d.appendChild(b)});
+const fr=v=>v.toFixed(2).replace('.',',')+' $';
+function draw(){[...d.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===k));const [m,p]=P[k];tot.textContent=fr(p);bar.style.width=(m/90*100)+'%';
+ per.textContent=k?'Soit '+fr(p/m*60).replace(' $',' $')+' de l\'heure : plus le soin est long, plus l\'heure revient moins cher.':'Idéal pour une zone précise : dos, nuque ou jambes.'}
+draw()})();
+</script>
+
+</body>
+</html>

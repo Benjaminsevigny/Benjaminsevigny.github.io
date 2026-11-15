@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Ferme Aux Saveurs des Monts · Poulet de grain élevé naturellement à Val-des-Monts</title>
+<meta name="description" content="Ferme Aux Saveurs des Monts à Val-des-Monts : poulet nourri au grain, sans antibiotiques ni sous-produits animaux, élevé en liberté dans la grange. Viandes locales et produits naturels de l'Outaouais.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--barn:#9E2B25;--barn2:#7E211C;--hay:#E8C66B;--gr:#4C6B3C;--cr:#FBF6EA;--ink:#2B2219;--mu:#6e6253;--ln:rgba(43,34,25,.13);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cr);color:var(--ink);font:400 1.03rem/1.64 Karla,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.zs{font-family:"Zilla Slab",Georgia,serif}
+nav{position:sticky;top:0;z-index:30;background:var(--barn);color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo b{font:700 1.3rem/1 "Zilla Slab"}.logo small{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;opacity:.8}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600;font-size:.94rem}
+nav ul a{text-decoration:none;opacity:.88}nav ul a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .95rem Karla;text-decoration:none;padding:13px 22px;border-radius:6px;background:var(--barn);color:#fff;border:2px solid var(--barn);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--barn2);transform:translateY(-2px)}.btn.h{background:var(--hay);border-color:var(--hay);color:var(--ink)}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero{position:relative;min-height:min(700px,calc(var(--vh) - 66px));display:flex;align-items:center;color:#fff;overflow:hidden;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(43,34,25,.9) 30%,rgba(43,34,25,.2))}
+.sign{display:inline-block;background:var(--hay);color:var(--ink);font:700 1rem "Zilla Slab";padding:6px 16px;border-radius:4px;transform:rotate(-2deg)}
+h1{font:700 clamp(3rem,7vw,5.8rem)/.98 "Zilla Slab";margin:16px 0 16px;max-width:14ch}
+h1 span{color:var(--hay)}
+.lead{font-size:1.15rem;max-width:46ch;margin:0 0 26px;color:#f0e6d3}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.fence{height:26px;background:repeating-linear-gradient(90deg,#fff 0 10px,transparent 10px 50px),linear-gradient(transparent 8px,#fff 8px 12px,transparent 12px 18px,#fff 18px 22px,transparent 22px);background-color:var(--gr)}
+section{padding:90px 0}
+h2{font:700 clamp(2.3rem,5vw,3.8rem)/1.02 "Zilla Slab";margin:0 0 14px}
+h2 span{color:var(--barn)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.05rem}
+.promise{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:36px}
+.pr{background:#fff;border:1px solid var(--ln);border-radius:16px;padding:22px;text-align:center}
+.pr svg{margin:0 auto 10px}.pr h3{font:700 1.2rem "Zilla Slab";margin:0}
+.calc{background:var(--gr);color:#eef2e6}
+.cgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:center}
+.calc h2{color:#fff}.calc h2 span{color:var(--hay)}.calc .sub{color:#d2dcc6}
+.board{background:var(--cr);color:var(--ink);border-radius:20px;padding:26px}
+.lbl{display:block;font:700 .76rem Karla;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);margin-bottom:8px}
+.g{display:flex;align-items:center;gap:14px;margin-bottom:16px}.g output{font:700 2.4rem "Zilla Slab";color:var(--barn);min-width:56px}
+input[type=range]{flex:1;accent-color:var(--barn);height:30px}
+.seg{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.seg button{border:1.5px solid var(--ln);background:#fff;border-radius:8px;padding:10px 14px;font:700 .93rem Karla;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.hens{display:flex;flex-wrap:wrap;gap:6px;min-height:46px;margin-bottom:10px}
+.hen{width:40px;height:40px}
+.res b{font:700 1.8rem "Zilla Slab";color:var(--barn)}
+.fine{font-size:.84rem;color:var(--mu);margin:8px 0 14px}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.story img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:16px}
+.sig{font:700 1.6rem "Zilla Slab";margin-top:18px;color:var(--barn)}
+.contact{background:var(--barn);color:#fff}
+.ccc{display:grid;grid-template-columns:1fr 1fr;gap:46px}
+.contact h2{color:#fff}.contact h2 span{color:var(--hay)}
+[data-hours]{list-style:none;margin:0;padding:0}[data-hours] li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.2)}
+[data-hours] li.td{color:var(--hay);font-weight:700}
+.st{display:inline-flex;align-items:center;gap:8px;font-weight:700;margin-bottom:12px}.st::before{content:"";width:10px;height:10px;border-radius:50%;background:#ccc}
+[data-open].on .st::before{background:#a6e07a}
+footer{background:var(--barn2);color:#f0c7c3;padding:24px 0;font-size:.88rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.cgrid,.story,.ccc{grid-template-columns:minmax(0,1fr)}.promise{grid-template-columns:repeat(2,minmax(0,1fr))}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Saveurs des Monts<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top"><svg width="36" height="32" viewBox="0 0 36 32" aria-hidden="true"><path d="M18 2 34 12v18H2V12z" fill="#E8C66B"/><path d="M13 30V18h10v12" fill="#9E2B25"/><path d="M13 18l10 12M23 18 13 30" stroke="#E8C66B" stroke-width="1.5"/></svg><span><b>Saveurs des Monts</b><small>Ferme · Val-des-Monts</small></span></a>
+<ul><li><a href="#poulet">Notre poulet</a></li><li><a href="#calcul">Combien en prendre</a></li><li><a href="#visite">Visiter la ferme</a></li></ul>
+<a class="btn h" href="tel:+18196434363">819 643-4363</a></div></nav>
+
+<header class="hero" id="top"><img src="img/1.jpg" alt="Poules à la ferme"><div class="wrap">
+<span class="sign">Producteur de l'Outaouais</span>
+<h1>Le poulet <span>comme la nature</span> l'a voulu.</h1>
+<p class="lead">Nourri au grain, élevé sans antibiotiques ni sous-produits animaux, en liberté dans la grange, et qui grandit à son rythme naturel. Une visite vous convaincra, une bouchée vous séduira.</p>
+<div class="ctas"><a class="btn h" href="#visite">Venir à la ferme</a><a class="btn o" href="#calcul">Combien de poulet ?</a></div></div></header>
+<div class="fence" aria-hidden="true"></div>
+
+<section id="poulet"><div class="wrap">
+<h2 class="rv">Notre <span>promesse</span></h2>
+<p class="sub rv">Le poulet est la vedette de la ferme, mais vous trouverez aussi d'autres viandes locales et des produits naturels, tous produits en Outaouais, au rythme de la nature et dans le respect des animaux.</p>
+<div class="promise">
+<div class="pr rv"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#4C6B3C" stroke-width="1.6" aria-hidden="true"><path d="M12 21V9M12 9c0-3 2-5 5-6-1 3-2 5-5 6zM12 13c0-3-2-5-5-6 1 3 2 5 5 6z"/></svg><h3>Nourri au grain</h3></div>
+<div class="pr rv" style="--d:.06s"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#4C6B3C" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/></svg><h3>Sans antibiotiques</h3></div>
+<div class="pr rv" style="--d:.12s"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#4C6B3C" stroke-width="1.6" aria-hidden="true"><path d="M3 11 12 4l9 7v9H3z"/></svg><h3>Libre dans la grange</h3></div>
+<div class="pr rv" style="--d:.18s"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#4C6B3C" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><h3>À son rythme naturel</h3></div>
+</div></div></section>
+
+<section class="calc" id="calcul"><div class="wrap cgrid">
+<div class="rv"><h2>Combien de <span>poulet ?</span></h2><p class="sub">Vous recevez ? Dites-nous combien vous serez et ce que vous préparez : on vous donne une quantité de départ à prendre à la ferme.</p></div>
+<div class="board rv">
+<span class="lbl">Convives</span><div class="g"><output id="n">6</output><input type="range" id="r" min="2" max="30" value="6" aria-label="Nombre de convives"></div>
+<span class="lbl">Au menu</span><div class="seg" id="k"><button type="button">Poulet entier rôti</button><button type="button">Poitrines</button><button type="button">Cuisses</button><button type="button">Ailes</button></div>
+<div class="hens" id="hens" aria-hidden="true"></div>
+<div class="res" aria-live="polite"><b id="q">--</b> <span id="u"></span></div>
+<p class="fine">Repère général pour un repas principal. Les gros appétits en voudront plus !</p>
+<a class="btn" href="tel:+18196434363">Appeler la ferme</a>
+</div></div></section>
+
+<section><div class="wrap story">
+<img class="rv" src="img/2.jpg" alt="La ferme">
+<div class="rv"><h2>Aussi chez <span>vos commerçants</span></h2><p class="sub">Soyez à l'affût ! En Outaouais, nos produits sont offerts chez votre épicier local et au menu de vos restaurants préférés.</p><p class="sig">Sylvain Bertrand, producteur</p></div>
+</div></section>
+
+<section class="contact" id="visite"><div class="wrap ccc">
+<div class="rv"><h2>Venez <span>nous voir</span></h2><p style="font:700 1.4rem/1.3 'Zilla Slab';margin:0 0 8px">883 Chem. du 6e-Rang<br>Val-des-Monts, QC J8N 7V3</p><p><a href="tel:+18196434363">819 643-4363</a> · <a href="mailto:info@saveursdesmonts.ca">info@saveursdesmonts.ca</a><br>4,9 ★ sur Google · 131 avis</p>
+<p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px"><a class="btn h" href="https://www.google.com/maps/search/?api=1&query=Ferme+Aux+Saveurs+Des+Monts+Inc+883+Chem.+du+6e-Rang%2C+Val-des-Monts%2C+QC+J8N+7V3" target="_blank" rel="noopener">Itinéraire</a></p></div>
+<div class="rv" data-open><div class="st" data-status></div><ul data-hours></ul></div>
+</div></section>
+<footer><div class="wrap"><span>© Ferme Aux Saveurs des Monts inc. · Val-des-Monts</span><span>Une bouchée vous séduira</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"1": [510, 990], "2": [510, 990], "3": [510, 990], "4": [510, 990], "5": [510, 990], "6": [510, 990], "0": [600, 900]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"1": [510, 990], "2": [510, 990], "3": [510, 990], "4": [510, 990], "5": [510, 990], "6": [510, 990], "0": [600, 900]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const K=[[4,'poulet entier','poulets entiers'],[1,'poitrine','poitrines'],[2,'cuisse','cuisses'],[0,'',''] ];let k=0;
+const r=document.getElementById('r'),n=document.getElementById('n'),kk=document.getElementById('k'),hens=document.getElementById('hens');
+const HEN='<svg class="hen" viewBox="0 0 40 40"><ellipse cx="18" cy="24" rx="13" ry="10" fill="#fff" stroke="#2B2219" stroke-width="1.5"/><circle cx="29" cy="14" r="6" fill="#fff" stroke="#2B2219" stroke-width="1.5"/><path d="M34 14l4 1-4 2z" fill="#E8C66B"/><path d="M27 8c1-3 4-3 4 0" fill="#9E2B25"/><path d="M14 34v4M20 34v4" stroke="#E8C66B" stroke-width="2"/></svg>';
+[...kk.children].forEach((b,i)=>b.onclick=()=>{k=i;draw()});r.oninput=draw;
+function draw(){[...kk.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===k));const p=+r.value;n.textContent=p;let q,u,icons;
+ if(k===0){q=Math.ceil(p/4);u=q>1?'poulets entiers (environ 4 portions chacun)':'poulet entier (environ 4 portions)';icons=q}
+ else if(k===3){q=(p*0.4).toFixed(1).replace('.',',');u='kg d\'ailes (environ 400 g par personne)';icons=Math.ceil(p/4)}
+ else{q=k===1?p:p*2;u=K[k][2]+(k===1?' (une par personne)':' (deux par personne)');icons=Math.ceil(p/4)}
+ document.getElementById('q').textContent=q;document.getElementById('u').textContent=u;hens.innerHTML=HEN.repeat(Math.min(icons,12))}
+draw()})();
+</script>
+
+</body>
+</html>

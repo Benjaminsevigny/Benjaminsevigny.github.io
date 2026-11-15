@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Masso-Kinésithérapie Laurent Brunner · Lévis</title>
+<meta name="description" content="Masso-Kinésithérapie Laurent Brunner à Lévis : massothérapie, kinésithérapie et massage sur chaise. Massothérapeute accrédité par la Croix Bleue Medavie pour les anciens combattants.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--sg:#4F7A6A;--sg2:#3C6253;--sand:#EFE7DA;--cl:#FAF7F1;--ink:#20302A;--mu:#64716b;--tc:#C7774E;--ln:rgba(32,48,42,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cl);color:var(--ink);font:400 1.02rem/1.66 Manrope,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:30;background:rgba(250,247,241,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;font:700 1.12rem/1.1 Fraunces}.logo small{display:block;font:500 .74rem Manrope;color:var(--mu);letter-spacing:.06em}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500;font-size:.94rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--sg)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .93rem Manrope;text-decoration:none;padding:13px 22px;border-radius:12px;background:var(--sg);color:#fff;border:2px solid var(--sg);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--sg2);transform:translateY(-2px)}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero{padding:50px 0 80px}
+.hgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--ln);border-radius:999px;padding:7px 14px 7px 8px;font-weight:700;font-size:.86rem}
+.badge i{width:26px;height:26px;border-radius:50%;background:var(--sg);display:grid;place-items:center}
+h1{font:500 clamp(2.7rem,6.4vw,5.2rem)/1.02 Fraunces;margin:18px 0 18px}
+h1 em{color:var(--sg)}
+.lead{font-size:1.1rem;color:var(--mu);max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.blob{width:100%;aspect-ratio:1/1.05;object-fit:cover;border-radius:46% 54% 42% 58%/52% 44% 56% 48%}
+section{padding:90px 0}
+h2{font:500 clamp(2.2rem,4.8vw,3.5rem)/1.06 Fraunces;margin:0 0 14px}
+h2 em{color:var(--tc)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.04rem}
+.map{background:var(--sand)}
+.mgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:center}
+.body{max-width:300px;margin:0 auto}
+.body svg{width:100%;height:auto}
+.body .z{fill:#d9cdb9;stroke:var(--cl);stroke-width:3;cursor:pointer;transition:.2s}
+.body .z:hover{fill:#c9b99f}.body .z.on{fill:var(--tc)}
+.body .sil{fill:#e7ddcd}
+.pick{background:#fff;border-radius:22px;padding:26px;box-shadow:0 20px 40px -30px rgba(0,0,0,.4)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px;min-height:40px}
+.chips button{border:1.5px solid var(--ln);background:var(--cl);border-radius:999px;padding:8px 13px;font:700 .88rem Manrope;cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--tc);border-color:var(--tc);color:#fff}
+.lbl{font:700 .74rem Manrope;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
+.svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:40px}
+.s{background:#fff;border-radius:20px;padding:26px;border:1px solid var(--ln)}
+.s h3{font:500 1.5rem Fraunces;margin:10px 0 6px}.s p{margin:0;color:var(--mu)}
+.s svg{color:var(--sg)}
+.vet{display:flex;gap:20px;align-items:center;background:var(--sg);color:#fff;border-radius:22px;padding:28px;margin-top:30px}
+.vet b{font:500 1.4rem Fraunces}
+.contact{background:var(--sg2);color:#e3eee9}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact h2{color:#fff}.contact h2 em{color:#f4c9b2}
+.contact .btn{background:#fff;color:var(--sg2);border-color:#fff}.contact .btn.o{background:transparent;color:#fff}
+footer{background:#2c4a3f;color:#a5bdb3;padding:24px 0;font-size:.86rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.mgrid,.cgrid{grid-template-columns:minmax(0,1fr)}.svc{grid-template-columns:minmax(0,1fr)}.blob{max-width:360px;margin:0 auto}.vet{flex-direction:column;align-items:flex-start}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Laurent Brunner<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top">Laurent Brunner<small>Masso-Kinésithérapie · Lévis</small></a>
+<ul><li><a href="#zones">Où ça fait mal ?</a></li><li><a href="#soins">Soins</a></li><li><a href="#contact">Rendez-vous</a></li></ul>
+<a class="btn" href="tel:+14189225822">418 922-5822</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="badge"><i><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l5 5 9-10"/></svg></i>Accrédité Croix Bleue Medavie pour les anciens combattants</span>
+<h1>La santé musculaire <em>à portée de main.</em></h1>
+<p class="lead">Massothérapie, kinésithérapie et massage sur chaise, sur la route du Président-Kennedy à Lévis.</p>
+<div class="ctas"><a class="btn" href="#zones">Montrer où j'ai mal</a><a class="btn o" href="tel:+14189225822">Appeler</a></div></div>
+<img class="blob rv" src="img/1.jpg" alt="Massothérapie">
+</div></header>
+
+<section class="map" id="zones"><div class="wrap mgrid">
+<div class="body rv"><svg viewBox="0 0 200 400" aria-label="Zones du corps">
+<g class="sil"><circle cx="100" cy="38" r="26"/><rect x="62" y="70" width="76" height="140" rx="30"/><rect x="30" y="80" width="26" height="130" rx="13"/><rect x="144" y="80" width="26" height="130" rx="13"/><rect x="66" y="200" width="30" height="180" rx="15"/><rect x="104" y="200" width="30" height="180" rx="15"/></g>
+<rect class="z" data-z="Cou" x="84" y="60" width="32" height="22" rx="8"/>
+<rect class="z" data-z="Épaules" x="44" y="78" width="112" height="26" rx="13"/>
+<rect class="z" data-z="Haut du dos" x="70" y="108" width="60" height="44" rx="12"/>
+<rect class="z" data-z="Bas du dos" x="70" y="156" width="60" height="44" rx="12"/>
+<rect class="z" data-z="Bras" x="30" y="110" width="26" height="96" rx="13"/>
+<rect class="z" data-z="Bras" x="144" y="110" width="26" height="96" rx="13"/>
+<rect class="z" data-z="Hanches" x="64" y="204" width="72" height="30" rx="12"/>
+<rect class="z" data-z="Jambes" x="66" y="240" width="30" height="130" rx="15"/>
+<rect class="z" data-z="Jambes" x="104" y="240" width="30" height="130" rx="15"/>
+</svg></div>
+<div class="pick rv"><h2 style="font-size:clamp(1.9rem,4vw,2.6rem)">Où ça fait <em>mal ?</em></h2><p class="sub">Touchez les zones sur le corps. Laurent saura quoi préparer pour votre rendez-vous.</p>
+<span class="lbl" style="display:block;margin-top:18px">Vos zones</span><div class="chips" id="chips"></div>
+<a class="btn" id="send" href="mailto:fuziomassage@gmail.com">Demander un rendez-vous</a></div>
+</div></section>
+
+<section id="soins"><div class="wrap">
+<h2 class="rv">Nos <em>soins</em></h2>
+<div class="svc">
+<div class="s rv"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 14c3-1 5 1 8 0s5-3 8-2M4 18c3-1 5 1 8 0s5-3 8-2M12 3v6"/></svg><h3>Massothérapie</h3><p>Pour détendre les muscles et soulager les tensions.</p></div>
+<div class="s rv"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="5" r="2"/><path d="M12 7v6l-4 7M12 13l4 7M7 10h10"/></svg><h3>Kinésithérapie</h3><p>Pour retrouver le mouvement et le confort.</p></div>
+<div class="s rv"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 21v-6h10v6M6 15h12M9 15V9a3 3 0 0 1 6 0v6"/></svg><h3>Massage sur chaise</h3><p>Un massage habillé, rapide et efficace.</p></div>
+</div>
+<div class="vet rv"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/></svg><div><b>Anciens combattants</b><p style="margin:4px 0 0;opacity:.9">Laurent Brunner est massothérapeute accrédité par la Croix Bleue Medavie pour les anciens combattants.</p></div></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Prendre <em>rendez-vous</em></h2><p style="font:500 1.3rem/1.4 Fraunces;margin:0 0 8px">40 Rte du Président-Kennedy<br>Lévis, QC G6V 6C4</p><p><a href="tel:+14189225822">418 922-5822</a> · <a href="mailto:fuziomassage@gmail.com">fuziomassage@gmail.com</a><br><span style="opacity:.8">5,0 ★ sur Google · 138 avis</span></p></div>
+<div class="rv"><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="tel:+14189225822">Appeler</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Masso-Kin%C3%A9sith%C3%A9rapie+Laurent+Brunner+40+Rte+du+Pr%C3%A9sident-Kennedy%2C+L%C3%A9vis%2C+QC+G6V+6C4" target="_blank" rel="noopener">Itinéraire</a></p></div>
+</div></section>
+<footer><div class="wrap"><span>© Masso-Kinésithérapie Laurent Brunner · Lévis</span><span>La santé musculaire à portée de main</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const on=new Set(['Épaules']);const chips=document.getElementById('chips'),send=document.getElementById('send');
+document.querySelectorAll('.z').forEach(z=>{z.setAttribute('tabindex','0');z.setAttribute('role','button');z.setAttribute('aria-label',z.dataset.z);const t=()=>{const k=z.dataset.z;on.has(k)?on.delete(k):on.add(k);draw()};z.onclick=t;z.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();t()}}});
+function draw(){document.querySelectorAll('.z').forEach(z=>z.classList.toggle('on',on.has(z.dataset.z)));
+ chips.innerHTML=on.size?'':'<span style="color:var(--mu)">Aucune zone choisie</span>';
+ on.forEach(k=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-pressed','true');b.textContent=k+'  ×';b.onclick=()=>{on.delete(k);draw()};chips.appendChild(b)});
+ const L=[...on].join(', ')||'à préciser';send.href='mailto:fuziomassage@gmail.com?subject='+encodeURIComponent('Rendez-vous : '+L)+'&body='+encodeURIComponent('Bonjour Laurent,\n\nZones : '+L+'\nDepuis quand :\nAncien combattant (Croix Bleue Medavie) : oui / non\n\nNom :\nTéléphone :\nDisponibilités :\n\nMerci !')}
+draw()})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Garage Pneus et Mécanique L.E. · Pneus, alignement et mécanique à Laval</title>
+<meta name="description" content="Garage Pneus et Mécanique L.E., 28 rue Gélinas à Laval : vente, installation et entreposage de pneus, changement d'huile, alignement, freins. Détaillant U-Haul.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--bk:#111214;--st:#1B1D21;--st2:#24272C;--ye:#FFC21A;--ye2:#FFD658;--wh:#F2F0EA;--mu:#9EA1A7;--ln:rgba(242,240,234,.1);--vh:100svh;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bk);color:var(--wh);font:400 1.02rem/1.6 Archivo,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.ab{font-family:"Archivo Black",sans-serif;font-weight:400}
+.mono{font:700 .74rem "Space Mono",monospace;letter-spacing:.12em;text-transform:uppercase}
+nav{position:sticky;top:0;z-index:30;background:rgba(17,18,20,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo .t{width:44px;height:44px;border-radius:50%;background:repeating-conic-gradient(#2c2f34 0 10deg,#1a1b1e 10deg 20deg);border:3px solid var(--ye);display:grid;place-items:center;font:1rem "Archivo Black";color:var(--ye)}
+.logo b{display:block;font:1.05rem/1.05 "Archivo Black";text-transform:uppercase}.logo small{color:var(--ye);font:700 .72rem "Space Mono";letter-spacing:.1em}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500;font-size:.95rem;color:var(--mu)}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--wh)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:1rem "Archivo Black";text-transform:uppercase;letter-spacing:.02em;text-decoration:none;padding:14px 22px;border-radius:6px;background:var(--ye);color:#141414;border:2px solid var(--ye);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--ye2);transform:translateY(-2px)}.btn.o{background:transparent;color:var(--wh);border-color:var(--ln)}.btn.o:hover{border-color:var(--wh)}
+/* héros */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero .bg{position:absolute;inset:0;z-index:-2}.hero .bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(.6) brightness(.55)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,var(--bk) 20%,rgba(17,18,20,.55) 70%,rgba(17,18,20,.25))}
+.hgrid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;min-height:min(700px,calc(var(--vh) - 70px));padding-block:60px}
+h1{font:clamp(3rem,7.6vw,6.6rem)/.92 "Archivo Black";text-transform:uppercase;margin:18px 0 18px;letter-spacing:-.02em}
+h1 span{color:var(--ye)}
+.lead{font-size:1.15rem;color:#c9c7c0;max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.tread{position:absolute;left:0;right:0;bottom:0;height:26px;background:repeating-linear-gradient(90deg,var(--ye) 0 22px,transparent 22px 34px),var(--bk);-webkit-mask:linear-gradient(transparent 40%,#000 40%);mask:linear-gradient(transparent 40%,#000 40%);opacity:.9}
+/* compte à rebours (outil) */
+.count{background:var(--st);border:1px solid var(--ln);border-radius:20px;padding:26px;position:relative}
+.count .mono{color:var(--ye)}
+.num{display:flex;align-items:flex-end;gap:12px;margin:10px 0 4px}
+.num b{font:5.4rem/.85 "Archivo Black";color:var(--ye)}.num span{font-weight:700;padding-bottom:8px}
+.track{height:12px;border-radius:99px;background:var(--st2);overflow:hidden;margin:16px 0 8px;position:relative}
+.track i{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,#4da3ff,var(--ye));border-radius:99px;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.scale{display:flex;justify-content:space-between;font:700 .7rem "Space Mono";color:var(--mu)}
+.count p{margin:12px 0 0;color:#c9c7c0}
+.count .btn{margin-top:16px;width:100%;justify-content:center}
+/* services */
+section{padding:100px 0}
+h2{font:clamp(2.2rem,5vw,3.8rem)/.98 "Archivo Black";text-transform:uppercase;margin:12px 0 14px}
+h2 span{color:var(--ye)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.06rem}
+.svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}
+.s{background:var(--st);border:1px solid var(--ln);border-radius:16px;padding:26px;position:relative;overflow:hidden;transition:.25s}
+.s:hover{border-color:var(--ye);transform:translateY(-4px)}
+.s .n{font:700 .74rem "Space Mono";color:var(--ye)}
+.s h3{font:1.35rem/1.1 "Archivo Black";text-transform:uppercase;margin:12px 0 8px}.s p{margin:0;color:var(--mu)}
+.s svg{position:absolute;right:-14px;bottom:-14px;opacity:.08;width:110px;height:110px}
+/* bandeau photo */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.duo img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px}
+/* uhaul */
+.uh{background:var(--ye);color:#141414}
+.ugrid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.uh h2 span{color:#141414;text-decoration:underline;text-decoration-thickness:6px;text-underline-offset:6px}
+.uh .sub{color:#3b3417}
+.uh .btn{background:#141414;color:var(--ye);border-color:#141414}
+.truck{font:clamp(4rem,10vw,8rem)/.8 "Archivo Black";text-align:right;opacity:.18;letter-spacing:-.04em}
+/* contact */
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:46px}
+.card{background:var(--st);border:1px solid var(--ln);border-radius:18px;padding:28px}
+.big{font:1.7rem/1.2 "Archivo Black";margin:10px 0 12px}
+.line{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--ln)}.line span{color:var(--mu)}
+footer{border-top:1px solid var(--ln);padding:26px 0;color:var(--mu);font-size:.88rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.ugrid,.cgrid{grid-template-columns:minmax(0,1fr)}.svc{grid-template-columns:minmax(0,1fr)}.duo{grid-template-columns:minmax(0,1fr)}.truck{display:none}section{padding:72px 0}.num b{font-size:4.2rem}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Pneus et Mécanique L.E<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top"><span class="t">L.E</span><span><b>Pneus et Mécanique</b><small>Garage · Laval</small></span></a>
+<ul><li><a href="#pneus">Pneus d'hiver</a></li><li><a href="#services">Services</a></li><li><a href="#uhaul">U-Haul</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn" href="tel:+14504904450">450 490-4450</a></div></nav>
+
+<header class="hero" id="top"><div class="bg"><img src="img/1.jpg" alt="Garage"></div>
+<div class="wrap hgrid">
+<div><span class="mono" style="color:var(--ye)">Garage mécanique · rue Gélinas, Laval</span>
+<h1>Pneus, huile, <span>alignement.</span> On s'en occupe.</h1>
+<p class="lead">Installer vos pneus d'hiver, changer votre huile, aligner vos roues ou réparer vos freins : le garage Pneus et Mécanique L.E. est fait pour vous.</p>
+<div class="ctas"><a class="btn" href="tel:+14504904450">Prendre rendez-vous</a><a class="btn o" href="#services">Nos services</a></div></div>
+<div class="count rv" id="pneus"><span class="mono">Pneus d'hiver obligatoires au Québec</span>
+<div class="num"><b id="days">--</b><span id="unit">jours</span></div>
+<div id="lbl" style="font-weight:700"></div>
+<div class="track"><i id="bar" style="width:0"></i></div>
+<div class="scale"><span>15 MARS</span><span>1er DÉC.</span><span>15 MARS</span></div>
+<p id="tip"></p>
+<a class="btn" href="tel:+14504904450">Réserver mon installation</a></div>
+</div><div class="tread"></div></header>
+
+<section id="services"><div class="wrap">
+<span class="mono rv" style="color:var(--ye)">Ce qu'on fait</span>
+<h2 class="rv">Nos <span>services</span></h2>
+<p class="sub rv">Pour votre auto, et même votre VTT. On vous attend !</p>
+<div class="svc">
+<div class="s rv"><span class="n">01</span><h3>Vente de pneus</h3><p>Pour voiture et VTT.</p><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="none" stroke="#fff" stroke-width="12"/><circle cx="50" cy="50" r="16" fill="#fff"/></svg></div>
+<div class="s rv" style="--d:.08s"><span class="n">02</span><h3>Installation et entreposage</h3><p>On pose vos pneus et on garde l'autre ensemble jusqu'à la prochaine saison.</p><svg viewBox="0 0 100 100"><rect x="10" y="20" width="80" height="70" fill="none" stroke="#fff" stroke-width="10"/></svg></div>
+<div class="s rv" style="--d:.16s"><span class="n">03</span><h3>Changement d'huile</h3><p>Rapide, pour garder votre moteur en santé.</p><svg viewBox="0 0 100 100"><path d="M50 8 C30 40 20 55 20 68a30 30 0 0 0 60 0C80 55 70 40 50 8z" fill="#fff"/></svg></div>
+<div class="s rv"><span class="n">04</span><h3>Alignement</h3><p>Pour que votre auto tienne la route et que vos pneus s'usent également.</p><svg viewBox="0 0 100 100"><path d="M10 50h80M50 10v80" stroke="#fff" stroke-width="10"/></svg></div>
+<div class="s rv" style="--d:.08s"><span class="n">05</span><h3>Réparation de freins</h3><p>Disques, plaquettes : on vérifie et on répare.</p><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="#fff" stroke-width="18" stroke-dasharray="40 14"/></svg></div>
+<div class="s rv" style="--d:.16s"><span class="n">06</span><h3>Et plus encore</h3><p>Une question sur votre véhicule ? Appelez-nous au 450 490-4450.</p><svg viewBox="0 0 100 100"><path d="M50 15v70M15 50h70" stroke="#fff" stroke-width="14"/></svg></div>
+</div>
+<div class="duo"><img class="rv" src="img/2.jpg" alt="Pneus"><img class="rv" src="img/3.jpg" alt="Mécanique"></div>
+</div></section>
+
+<section class="uh" id="uhaul"><div class="wrap ugrid">
+<div class="rv"><span class="mono">Partenaire</span><h2>Détaillant <span>U-Haul</span></h2><p class="sub">Vous déménagez ? Louez votre camion U-Haul directement chez nous, au même endroit que votre garage.</p>
+<p style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="tel:+14504904450">Appeler pour un camion</a></p></div>
+<div class="truck" aria-hidden="true">U-HAUL</div>
+</div></section>
+
+<section id="contact"><div class="wrap cgrid">
+<div class="rv"><span class="mono" style="color:var(--ye)">Venez nous voir</span><p class="big">28 Rue Gélinas<br>Laval, QC H7M 2Z5</p>
+<p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Garage+Pneus+et+M%C3%A9canique+L.E+28+Rue+G%C3%A9linas%2C+Laval%2C+QC+H7M+2Z5" target="_blank" rel="noopener">Itinéraire</a><a class="btn o" href="tel:+14504904450">Appeler</a></p></div>
+<div class="card rv"><div class="line"><span>Téléphone</span><a href="tel:+14504904450">450 490-4450</a></div><div class="line"><span>Courriel</span><a href="mailto:pneusetmecanique@outlook.com">pneusetmecanique@outlook.com</a></div><div class="line"><span>Avis Google</span><span style="color:var(--wh)">4,5 ★ · 56 avis</span></div><div class="line" style="border:0"><span>Partenaire</span><span style="color:var(--wh)">Auto Mécano</span></div></div>
+</div></section>
+<footer><div class="wrap"><span>© Pneus et Mécanique L.E. inc. · Laval</span><span>On vous attend !</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const now=new Date(),y=now.getFullYear(),day=864e5;
+const dec1=new Date(y,11,1),mar15=new Date(y,2,15),mar15n=new Date(y+1,2,15),prevDec=new Date(y-1,11,1);
+const inSeason=now>=dec1||now<=mar15;
+const days=document.getElementById('days'),unit=document.getElementById('unit'),lbl=document.getElementById('lbl'),bar=document.getElementById('bar'),tip=document.getElementById('tip');
+let pct,d;
+if(!inSeason){d=Math.ceil((dec1-now)/day);days.textContent=d;unit.textContent=d>1?'jours':'jour';lbl.textContent='avant le 1er décembre';pct=(now-mar15)/(dec1-mar15)*50;
+ tip.textContent=d<=30?'Les places partent vite en novembre : réservez votre installation maintenant.':'Il vous reste du temps, mais les garages se remplissent vite à l\'automne.'}
+else{const end=now>=dec1?mar15n:mar15,start=now>=dec1?dec1:prevDec;d=Math.ceil((end-now)/day);days.textContent=d;unit.textContent=d>1?'jours':'jour';lbl.textContent='avant le 15 mars (fin de la période obligatoire)';pct=50+(now-start)/(end-start)*50;
+ tip.textContent='Vos pneus d\'hiver doivent être posés jusqu\'au 15 mars. On entrepose vos pneus d\'été en attendant.'}
+requestAnimationFrame(()=>bar.style.width=Math.max(3,Math.min(100,pct))+'%')})();
+</script>
+
+</body>
+</html>

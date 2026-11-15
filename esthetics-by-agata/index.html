@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Demo · Esthetics by Agata · Skincare, waxing, lashes and nails in Aylmer</title>
+<meta name="description" content="Esthetics by Agata in Aylmer, Gatineau: customized facials, microdermabrasion, mink and silk lash extensions, waxing, manicures and pedicures. One-on-one care with clear prices.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--plum:#5B3A5E;--plum2:#472C49;--lil:#EADCEB;--pearl:#FBF8FA;--gold:#C3A26B;--ink:#2B2230;--mu:#76687a;--ln:rgba(43,34,48,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--pearl);color:var(--ink);font:400 1.02rem/1.68 "Hanken Grotesk",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.gd{font-family:"Gilda Display",Georgia,serif}
+nav{position:sticky;top:0;z-index:30;background:rgba(251,248,250,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;font:1.5rem "Gilda Display"}.logo i{font-style:normal;color:var(--gold)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500;font-size:.94rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--plum)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 .9rem "Hanken Grotesk";letter-spacing:.06em;text-decoration:none;padding:13px 22px;border-radius:999px;background:var(--plum);color:#fff;border:1.5px solid var(--plum);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--plum2);transform:translateY(-2px)}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero{padding:50px 0 80px;position:relative;overflow:hidden}
+.hgrid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.k{font:600 .76rem "Hanken Grotesk";letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+h1{font:400 clamp(3rem,7vw,5.6rem)/1.02 "Gilda Display";margin:14px 0 18px}
+h1 em{font-style:normal;color:var(--plum)}
+.lead{font-size:1.1rem;color:var(--mu);max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.pic{position:relative}.pic img{width:100%;aspect-ratio:4/4.6;object-fit:cover;border-radius:999px 999px 24px 24px}
+.pic span{position:absolute;right:-10px;top:24px;background:#fff;border:1px solid var(--ln);border-radius:16px;padding:12px 16px;font-weight:600;box-shadow:0 16px 30px -18px rgba(0,0,0,.4)}
+section{padding:90px 0}
+h2{font:400 clamp(2.4rem,5vw,3.8rem)/1.05 "Gilda Display";margin:0 0 14px}
+h2 em{font-style:normal;color:var(--plum)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.04rem}
+.menu{background:#fff;border-block:1px solid var(--ln)}
+.mgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:46px;align-items:start}
+.cats{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+.cats button{border:1.5px solid var(--ln);background:var(--pearl);border-radius:999px;padding:9px 16px;font:600 .92rem "Hanken Grotesk";cursor:pointer}
+.cats button[aria-pressed=true]{background:var(--plum);color:#fff;border-color:var(--plum)}
+.items{columns:2;column-gap:24px}
+.it{break-inside:avoid;display:flex;gap:10px;align-items:baseline;padding:9px 0;border-bottom:1px dotted var(--ln);cursor:pointer}
+.it input{accent-color:var(--plum);width:17px;height:17px;flex:none;transform:translateY(3px)}
+.it span{flex:1}.it b{font-weight:600;color:var(--plum);white-space:nowrap}
+.bag{position:sticky;top:90px;background:var(--lil);border-radius:22px;padding:22px}
+.bag h3{font:400 1.6rem "Gilda Display";margin:0 0 8px}
+.bag ul{list-style:none;margin:0 0 12px;padding:0;min-height:40px;font-size:.94rem}.bag li{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(91,58,94,.15)}
+.bag .t{display:flex;justify-content:space-between;align-items:baseline;font-weight:600}.bag .t b{font:400 2.2rem "Gilda Display";color:var(--plum)}
+.contact{background:var(--plum);color:#f1e8f2}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact h2{color:#fff}.contact h2 em{color:var(--lil)}
+.contact .btn{background:#fff;color:var(--plum);border-color:#fff}.contact .btn.o{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+footer{background:var(--plum2);color:#c8b5ca;padding:24px 0;font-size:.86rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.mgrid,.cgrid{grid-template-columns:minmax(0,1fr)}.items{columns:1}.bag{position:static}.pic{max-width:340px;margin:0 auto}.pic span{right:0}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DEMO</b>Example made for Esthetics by Agata<span class="long"> · not the business's official website</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top">Esthetics <i>by</i> Agata</a>
+<ul><li><a href="#menu">Services &amp; prices</a></li><li><a href="#contact">Book</a></li></ul>
+<a class="btn" href="tel:+18196650573">(819) 665-0573</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="k">Aylmer · one-on-one care</span>
+<h1>Skin care, made <em>just for you.</em></h1>
+<p class="lead">Facials customized to your skin's needs and condition, mink and silk lash extensions, waxing, manicures and pedicures, in a calm, private setting with one esthetician: Agata.</p>
+<div class="ctas"><a class="btn" href="#menu">Build my visit</a><a class="btn o" href="mailto:estheticsbyagata@gmail.com?subject=Appointment%20request">Email Agata</a></div></div>
+<div class="pic rv"><img src="img/1.jpg" alt="Facial treatment"><span>Clear, honest prices</span></div>
+</div></header>
+
+<section class="menu" id="menu"><div class="wrap mgrid">
+<div class="rv"><h2>Build <em>your visit</em></h2><p class="sub">Choose a category and tick what you'd like. Your total updates as you go, then send the list to book.</p>
+<div class="cats" id="cats"><button type="button">Skin</button><button type="button">Lashes &amp; brows</button><button type="button">Waxing</button><button type="button">Hands</button></div>
+<div class="items" id="items"></div></div>
+<aside class="bag rv"><h3>Your visit</h3><ul id="sel"><li style="border:0;color:var(--mu)">Nothing yet.</li></ul><div class="t"><span>Total</span><b id="tot">$0</b></div>
+<p style="font-size:.82rem;color:var(--mu);margin:6px 0 14px">Prices with "+" may vary.</p><a class="btn" id="send" href="mailto:estheticsbyagata@gmail.com">Request this appointment</a></aside>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Book <em>with Agata</em></h2><p style="font:400 1.4rem/1.3 'Gilda Display';margin:0 0 8px">536 Rue du Jockey<br>Gatineau, QC J9J 0J6</p><p><a href="tel:+18196650573">(819) 665-0573</a> · <a href="mailto:estheticsbyagata@gmail.com">estheticsbyagata@gmail.com</a><br><span style="opacity:.75">4.9 ★ on Google · 69 reviews</span></p></div>
+<div class="rv"><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="tel:+18196650573">Call</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Esthetics+by+Agata+536+Rue+du+Jockey%2C+Gatineau%2C+QC+J9J+0J6" target="_blank" rel="noopener">Directions</a></p></div>
+</div></section>
+<footer><div class="wrap"><span>© Esthetics by Agata · Aylmer</span><span>Skincare · Waxing · Lashes · Nails</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "en") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="en"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const C=[[['Cleansing facial',85],['Deep cleansing facial (acne)',95],['Anti-aging A.H.A. treatment',95],['Eye contour treatment',45],['Back anti-acne treatment',85],['Microdermabrasion',55],['Glycolic treatment',45]],
+[['Lash extensions, full set',100],['Lash refill (2 weeks)',45],['Lash refill (3 weeks)',55],['Eyelash tint',22],['Eyebrow tint',16]],
+[['Eyebrows',15],['Upper lip',13],['Chin',13],['Full face',40],['Under arms',16],['Half arms',27],['Full arms',37],['Half legs',30],['Full legs (bikini incl.)',60],['Bikini line',25],['Brazilian bikini',50,1],['Back',45]],
+[['Manicure',30],['French manicure',35],['Polish change',10],['Paraffin for hands',13]]];let k=0;const pick=new Map();
+const cats=document.getElementById('cats'),items=document.getElementById('items'),sel=document.getElementById('sel'),tot=document.getElementById('tot'),send=document.getElementById('send');
+[...cats.children].forEach((b,i)=>b.onclick=()=>{k=i;build()});
+function build(){[...cats.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===k));items.innerHTML=C[k].map((x,i)=>{const id=k+'-'+i;return '<label class="it"><input type="checkbox" data-id="'+id+'"'+(pick.has(id)?' checked':'')+'><span>'+x[0]+'</span><b>$'+x[1]+(x[2]?'+':'')+'</b></label>'}).join('')}
+items.addEventListener('change',e=>{const id=e.target.dataset.id,[a,b]=id.split('-').map(Number);e.target.checked?pick.set(id,C[a][b]):pick.delete(id);upd()});
+function upd(){const L=[...pick.values()];sel.innerHTML=L.length?L.map(x=>'<li><span>'+x[0]+'</span><span>$'+x[1]+'</span></li>').join(''):'<li style="border:0;color:var(--mu)">Nothing yet.</li>';tot.textContent='$'+L.reduce((a,x)=>a+x[1],0);
+ send.href='mailto:estheticsbyagata@gmail.com?subject='+encodeURIComponent('Appointment request')+'&body='+encodeURIComponent('Hi Agata,\n\nI would like to book:\n- '+(L.map(x=>x[0]).join('\n- ')||'...')+'\n\nName:\nPhone:\nAvailability:\n\nThank you!')}
+build();upd()})();
+</script>
+
+</body>
+</html>

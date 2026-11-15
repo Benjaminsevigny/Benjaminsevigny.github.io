@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Floralies Jouvence · Centre jardin et fleuriste à Lévis et Sainte-Foy</title>
+<meta name="description" content="Floralies Jouvence, la plus grande surface jardin à Québec : plantes, arbres et arbustes, bulbes, potager, décoration et Noël. Fondée en 1984 par Paul Daoust. Succursales de Lévis et Sainte-Foy, et boutique en ligne.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,600;1,600&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--fo:#2F5D3A;--fo2:#234A2D;--pet:#E9897E;--sun:#F2C14E;--cr:#F8F5EE;--ink:#1F2D22;--mu:#66705f;--ln:rgba(31,45,34,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cr);color:var(--ink);font:400 1.03rem/1.65 Mulish,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.cm{font-family:Cormorant,Georgia,serif}
+nav{position:sticky;top:0;z-index:30;background:rgba(248,245,238,.93);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo b{font:600 1.6rem/1 Cormorant;color:var(--fo)}.logo small{display:block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mu)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600;font-size:.94rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--fo)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .94rem Mulish;text-decoration:none;padding:13px 22px;border-radius:999px;background:var(--fo);color:#fff;border:2px solid var(--fo);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--fo2);transform:translateY(-2px)}.btn.o{background:transparent;color:inherit;border-color:currentColor}.btn.p{background:var(--pet);border-color:var(--pet)}
+.hero{position:relative;overflow:hidden}
+.hgrid{display:grid;grid-template-columns:1fr 1.1fr;min-height:min(700px,calc(var(--vh) - 66px))}
+.htext{display:flex;flex-direction:column;justify-content:center;padding:60px 40px 60px max(20px,calc((100vw - 1200px)/2 + 20px))}
+.big{font:600 .82rem Mulish;letter-spacing:.24em;text-transform:uppercase;color:var(--pet)}
+h1{font:600 clamp(3.2rem,7.4vw,6.4rem)/.92 Cormorant;margin:14px 0 18px;color:var(--fo)}
+h1 em{color:var(--pet)}
+.lead{font-size:1.12rem;color:var(--mu);max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hpic{position:relative}.hpic img{width:100%;height:100%;object-fit:cover}
+.pet{position:absolute;width:26px;height:16px;border-radius:50% 0 50% 0;background:var(--pet);opacity:.85;animation:fall 9s linear infinite}
+@keyframes fall{from{transform:translate(0,-40px) rotate(0)}to{transform:translate(80px,720px) rotate(540deg)}}
+.stat{position:absolute;left:24px;bottom:24px;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 20px 40px -24px rgba(0,0,0,.4)}
+.stat b{font:600 2rem/1 Cormorant;color:var(--fo);display:block}.stat span{font-size:.85rem;color:var(--mu)}
+section{padding:90px 0}
+h2{font:600 clamp(2.5rem,5.4vw,4rem)/1 Cormorant;margin:0 0 14px;color:var(--fo)}
+h2 em{color:var(--pet)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.05rem}
+.season{background:var(--fo);color:#e9efe6}
+.sgrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;align-items:start}
+.season h2{color:#fff}.season h2 em{color:var(--sun)}.season .sub{color:#c3d1c1}
+.months{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;margin-top:22px}
+.months button{border:1px solid rgba(255,255,255,.2);background:transparent;color:#fff;border-radius:10px;padding:10px 0;font:700 .85rem Mulish;cursor:pointer}
+.months button[aria-pressed=true]{background:var(--sun);color:var(--ink);border-color:var(--sun)}
+.card{background:var(--cr);color:var(--ink);border-radius:24px;padding:26px;min-height:300px}
+.card h3{font:600 2rem/1 Cormorant;color:var(--fo);margin:0 0 10px}
+.card ul{list-style:none;margin:0 0 18px;padding:0}.card li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px dashed var(--ln)}
+.card li i{width:14px;height:14px;border-radius:50%;background:var(--pet);flex:none;margin-top:6px}
+.cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:36px}
+.cat{background:#fff;border-radius:22px;overflow:hidden;border:1px solid var(--ln)}
+.cat img{width:100%;aspect-ratio:1;object-fit:cover}.cat h3{font:600 1.4rem Cormorant;margin:0;padding:14px 16px}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.story img{width:100%;aspect-ratio:4/4.4;object-fit:cover;border-radius:200px 200px 24px 24px}
+.contact{background:#EFE8DA}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:30px}
+.br{background:#fff;border-radius:22px;padding:24px;border:1px solid var(--ln)}
+.br h3{font:600 1.8rem Cormorant;color:var(--fo);margin:0 0 6px}
+footer{background:var(--fo2);color:#a9bba6;padding:24px 0;font-size:.88rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid{grid-template-columns:minmax(0,1fr)}.htext{padding:46px 20px}.hpic{height:340px}.sgrid,.story,.cgrid{grid-template-columns:minmax(0,1fr)}.cats{grid-template-columns:repeat(2,minmax(0,1fr))}.months{grid-template-columns:repeat(4,minmax(0,1fr))}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Floralies Jouvence<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top"><span><b>Floralies Jouvence</b><small>Centre jardin · Fleuriste</small></span></a>
+<ul><li><a href="#saison">Ce mois-ci</a></li><li><a href="#rayons">Nos rayons</a></li><li><a href="#histoire">Notre histoire</a></li><li><a href="#succursales">Succursales</a></li></ul>
+<a class="btn" href="http://www.floraliesjouvence.ca/" target="_blank" rel="noopener">Boutique en ligne</a></div></nav>
+
+<header class="hero" id="top"><div class="hgrid">
+<div class="htext"><span class="big">Lévis · Sainte-Foy</span>
+<h1>Le plus grand <em>jardin</em> de Québec, à l'abri.</h1>
+<p class="lead">Plus de 90 000 pieds carrés d'espace couvert : plantes, arbres et arbustes, potager, décoration, cadeaux et Noël. Et une boutique en ligne ouverte en tout temps.</p>
+<div class="ctas"><a class="btn" href="#saison">Quoi planter ce mois-ci ?</a><a class="btn o" href="http://www.floraliesjouvence.ca/" target="_blank" rel="noopener">Commander en ligne</a></div></div>
+<div class="hpic"><img src="img/1.jpg" alt="Centre jardin"><span class="pet" style="left:20%;animation-delay:-1s"></span><span class="pet" style="left:50%;animation-delay:-4s"></span><span class="pet" style="left:75%;animation-delay:-7s"></span><div class="stat"><b>90 000 pi²</b><span>d'espace couvert</span></div></div>
+</div></header>
+
+<section class="season" id="saison"><div class="wrap sgrid">
+<div class="rv"><h2>Qu'est-ce qu'on fait <em>ce mois-ci ?</em></h2><p class="sub">Choisissez un mois : on vous montre quoi planter, préparer ou offrir, et ce que vous trouverez chez nous pour le faire.</p>
+<div class="months" id="months"></div></div>
+<div class="card rv" id="card" aria-live="polite"></div>
+</div></section>
+
+<section id="rayons"><div class="wrap">
+<h2 class="rv">Nos <em>rayons</em></h2>
+<div class="cats">
+<div class="cat rv"><img src="img/2.jpg" alt="Plantes"><h3>Plantes et fleurs</h3></div>
+<div class="cat rv" style="--d:.06s"><img src="img/3.jpg" alt="Arbres"><h3>Arbres et arbustes</h3></div>
+<div class="cat rv" style="--d:.12s"><img src="img/4.jpg" alt="Potager"><h3>Potager et semis</h3></div>
+<div class="cat rv" style="--d:.18s"><img src="img/5.jpg" alt="Décoration"><h3>Déco, cadeaux et Noël</h3></div>
+</div></div></section>
+
+<section id="histoire" style="padding-top:0"><div class="wrap story">
+<div class="rv"><h2>Depuis <em>1984</em></h2><p class="sub">Lorsque Paul Daoust fonde Floralies Jouvence en 1984, il crée l'une des entreprises les plus florissantes et originales de l'horticulture au Québec. Aujourd'hui, c'est la référence en horticulture à Québec.</p>
+<p style="margin-top:16px;font-weight:700">4,5 ★ sur Google · 643 avis</p></div>
+<img class="rv" src="img/6.jpg" alt="Fleurs">
+</div></section>
+
+<section class="contact" id="succursales"><div class="wrap">
+<h2 class="rv">Nos <em>succursales</em></h2>
+<div class="cgrid">
+<div class="br rv"><h3>Lévis</h3><p style="margin:0">4760 Bd Guillaume-Couture<br>Lévis, QC G6W 5N6</p><p><a href="tel:+14188333323">418 833-3323</a> · <a href="mailto:levis@floraliesjouvence.ca">levis@floraliesjouvence.ca</a></p><p style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Floralies+Jouvence+4760+Bd+Guillaume-Couture%2C+L%C3%A9vis%2C+QC+G6W+5N6" target="_blank" rel="noopener">Itinéraire</a></p></div>
+<div class="br rv"><h3>Sainte-Foy</h3><p style="margin:0">Sainte-Foy (Québec)</p><p><a href="mailto:ste-foy@floraliesjouvence.ca">ste-foy@floraliesjouvence.ca</a></p><p style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn o" href="http://www.floraliesjouvence.ca/" target="_blank" rel="noopener">Heures d'ouverture</a></p></div>
+</div></div></section>
+<footer><div class="wrap"><span>© Floralies Jouvence · Québec</span><span>La référence en horticulture</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const M=['Jan','Fév','Mars','Avr','Mai','Juin','Juil','Août','Sept','Oct','Nov','Déc'];
+const T=[
+['Janvier : l\'intérieur fleurit',['Des plantes d\'intérieur pour égayer l\'hiver','Éclairage pour plantes et semis','Le temps de planifier le potager']],
+['Février : on prépare les semis',['Matériel de semis et de germination','Terreau pour semis','Éclairage pour plantes']],
+['Mars : les premiers semis',['Semer à l\'intérieur les légumes lents','Bacs de culture et potagers surélevés','Tuteurs et attaches à prévoir']],
+['Avril : réveil du jardin',['Bulbes à planter au printemps','Nettoyage des plates-bandes','Terreau, paillis et pierre']],
+['Mai : la grande plantation',['Arbres, arbustes et conifères','Fleurs annuelles et vivaces','Pots et jardinières d\'extérieur']],
+['Juin : le potager s\'installe',['Plants de légumes et fines herbes','Treillis, tuteurs et cages à tomates','Contrôle des insectes et des mauvaises herbes']],
+['Juillet : on profite',['Entretien des fleurs et arrosage','Accessoires pour bassin d\'eau','Décoration extérieure']],
+['Août : récoltes',['Récolter et ressemer','Paillis pour garder l\'humidité','Bocaux et art de la table']],
+['Septembre : on plante pour le printemps',['Bulbes à planter à l\'automne','Ail, oignon et échalote à planter','Arbres et arbustes, la bonne saison']],
+['Octobre : on protège',['Toiles, filets et géotextiles','Derniers bulbes d\'automne','Amaryllis et bulbes d\'intérieur']],
+['Novembre : place aux fêtes',['Sapins et sapinage naturels','Décoration de Noël intérieure et extérieure','Amaryllis à offrir']],
+['Décembre : Noël en grand',['Ornements et personnages de Noël','Chandelles parfumées et cadeaux','Chocolats et confiseries']]];
+let k=new Date().getMonth();const months=document.getElementById('months'),card=document.getElementById('card');
+M.forEach((m,i)=>{const b=document.createElement('button');b.type='button';b.textContent=m;b.onclick=()=>{k=i;draw()};months.appendChild(b)});
+function draw(){[...months.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===k));const t=T[k];
+ card.innerHTML='<h3>'+t[0]+'</h3><ul>'+t[1].map(x=>'<li><i></i><span>'+x+'</span></li>').join('')+'</ul><a class="btn p" href="http://www.floraliesjouvence.ca/" target="_blank" rel="noopener">Voir en boutique en ligne</a>'}
+draw()})();
+</script>
+
+</body>
+</html>

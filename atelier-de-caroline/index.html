@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · L'Atelier de Caroline · Couture et retouches à Québec</title>
+<meta name="description" content="L'Atelier de Caroline, couturière à Québec depuis plus de 20 ans : retouches et couture, dans un atelier à la maison, sur rendez-vous seulement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Lora:ital,wght@0,500;0,600;1,500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#2E7C7E;--teal2:#236264;--blush:#F2DCD4;--lin:#F8F4EC;--ink:#26302F;--mu:#68716f;--ln:rgba(38,48,47,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--lin);color:var(--ink);font:400 1.03rem/1.66 Nunito,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.lo{font-family:Lora,Georgia,serif}.cv{font-family:Caveat,cursive}
+nav{position:sticky;top:0;z-index:30;background:rgba(248,244,236,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;font:600 1.3rem Lora}.logo span{font:600 1.6rem Caveat;color:var(--teal)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600;font-size:.94rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--teal)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .94rem Nunito;text-decoration:none;padding:13px 22px;border-radius:999px;background:var(--teal);color:#fff;border:2px solid var(--teal);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--teal2);transform:translateY(-2px)}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero{padding:56px 0 80px;position:relative;overflow:hidden}
+.hgrid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.cv.note{font-size:1.8rem;color:var(--teal)}
+h1{font:500 clamp(2.8rem,6.4vw,5rem)/1.06 Lora;margin:8px 0 18px}
+h1 em{color:var(--teal)}
+.lead{font-size:1.1rem;color:var(--mu);max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hoop{position:relative;justify-self:center;width:min(100%,400px);aspect-ratio:1}
+.hoop img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:14px solid #C9A27A;box-shadow:inset 0 0 0 4px #a8825a,0 30px 50px -30px rgba(0,0,0,.5)}
+.hoop svg{position:absolute;inset:-20px;width:calc(100% + 40px);height:calc(100% + 40px);pointer-events:none}
+.hoop circle{fill:none;stroke:var(--teal);stroke-width:2;stroke-dasharray:6 8;animation:st 40s linear infinite}
+@keyframes st{to{stroke-dashoffset:-400}}
+section{padding:90px 0}
+h2{font:500 clamp(2.2rem,4.8vw,3.4rem)/1.08 Lora;margin:0 0 14px}
+h2 em{color:var(--teal)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.04rem}
+.req{background:#fff;border-block:1px solid var(--ln)}
+.rgrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;align-items:start}
+.tag{background:var(--blush);border-radius:6px 22px 22px 6px;padding:24px 26px;position:relative}
+.tag::before{content:"";position:absolute;left:12px;top:50%;width:14px;height:14px;border-radius:50%;background:var(--lin);transform:translateY(-50%)}
+.tag>*{margin-left:18px}
+.lbl{display:block;font:700 .76rem Nunito;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);margin:0 0 8px 18px}
+.seg{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.seg button{border:1.5px solid rgba(38,48,47,.2);background:#fff;border-radius:999px;padding:9px 14px;font:700 .9rem Nunito;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--teal);color:#fff;border-color:var(--teal)}
+textarea{width:calc(100% - 18px);min-height:80px;border:1.5px solid rgba(38,48,47,.2);border-radius:12px;padding:12px;font:500 1rem Nunito;margin-bottom:14px;background:#fff}
+.me{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.me img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:20px}
+.me .sig{font:600 2.2rem Caveat;color:var(--teal);margin-top:12px}
+.contact{background:var(--teal);color:#e8f2f1}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact h2{color:#fff}.contact h2 em{color:var(--blush)}
+.contact .btn{background:#fff;color:var(--teal);border-color:#fff}
+footer{background:var(--teal2);color:#b4d1cf;padding:24px 0;font-size:.86rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.rgrid,.me,.cgrid{grid-template-columns:minmax(0,1fr)}.hoop{width:280px}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour L&#x27;Atelier de Caroline<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top">L'Atelier de <span>Caroline</span></a>
+<ul><li><a href="#demande">Ma retouche</a></li><li><a href="#caroline">Caroline</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn" href="mailto:atelierdecaroline@gmail.com">Écrire</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="cv note">Sur rendez-vous seulement</span>
+<h1>Le plus beau métier du monde, <em>depuis plus de 20 ans.</em></h1>
+<p class="lead">Une couturière d'expérience qui travaille de la maison, avec une clientèle bien établie qui lui fait confiance année après année. Ma mission : vous offrir le meilleur.</p>
+<div class="ctas"><a class="btn" href="#demande">Décrire ma retouche</a><a class="btn o" href="tel:+14183804147">Appeler</a></div></div>
+<div class="hoop rv"><img src="img/1.jpg" alt="Couture"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48"/></svg></div>
+</div></header>
+
+<section class="req" id="demande"><div class="wrap rgrid">
+<div class="rv"><h2>Votre <em>retouche</em></h2><p class="sub">Choisissez le vêtement et ce qu'il faut faire. On prépare votre courriel : joignez une photo, et Caroline vous propose un rendez-vous.</p></div>
+<div class="tag rv">
+<span class="lbl">Le vêtement</span><div class="seg" id="vt"><button type="button">Pantalon</button><button type="button">Robe</button><button type="button">Manteau</button><button type="button">Veston</button><button type="button">Chemise</button><button type="button">Autre</button></div>
+<span class="lbl">À faire</span><div class="seg" id="af"><button type="button">Raccourcir</button><button type="button">Ajuster</button><button type="button">Réparer</button><button type="button">Fermeture éclair</button></div>
+<span class="lbl">Détails</span><textarea id="tx" placeholder="Ex. : à porter pour un mariage le 12 décembre" aria-label="Détails"></textarea>
+<a class="btn" id="send" href="mailto:atelierdecaroline@gmail.com" style="margin-left:18px">Envoyer à Caroline</a>
+</div></div></section>
+
+<section id="caroline"><div class="wrap me">
+<img class="rv" src="img/2.jpg" alt="Atelier de couture">
+<div class="rv"><h2>Faire de sa passion <em>son métier</em></h2><p class="sub">« Faire de sa passion son métier, c'est se lever chaque matin avec le sourire ! » Depuis plus de 20 ans, Caroline pratique la couture avec soin, dans son atelier à la maison.</p><p class="sig">Caroline</p></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Visites <em>sur rendez-vous</em></h2><p style="margin:0 0 6px">17035 Boul. Henri-Bourassa<br>Québec, QC G1G 4A6</p><p><a href="tel:+14183804147">418 380-4147</a> · <a href="mailto:atelierdecaroline@gmail.com">atelierdecaroline@gmail.com</a><br><span style="opacity:.8">5,0 ★ sur Google · 158 avis</span></p></div>
+<div class="rv"><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="mailto:atelierdecaroline@gmail.com">Écrire à Caroline</a></p></div>
+</div></section>
+<footer><div class="wrap"><span>© L'Atelier de Caroline · Québec</span><span>Couture et retouches</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const st={vt:0,af:0};const tx=document.getElementById('tx'),send=document.getElementById('send');
+['vt','af'].forEach(k=>[...document.getElementById(k).children].forEach((b,i)=>b.onclick=()=>{st[k]=i;draw()}));tx.oninput=draw;
+function draw(){['vt','af'].forEach(k=>[...document.getElementById(k).children].forEach((b,i)=>b.setAttribute('aria-pressed',i===st[k])));const v=document.getElementById('vt').children[st.vt].textContent,a=document.getElementById('af').children[st.af].textContent;
+ send.href='mailto:atelierdecaroline@gmail.com?subject='+encodeURIComponent('Retouche : '+v+', '+a.toLowerCase())+'&body='+encodeURIComponent('Bonjour Caroline,\n\nVêtement : '+v+'\nÀ faire : '+a+'\nDétails : '+(tx.value||'...')+'\n\n(Photo en pièce jointe)\n\nNom :\nTéléphone :\nDisponibilités :\n\nMerci !')}
+draw()})();
+</script>
+
+</body>
+</html>

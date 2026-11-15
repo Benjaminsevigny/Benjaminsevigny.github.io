@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Gatine-AUTO · Centre de service automobile à Gatineau</title>
+<meta name="description" content="Gatine-AUTO, 587 boulevard Maloney Est à Gatineau : service de transmission automatique, freins, silencieux, air climatisé, direction et suspension, système de refroidissement, injecteurs. Service avec intégrité, du lundi au vendredi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bl:#0F4C81;--bl2:#0A3760;--ye:#FFC72C;--gy:#E9ECEF;--ink:#16212C;--mu:#5d6773;--ln:rgba(22,33,44,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--ink);font:400 1.04rem/1.62 "Source Sans 3",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:30;background:var(--bl);color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;font:700 1.45rem Oswald;letter-spacing:.02em}.logo span{color:var(--ye)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600;font-size:.95rem;color:#c6d6e6}
+nav ul a{text-decoration:none}nav ul a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .96rem "Source Sans 3";text-decoration:none;padding:13px 22px;border-radius:6px;background:var(--ye);color:var(--ink);border:2px solid var(--ye);transition:.2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px);filter:brightness(.95)}.btn.o{background:transparent;color:inherit;border-color:currentColor}.btn.b{background:var(--bl);border-color:var(--bl);color:#fff}
+.hero{background:linear-gradient(110deg,var(--bl2) 0 55%,transparent 55%),var(--gy);color:#fff;overflow:hidden}
+.hgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-block:60px 80px}
+.int{display:inline-block;border-left:4px solid var(--ye);padding-left:12px;font:500 1.05rem Oswald;letter-spacing:.06em;text-transform:uppercase}
+h1{font:700 clamp(2.8rem,6.8vw,5.6rem)/.98 Oswald;margin:16px 0 18px;text-transform:uppercase}
+h1 span{color:var(--ye)}
+.lead{font-size:1.12rem;color:#d3e0ec;max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hpic img{width:100%;aspect-ratio:4/3.6;object-fit:cover;border-radius:10px;box-shadow:0 30px 50px -30px rgba(0,0,0,.6)}
+section{padding:90px 0}
+h2{font:700 clamp(2.2rem,5vw,3.8rem)/1 Oswald;margin:0 0 14px;text-transform:uppercase}
+h2 span{color:var(--bl)}
+.sub{color:var(--mu);max-width:58ch;margin:0}
+.dash{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:36px}
+.dash button{background:var(--ink);color:#9aa7b4;border:2px solid transparent;border-radius:14px;padding:22px 16px;cursor:pointer;text-align:left;font:600 1.02rem "Source Sans 3";transition:.2s;display:flex;gap:14px;align-items:center}
+.dash button svg{flex:none}
+.dash button[aria-pressed=true]{color:var(--ye);border-color:var(--ye);box-shadow:0 0 24px -6px rgba(255,199,44,.6)}
+.dash button[aria-pressed=true] b{color:#fff}
+.dash b{display:block;font:500 1.15rem Oswald;letter-spacing:.02em;color:#e8edf2}
+.ans{margin-top:16px;background:var(--gy);border-radius:14px;padding:22px 24px;display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+.ans p{margin:0;max-width:62ch}
+.svc{background:var(--gy)}
+.sl{columns:2;column-gap:40px;margin:30px 0 0;padding:0;list-style:none}
+.sl li{break-inside:avoid;padding:13px 0;border-bottom:1px solid var(--ln);font-weight:600;display:flex;gap:12px}
+.sl li::before{content:"";width:10px;height:10px;margin-top:8px;background:var(--bl);transform:rotate(45deg);flex:none}
+.contact{background:var(--bl2);color:#d3e0ec}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:46px}
+.contact h2{color:#fff}.contact h2 span{color:var(--ye)}
+[data-hours]{list-style:none;margin:0;padding:0}[data-hours] li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+[data-hours] li.td{color:var(--ye);font-weight:700}
+.st{display:inline-flex;align-items:center;gap:8px;font-weight:700;margin-bottom:12px}.st::before{content:"";width:10px;height:10px;border-radius:50%;background:#8796a6}
+[data-open].on .st::before{background:#5be08a}
+footer{background:var(--ink);color:#8796a6;padding:24px 0;font-size:.86rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hero{background:var(--bl2)}.hgrid,.cgrid{grid-template-columns:minmax(0,1fr)}.dash{grid-template-columns:minmax(0,1fr)}.sl{columns:1}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Gatine-AUTO<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top">Gatine-<span>AUTO</span></a>
+<ul><li><a href="#symptome">Mon problème</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Heures</a></li></ul>
+<a class="btn" href="tel:+18196633300">819 663-3300</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="int">Service avec intégrité</span>
+<h1>Ça fait du bruit&nbsp;? <span>On s'en occupe.</span></h1>
+<p class="lead">Silencieux bruyant, freins qui crient, air climatisé qui ne refroidit plus : autant de problèmes que Gatine-AUTO peut régler, boulevard Maloney Est.</p>
+<div class="ctas"><a class="btn" href="#symptome">Décrire mon problème</a><a class="btn o" href="tel:+18196633300">Appeler</a></div></div>
+<div class="hpic rv"><img src="img/1.jpg" alt="Atelier de réparation automobile"></div>
+</div></header>
+
+<section id="symptome"><div class="wrap">
+<h2 class="rv">Qu'est-ce que <span>vous remarquez&nbsp;?</span></h2>
+<p class="sub rv">Choisissez ce qui ressemble le plus à votre problème : on vous dit quoi faire vérifier.</p>
+<div class="dash" id="dash">
+<button type="button"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 14h10a3 3 0 0 0 3-3V9h5M6 18c1 0 1-1 2-1s1 1 2 1 1-1 2-1"/></svg><span><b>Le silencieux</b>fait du bruit</span></button>
+<button type="button"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M2 8a10 10 0 0 0 0 8M22 8a10 10 0 0 1 0 8"/></svg><span><b>Les freins</b>crient</span></button>
+<button type="button"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M4.9 4.9l14.2 14.2M2 12h20M4.9 19.1L19.1 4.9"/></svg><span><b>L'air climatisé</b>ne refroidit plus</span></button>
+<button type="button"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7l-4 5 4 5M17 7l4 5-4 5M3 12h18"/></svg><span><b>La direction</b>tire ou cogne</span></button>
+<button type="button"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3v9a5 5 0 1 0 10 0V3"/><path d="M12 3v14"/></svg><span><b>La température</b>monte</span></button>
+<button type="button"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M7 7V5h4v2M14 7V5h4v2M8 13h3M14 13h2"/></svg><span><b>La batterie</b>se décharge</span></button>
+</div>
+<div class="ans rv" aria-live="polite"><p id="ap"></p><a class="btn b" id="send" href="tel:+18196633300">Prendre rendez-vous</a></div>
+</div></section>
+
+<section class="svc" id="services"><div class="wrap">
+<h2 class="rv">Nos <span>services</span></h2>
+<ul class="sl rv"><li>Service de transmission automatique</li><li>Freins</li><li>Silencieux et échappement</li><li>Vérification de l'air climatisé</li><li>Vérification de la direction et de la suspension</li><li>Purge du système de refroidissement</li><li>Vérification du système de charge</li><li>Nettoyage des injecteurs et mise au point</li></ul>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Venez au <span>garage</span></h2><p style="font:500 1.4rem/1.3 Oswald;color:#fff;margin:0 0 8px">587 Boulevard Maloney E<br>Gatineau, QC J8P 1G2</p><p><a href="tel:+18196633300">819 663-3300</a> · <a href="mailto:info@gatine-auto.com">info@gatine-auto.com</a><br><span style="opacity:.75">4,9 ★ sur Google · 360 avis</span></p>
+<p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px"><a class="btn" href="tel:+18196633300">Appeler</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Centre+de+Service+Gatine-AUTO+587+Boulevard+Maloney+E%2C+Gatineau%2C+QC+J8P+1G2" target="_blank" rel="noopener">Itinéraire</a></p></div>
+<div class="rv" data-open><div class="st" data-status></div><ul data-hours></ul></div>
+</div></section>
+<footer><div class="wrap"><span>© Gatine-AUTO · Gatineau</span><span>Service avec intégrité</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"1": [480, 1020], "2": [480, 1020], "3": [480, 1020], "4": [480, 1020], "5": [480, 1020]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"1": [480, 1020], "2": [480, 1020], "3": [480, 1020], "4": [480, 1020], "5": [480, 1020]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const A=['Un silencieux qui fait du bruit, c\'est souvent un échappement percé ou un support usé. On vérifie et on vous explique avant de réparer.','Des freins qui crient demandent une vérification rapide : plus on attend, plus la réparation peut coûter cher.','On vérifie votre système d\'air climatisé pour trouver pourquoi il ne refroidit plus.','On vérifie la direction et la suspension pour trouver d\'où vient le problème.','Une température qui monte peut venir du système de refroidissement. Une purge fait parfois partie de la solution.','On vérifie le système de charge : batterie, alternateur et régulateur.'];let k=1;
+const dash=document.getElementById('dash');[...dash.children].forEach((b,i)=>b.onclick=()=>{k=i;draw()});
+function draw(){[...dash.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===k));document.getElementById('ap').textContent=A[k]}
+draw()})();
+</script>
+
+</body>
+</html>

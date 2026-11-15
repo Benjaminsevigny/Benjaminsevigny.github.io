@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Demo · Ottawa Ink · Custom tattoos and piercings in Ottawa</title>
+<meta name="description" content="Ottawa Ink: custom tattoos, black and grey, realism, fine line and cover-ups, plus piercings. Walk-ins welcome.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bk:#0B0B0B;--gy:#161616;--gr:#39FF7A;--wh:#EDEDED;--mu:#9a9a9a;--ln:rgba(237,237,237,.1);--vh:100svh;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bk);color:var(--wh);font:400 1.02rem/1.62 Archivo,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.bl{font-family:"UnifrakturMaguntia",serif;font-weight:400}
+nav{position:sticky;top:0;z-index:30;background:rgba(11,11,11,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;font:1.9rem/1 UnifrakturMaguntia}.logo span{color:var(--gr)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mu)}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--wh)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:800 .86rem Archivo;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:14px 22px;background:var(--gr);color:#0b0b0b;border:2px solid var(--gr);transition:.2s;cursor:pointer}
+.btn:hover{box-shadow:0 0 24px rgba(57,255,122,.45)}.btn.o{background:transparent;color:var(--wh);border-color:var(--ln)}
+.hero{position:relative;min-height:min(740px,calc(var(--vh) - 66px));display:grid;place-items:center;text-align:center;overflow:hidden;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:grayscale(1) brightness(.35)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle,transparent 20%,var(--bk) 80%)}
+h1{font:clamp(4rem,12vw,9.5rem)/.9 UnifrakturMaguntia;margin:0}
+h1 span{color:var(--gr);text-shadow:0 0 30px rgba(57,255,122,.4)}
+.hero p{max-width:46ch;margin:18px auto 26px;color:#c9c9c9;font-size:1.1rem}
+.tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:24px}
+.tags span{border:1px solid var(--ln);padding:6px 12px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+section{padding:90px 0}
+h2{font:800 clamp(2.4rem,5vw,4rem)/.95 Archivo;text-transform:uppercase;margin:0 0 14px;letter-spacing:-.02em}
+h2 span{color:var(--gr)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.04rem}
+.styles{display:grid;grid-template-columns:.8fr 1.2fr;gap:46px;align-items:start}
+.list{display:grid;gap:2px;margin-top:20px}
+.list button{display:flex;justify-content:space-between;align-items:center;text-align:left;border:0;border-bottom:1px solid var(--ln);background:transparent;color:var(--wh);padding:16px 4px;font:800 1.4rem Archivo;text-transform:uppercase;cursor:pointer;transition:.2s}
+.list button::after{content:"→";color:var(--mu)}
+.list button[aria-pressed=true]{color:var(--gr);padding-left:14px}.list button[aria-pressed=true]::after{color:var(--gr)}
+.view{background:var(--gy);border:1px solid var(--ln);overflow:hidden}
+.view img{width:100%;aspect-ratio:16/10;object-fit:cover;filter:grayscale(1);transition:filter .4s}
+.view div{padding:22px}
+.view h3{font:1.9rem UnifrakturMaguntia;margin:0 0 8px;color:var(--gr)}.view p{margin:0 0 14px;color:#c9c9c9}
+.walk{display:flex;align-items:center;gap:20px;justify-content:space-between;flex-wrap:wrap;border:1px solid var(--gr);padding:26px 28px}
+.walk b{font:800 1.6rem Archivo;text-transform:uppercase}
+.contact{border-top:1px solid var(--ln)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+footer{border-top:1px solid var(--ln);color:#6d6d6d;padding:24px 0;font-size:.86rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.styles,.cgrid{grid-template-columns:minmax(0,1fr)}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DEMO</b>Example made for Ottawa Ink<span class="long"> · not the business's official website</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top">Ottawa <span>Ink</span></a>
+<ul><li><a href="#styles">Styles</a></li><li><a href="#walkin">Walk-ins</a></li><li><a href="#contact">Book</a></li></ul>
+<a class="btn" href="tel:+13439988797">(343) 998-8797</a></div></nav>
+
+<header class="hero" id="top"><img src="img/1.jpg" alt="Tattoo artist at work"><div class="wrap">
+<h1>Ottawa <span>Ink</span></h1>
+<p>Custom tattoos and piercings in Ottawa. Bring an idea, leave with art that's yours alone.</p>
+<div class="tags"><span>Custom</span><span>Black &amp; grey</span><span>Realism</span><span>Fine line</span><span>Cover-ups</span><span>Piercing</span></div>
+<div class="ctas"><a class="btn" href="#styles">Find your style</a><a class="btn o" href="mailto:ottawainkinc@gmail.com?subject=Tattoo%20idea">Send your idea</a></div></div></header>
+
+<section id="styles"><div class="wrap styles">
+<div class="rv"><h2>Find your <span>style</span></h2><p class="sub">Tap a style to see what it's about. Then send us your idea with a few references.</p>
+<div class="list" id="list"><button type="button">Custom</button><button type="button">Black &amp; grey</button><button type="button">Realism</button><button type="button">Fine line</button><button type="button">Cover-up</button><button type="button">Piercing</button></div></div>
+<div class="view rv" id="view" aria-live="polite"></div>
+</div></section>
+
+<section id="walkin" style="padding-top:0"><div class="wrap">
+<div class="walk rv"><div><b>Walk-ins welcome</b><p class="sub" style="margin:4px 0 0">Feeling spontaneous? Come by the shop and see who's available.</p></div><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Ottawa+Ink+Inc+928+Montr%C3%A9al+Rd+2nd+floor%2C+Ottawa%2C+ON+K1K+0S8" target="_blank" rel="noopener">Get directions</a></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Book <span>your piece</span></h2><p style="font-size:1.15rem;margin:0 0 6px">928 Montréal Rd 2nd floor<br>Ottawa, ON K1K 0S8</p><p><a href="tel:+13439988797">(343) 998-8797</a> · <a href="mailto:ottawainkinc@gmail.com">ottawainkinc@gmail.com</a><br><span style="color:var(--mu)">4.9 ★ on Google · 418 reviews</span></p></div>
+<div class="rv"><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="tel:+13439988797">Call</a><a class="btn o" href="mailto:ottawainkinc@gmail.com?subject=Tattoo%20idea">Email your idea</a></p></div>
+</div></section>
+<footer><div class="wrap"><span>© Ottawa Ink Inc.</span><span>Custom tattoos &amp; piercings</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "en") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="en"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const S=[['Custom','Your idea, drawn for you. Bring references, a story or a feeling: the artist builds a one-of-a-kind design.','img/2.jpg'],['Black & grey','Depth and shading in black and grey tones. Timeless, and it ages beautifully.','img/3.jpg'],['Realism','Portraits, animals, nature: detailed work that looks like it could come off the skin.','img/2.jpg'],['Fine line','Delicate, precise lines for minimal and elegant pieces.','img/3.jpg'],['Cover-up','Not happy with an old tattoo? We design a new piece to cover it. Send a photo of the current one.','img/2.jpg'],['Piercing','Piercings done in the shop, with care.','img/3.jpg']];let k=0;
+const list=document.getElementById('list'),view=document.getElementById('view');
+[...list.children].forEach((b,i)=>b.onclick=()=>{k=i;draw()});
+function draw(){[...list.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===k));const s=S[k];view.innerHTML='<img src="'+s[2]+'" alt=""><div><h3>'+s[0]+'</h3><p>'+s[1]+'</p><a class="btn" href="mailto:ottawainkinc@gmail.com?subject='+encodeURIComponent(s[0]+' tattoo idea')+'">Send my idea</a></div>'}
+draw()})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Centre de Santé Globale Holos · Saint-Jean-sur-Richelieu</title>
+<meta name="description" content="Centre de Santé Globale Holos, rue Saint-Jacques à Saint-Jean-sur-Richelieu : la santé sous tous ses aspects. Kinésiologie, massothérapie, kinésithérapie, naturothérapie, posturologie, réflexologie, relation d'aide, sonothérapie et plus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--sg:#5B8C5A;--sg2:#3F6B3E;--sun:#E9B44C;--sky:#CFE3E0;--cr:#F8F6EF;--ink:#24322A;--mu:#66726a;--ln:rgba(36,50,42,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cr);color:var(--ink);font:400 1.03rem/1.68 Mulish,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:30;background:rgba(248,246,239,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:400 1.5rem Marcellus;letter-spacing:.14em}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600;font-size:.94rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--sg)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .94rem Mulish;text-decoration:none;padding:13px 22px;border-radius:999px;background:var(--sg);color:#fff;border:2px solid var(--sg);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--sg2);transform:translateY(-2px)}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero{padding:50px 0 80px;position:relative;overflow:hidden}
+.hgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.k{font-weight:700;color:var(--sg);letter-spacing:.14em;text-transform:uppercase;font-size:.82rem}
+h1{font:400 clamp(2.8rem,6.8vw,5.6rem)/1.02 Marcellus;margin:14px 0 18px}
+h1 span{color:var(--sg)}
+.lead{font-size:1.12rem;color:var(--mu);max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.circ{position:relative;width:min(100%,420px);aspect-ratio:1;justify-self:center}
+.circ img{position:absolute;inset:14%;width:72%;height:72%;object-fit:cover;border-radius:50%}
+.circ svg{position:absolute;inset:0;width:100%;height:100%;animation:rot 60s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+.circ text{font:700 9px Mulish;letter-spacing:3px;fill:var(--sg2);text-transform:uppercase}
+section{padding:90px 0}
+h2{font:400 clamp(2.2rem,4.8vw,3.6rem)/1.06 Marcellus;margin:0 0 14px}
+h2 span{color:var(--sg)}
+.sub{color:var(--mu);max-width:58ch;margin:0}
+.find{background:#fff;border-block:1px solid var(--ln)}
+.fg{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:start;margin-top:30px}
+.needs{display:flex;flex-wrap:wrap;gap:10px}
+.needs button{border:1.5px solid var(--ln);background:var(--cr);border-radius:999px;padding:11px 16px;font:700 .95rem Mulish;cursor:pointer;color:inherit}
+.needs button[aria-pressed=true]{background:var(--sg);border-color:var(--sg);color:#fff}
+.who{display:grid;gap:10px}
+.w{display:flex;gap:14px;align-items:center;background:var(--cr);border-radius:16px;padding:14px 16px;transition:.3s}
+.w i{width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-items:center;background:var(--sky);color:var(--sg2)}
+.w b{display:block;font:400 1.2rem Marcellus}.w span{color:var(--mu);font-size:.92rem}
+.wheel{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px}
+.wheel span{background:var(--sky);border-radius:999px;padding:7px 14px;font-weight:600;font-size:.92rem}
+.contact{background:var(--sg2);color:#e0ebe0}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact h2{color:#fff}.contact h2 span{color:var(--sun)}
+.contact .btn{background:#fff;color:var(--sg2);border-color:#fff}.contact .btn.o{background:transparent;color:#fff}
+footer{background:#2f4f2e;color:#a6bea5;padding:24px 0;font-size:.86rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.fg,.cgrid{grid-template-columns:minmax(0,1fr)}.circ{width:300px}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Holos<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5B8C5A" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3c-3 3-3 15 0 18M12 3c3 3 3 15 0 18M3 12h18"/></svg>HOLOS</a>
+<ul><li><a href="#trouver">Mon thérapeute</a></li><li><a href="#equipe">L'équipe</a></li><li><a href="#contact">Nous joindre</a></li></ul>
+<a class="btn" href="tel:+15142086247">514 208-6247</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="k">Centre de santé globale · Saint-Jean-sur-Richelieu</span>
+<h1>La santé <span>sous tous ses aspects.</span></h1>
+<p class="lead">Une équipe de thérapeutes réunis sous un même toit, pour une approche holistique : le corps, la posture, les émotions et l'énergie.</p>
+<div class="ctas"><a class="btn" href="#trouver">Trouver mon thérapeute</a><a class="btn o" href="tel:+15142086247">Appeler</a></div></div>
+<div class="circ rv"><img src="img/1.jpg" alt="Soin holistique"><svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="cpath" d="M100,100 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0"/></defs><text><textPath href="#cpath">Corps · Posture · Émotions · Énergie · Mouvement · Corps · Posture · Émotions · Énergie ·</textPath></text></svg></div>
+</div></header>
+
+<section class="find" id="trouver"><div class="wrap">
+<h2 class="rv">Qui peut <span>m'aider&nbsp;?</span></h2>
+<p class="sub rv">Choisissez ce que vous vivez : on vous montre les approches de notre équipe qui y répondent.</p>
+<div class="fg">
+<div class="needs rv" id="needs"><button type="button">Douleurs chroniques</button><button type="button">Tensions et stress</button><button type="button">Posture</button><button type="button">Course et performance</button><button type="button">Soins des pieds</button><button type="button">Besoin d'en parler</button><button type="button">Soins de première ligne</button></div>
+<div class="rv"><div class="who" id="who" aria-live="polite"></div><p style="margin-top:16px"><a class="btn" id="send" href="mailto:info@santeholos.com">Demander un rendez-vous</a></p></div>
+</div></div></section>
+
+<section id="equipe"><div class="wrap">
+<h2 class="rv">Une équipe <span>multidisciplinaire</span></h2>
+<p class="sub rv">Sylvain Gendron, co-propriétaire, et une grande équipe de thérapeutes vous accueillent rue Saint-Jacques.</p>
+<div class="wheel rv"><span>Kinésiologie</span><span>Kinésithérapie</span><span>Massothérapie</span><span>Orthothérapie</span><span>Naturothérapie</span><span>Posturologie</span><span>Réflexologie plantaire</span><span>Soins des pieds</span><span>Relation d'aide</span><span>Intervention psychosociale</span><span>Coaching PNL</span><span>Sonothérapie</span><span>Neurothérapie</span><span>Infirmière praticienne</span><span>Réadaptation physique</span><span>Massage crânien</span><span>Feng shui</span></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Venez <span>nous rencontrer</span></h2><p style="font:400 1.4rem/1.35 Marcellus;margin:0 0 8px">485 Rue Saint-Jacques #1<br>Saint-Jean-sur-Richelieu, Quebec J3B 2M1</p><p><a href="tel:+15142086247">514 208-6247</a> · <a href="mailto:info@santeholos.com">info@santeholos.com</a><br><span style="opacity:.8">4,9 ★ sur Google · 32 avis</span></p></div>
+<div class="rv"><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="tel:+15142086247">Appeler</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Centre+de+Sant%C3%A9+Globale+Holos+485+Rue+Saint-Jacques+%231%2C+Saint-Jean-sur-Richelieu%2C+Quebec+J3B+2M1" target="_blank" rel="noopener">Itinéraire</a></p></div>
+</div></section>
+<footer><div class="wrap"><span>© Centre de Santé Globale Holos · Saint-Jean-sur-Richelieu</span><span>La santé sous tous ses aspects</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const N=[[['Kinésiologie et naturothérapie','Spécialisée en symptômes de douleurs chroniques'],['Massothérapie et kinésithérapie','Pour le corps en tension'],['Réadaptation physique','Pour retrouver le mouvement']],[['Massothérapie','Massage crânien et métamorphique'],['Sonothérapie','Tambour et voix'],['Relation d\'aide','Une écoute pour avancer']],[['Posturologie','Pour mieux se tenir, au quotidien'],['Orthothérapie','Pour les déséquilibres du corps'],['Préparation physique','Avec une posturologue']],[['Kinésiologie','Spécialiste en technique de course'],['Préparation physique','Avec une préparatrice physique']],[['Soins des pieds spécialisés','Par une technicienne en soin des pieds'],['Réflexologie plantaire','Le bien-être par les pieds']],[['Relation d\'aide','Thérapeutes en relation d\'aide'],['Intervention psychosociale','Un accompagnement humain'],['Coaching PNL','Coach certifié']],[['Infirmière praticienne','Spécialisée en soins de première ligne']]];let k=0;
+const needs=document.getElementById('needs'),who=document.getElementById('who'),send=document.getElementById('send');
+[...needs.children].forEach((b,i)=>b.onclick=()=>{k=i;draw()});
+function draw(){[...needs.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===k));const n=needs.children[k].textContent;
+ who.innerHTML=N[k].map(w=>'<div class="w"><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></i><div><b>'+w[0]+'</b><span>'+w[1]+'</span></div></div>').join('');
+ send.href='mailto:info@santeholos.com?subject='+encodeURIComponent('Rendez-vous : '+n)+'&body='+encodeURIComponent('Bonjour,\n\nCe que je vis : '+n+'\nApproche qui m\'intéresse : '+N[k].map(w=>w[0]).join(' / ')+'\n\nNom :\nTéléphone :\nDisponibilités :\n\nMerci !')}
+draw()})();
+</script>
+
+</body>
+</html>

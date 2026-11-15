@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · D&amp;M Peintres · Peinture intérieure et extérieure, Laval et Grand Montréal</title>
+<meta name="description" content="D&amp;M Peintres, entreprise de peinture à Laval : peinture intérieure et extérieure, armoires de cuisine, fusil pulvérisateur, papier peint, plâtre et gypse. Laval, Montréal, Rive-Nord et Rive-Sud. RBQ 8279-7655-34.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1B1B1F;--wh:#FBFAF7;--c1:#E86A33;--c2:#2D6A4F;--c3:#3A5BA0;--c4:#F2C14E;--mu:#66666d;--ln:rgba(27,27,31,.12);--wall:#E86A33;--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--wh);color:var(--ink);font:400 1.02rem/1.64 Karla,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:30;background:rgba(251,250,247,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;font:800 1.4rem Syne;letter-spacing:-.02em}.logo span{color:var(--c1)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500;font-size:.95rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--c1)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .95rem Karla;text-decoration:none;padding:13px 22px;border-radius:8px;background:var(--ink);color:#fff;border:2px solid var(--ink);transition:.2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px);box-shadow:4px 4px 0 var(--c1)}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero{padding:50px 0 80px;position:relative;overflow:hidden}
+.hgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:46px;align-items:center}
+.rbq{font-weight:700;font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mu)}
+h1{font:800 clamp(2.9rem,7.4vw,6.2rem)/.94 Syne;margin:14px 0 18px;letter-spacing:-.03em}
+h1 .s{position:relative;display:inline-block;z-index:0}
+h1 .s::before{content:"";position:absolute;left:-4px;right:-6px;bottom:6%;height:42%;background:var(--c4);z-index:-1;transform:skew(-6deg);animation:rl 1.4s .3s both cubic-bezier(.2,.8,.2,1);transform-origin:left}
+@keyframes rl{from{transform:scaleX(0) skew(-6deg)}}
+.lead{font-size:1.12rem;color:var(--mu);max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hpic{position:relative}
+.hpic img{width:100%;aspect-ratio:4/4.4;object-fit:cover;border-radius:10px}
+.sw{position:absolute;left:-18px;bottom:24px;display:flex;flex-direction:column;gap:6px;background:#fff;padding:10px;border-radius:10px;box-shadow:0 18px 30px -18px rgba(0,0,0,.4)}
+.sw i{width:46px;height:22px;border-radius:4px}
+section{padding:90px 0}
+h2{font:800 clamp(2.2rem,5vw,3.8rem)/1 Syne;margin:0 0 14px;letter-spacing:-.02em}
+h2 span{color:var(--c1)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.04rem}
+.calc{background:var(--ink);color:#eee}
+.calc h2{color:#fff}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center;margin-top:30px}
+.room{aspect-ratio:4/3;perspective:700px;display:grid;place-items:center}
+.box{width:72%;height:62%;position:relative;transform-style:preserve-3d;transform:rotateX(-12deg) rotateY(-28deg)}
+.box div{position:absolute;inset:0;background:var(--wall);transition:background .4s;border:2px solid rgba(0,0,0,.2)}
+.box .bk{transform:translateZ(-80px)}.box .lf{width:160px;left:0;transform-origin:left;transform:rotateY(90deg) translateX(-80px);filter:brightness(.8)}
+.box .fl{top:auto;height:160px;bottom:0;transform-origin:bottom;transform:rotateX(90deg);background:#c9b28f;filter:brightness(.9)}
+.box .bk::after{content:"";position:absolute;left:58%;top:30%;width:22%;height:36%;background:#bfe3ff;border:6px solid #fff}
+.ctl label{display:block;font:700 .76rem Karla;letter-spacing:.14em;text-transform:uppercase;color:#aaa;margin-bottom:6px}
+.ctl .row{display:flex;align-items:center;gap:14px;margin-bottom:16px}.ctl output{font:800 1.4rem Syne;min-width:76px;color:#fff}
+.ctl input[type=range]{flex:1;accent-color:var(--c1);height:28px}
+.cols{display:flex;gap:8px;margin-bottom:18px}.cols button{width:38px;height:38px;border-radius:50%;border:3px solid transparent;cursor:pointer}
+.cols button[aria-pressed=true]{border-color:#fff}
+.res{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.res div{background:#2a2a30;border-radius:10px;padding:14px}.res b{display:block;font:800 1.9rem/1 Syne;color:var(--c4)}.res span{font-size:.86rem;color:#aaa}
+.svc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:36px}
+.s{border:2px solid var(--ink);border-radius:10px;padding:20px;background:#fff;transition:.2s}
+.s:hover{box-shadow:6px 6px 0 var(--c1);transform:translate(-3px,-3px)}
+.s b{display:block;font:800 1.15rem Syne;margin-bottom:4px}.s span{color:var(--mu);font-size:.94rem}
+.zones{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}.zones span{background:var(--c4);border-radius:999px;padding:7px 15px;font-weight:700}
+.contact{background:var(--c1);color:#fff}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact .btn{background:#fff;color:var(--ink);border-color:#fff}.contact .btn.o{background:transparent;color:#fff}
+footer{background:var(--ink);color:#999;padding:24px 0;font-size:.86rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.cg,.cgrid{grid-template-columns:minmax(0,1fr)}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}.s{padding:16px}.s b{font-size:.95rem;hyphens:auto;-webkit-hyphens:auto;overflow-wrap:anywhere}.hpic{max-width:380px;margin:0 auto}.sw{left:-6px}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour D&amp;M Peintres<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top">D<span>&amp;</span>M Peintres</a>
+<ul><li><a href="#calcul">Calculer ma peinture</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Soumission</a></li></ul>
+<a class="btn" href="tel:+14388279477">438 827-9477</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="rbq">Licence RBQ 8279-7655-34</span>
+<h1>Une peinture <span class="s">parfaite,</span> d'un mur à l'autre.</h1>
+<p class="lead">Daniel et Mathieu, propriétaires engagés, peignent depuis plus de 10 ans, appuyés par 25 ans d'expérience dans le domaine. Intérieur, extérieur, armoires de cuisine.</p>
+<div class="ctas"><a class="btn" href="#calcul">Calculer ma peinture</a><a class="btn o" href="tel:+14388279477">Appeler</a></div></div>
+<div class="hpic rv"><img src="img/1.jpg" alt="Peintres au travail"><div class="sw" aria-hidden="true"><i style="background:var(--c1)"></i><i style="background:var(--c2)"></i><i style="background:var(--c3)"></i><i style="background:var(--c4)"></i></div></div>
+</div></header>
+
+<section class="calc" id="calcul"><div class="wrap">
+<h2 class="rv">Combien de <span>peinture ?</span></h2>
+<p class="sub rv" style="color:#aaa">Entrez les dimensions de votre pièce : on estime la surface des murs et la peinture pour deux couches.</p>
+<div class="cg">
+<div class="room rv" aria-hidden="true"><div class="box"><div class="fl"></div><div class="lf"></div><div class="bk"></div></div></div>
+<div class="ctl rv">
+<label for="w">Longueur</label><div class="row"><output id="wo"></output><input type="range" id="w" min="6" max="30" value="14"></div>
+<label for="d">Largeur</label><div class="row"><output id="do"></output><input type="range" id="d" min="6" max="30" value="12"></div>
+<label for="h">Hauteur des murs</label><div class="row"><output id="ho"></output><input type="range" id="h" min="7" max="12" value="8"></div>
+<label>Couleur</label><div class="cols" id="cols"><button type="button" style="background:#E86A33" aria-label="Terracotta"></button><button type="button" style="background:#2D6A4F" aria-label="Vert"></button><button type="button" style="background:#3A5BA0" aria-label="Bleu"></button><button type="button" style="background:#F2C14E" aria-label="Jaune"></button><button type="button" style="background:#EDE6DA" aria-label="Lin"></button></div>
+<div class="res" aria-live="polite"><div><b id="sq"></b><span>pi² de murs</span></div><div><b id="gal"></b><span>gallons, 2 couches</span></div></div>
+<p style="font-size:.86rem;color:#999;margin:0 0 16px">Estimation approximative (environ 375 pi² par gallon, portes et fenêtres non déduites).</p>
+<a class="btn" id="send" style="background:var(--c1);border-color:var(--c1)" href="mailto:detmpeintres@gmail.com">Demander une soumission</a></div>
+</div></div></section>
+
+<section id="services"><div class="wrap">
+<h2 class="rv">Tous les services <span>de finition</span></h2>
+<p class="sub rv">Des tarifs compétitifs, adaptés à l'emplacement et à l'ampleur du projet, pour le résidentiel comme le commercial.</p>
+<div class="svc">
+<div class="s rv"><b>Intérieur</b><span>Murs, plafonds, finition.</span></div>
+<div class="s rv"><b>Extérieur</b><span>Revêtements, toitures.</span></div>
+<div class="s rv"><b>Armoires de cuisine</b><span>Une cuisine transformée.</span></div>
+<div class="s rv"><b>Fusil pulvérisateur</b><span>Intérieur et extérieur.</span></div>
+<div class="s rv"><b>Papier peint</b><span>Installation.</span></div>
+<div class="s rv"><b>Plinthes et cadrages</b><span>Installation.</span></div>
+<div class="s rv"><b>Gypse et plâtre</b><span>Réparations, ancien plâtre.</span></div>
+<div class="s rv"><b>Commercial</b><span>Travaux de grande envergure.</span></div>
+</div>
+<div class="zones rv"><span>Laval</span><span>Montréal</span><span>Rive-Nord</span><span>Rive-Sud</span></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Parlons de <span style="color:var(--ink)">vos murs</span></h2><p style="margin:0 0 6px">627 R. Robert-Élie #105, Laval, Quebec H7N 3Y9</p><p><a href="tel:+14388279477">438 827-9477</a> · <a href="mailto:detmpeintres@gmail.com">detmpeintres@gmail.com</a><br><span style="opacity:.85">5,0 ★ sur Google · 59 avis</span></p></div>
+<div class="rv"><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="tel:+14388279477">Appeler</a><a class="btn o" href="mailto:detmpeintres@gmail.com?subject=Soumission%20peinture">Écrire</a></p></div>
+</div></section>
+<footer><div class="wrap"><span>© D&amp;M Peintres · Laval</span><span>RBQ 8279-7655-34</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const $=i=>document.getElementById(i);const w=$('w'),d=$('d'),h=$('h'),cols=$('cols'),send=$('send');let c=0;
+[...cols.children].forEach((b,i)=>b.onclick=()=>{c=i;draw()});w.oninput=d.oninput=h.oninput=draw;
+function draw(){const W=+w.value,D=+d.value,H=+h.value;$('wo').textContent=W+' pi';$('do').textContent=D+' pi';$('ho').textContent=H+' pi';
+ [...cols.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===c));document.documentElement.style.setProperty('--wall',cols.children[c].style.background);
+ const A=2*(W+D)*H,G=Math.ceil(A*2/375*2)/2;$('sq').textContent=A.toLocaleString('fr-CA');$('gal').textContent=String(G).replace('.',',');
+ send.href='mailto:detmpeintres@gmail.com?subject='+encodeURIComponent('Soumission peinture')+'&body='+encodeURIComponent('Bonjour Daniel et Mathieu,\n\nPièce : '+W+' x '+D+' pi, murs de '+H+' pi (environ '+A+' pi²)\nTravaux : intérieur / extérieur / armoires\nVille :\n\nNom :\nTéléphone :\n\nMerci !')}
+draw()})();
+</script>
+
+</body>
+</html>

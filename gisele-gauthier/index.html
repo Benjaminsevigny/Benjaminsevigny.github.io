@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Gisèle Gauthier Traiteur · Traiteur à Montréal pour bureaux, cocktails et banquets</title>
+<meta name="description" content="Gisèle Gauthier Traiteur, rue Saint-Denis à Montréal : boîtes repas, Tiffins zéro déchet, cocktails et banquets jusqu'à 800 personnes. Chef propriétaire Éric Reynaud.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--pe:#F2C9B0;--pe2:#E8AF8E;--br:#3A2318;--br2:#5A3826;--cr:#FBF5EF;--mu:#7d6658;--sage:#9DAA8C;--ln:rgba(58,35,24,.13);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cr);color:var(--br);font:400 1.02rem/1.65 Manrope,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:30;background:rgba(251,245,239,.93);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo .g{width:42px;height:42px;border-radius:50%;background:var(--br);color:var(--pe);display:grid;place-items:center;font:1.5rem Gloock}
+.logo b{font:1.15rem/1.05 Gloock}.logo small{display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mu)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500;font-size:.94rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--br2);text-decoration:underline}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .92rem Manrope;text-decoration:none;padding:13px 22px;border-radius:999px;background:var(--br);color:var(--cr);border:1.5px solid var(--br);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--br2);transform:translateY(-2px)}.btn.o{background:transparent;color:var(--br)}.btn.p{background:var(--pe);border-color:var(--pe);color:var(--br)}
+.hero{padding:40px 0 90px}
+.hgrid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end}
+h1{font:400 clamp(3.2rem,8vw,7rem)/.95 Gloock;margin:0;letter-spacing:-.02em}
+h1 span{background:linear-gradient(transparent 62%,var(--pe) 62%)}
+.lead{font-size:1.12rem;color:var(--mu);margin:0 0 24px;max-width:38ch}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.band{display:grid;grid-template-columns:2fr 1fr 1fr;gap:14px;margin-top:44px}
+.band>*{height:min(46vh,440px)}.band img{width:100%;object-fit:cover;border-radius:22px}
+.band .stat{background:var(--br);color:var(--cr);border-radius:22px;padding:24px;display:flex;flex-direction:column;justify-content:flex-end}
+.stat b{font:4rem/1 Gloock;color:var(--pe)}.stat span{font-size:.92rem;color:#d8c3b3}
+section{padding:96px 0}
+h2{font:400 clamp(2.3rem,5vw,3.8rem)/1.02 Gloock;margin:0 0 14px}
+h2 span{background:linear-gradient(transparent 62%,var(--pe) 62%)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.06rem}
+/* outil */
+.pick{background:var(--br);color:var(--cr)}
+.pk{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:start}
+.pick h2 span{background:linear-gradient(transparent 62%,var(--br2) 62%)}.pick .sub{color:#d8c3b3}
+.panel{background:var(--cr);color:var(--br);border-radius:26px;padding:28px}
+.lbl{font:700 .75rem Manrope;letter-spacing:.16em;text-transform:uppercase;color:var(--mu);margin-bottom:8px;display:block}
+.mo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:22px}
+.mo button{border:1.5px solid var(--ln);background:#fff;border-radius:14px;padding:13px 10px;font:600 .95rem Manrope;cursor:pointer;text-align:left}
+.mo button[aria-pressed=true]{background:var(--pe);border-color:var(--pe2)}
+.g{display:flex;align-items:center;gap:14px;margin-bottom:20px}.g output{font:2.8rem/1 Gloock;min-width:90px}
+input[type=range]{flex:1;accent-color:var(--br2);height:30px}
+.eco{display:flex;align-items:center;gap:10px;margin-bottom:20px;font-weight:600;cursor:pointer}
+.eco input{width:20px;height:20px;accent-color:#5d7a4a}
+.ans{border-radius:18px;background:#fff;border:1.5px solid var(--pe2);padding:20px}
+.ans b{font:1.6rem/1.1 Gloock;display:block;margin-bottom:6px}.ans p{margin:0;color:var(--mu)}
+/* formules */
+.forms{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:40px}
+.f{background:#fff;border:1px solid var(--ln);border-radius:22px;overflow:hidden;transition:.25s}
+.f:hover{transform:translateY(-6px)}
+.f img{width:100%;aspect-ratio:4/3.3;object-fit:cover}.f div{padding:18px}
+.f h3{font:1.3rem/1.15 Gloock;margin:0 0 6px}.f p{margin:0;color:var(--mu);font-size:.95rem}
+/* artisans */
+.art{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.names{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.names span{border:1.5px solid var(--br);border-radius:999px;padding:8px 16px;font-weight:600}
+.art img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%}
+.q{margin-top:26px;font:1.5rem/1.3 Gloock}
+.contact{background:var(--pe)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.big{font:2.2rem/1.15 Gloock;margin:10px 0}
+footer{background:var(--br);color:#c8b2a3;padding:24px 0;font-size:.88rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.pk,.art,.cgrid{grid-template-columns:minmax(0,1fr)}.band{grid-template-columns:minmax(0,1fr) minmax(0,1fr);height:auto}.band img:first-child{grid-column:1/-1;height:260px}.band img:nth-child(2),.band .stat{height:220px}.forms{grid-template-columns:repeat(2,minmax(0,1fr))}.mo{grid-template-columns:minmax(0,1fr)}.art img{max-width:300px}section{padding:72px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Gisèle Gauthier<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top"><span class="g">g</span><span><b>Gisèle Gauthier</b><small>Traiteur · Montréal</small></span></a>
+<ul><li><a href="#formule">Trouver ma formule</a></li><li><a href="#menus">Nos formules</a></li><li><a href="#artisans">Nos artisans</a></li><li><a href="#contact">Soumission</a></li></ul>
+<a class="btn" href="tel:+15142722121">514 272-2121</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div class="hgrid"><h1>L'art de <span>recevoir,</span> réinventé.</h1>
+<div><p class="lead">Une cuisine traditionnelle, réconfortante et généreuse, pour vos repas d'affaires, vos événements et vos mariages, partout dans le grand Montréal.</p>
+<div class="ctas"><a class="btn" href="#formule">Trouver ma formule</a><a class="btn o" href="mailto:info@ggtraiteur.com">Demander une soumission</a></div></div></div>
+<div class="band"><img src="img/1.jpg" alt="Buffet"><img src="img/2.jpg" alt="Bouchées"><div class="stat"><b>800</b><span>invités, des petits groupes intimes jusqu'aux galas et congrès</span></div></div>
+</div></header>
+
+<section class="pick" id="formule"><div class="wrap pk">
+<div class="rv"><h2>Quelle formule <span>pour vous ?</span></h2><p class="sub">Dites-nous le moment et le nombre de personnes : on vous suggère la formule qui convient. Le chef adapte les menus aux allergies et aux régimes (végé, végétalien, sans gluten) sur demande.</p></div>
+<div class="panel rv">
+<span class="lbl">Le moment</span>
+<div class="mo" id="mo"><button type="button">Dîner au bureau</button><button type="button">Cocktail ou 5 à 7</button><button type="button">Banquet, gala ou mariage</button><button type="button">Réunion d'une journée</button></div>
+<span class="lbl">Nombre de personnes</span>
+<div class="g"><output id="n">25</output><input type="range" id="r" min="5" max="800" step="5" value="25" aria-label="Nombre de personnes"></div>
+<label class="eco"><input type="checkbox" id="eco"> Je veux une option zéro déchet</label>
+<div class="ans" id="ans" aria-live="polite"></div>
+<p style="margin:18px 0 0"><a class="btn" id="send" href="mailto:info@ggtraiteur.com">Demander une soumission</a></p>
+</div></div></section>
+
+<section id="menus"><div class="wrap">
+<h2 class="rv">Nos <span>formules</span></h2>
+<p class="sub rv">Du lunch d'équipe au grand banquet, avec la même cuisine généreuse.</p>
+<div class="forms">
+<div class="f rv"><img src="img/3.jpg" alt="Boîte repas"><div><h3>Boîtes repas froides</h3><p>Pratiques pour les réunions et les dîners d'équipe.</p></div></div>
+<div class="f rv" style="--d:.08s"><img src="img/4.jpg" alt="Repas chaud"><div><h3>Tiffins chauds zéro déchet</h3><p>Des boîtes en acier inoxydable, consignées et réutilisables.</p></div></div>
+<div class="f rv" style="--d:.16s"><img src="img/2.jpg" alt="Cocktail"><div><h3>Cocktail</h3><p>Bouchées, canapés, planches et cup apéros.</p></div></div>
+<div class="f rv" style="--d:.24s"><img src="img/5.jpg" alt="Banquet"><div><h3>Banquets</h3><p>Menus et forfaits pour galas, mariages et congrès.</p></div></div>
+</div></div></section>
+
+<section id="artisans" style="background:#fff"><div class="wrap art">
+<div class="rv"><h2>Un visage derrière <span>chaque produit</span></h2>
+<p class="sub">Porté par le savoir-faire du chef propriétaire Éric Reynaud, formé à Paris, Gisèle Gauthier Traiteur travaille main dans la main avec des institutions montréalaises.</p>
+<div class="names"><span>Boulangerie Arhoma</span><span>Macarons Point G</span><span>Boucherie des Faubourgs</span><span>Maison du rôti</span><span>Cochon tout Rond</span></div>
+<p class="q">« Un petit plus côté écoresponsabilité : on évite d'acheter des assiettes et des couverts jetables. »</p></div>
+<img class="rv" src="img/6.jpg" alt="Cuisine">
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><span class="lbl">Nous joindre</span><p class="big">5450 R. Saint-Denis<br>Montréal, QC H2J 2M5</p><p><a href="tel:+15142722121">514 272-2121</a> · <a href="mailto:info@ggtraiteur.com">info@ggtraiteur.com</a></p></div>
+<div class="rv"><p style="margin:0 0 16px">Livraison dans la grande région de Montréal et ses environs. Contactez-nous pour valider la disponibilité dans votre secteur.</p><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="mailto:info@ggtraiteur.com">Demander une soumission</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Gis%C3%A8le+Gauthier+Traiteur+5450+R.+Saint-Denis%2C+Montr%C3%A9al%2C+QC+H2J+2M5" target="_blank" rel="noopener">Itinéraire</a></p><p style="font-size:.9rem;margin-top:14px">4,6 ★ sur Google · 68 avis</p></div>
+</div></section>
+<footer><div class="wrap"><span>© Gisèle Gauthier Traiteur · Montréal</span><span>La Gisèle Attitude</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{let m=0;const mo=document.getElementById('mo'),r=document.getElementById('r'),n=document.getElementById('n'),eco=document.getElementById('eco'),ans=document.getElementById('ans'),send=document.getElementById('send');
+[...mo.children].forEach((b,i)=>b.onclick=()=>{m=i;draw()});r.oninput=draw;eco.onchange=draw;
+function draw(){[...mo.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===m));const k=+r.value;n.textContent=k;let t,p;
+ if(m===0||m===3){if(eco.checked){t='Tiffins chauds zéro déchet';p='Des repas chauds livrés dans des Tiffins en acier, consignés : on récupère les contenants à la prochaine commande.'}else{t='Boîtes repas';p='Des boîtes repas froides, ou chaudes en Tiffins, pour '+k+' personnes. Idéal pour les réunions.'}}
+ else if(m===1){t='Formule cocktail';p='Bouchées, canapés, planches et cup apéros pour '+k+' invités.'+(eco.checked?' Demandez-nous nos options réutilisables.':'')}
+ else{t='Banquet et forfaits';p=k>=100?'Pour '+k+' invités : on sert jusqu\'à 800 personnes, avec notre équipe chevronnée.':'Pour un groupe intime de '+k+' invités : menus et forfaits sur mesure.'}
+ ans.innerHTML='<b>'+t+'</b><p>'+p+'</p>';
+ send.href='mailto:info@ggtraiteur.com?subject='+encodeURIComponent('Soumission : '+mo.children[m].textContent+', '+k+' personnes')+'&body='+encodeURIComponent('Bonjour,\n\nJ\'aimerais une soumission.\nMoment : '+mo.children[m].textContent+'\nNombre de personnes : '+k+'\nFormule suggérée : '+t+(eco.checked?'\nOption zéro déchet souhaitée':'')+'\nDate :\nAdresse de livraison :\n\nMerci !')}
+draw()})();
+</script>
+
+</body>
+</html>

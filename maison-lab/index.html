@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · La Maison L.A.B · Salon de coiffure écoresponsable à Montréal</title>
+<meta name="description" content="La Maison L.A.B (Life, Art, Beauty), salon de coiffure entre amis à Montréal : coupes, couleur, balayage et soins, avec une attention à l'environnement. Prix affichés.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--pa:#F4F0E8;--ol:#6B7350;--ol2:#535A3D;--cl:#C98B6B;--ink:#232320;--mu:#6f6c63;--ln:rgba(35,35,32,.14);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--pa);color:var(--ink);font:400 1.02rem/1.66 Inter,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.cp{font-family:"Courier Prime",monospace}
+nav{position:sticky;top:0;z-index:30;background:rgba(244,240,232,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:14px}
+.logo{text-decoration:none;font:700 1.3rem "Courier Prime";letter-spacing:.3em}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font:400 .9rem "Courier Prime"}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--cl)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .9rem "Courier Prime";letter-spacing:.06em;text-decoration:none;padding:12px 22px;background:var(--ink);color:var(--pa);border:1px solid var(--ink);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--ol2);border-color:var(--ol2)}.btn.o{background:transparent;color:var(--ink)}
+.hero{padding:50px 0 70px}
+.lab{display:flex;gap:18px;font:700 clamp(4rem,14vw,11rem)/.8 "Courier Prime";letter-spacing:.06em}
+.lab span{display:flex;flex-direction:column}
+.lab small{font:italic 400 1.1rem "Instrument Serif";letter-spacing:0;color:var(--cl);margin-top:10px}
+.hrow{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px;align-items:end}
+.hrow img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.hrow p{font:italic 400 1.6rem/1.35 "Instrument Serif";margin:0 0 22px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:90px 0}
+h2{font:400 clamp(2.6rem,5.4vw,4.2rem)/1 "Instrument Serif";margin:0 0 14px}
+h2 em{color:var(--cl)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.04rem}
+.menu{background:#fff;border-block:1px solid var(--ln)}
+.mgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:start}
+.ticket{border:1px solid var(--ink);padding:24px;font-family:"Courier Prime",monospace;background:var(--pa)}
+.ticket h3{font:700 1rem "Courier Prime";letter-spacing:.2em;margin:0 0 12px;text-align:center}
+.row{display:flex;gap:10px;align-items:baseline;padding:9px 0;border-bottom:1px dashed rgba(35,35,32,.25);cursor:pointer}
+.row input{accent-color:var(--ol);width:18px;height:18px;flex:none;transform:translateY(3px)}
+.row span{flex:1}.row small{display:block;color:var(--mu);font-size:.8rem}
+.row b{white-space:nowrap}
+.sum{display:flex;justify-content:space-between;font-weight:700;font-size:1.2rem;margin-top:14px;border-top:2px solid var(--ink);padding-top:10px}
+.time{display:flex;justify-content:space-between;color:var(--mu);margin-top:4px}
+.green{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.green img{width:100%;aspect-ratio:4/4.4;object-fit:cover}
+.leaf{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.leaf span{border:1px solid var(--ol);color:var(--ol2);padding:6px 14px;font:700 .85rem "Courier Prime"}
+.q{font:italic 400 1.5rem/1.4 "Instrument Serif";margin-top:26px;border-left:2px solid var(--cl);padding-left:18px}
+.contact{background:var(--ol);color:#f1efe4}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:46px}
+.contact h2{color:#fff}.contact h2 em{color:#f0c7b0}
+[data-hours]{list-style:none;margin:0;padding:0;font-family:"Courier Prime",monospace}[data-hours] li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+[data-hours] li.td{color:#f0c7b0;font-weight:700}
+.st{display:inline-flex;align-items:center;gap:8px;margin-bottom:12px;font-family:"Courier Prime",monospace}.st::before{content:"";width:9px;height:9px;border-radius:50%;background:#aaa}
+[data-open].on .st::before{background:#cfe8a6}
+.contact .btn{background:var(--pa);color:var(--ink);border-color:var(--pa)}.contact .btn.o{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+footer{background:var(--ink);color:#99968c;padding:24px 0;font:400 .85rem "Courier Prime"}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hrow,.mgrid,.green,.cgrid{grid-template-columns:minmax(0,1fr)}.lab{gap:10px}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Maison L.A.B<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top">L·A·B</a>
+<ul><li><a href="#menu">Services et prix</a></li><li><a href="#vert">Notre approche</a></li><li><a href="#contact">Heures</a></li></ul>
+<a class="btn" href="tel:+14383753555">438 375-3555</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div class="lab" aria-label="Life, Art, Beauty"><span>L<small>life</small></span><span>A<small>art</small></span><span>B<small>beauty</small></span></div>
+<div class="hrow"><img class="rv" src="img/1.jpg" alt="Salon La Maison L.A.B">
+<div><p>Un salon de coiffure tenu par des amis, à Montréal. On mise sur l'écoresponsabilité, le plaisir, et de très beaux cheveux.</p>
+<div class="ctas"><a class="btn" href="#menu">Voir les services et prix</a><a class="btn o" href="tel:+14383753555">Prendre rendez-vous</a></div></div></div>
+</div></header>
+
+<section class="menu" id="menu"><div class="wrap mgrid">
+<div class="rv"><h2>Composez <em>votre visite</em></h2><p class="sub">Cochez les services : vous voyez le prix de départ et le temps à prévoir. Les prix varient selon la longueur et l'épaisseur des cheveux.</p></div>
+<div class="ticket rv"><h3>— LA MAISON L.A.B —</h3><div id="rows"></div><div class="sum"><span>À partir de</span><span id="tot">0 $</span></div><div class="time"><span>Temps estimé</span><span id="tm">–</span></div>
+<p style="margin:16px 0 0"><a class="btn" id="send" href="mailto:lamaisonlab@gmail.com">Réserver ces services</a></p></div>
+</div></section>
+
+<section id="vert"><div class="wrap green">
+<div class="rv"><h2>Beau, <em>et responsable</em></h2><p class="sub">Une approche durable du salon, sans rien sacrifier au résultat. Une équipe qui connaît tout sur les cheveux, et des produits fantastiques.</p>
+<div class="leaf"><span>Écoresponsable</span><span>Entre amis</span><span>Prix raisonnables</span></div>
+<p class="q">« Le meilleur salon où je suis allée. Des prix raisonnables, une équipe super compétente et des produits fantastiques. »</p></div>
+<img class="rv" src="img/2.jpg" alt="Coiffure">
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Venez <em>nous voir</em></h2><p style="font:italic 400 1.6rem/1.3 'Instrument Serif';margin:0 0 8px">3480 Av. du Parc<br>Montréal, QC H2X 2H5</p><p><a href="tel:+14383753555">438 375-3555</a> · <a href="mailto:lamaisonlab@gmail.com">lamaisonlab@gmail.com</a><br>5,0 ★ sur Google · 164 avis</p>
+<p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px"><a class="btn" href="tel:+14383753555">Appeler</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Maison+L.A.B+3480+Av.+du+Parc%2C+Montr%C3%A9al%2C+QC+H2X+2H5" target="_blank" rel="noopener">Itinéraire</a></p></div>
+<div class="rv" data-open><div class="st" data-status></div><ul data-hours></ul></div>
+</div></section>
+<footer><div class="wrap"><span>© La Maison L.A.B · Montréal</span><span>Life · Art · Beauty</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"3": [600, 1140], "4": [600, 1140], "5": [600, 1140], "6": [540, 960]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"3": [600, 1140], "4": [600, 1140], "5": [600, 1140], "6": [540, 960]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const S=[['Coupe régulière','Avec shampooing et brushing',55,0],['Coupe, cheveux longs et épais','Avec shampooing et brushing',65,0],['Couvrir mes cheveux blancs','Couleur',75,90],['Éclaircir un peu','Couleur',215,150],['Encadrement du visage','Mèches autour du visage',125,90],['Rehausser le ton','Gloss / tonalité',65,0],['Soin nourrissant','Au choix',20,0],['Coiffure d\'occasion','Mariage, événement',150,0]];
+const rows=document.getElementById('rows');S.forEach((s,i)=>rows.insertAdjacentHTML('beforeend','<label class="row"><input type="checkbox" data-i="'+i+'"><span>'+s[0]+'<small>'+s[1]+'</small></span><b>'+s[2]+' $+</b></label>'));
+const f=m=>m>=60?Math.floor(m/60)+' h'+(m%60?' '+m%60:''):m+' min';
+function draw(){const c=[...rows.querySelectorAll('input:checked')].map(x=>S[+x.dataset.i]);document.getElementById('tot').textContent=c.reduce((a,s)=>a+s[2],0)+' $';const kn=c.reduce((a,s)=>a+s[3],0),unk=c.some(s=>!s[3]);document.getElementById('tm').textContent=!c.length?'–':kn?(unk?'au moins ':'environ ')+f(kn):'confirmé au rendez-vous';
+ document.getElementById('send').href='mailto:lamaisonlab@gmail.com?subject='+encodeURIComponent('Rendez-vous')+'&body='+encodeURIComponent('Bonjour,\n\nJ\'aimerais réserver :\n- '+(c.map(s=>s[0]).join('\n- ')||'...')+'\n\nNom :\nTéléphone :\nDisponibilités :\n\nMerci !')}
+rows.addEventListener('change',draw);draw()})();
+</script>
+
+</body>
+</html>

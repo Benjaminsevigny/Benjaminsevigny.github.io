@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Garage Denis Talbot & Fils · Mécanique et pneus neufs et usagés à Lévis</title>
+<meta name="description" content="Garage Denis Talbot & Fils à Lévis : mécanique générale, entretien et réparation, grand inventaire de pneus neufs et usagés, service 24 heures sur 24. Une équipe dynamique axée sur le service.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bl:#0F4C9C;--bl2:#0B3A78;--rd:#E30613;--yl:#FFD400;--pa:#F2F4F7;--ink:#0D1B2E;--mu:#5d6878;--ln:rgba(13,27,46,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--pa);color:var(--ink);font:400 1.02rem/1.62 Roboto,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.ru{font-family:"Russo One",sans-serif;font-weight:400}
+.h24{background:var(--rd);color:#fff;text-align:center;padding:8px 16px;font:400 .95rem "Russo One"}
+nav{position:sticky;top:0;z-index:30;background:#fff;border-bottom:3px solid var(--bl)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:10px}
+.logo{text-decoration:none;line-height:1}.logo b{font:1.35rem "Russo One";color:var(--bl)}.logo small{display:block;font-size:.74rem;color:var(--mu);margin-top:3px}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500;font-size:.94rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--bl)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:400 .95rem "Russo One";text-decoration:none;padding:13px 22px;border-radius:8px;background:var(--bl);color:#fff;border:2px solid var(--bl);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--bl2);transform:translateY(-2px)}.btn.r{background:var(--rd);border-color:var(--rd)}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero{background:linear-gradient(115deg,var(--bl) 55%,var(--bl2) 55%);color:#fff;overflow:hidden;position:relative}
+.hgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-block:60px 70px}
+.fam{display:inline-block;background:var(--yl);color:var(--ink);font:400 .9rem "Russo One";padding:6px 12px;border-radius:6px}
+h1{font:400 clamp(2.6rem,6.4vw,5rem)/1.02 "Russo One";margin:16px 0 18px}
+h1 span{color:var(--yl)}
+.lead{font-size:1.13rem;color:#d3e0f2;max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.pic{position:relative}.pic img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:16px;border:6px solid #fff}
+.pic .stamp{position:absolute;left:-16px;top:-16px;width:110px;height:110px;border-radius:50%;background:var(--rd);display:grid;place-items:center;text-align:center;font:400 1.6rem/1 "Russo One";transform:rotate(-12deg);box-shadow:0 10px 20px -8px rgba(0,0,0,.5)}
+.pic .stamp small{display:block;font-size:.55em}
+section{padding:90px 0}
+h2{font:400 clamp(2.1rem,4.6vw,3.4rem)/1.05 "Russo One";margin:0 0 14px}
+h2 span{color:var(--rd)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.05rem}
+.tread{background:#fff}
+.tgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+.gauge{background:var(--ink);color:#fff;border-radius:20px;padding:26px}
+.cut{display:flex;gap:6px;height:120px;align-items:flex-end;background:#26324a;border-radius:12px;padding:0 14px;margin:6px 0 16px;position:relative;overflow:hidden}
+.cut i{flex:1;background:#111;border-radius:4px 4px 0 0;transition:height .3s}
+.cut::after{content:"";position:absolute;left:0;right:0;bottom:22%;border-top:2px dashed var(--yl)}
+.lbl{display:block;font:500 .76rem Roboto;letter-spacing:.14em;text-transform:uppercase;color:#9fb0c8;margin-bottom:6px}
+.g{display:flex;align-items:center;gap:14px}.g output{font:400 2rem "Russo One";min-width:90px;color:var(--yl)}
+input[type=range]{flex:1;accent-color:var(--yl);height:30px}
+.verdict{margin-top:16px;border-radius:12px;padding:14px 16px;background:#1b2740}
+.verdict b{font:400 1.3rem "Russo One";display:block}.verdict p{margin:4px 0 0;color:#c3cfe2}
+.svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+.s{background:#fff;border-radius:16px;padding:24px;border-top:5px solid var(--bl)}
+.s:nth-child(2){border-color:var(--rd)}.s:nth-child(3){border-color:var(--yl)}
+.s h3{font:400 1.25rem "Russo One";margin:0 0 6px}.s p{margin:0;color:var(--mu)}
+.contact{background:var(--ink);color:#e0e7f1}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact h2{color:#fff}.contact h2 span{color:var(--yl)}
+footer{background:#08111e;color:#8090a5;padding:24px 0;font-size:.88rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.tgrid,.cgrid{grid-template-columns:minmax(0,1fr)}.svc{grid-template-columns:minmax(0,1fr)}.hero{background:var(--bl)}.pic .stamp{left:8px}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Garage Denis Talbot<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<div class="h24">Mal pris ? On vous aide dans la plupart des situations, 24 heures sur 24.</div>
+<nav><div class="wrap"><a class="logo" href="#top"><b>Garage Denis Talbot</b><small>&amp; Fils · Lévis</small></a>
+<ul><li><a href="#usure">Mes pneus</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Rendez-vous</a></li></ul>
+<a class="btn r" href="tel:+14189034982">418 903-4982</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="fam">Une affaire de famille</span>
+<h1>Un garage axé sur <span>vous.</span></h1>
+<p class="lead">Une équipe dynamique et professionnelle, un centre de mécanique outillé à la fine pointe, et un grand inventaire de pneus neufs et usagés pour la plupart des modèles et grandeurs.</p>
+<div class="ctas"><a class="btn r" href="tel:+14189034982">Prendre rendez-vous</a><a class="btn o" href="#usure">Mes pneus sont-ils usés ?</a></div></div>
+<div class="pic rv"><img src="img/1.jpg" alt="Garage Denis Talbot"><span class="stamp"><span>24 h<small>sur 24</small></span></span></div>
+</div></header>
+
+<section class="tread" id="usure"><div class="wrap tgrid">
+<div class="rv"><h2>Vos pneus sont-ils <span>encore bons ?</span></h2><p class="sub">Mesurez la profondeur des rainures (une jauge coûte quelques dollars) et entrez-la ici. On vous dit s'il est temps de passer nous voir. Pas de jauge ? Passez nous voir.</p></div>
+<div class="gauge rv">
+<span class="lbl">Profondeur des rainures</span>
+<div class="cut" id="cut" aria-hidden="true"></div>
+<div class="g"><output id="o">6/32 po</output><input type="range" id="r" min="1" max="12" value="6" aria-label="Profondeur en 32es de pouce"></div>
+<div class="verdict" id="v" aria-live="polite"></div>
+</div></div></section>
+
+<section id="services"><div class="wrap">
+<h2 class="rv">Nos <span>services</span></h2>
+<p class="sub rv">Des services professionnels et garantis, pour l'entretien et la réparation de votre véhicule.</p>
+<div class="svc">
+<div class="s rv"><h3>Mécanique générale</h3><p>Entretien et réparation, dans un centre à la fine pointe de la technologie.</p></div>
+<div class="s rv" style="--d:.1s"><h3>Pneus neufs et usagés</h3><p>Un vaste inventaire : nos experts vous guident vers le bon choix.</p></div>
+<div class="s rv" style="--d:.2s"><h3>Service 24 h sur 24</h3><p>On peut vous aider dans la plupart des situations, jour et nuit.</p></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Au plaisir de <span>travailler pour vous</span></h2><p style="font:400 1.3rem 'Russo One';margin:0 0 6px">5656 Rue Saint-Georges<br>Lévis, QC G6V 4M3</p><p><a href="tel:+14189034982">418 903-4982</a> · <a href="mailto:garagedenistalbot@hotmail.com">garagedenistalbot@hotmail.com</a><br><span style="color:#9fb0c8">4,6 ★ sur Google · 101 avis</span></p></div>
+<div class="rv"><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn r" href="tel:+14189034982">Appeler</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Garage+Denis+Talbot+%26+Fils+Inc.+5656+Rue+Saint-Georges%2C+L%C3%A9vis%2C+QC+G6V+4M3" target="_blank" rel="noopener">Itinéraire</a></p></div>
+</div></section>
+<footer><div class="wrap"><span>© Garage Denis Talbot &amp; Fils inc. · Lévis</span><span>Une équipe fière de vous servir</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const r=document.getElementById('r'),o=document.getElementById('o'),cut=document.getElementById('cut'),v=document.getElementById('v');
+for(let i=0;i<9;i++)cut.appendChild(document.createElement('i'));
+function draw(){const x=+r.value;o.textContent=x+'/32 po';[...cut.children].forEach((b,i)=>b.style.height=(10+x*7-(i%2)*6)+'%');let t,p;
+ if(x<=2){t='À remplacer maintenant';p='À 2/32 po ou moins, le pneu est usé jusqu\'à la limite. Venez nous voir : on a des pneus neufs et usagés.'}
+ else if(x<=4){t='Bientôt à changer';p='Sous 4/32 po, l\'adhérence sur la neige et la pluie baisse beaucoup. Pensez-y avant l\'hiver.'}
+ else if(x<=6){t='Correct, à surveiller';p='Encore de la vie, mais vérifiez l\'usure régulière et la pression.'}
+ else{t='En bonne forme';p='Vos rainures sont profondes. Pensez à la rotation pour qu\'ils s\'usent également.'}
+ v.innerHTML='<b style="color:'+(x<=2?'#ff6b6b':x<=4?'#FFD400':'#7ee0a0')+'">'+t+'</b><p>'+p+'</p>'}
+r.oninput=draw;draw()})();
+</script>
+
+</body>
+</html>

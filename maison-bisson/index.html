@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · La Maison Bisson · Boucherie spécialisée et épicerie fine à Gatineau</title>
+<meta name="description" content="La Maison Bisson, boucherie spécialisée et épicerie fine au Manoir de Trembles à Gatineau depuis plus de 20 ans : viande de première qualité et produits locaux.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--kr:#EFE5D3;--kr2:#E3D5BC;--bd:#7D1D1D;--bd2:#5E1414;--fo:#2F4A2C;--ink:#231B16;--mu:#6d5f52;--ln:rgba(35,27,22,.15);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--kr);color:var(--ink);font:400 1.03rem/1.65 Lato,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.rz{font-family:"Rozha One",Georgia,serif;font-weight:400}
+nav{position:sticky;top:0;z-index:30;background:var(--bd);color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;line-height:1;text-align:center}.logo small{display:block;font:900 .72rem Lato;letter-spacing:.3em;text-transform:uppercase;opacity:.8}.logo b{font:1.7rem "Rozha One";letter-spacing:.02em}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:700;font-size:.92rem;letter-spacing:.04em}
+nav ul a{text-decoration:none;opacity:.85}nav ul a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;gap:8px;font:900 .9rem Lato;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:14px 22px;border-radius:3px;background:var(--bd);color:#fff;border:2px solid var(--bd);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--bd2);border-color:var(--bd2);transform:translateY(-2px)}.btn.w{background:#fff;color:var(--bd);border-color:#fff}.btn.o{background:transparent;color:var(--ink);border-color:var(--ink)}
+/* héros */
+.hero{position:relative;min-height:min(720px,calc(var(--vh) - 70px));display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(25,14,10,.92) 8%,rgba(25,14,10,.35) 60%,rgba(25,14,10,.2))}
+.hero .wrap{padding-bottom:70px;width:100%}
+.est{display:inline-block;border:1.5px solid rgba(255,255,255,.6);padding:6px 14px;font:900 .74rem Lato;letter-spacing:.24em;text-transform:uppercase}
+h1{font:clamp(3.2rem,8vw,6.8rem)/.95 "Rozha One";margin:16px 0 14px;max-width:14ch}
+.lead{font-size:1.18rem;max-width:48ch;margin:0 0 26px;color:#efe4d6}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.label{position:absolute;right:6%;top:16%;width:170px;height:170px;border-radius:50%;border:2px dashed rgba(255,255,255,.7);display:grid;place-items:center;text-align:center;font:900 .78rem/1.3 Lato;letter-spacing:.14em;text-transform:uppercase;animation:spin 24s linear infinite}
+.label b{display:block;font:2.6rem/1 "Rozha One";letter-spacing:0}
+@keyframes spin{to{transform:rotate(360deg)}}
+section{padding:96px 0}
+h2{font:clamp(2.4rem,5vw,3.9rem)/1 "Rozha One";margin:0 0 14px}
+h2 em{font-style:normal;color:var(--bd)}
+.kick{font:900 .74rem Lato;letter-spacing:.24em;text-transform:uppercase;color:var(--fo)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.08rem}
+/* étals */
+.shelves{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:40px}
+.sh{background:#fff;border:1px solid var(--ln);position:relative}
+.sh img{width:100%;aspect-ratio:4/3.2;object-fit:cover}
+.sh div{padding:18px 20px 22px}.sh h3{font:1.6rem "Rozha One";margin:0 0 4px}.sh p{margin:0;color:var(--mu)}
+.sh .tag{position:absolute;top:14px;left:-8px;background:var(--fo);color:#fff;font:900 .7rem Lato;letter-spacing:.16em;text-transform:uppercase;padding:6px 12px}
+/* outil */
+.plan{background:var(--fo);color:#EFE7D8}
+.pgrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:center}
+.plan h2{color:#fff}.plan .sub{color:#cdd5c3}.plan .kick{color:#E9C98B}
+.butcher{background:var(--kr);color:var(--ink);padding:30px;border-radius:4px;position:relative;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.butcher::before{content:"";position:absolute;inset:8px;border:1.5px dashed var(--ln);pointer-events:none}
+.lbl{font:900 .76rem Lato;letter-spacing:.16em;text-transform:uppercase;color:var(--mu)}
+.cuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:10px 0 20px}
+.cuts button{border:1.5px solid var(--ln);background:#fff;padding:12px 6px;font:700 .95rem Lato;cursor:pointer;border-radius:3px}
+.cuts button[aria-pressed=true]{background:var(--bd);border-color:var(--bd);color:#fff}
+.cnt{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-bottom:20px}
+.cnt div{background:#fff;border:1px solid var(--ln);padding:12px 14px;display:flex;justify-content:space-between;align-items:center;border-radius:3px}
+.cnt button{width:34px;height:34px;border:0;border-radius:50%;background:var(--kr2);font:900 1.1rem Lato;cursor:pointer}
+.cnt output{font:1.6rem "Rozha One";min-width:30px;text-align:center}
+.res{display:flex;align-items:baseline;gap:12px;border-top:2px solid var(--ink);padding-top:14px}
+.res b{font:3.4rem/1 "Rozha One";color:var(--bd)}
+.res span{color:var(--mu)}
+.fine{font-size:.85rem;color:var(--mu);margin:10px 0 0}
+/* histoire */
+.story{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.story img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:28px}
+.three div{border-top:3px solid var(--bd);padding-top:10px}.three b{display:block;font:2rem/1 "Rozha One"}.three span{font-size:.88rem;color:var(--mu)}
+/* contact */
+.contact{background:var(--kr2)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
+.big{font:2rem/1.2 "Rozha One";margin:10px 0}
+footer{background:var(--ink);color:#b9ab9b;padding:24px 0;font-size:.88rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.pgrid,.story,.cgrid{grid-template-columns:minmax(0,1fr)}.shelves{grid-template-columns:minmax(0,1fr)}.label{width:120px;height:120px;right:16px;top:20px}.label b{font-size:1.8rem}.cuts{grid-template-columns:repeat(2,minmax(0,1fr))}.cnt{grid-template-columns:minmax(0,1fr)}section{padding:72px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Maison Bisson<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top"><small>La Maison</small><b>Bisson</b></a>
+<ul><li><a href="#comptoirs">Nos comptoirs</a></li><li><a href="#calcul">Combien en prendre ?</a></li><li><a href="#maison">La Maison</a></li><li><a href="#contact">Nous joindre</a></li></ul>
+<a class="btn w" href="tel:+18197720702">819 772-0702</a></div></nav>
+
+<header class="hero" id="top"><img src="img/1.jpg" alt="Comptoir de boucherie">
+<div class="label" aria-hidden="true"><div><b>20+</b>ans de<br>passion</div></div>
+<div class="wrap"><span class="est">Boucherie spécialisée · Épicerie fine</span>
+<h1>La belle épicerie de quartier.</h1>
+<p class="lead">Au Manoir de Trembles à Gatineau, une histoire de passion familiale pour la gastronomie : viande de première qualité et grande vitrine de produits locaux.</p>
+<div class="ctas"><a class="btn w" href="#calcul">Planifier mon repas</a><a class="btn" href="https://www.google.com/maps/search/?api=1&query=La+Maison+Bisson+2+Bd+Louise-Campagna%2C+Gatineau%2C+QC+J9A+2X1" target="_blank" rel="noopener">Itinéraire</a></div></div></header>
+
+<section id="comptoirs"><div class="wrap">
+<span class="kick rv">Venez vivre l'expérience</span><h2 class="rv">Trois bonnes raisons <em>d'entrer</em></h2>
+<p class="sub rv">Notre équipe dynamique et chevronnée se fera un plaisir de vous conseiller et de vous faire découvrir ses trouvailles.</p>
+<div class="shelves">
+<div class="sh rv"><span class="tag">Boucherie</span><img src="img/2.jpg" alt="Viandes"><div><h3>Viande de première qualité</h3><p>Une boucherie spécialisée, avec des conseils pour chaque coupe.</p></div></div>
+<div class="sh rv" style="--d:.1s"><span class="tag">Épicerie fine</span><img src="img/3.jpg" alt="Épicerie fine"><div><h3>Une grande variété de produits fins</h3><p>De quoi garnir la table, du quotidien aux grandes occasions.</p></div></div>
+<div class="sh rv" style="--d:.2s"><span class="tag">D'ici</span><img src="img/6.jpg" alt="Produits locaux"><div><h3>Une vitrine de produits locaux</h3><p>On met de l'avant les producteurs de chez nous.</p></div></div>
+</div></div></section>
+
+<section class="plan" id="calcul"><div class="wrap pgrid">
+<div class="rv"><span class="kick">Recevoir sans stress</span><h2>Combien <em style="color:#E9C98B">en prendre ?</em></h2>
+<p class="sub">Vous recevez ? Dites-nous combien vous serez et ce que vous servez : on vous donne une quantité de départ. Au comptoir, on ajuste avec vous.</p></div>
+<div class="butcher rv">
+<div class="lbl">Au menu</div>
+<div class="cuts" id="cuts"><button type="button">Steaks</button><button type="button">Rôti</button><button type="button">Brochettes</button><button type="button">Saucisses</button><button type="button">Viande hachée</button><button type="button">Côtes levées</button></div>
+<div class="cnt">
+<div><span>Adultes</span><span style="display:flex;gap:6px;align-items:center"><button type="button" data-k="a" data-v="-1" aria-label="Moins d'adultes">−</button><output id="a">4</output><button type="button" data-k="a" data-v="1" aria-label="Plus d'adultes">+</button></span></div>
+<div><span>Enfants</span><span style="display:flex;gap:6px;align-items:center"><button type="button" data-k="e" data-v="-1" aria-label="Moins d'enfants">−</button><output id="e">2</output><button type="button" data-k="e" data-v="1" aria-label="Plus d'enfants">+</button></span></div>
+</div>
+<div class="res"><b id="kg">1,3 kg</b><span id="hint">de viande crue, environ</span></div>
+<p class="fine">Guide approximatif pour un repas principal. Pour un buffet ou de gros appétits, demandez conseil à l'équipe : <a href="tel:+18197720702">819 772-0702</a>.</p>
+</div></div></section>
+
+<section id="maison"><div class="wrap story">
+<div class="rv"><span class="kick">La Maison</span><h2>D'abord une histoire <em>de famille</em></h2>
+<p class="sub">Depuis plus de 20 ans, La Maison Bisson est une boucherie spécialisée et une épicerie fine reconnue en Outaouais, dans le domaine agroalimentaire et biologique. Venez nous voir et vivez l'expérience d'une belle épicerie de quartier.</p>
+<div class="three"><div><b>20+</b><span>ans au Manoir de Trembles</span></div><div><b>4,5★</b><span>84 avis Google</span></div><div><b>Local</b><span>et biologique</span></div></div></div>
+<img class="rv" src="img/4.jpg" alt="Boucher">
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><span class="kick">Nous joindre</span><p class="big">2 Bd Louise-Campagna<br>Gatineau, QC J9A 2X1</p><p><a href="tel:+18197720702">819 772-0702</a> · <a href="mailto:info@lamaisonbisson.ca">info@lamaisonbisson.ca</a></p>
+<p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=La+Maison+Bisson+2+Bd+Louise-Campagna%2C+Gatineau%2C+QC+J9A+2X1" target="_blank" rel="noopener">Itinéraire</a><a class="btn o" href="tel:+18197720702">Appeler</a></p></div>
+<img class="rv" src="img/5.jpg" alt="Épicerie" style="width:100%;aspect-ratio:16/11;object-fit:cover">
+</div></section>
+<footer><div class="wrap"><span>© La Maison Bisson · Gatineau</span><span>Boucherie spécialisée et épicerie fine</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const C=[['Steaks',250],['Rôti',225],['Brochettes',200],['Saucisses',200],['Viande hachée',150],['Côtes levées',450]];let c=0;const n={a:4,e:2};
+const cuts=document.getElementById('cuts');[...cuts.children].forEach((b,i)=>b.onclick=()=>{c=i;draw()});
+document.querySelectorAll('.cnt button').forEach(b=>b.onclick=()=>{const k=b.dataset.k;n[k]=Math.max(k==='a'?1:0,Math.min(40,n[k]+ +b.dataset.v));draw()});
+function draw(){[...cuts.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===c));document.getElementById('a').textContent=n.a;document.getElementById('e').textContent=n.e;
+ const g=C[c][1]*(n.a+n.e*.5);document.getElementById('kg').textContent=(g/1000).toFixed(1).replace('.',',')+' kg';
+ document.getElementById('hint').textContent=(C[c][0]==='Côtes levées'?'de côtes levées (avec l\'os), environ':'de '+C[c][0].toLowerCase()+' (cru), environ')}
+draw()})();
+</script>
+
+</body>
+</html>

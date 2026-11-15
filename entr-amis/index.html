@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Restaurant L'Entr'Amis · Apportez votre vin, Sherbrooke</title>
+<meta name="description" content="Restaurant L'Entr'Amis, Sherbrooke depuis 2000 : cuisine bistro raffinée aux racines françaises, produits de l'Estrie. Apportez votre vin et bière. Menu midi 3 services, table d'hôte 5 services, menus gastronomiques 7 services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--wine:#6B1E2E;--wine2:#4E1420;--gold:#C8A15A;--lin:#F7F2EA;--ink:#2A1E1F;--mu:#776a66;--ln:rgba(42,30,31,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--lin);color:var(--ink);font:400 1.02rem/1.7 Lato,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:30;background:var(--wine2);color:#f3e6dc}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;font:italic 500 1.6rem "Cormorant Garamond"}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:.86rem;letter-spacing:.14em;text-transform:uppercase}
+nav ul a{text-decoration:none;opacity:.85}nav ul a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .82rem Lato;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:14px 22px;background:var(--gold);color:var(--wine2);border:1px solid var(--gold);transition:.25s;cursor:pointer}
+.btn:hover{background:#d8b678}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero{background:var(--wine);color:#f6ebe2;position:relative;overflow:hidden}
+.hgrid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding-block:60px 90px}
+.byob{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--gold);color:var(--gold);padding:8px 16px;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase}
+h1{font:500 clamp(2.9rem,7vw,5.8rem)/1 "Cormorant Garamond";margin:18px 0 18px}
+h1 i{color:var(--gold)}
+.lead{font-size:1.1rem;color:#e3cfc6;max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.glass{position:relative}
+.glass img{width:100%;aspect-ratio:4/4.6;object-fit:cover;border-radius:200px 200px 6px 6px}
+.glass span{position:absolute;left:-14px;bottom:26px;background:var(--lin);color:var(--wine);padding:12px 18px;font:italic 500 1.3rem "Cormorant Garamond";box-shadow:0 16px 30px -16px rgba(0,0,0,.5)}
+section{padding:90px 0}
+h2{font:500 clamp(2.4rem,5vw,3.8rem)/1.04 "Cormorant Garamond";margin:0 0 14px}
+h2 i{color:var(--wine)}
+.sub{color:var(--mu);max-width:58ch;margin:0}
+.for{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:start;margin-top:30px}
+.occ{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.occ button{border:1px solid var(--ln);background:#fff;padding:18px 14px;font:500 1.3rem "Cormorant Garamond";cursor:pointer;text-align:left;color:inherit;transition:.2s}
+.occ button small{display:block;font:400 .82rem Lato;color:var(--mu)}
+.occ button[aria-pressed=true]{background:var(--wine);color:#fff;border-color:var(--wine)}.occ button[aria-pressed=true] small{color:#e3cfc6}
+.menu{background:#fff;border:1px solid var(--ln);padding:34px 30px;text-align:center;position:relative}
+.menu::before{content:"";position:absolute;inset:8px;border:1px solid var(--gold);pointer-events:none}
+.menu .k{font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.menu h3{font:500 2.4rem/1.05 "Cormorant Garamond";margin:8px 0}
+.menu .s{font:italic 500 1.2rem "Cormorant Garamond";color:var(--mu)}
+.menu .crs{display:flex;justify-content:center;gap:8px;margin:18px 0}
+.menu .crs i{width:12px;height:12px;border-radius:50%;background:var(--ln)}.menu .crs i.on{background:var(--wine)}
+.menu p{margin:0 0 18px;color:var(--mu)}
+.est{background:var(--wine2);color:#e9d8cf}
+.eg{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.eg img{width:100%;aspect-ratio:4/3.2;object-fit:cover}
+.est h2{color:#fff}.est h2 i{color:var(--gold)}
+blockquote{margin:22px 0 0;padding-left:18px;border-left:2px solid var(--gold);font:italic 500 1.4rem/1.4 "Cormorant Garamond"}
+.contact .cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+footer{background:var(--wine2);color:#c8aea4;padding:24px 0;font-size:.86rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.for,.eg,.contact .cgrid{grid-template-columns:minmax(0,1fr)}.glass{max-width:340px;margin:0 auto}.glass span{left:0}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour L&#x27;Entr-Amis<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top">L'Entr'Amis</a>
+<ul><li><a href="#formule">Votre soirée</a></li><li><a href="#estrie">Le chef</a></li><li><a href="#contact">Réserver</a></li></ul>
+<a class="btn" href="tel:+18193465227">Réserver</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="byob"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 2h8l-1 8a3 3 0 0 1-6 0zM12 13v7M8 22h8"/></svg>Apportez votre vin et bière</span>
+<h1>Une table <i>entre amis,</i> depuis l'an 2000.</h1>
+<p class="lead">Une cuisine bistro raffinée qui puise ses racines dans la fine cuisine française et internationale, avec les produits de l'Estrie à l'honneur.</p>
+<div class="ctas"><a class="btn" href="#formule">Choisir ma formule</a><a class="btn o" href="tel:+18193465227">Réserver une table</a></div></div>
+<div class="glass rv"><img src="img/1.jpg" alt="Salle à manger"><span>Est de Sherbrooke</span></div>
+</div></header>
+
+<section id="formule"><div class="wrap">
+<h2 class="rv">Quelle est <i>l'occasion&nbsp;?</i></h2>
+<p class="sub rv">Choisissez votre soirée : on vous suggère la formule qui convient. N'oubliez pas votre bouteille !</p>
+<div class="for">
+<div class="occ rv" id="occ"><button type="button">Dîner d'affaires<small>Le midi</small></button><button type="button">Souper d'amoureux<small>En tête-à-tête</small></button><button type="button">Repas entre amis<small>Une belle tablée</small></button><button type="button">Party de bureau<small>Pour toute l'équipe</small></button><button type="button">Grande occasion<small>Pour les gourmets</small></button><button type="button">Juste une bonne soupe<small>Au menu depuis 25 ans</small></button></div>
+<div class="menu rv" aria-live="polite"><span class="k" id="mk"></span><h3 id="mh"></h3><span class="s" id="ms"></span><div class="crs" id="crs"></div><p id="mp"></p><a class="btn" style="background:var(--wine);color:#fff;border-color:var(--wine)" href="tel:+18193465227">Réserver une table</a></div>
+</div></div></section>
+
+<section class="est" id="estrie"><div class="wrap eg">
+<img class="rv" src="img/2.jpg" alt="Plat bistro">
+<div class="rv"><h2>Les produits <i>de l'Estrie</i></h2><p>Fromages, viandes, pousses et légumes : l'Estrie offre une multitude de produits, et nous leur faisons une place de choix sur nos menus. À deux pas du CHUS Fleurimont et des Galeries Quatre-Saisons.</p>
+<blockquote>« 30 ans d'expérience en cuisine, acquise dans des établissements de l'Estrie et en France. »</blockquote></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Réservez <i>votre table</i></h2><p style="font:500 1.5rem/1.3 'Cormorant Garamond';margin:0 0 8px">734 13e Avenue N<br>Sherbrooke, QC J1E 3L7</p><p><a href="tel:+18193465227">819 346-5227</a> · <a href="mailto:restaurantlentramis@hotmail.com">restaurantlentramis@hotmail.com</a><br><span style="color:var(--mu)">4,6 ★ sur Google · 400 avis</span></p></div>
+<div class="rv"><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" style="background:var(--wine);color:#fff;border-color:var(--wine)" href="tel:+18193465227">Appeler</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Restaurant+L%27Entr-Amis+734+13e+Avenue+N%2C+Sherbrooke%2C+QC+J1E+3L7" target="_blank" rel="noopener">Itinéraire</a></p></div>
+</div></section>
+<footer><div class="wrap"><span>© Restaurant L'Entr'Amis · Sherbrooke</span><span>Apportez votre vin et bière</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const F=[['Le midi','Menu 3 services','Renouvelé chaque semaine',3,'Parfait pour un dîner d\'affaires : trois services, un menu qui change toutes les semaines.'],['Le soir','Table d\'hôte 5 services','Renouvelée chaque mois',5,'Cinq services pour prendre son temps à deux. Apportez la bouteille qui vous ressemble.'],['Le soir','Table d\'hôte 5 services','Renouvelée chaque mois',5,'Cinq services à partager, une bouteille par couple : la formule idéale entre amis.'],['Pour les groupes','Table d\'hôte 5 services','Renouvelée chaque mois',5,'L\'Entr\'Amis est l\'endroit idéal pour un party de bureau. Appelez-nous pour réserver votre groupe.'],['Pour les gourmets','Menu gastronomique 7 services','Dégustation',7,'Sept services gastronomiques pour les grandes occasions.'],['Un classique','Soupe de poissons et fruits de mer','Au menu depuis 25 ans',1,'Un classique de la maison, au menu depuis 25 ans.']];let k=1;
+const occ=document.getElementById('occ');[...occ.children].forEach((b,i)=>b.onclick=()=>{k=i;draw()});
+function draw(){[...occ.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===k));const f=F[k];
+ document.getElementById('mk').textContent=f[0];document.getElementById('mh').textContent=f[1];document.getElementById('ms').textContent=f[2];document.getElementById('mp').textContent=f[4];
+ document.getElementById('crs').innerHTML=Array.from({length:7},(_,i)=>'<i class="'+(i<f[3]?'on':'')+'"></i>').join('')}
+draw()})();
+</script>
+
+</body>
+</html>

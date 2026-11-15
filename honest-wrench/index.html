@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Demo · The Honest Wrench · Honest auto repair in Kars and Ottawa</title>
+<meta name="description" content="The Honest Wrench, Kars: honest auto repair for Ottawa and area for over 10 years. Manufacturer maintenance, engine and suspension repair, brakes, tires. After-hours pickup and drop-off.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ye:#F2C230;--ye2:#D9A812;--bk:#16171A;--gy:#24262B;--pa:#F5F3EE;--mu:#666;--ln:rgba(22,23,26,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--pa);color:var(--bk);font:400 1.02rem/1.64 "Work Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.bi{font-family:Bitter,Georgia,serif}
+nav{position:sticky;top:0;z-index:30;background:var(--bk);color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 1.2rem Bitter;letter-spacing:.04em;text-transform:uppercase}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500;font-size:.94rem;color:#bbb}
+nav ul a{text-decoration:none}nav ul a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 .95rem "Work Sans";text-decoration:none;padding:13px 22px;border-radius:6px;background:var(--ye);color:var(--bk);border:2px solid var(--ye);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--ye2);transform:translateY(-2px)}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero{background:var(--bk);color:#fff;overflow:hidden;position:relative}
+.hgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-block:70px}
+.yrs{color:var(--ye);font-weight:600}
+h1{font:800 clamp(2.8rem,6.6vw,5.4rem)/1 Bitter;margin:14px 0 18px}
+h1 span{color:var(--ye)}
+.lead{font-size:1.12rem;color:#c9c9c9;max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.wr{justify-self:center;width:min(100%,320px);animation:sw 6s ease-in-out infinite;transform-origin:30% 70%}
+@keyframes sw{50%{transform:rotate(-8deg)}}
+section{padding:90px 0}
+h2{font:800 clamp(2.2rem,4.8vw,3.6rem)/1.04 Bitter;margin:0 0 14px}
+h2 span{color:var(--ye2)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.04rem}
+.ask{background:#fff;border-block:1px solid var(--ln)}
+.agrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;align-items:start}
+.sym{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.sym button{border:1.5px solid var(--ln);background:var(--pa);border-radius:999px;padding:10px 15px;font:600 .93rem "Work Sans";cursor:pointer}
+.sym button[aria-pressed=true]{background:var(--bk);color:#fff;border-color:var(--bk)}
+.note{background:var(--pa);border-radius:16px;padding:22px;border-top:5px solid var(--ye)}
+.note h3{font:800 1.5rem Bitter;margin:0 0 8px}.note p{margin:0 0 12px;color:var(--mu)}
+.note textarea{width:100%;min-height:80px;border:1.5px solid var(--ln);border-radius:10px;padding:12px;font:500 1rem "Work Sans";margin-bottom:14px}
+.svc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:36px}
+.s{background:#fff;border-radius:14px;padding:20px;border:1px solid var(--ln)}
+.s h3{font:800 1.1rem Bitter;margin:0 0 4px}.s p{margin:0;color:var(--mu);font-size:.94rem}
+.eric{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.eric img{width:100%;aspect-ratio:4/3.3;object-fit:cover;border-radius:16px}
+.contact{background:var(--bk);color:#e3e3e3}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact h2{color:#fff}
+footer{background:#0c0c0e;color:#7c7c7c;padding:24px 0;font-size:.86rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.agrid,.eric,.cgrid{grid-template-columns:minmax(0,1fr)}.svc{grid-template-columns:repeat(2,minmax(0,1fr))}.wr{width:180px}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DEMO</b>Example made for The Honest Wrench<span class="long"> · not the business's official website</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top"><svg width="26" height="26" viewBox="0 0 24 24" fill="#F2C230" aria-hidden="true"><path d="M21 6.5a5 5 0 0 1-6.6 4.7L6 19.6a2 2 0 0 1-2.8-2.8l8.4-8.4A5 5 0 0 1 17.5 3l-3 3 .8 2.7 2.7.8z"/></svg>The Honest Wrench</a>
+<ul><li><a href="#ask">Ask Eric</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Hours</a></li></ul>
+<a class="btn" href="tel:+16136923008">(613) 692-3008</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="yrs">Serving Ottawa and area for over 10 years</span>
+<h1>Upfront. Honest. <span>Done right.</span></h1>
+<p class="lead">A licensed auto technician who believes being upfront and honest with customers is the best way to do business. Like his grandfather before him.</p>
+<div class="ctas"><a class="btn" href="#ask">Describe my problem</a><a class="btn o" href="tel:+16136923008">Call the shop</a></div></div>
+<svg class="wr rv" viewBox="0 0 200 200" aria-hidden="true"><path d="M170 50a40 40 0 0 1-53 38L48 157a16 16 0 0 1-23-23l69-69A40 40 0 0 1 132 12l-24 24 6 22 22 6z" fill="#F2C230"/></svg>
+</div></header>
+
+<section class="ask" id="ask"><div class="wrap agrid">
+<div class="rv"><h2>What's your car <span>doing?</span></h2><p class="sub">Pick what you're noticing and add a few words. You'll get an honest answer from Eric, with no pressure.</p>
+<div class="sym" id="sym"><button type="button">Squeaky or grinding brakes</button><button type="button">Clunks over bumps</button><button type="button">Check engine light</button><button type="button">Shakes at highway speed</button><button type="button">Due for maintenance</button><button type="button">Tire change</button></div></div>
+<div class="note rv"><h3 id="nt">Squeaky or grinding brakes</h3><p id="np"></p><textarea id="tx" placeholder="Year, make, model, and anything else we should know" aria-label="Details"></textarea><a class="btn" id="send" href="mailto:thehonestwrench@gmail.com">Send to Eric</a></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2 class="rv">What we <span>do</span></h2>
+<p class="sub rv">Following the manufacturer's maintenance guidelines increases the life of your vehicle and protects your warranty.</p>
+<div class="svc">
+<div class="s rv"><h3>Maintenance</h3><p>By the manufacturer's schedule.</p></div>
+<div class="s rv"><h3>Engine &amp; suspension</h3><p>Diagnosis and repair.</p></div>
+<div class="s rv"><h3>Brakes</h3><p>Service and replacement.</p></div>
+<div class="s rv"><h3>Tires</h3><p>Rotation, installation, balancing.</p></div>
+</div>
+<div class="eric"><img class="rv" src="img/1.jpg" alt="Mechanic at work" style="margin-top:50px"><div class="rv" style="margin-top:50px"><h2>Meet <span>Eric</span></h2><p class="sub">Eric worked on his first car at fourteen and was hooked. Following in his grandfather's footsteps, he became a licensed auto technician, and he's a member of iATN, the International Automotive Technicians Network.</p></div></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Drop it off <span>anytime</span></h2><p style="margin:0 0 6px">5600 First Line Rd, Kars, ON K0A 2E0</p><p><a href="tel:+16136923008">(613) 692-3008</a> · <a href="mailto:thehonestwrench@gmail.com">thehonestwrench@gmail.com</a><br><span style="color:#999">4.9 ★ on Google · 162 reviews</span></p></div>
+<div class="rv"><p style="margin:0 0 14px">Open 8:00 a.m. to 6:00 p.m. After-hours pickup and drop-off available.</p><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="tel:+16136923008">Call</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=The+Honest+Wrench+5600+First+Line+Rd%2C+Kars%2C+ON+K0A+2E0" target="_blank" rel="noopener">Directions</a></p></div>
+</div></section>
+<footer><div class="wrap"><span>© The Honest Wrench · Kars</span><span>Upfront and honest</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "en") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="en"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const P=['Brakes that squeak or grind can mean worn pads. Better to check early than to replace rotors later.','Clunks over bumps often come from suspension parts. A quick inspection tells us what\'s going on.','A check engine light can mean many things. We read the code and explain it in plain words.','Shaking at speed can be tire balance, alignment or something else. We\'ll find the cause.','Tell us your kilometres: we\'ll follow your manufacturer\'s maintenance guide and protect your warranty.','Rotation, installation and balancing. Book before the rush.'];let k=0;
+const sym=document.getElementById('sym'),tx=document.getElementById('tx'),send=document.getElementById('send');
+[...sym.children].forEach((b,i)=>b.onclick=()=>{k=i;draw()});tx.oninput=draw;
+function draw(){[...sym.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===k));const t=sym.children[k].textContent;document.getElementById('nt').textContent=t;document.getElementById('np').textContent=P[k];
+ send.href='mailto:thehonestwrench@gmail.com?subject='+encodeURIComponent(t)+'&body='+encodeURIComponent('Hi Eric,\n\nWhat I notice: '+t+'\nDetails: '+(tx.value||'...')+'\n\nName:\nPhone:\n\nThanks!')}
+draw()})();
+</script>
+
+</body>
+</html>

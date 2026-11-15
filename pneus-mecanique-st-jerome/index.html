@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Pneus et Mécanique · Garage à Saint-Jérôme depuis 1986</title>
+<meta name="description" content="Garage de pneus et de mécanique au 977 rue Labelle à Saint-Jérôme, depuis 1986 : vente, installation et entreposage de pneus, réparation et remplacement de pare-brise, climatisation, traitement antirouille Rust Check.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ye:#FFCB05;--ye2:#E6B400;--bk:#1A1A1A;--gy:#2B2B2B;--pa:#F4F4F1;--mu:#666660;--ln:rgba(26,26,26,.13);--sky:#9CCBE8;--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--pa);color:var(--bk);font:400 1.02rem/1.62 Rubik,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:30;background:#fff;border-bottom:4px solid var(--ye)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:10px}
+.logo{text-decoration:none;font:900 1.3rem/1 Rubik}.logo span{background:var(--ye);padding:0 6px}.logo small{display:block;font-weight:500;font-size:.72rem;color:var(--mu);margin-top:4px}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500;font-size:.94rem}
+nav ul a{text-decoration:none}nav ul a:hover{text-decoration:underline;text-decoration-color:var(--ye);text-decoration-thickness:3px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .95rem Rubik;text-decoration:none;padding:13px 22px;border-radius:6px;background:var(--ye);color:var(--bk);border:2px solid var(--ye);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--ye2);transform:translateY(-2px)}.btn.k{background:var(--bk);border-color:var(--bk);color:#fff}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero{background:var(--bk);color:#fff;position:relative;overflow:hidden}
+.hgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding-block:60px 70px}
+.since{display:inline-flex;align-items:center;gap:10px;font-weight:700;color:var(--ye)}
+.since b{font:900 2.4rem/1 Rubik}
+h1{font:900 clamp(2.8rem,6.6vw,5.4rem)/.98 Rubik;margin:12px 0 18px;letter-spacing:-.02em}
+h1 mark{background:var(--ye);color:var(--bk);padding:0 .1em}
+.lead{font-size:1.13rem;color:#cfcfca;max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.pic img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:12px}
+.chev{height:20px;background:repeating-linear-gradient(135deg,var(--ye) 0 14px,var(--bk) 14px 28px)}
+section{padding:90px 0}
+h2{font:900 clamp(2.2rem,4.8vw,3.6rem)/1.02 Rubik;margin:0 0 14px;letter-spacing:-.02em}
+h2 mark{background:var(--ye);padding:0 .1em}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.05rem}
+.ws{background:#fff}
+.wgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+.glass{position:relative;aspect-ratio:16/9;border-radius:40% 40% 10px 10px/30% 30% 10px 10px;background:linear-gradient(170deg,#cfe7f6,var(--sky) 60%,#7fb3d6);border:10px solid var(--bk);overflow:hidden}
+.chip{position:absolute;left:58%;top:42%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.95) 10%,rgba(255,255,255,.4) 40%,transparent 70%);transition:.3s}
+.crack{position:absolute;left:58%;top:42%;height:2px;background:#fff;transform-origin:left;transition:.3s;box-shadow:0 0 2px #fff}
+.ctl{margin-top:18px}
+.seg{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 16px}
+.seg button{border:2px solid var(--ln);background:var(--pa);border-radius:8px;padding:10px 14px;font:700 .93rem Rubik;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--bk);color:#fff;border-color:var(--bk)}
+.lbl{display:block;font:700 .76rem Rubik;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
+.v{border-left:6px solid var(--ye);background:var(--pa);padding:14px 16px;border-radius:0 10px 10px 0}
+.v b{font:900 1.3rem Rubik;display:block}.v p{margin:4px 0 0;color:var(--mu)}
+.svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+.s{background:#fff;border-radius:12px;padding:24px;border:1px solid var(--ln);position:relative}
+.s::after{content:"";position:absolute;left:24px;top:0;width:40px;height:5px;background:var(--ye)}
+.s h3{font:700 1.2rem Rubik;margin:6px 0 6px}.s p{margin:0;color:var(--mu)}
+.contact{background:var(--bk);color:#e8e8e4}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:46px}
+.contact h2{color:#fff}
+[data-hours]{list-style:none;margin:0;padding:0}[data-hours] li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+[data-hours] li.td{color:var(--ye);font-weight:700}
+.st{display:inline-flex;align-items:center;gap:8px;font-weight:700;margin-bottom:12px}.st::before{content:"";width:10px;height:10px;border-radius:50%;background:#777}
+[data-open].on .st::before{background:#5fdc85}
+footer{background:#0f0f0f;color:#85857f;padding:24px 0;font-size:.88rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.wgrid,.cgrid{grid-template-columns:minmax(0,1fr)}.svc{grid-template-columns:minmax(0,1fr)}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Pneus et Mécanique<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top"><span>Pneus</span> et Mécanique<small>977, rue Labelle · Saint-Jérôme</small></a>
+<ul><li><a href="#parebrise">Pare-brise</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Heures</a></li></ul>
+<a class="btn" href="tel:+14504366767">450 436-6767</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="since"><b>1986</b> reconnu dans le domaine automobile</span>
+<h1>Pneus, pare-brise, antirouille : <mark>réglé.</mark></h1>
+<p class="lead">Un garage de Saint-Jérôme qui offre un service professionnel de mécanique et de pneus, avec une équipe de techniciens et des fournisseurs de confiance.</p>
+<div class="ctas"><a class="btn" href="tel:+14504366767">Prendre rendez-vous</a><a class="btn o" href="#parebrise">Mon pare-brise est fissuré</a></div></div>
+<div class="pic rv"><img src="img/1.jpg" alt="Garage"></div>
+</div></header>
+<div class="chev" aria-hidden="true"></div>
+
+<section class="ws" id="parebrise"><div class="wrap wgrid">
+<div class="rv"><div class="glass" aria-hidden="true"><span class="chip" id="chip"></span><span class="crack" id="crack"></span></div></div>
+<div class="rv"><h2>Réparer ou <mark>remplacer ?</mark></h2><p class="sub">Choisissez ce que vous voyez sur votre pare-brise : on vous dit ce qui est le plus probable. On confirme en le regardant.</p>
+<div class="ctl"><span class="lbl">Le dommage</span><div class="seg" id="ty"><button type="button">Un éclat</button><button type="button">Une fissure</button></div>
+<span class="lbl">La taille</span><div class="seg" id="sz"><button type="button">Petit (moins qu'un 2 $)</button><button type="button">Moyen</button><button type="button">Grand</button></div>
+<div class="v" id="v" aria-live="polite"></div></div></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2 class="rv">Nos <mark>services</mark></h2>
+<div class="svc">
+<div class="s rv"><h3>Pneus</h3><p>Vente et installation de pneus neufs ou usagés, et entreposage.</p></div>
+<div class="s rv" style="--d:.06s"><h3>Pare-brise</h3><p>Réparation et remplacement.</p></div>
+<div class="s rv" style="--d:.12s"><h3>Antirouille Rust Check</h3><p>Pour protéger votre véhicule de l'hiver québécois.</p></div>
+<div class="s rv"><h3>Climatisation</h3><p>Entretien de la climatisation.</p></div>
+<div class="s rv" style="--d:.06s"><h3>Mécanique</h3><p>Des techniciens certifiés pour vos réparations.</p></div>
+<div class="s rv" style="--d:.12s"><h3>Accessoires</h3><p>Installation de tous types d'accessoires, sur rendez-vous.</p></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Venez nous voir</h2><p style="font:700 1.4rem/1.3 Rubik;margin:0 0 8px">977 Rue Labelle<br>Saint-Jérôme, QC J7Z 5N5</p><p><a href="tel:+14504366767">450 436-6767</a> · <a href="mailto:pneus.mec@gmail.com">pneus.mec@gmail.com</a><br><span style="color:#9a9a94">4,4 ★ sur Google · 85 avis</span></p>
+<p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px"><a class="btn" href="tel:+14504366767">Appeler</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Garage+Pneus+et+m%C3%A9canique+Denis+Langlois+977+Rue+Labelle%2C+Saint-J%C3%A9r%C3%B4me%2C+QC+J7Z+5N5" target="_blank" rel="noopener">Itinéraire</a></p></div>
+<div class="rv" data-open><div class="st" data-status></div><ul data-hours></ul><p style="color:#9a9a94;font-size:.88rem;margin-top:10px">Le samedi matin, l'hiver seulement.</p></div>
+</div></section>
+<footer><div class="wrap"><span>© Pneus et Mécanique · Saint-Jérôme</span><span>Depuis 1986</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"1": [420, 1020], "2": [420, 1020], "3": [420, 1020], "4": [420, 1020], "5": [420, 1020], "6": [480, 720]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"1": [420, 1020], "2": [420, 1020], "3": [420, 1020], "4": [420, 1020], "5": [420, 1020], "6": [480, 720]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{let t=0,s=0;const ty=document.getElementById('ty'),sz=document.getElementById('sz'),v=document.getElementById('v'),chip=document.getElementById('chip'),crack=document.getElementById('crack');
+[...ty.children].forEach((b,i)=>b.onclick=()=>{t=i;draw()});[...sz.children].forEach((b,i)=>b.onclick=()=>{s=i;draw()});
+function draw(){[...ty.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===t));[...sz.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===s));
+ const d=[24,44,70][s];chip.style.width=chip.style.height=(t?14:d)+'px';crack.style.width=t?[60,140,260][s]+'px':'0';crack.style.transform='rotate(-14deg)';
+ let a,b;if(!t&&s<2){a='Probablement réparable';b='Un petit éclat se répare souvent sans changer le pare-brise. Faites-le vite : le froid peut le faire fendre.'}
+ else if(!t){a='À évaluer';b='Un gros éclat peut nuire à la visibilité. Passez nous voir pour savoir si on peut le réparer.'}
+ else if(s===0){a='À évaluer rapidement';b='Une petite fissure s\'allonge souvent avec les variations de température. Venez nous la montrer.'}
+ else{a='Remplacement probable';b='Une fissure de cette taille demande souvent un nouveau pare-brise. On s\'en occupe.'}
+ v.innerHTML='<b>'+a+'</b><p>'+b+'</p>'}
+draw()})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · A.C.E. Électronique · Réparation de modules électroniques automobiles à Drummondville</title>
+<meta name="description" content="A.C.E. Électronique, Drummondville : réparation de modules électroniques pour autos, motos, VR et bateaux depuis plus de 30 ans. Radio, chauffage, coussins gonflables, ABS, PCM, caméras de recul, démarreurs à distance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0C1210;--pcb:#0F3B2A;--pcb2:#145238;--cu:#E3A24A;--gr:#3BE38A;--rd:#E5312B;--wh:#EAF2EE;--mu:#93A69C;--ln:rgba(234,242,238,.1);--vh:100svh;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--wh);font:400 1.02rem/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.ch{font-family:"Chakra Petch",sans-serif;font-weight:700}
+.mono{font:500 .76rem "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
+nav{position:sticky;top:0;z-index:30;background:rgba(12,18,16,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;font:700 1.45rem/1 "Chakra Petch";letter-spacing:.02em}.logo b{color:var(--rd)}.logo small{display:block;font:500 .66rem "JetBrains Mono";letter-spacing:.14em;color:var(--mu);margin-top:3px}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500;font-size:.94rem;color:var(--mu)}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--wh)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 1rem "Chakra Petch";letter-spacing:.04em;text-transform:uppercase;text-decoration:none;padding:13px 22px;border-radius:4px;background:var(--gr);color:#06120c;border:2px solid var(--gr);transition:.2s;cursor:pointer}
+.btn:hover{filter:brightness(1.1);transform:translateY(-2px)}.btn.o{background:transparent;color:var(--wh);border-color:var(--ln)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 75% 40%,var(--pcb2),var(--bg) 60%)}
+.traces{position:absolute;inset:0;opacity:.5;pointer-events:none}
+.traces path{fill:none;stroke:var(--cu);stroke-width:2;stroke-dasharray:6 900;animation:run 6s linear infinite}
+.traces path:nth-child(2){animation-delay:-2s}.traces path:nth-child(3){animation-delay:-4s}
+@keyframes run{to{stroke-dashoffset:-906}}
+.traces .base{stroke:rgba(227,162,74,.18);stroke-dasharray:none;animation:none}
+.hgrid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;min-height:min(680px,calc(var(--vh) - 66px));padding-block:60px}
+h1{font:700 clamp(2.8rem,6.6vw,5.4rem)/.98 "Chakra Petch";margin:16px 0 18px;text-transform:uppercase}
+h1 span{color:var(--gr)}
+.lead{font-size:1.13rem;color:#bdcbc4;max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.chip{background:var(--pcb);border:2px solid var(--cu);border-radius:14px;padding:26px;position:relative;box-shadow:0 0 60px -20px rgba(59,227,138,.4)}
+.chip::before{content:"";position:absolute;inset:10px;border:1px dashed rgba(227,162,74,.4);border-radius:8px;pointer-events:none}
+.chip b{display:block;font:700 4.4rem/1 "Chakra Petch";color:var(--cu)}.chip span{color:#cfe0d6}
+.pins{display:flex;gap:10px;margin-top:16px}.pins i{width:10px;height:18px;background:var(--cu);border-radius:2px}
+section{padding:90px 0}
+h2{font:700 clamp(2.2rem,5vw,3.6rem)/1 "Chakra Petch";text-transform:uppercase;margin:0 0 14px}
+h2 span{color:var(--gr)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.05rem}
+.diag{background:#101A16;border-block:1px solid var(--ln)}
+.dgrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;align-items:start}
+.sym{display:flex;flex-direction:column;gap:8px;margin-top:20px}
+.sym button{text-align:left;border:1px solid var(--ln);background:transparent;color:var(--wh);border-radius:8px;padding:13px 16px;font:500 1rem Inter;cursor:pointer;display:flex;gap:12px;align-items:center}
+.sym button::before{content:"";width:10px;height:10px;border-radius:50%;background:#33433c;flex:none}
+.sym button[aria-pressed=true]{border-color:var(--gr);background:rgba(59,227,138,.08)}.sym button[aria-pressed=true]::before{background:var(--gr);box-shadow:0 0 10px var(--gr)}
+.scope{background:#05100b;border:1px solid rgba(59,227,138,.3);border-radius:14px;padding:24px;font-family:"JetBrains Mono",monospace;min-height:330px}
+.scope .l{color:var(--gr);font-size:.82rem;letter-spacing:.06em}
+.scope h3{font:700 1.7rem/1.1 "Chakra Petch";color:#fff;margin:10px 0}
+.scope p{font:400 .98rem/1.6 Inter;color:#bdcbc4;margin:0 0 12px}
+.wave{width:100%;height:50px;margin:10px 0 16px;display:block}.wave path{fill:none;stroke:var(--gr);stroke-width:2}
+.veh{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.veh span{border:1px solid var(--cu);color:var(--cu);border-radius:999px;padding:6px 14px;font:700 .9rem "Chakra Petch";text-transform:uppercase}
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:36px}
+.col{background:#101A16;border:1px solid var(--ln);border-radius:12px;padding:24px}
+.col h3{font:700 1.25rem "Chakra Petch";text-transform:uppercase;margin:0 0 10px;color:var(--cu)}
+.col ul{margin:0;padding-left:18px;color:#bdcbc4}.col li{margin:4px 0}
+.contact .cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.big{font:700 2rem/1.15 "Chakra Petch";margin:10px 0}
+[data-hours]{list-style:none;margin:0;padding:0}[data-hours] li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--ln)}
+[data-hours] li.td{color:var(--gr)}
+.st{display:inline-flex;align-items:center;gap:8px;margin-bottom:12px;font-weight:600}.st::before{content:"";width:9px;height:9px;border-radius:50%;background:#555}
+[data-open].on .st::before{background:var(--gr);box-shadow:0 0 10px var(--gr)}
+footer{border-top:1px solid var(--ln);color:#6f8178;padding:24px 0;font-size:.88rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.dgrid,.contact .cgrid{grid-template-columns:minmax(0,1fr)}.cols{grid-template-columns:minmax(0,1fr)}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour ACE Électronique<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top"><b>A.C.E.</b> Électronique<small>Automobile · Drummondville</small></a>
+<ul><li><a href="#diag">Quel module ?</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Heures</a></li></ul>
+<a class="btn" href="tel:+18194728040">819 472-8040</a></div></nav>
+
+<header class="hero" id="top">
+<svg class="traces" viewBox="0 0 1400 700" preserveAspectRatio="none" aria-hidden="true"><path class="base" d="M0 120h300l60 60h420l40-40h580"/><path class="base" d="M0 420h200l80-80h520l60 60h540"/><path class="base" d="M0 600h500l40-40h860"/><path d="M0 120h300l60 60h420l40-40h580"/><path d="M0 420h200l80-80h520l60 60h540"/><path d="M0 600h500l40-40h860"/></svg>
+<div class="wrap hgrid">
+<div><span class="mono" style="color:var(--cu)">Réparation électronique · auto, moto, VR, bateau</span>
+<h1>On <span>répare</span> le module. Pas besoin de le remplacer.</h1>
+<p class="lead">Spécialistes de la réparation de modules électroniques automobiles depuis plus de 30 ans. Travail professionnel et satisfaction garantie.</p>
+<div class="ctas"><a class="btn" href="#diag">Trouver mon problème</a><a class="btn o" href="tel:+18194728040">Appeler</a></div></div>
+<div class="chip rv"><span class="mono" style="color:var(--gr)">Expérience</span><b>30+ ans</b><span>en réparation de modules électroniques, simples et complexes.</span><div class="pins" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+</div></header>
+
+<section class="diag" id="diag"><div class="wrap dgrid">
+<div class="rv"><h2>Qu'est-ce qui <span>ne marche plus ?</span></h2><p class="sub">Choisissez le symptôme : on vous dit quel module est en cause et ce qu'on peut faire.</p>
+<div class="sym" id="sym"><button type="button">La radio ou l'écran ne s'allume plus</button><button type="button">Le chauffage ou la clim ne répond pas</button><button type="button">Le témoin du coussin gonflable reste allumé</button><button type="button">Le témoin ABS est allumé</button><button type="button">Le moteur a des comportements bizarres</button><button type="button">Le tableau de bord est mort ou faux</button><button type="button">La batterie se vide toute seule</button></div></div>
+<div class="scope rv" aria-live="polite"><span class="l">// DIAGNOSTIC</span><svg class="wave" viewBox="0 0 400 50" preserveAspectRatio="none" aria-hidden="true"><path id="wv" d="M0 25h400"/></svg><div id="out"></div></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2 class="rv">Nos <span>services</span></h2>
+<p class="sub rv">Un service très complet pour les composantes électroniques des autos, motos, VR, bateaux et plus.</p>
+<div class="cols">
+<div class="col rv"><h3>Réparation de modules</h3><ul><li>PCM (ECU), ABS, coussins gonflables</li><li>Contrôle de chauffage</li><li>Tableaux de bord et instrumentation</li><li>Écrans tactiles et LCD, diodes, ampoules</li></ul></div>
+<div class="col rv" style="--d:.1s"><h3>Vente et installation</h3><ul><li>Démarreurs et télécommandes</li><li>Radio, GPS, navigation, CB, antennes</li><li>Éclairage DEL et HID, gyrophares</li><li>Caméras de recul, systèmes de son</li></ul></div>
+<div class="col rv" style="--d:.2s"><h3>Expertises</h3><ul><li>Filage général</li><li>Drainage parasitaire de batterie</li><li>Recherche de causes d'incendie</li><li>Modules industriels, commerciaux et résidentiels</li></ul></div>
+</div>
+<div class="veh rv"><span>Autos</span><span>Motos</span><span>VR</span><span>Bateaux</span><span>Et plus</span></div>
+</div></section>
+
+<section class="contact" id="contact" style="background:#101A16"><div class="wrap cgrid">
+<div class="rv"><h2>Passez <span>nous voir</span></h2><p class="big">2100 Bd Lemire<br>Drummondville, QC J2B 7E9</p><p><a href="tel:+18194728040">819 472-8040</a> · <a href="mailto:info@aceelectronique.com">info@aceelectronique.com</a><br><span style="color:var(--mu)">4,5 ★ sur Google · 114 avis</span></p>
+<p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px"><a class="btn" href="tel:+18194728040">Appeler</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=A+C+E+Electronique+Inc+2100+Bd+Lemire%2C+Drummondville%2C+QC+J2B+7E9" target="_blank" rel="noopener">Itinéraire</a></p></div>
+<div class="rv" data-open><div class="st" data-status></div><ul data-hours></ul><p style="color:var(--mu);font-size:.9rem;margin-top:10px">Fermé pour le dîner de midi à 13 h.</p></div>
+</div></section>
+<footer><div class="wrap"><span>© A.C.E. Électronique inc. · Drummondville</span><span>Satisfaction garantie</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"2": [510, 1020], "3": [510, 1020], "4": [510, 1020], "5": [510, 1020]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"2": [510, 1020], "3": [510, 1020], "4": [510, 1020], "5": [510, 1020]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const S=[['Radio, écran, navigation','On répare les radios, lecteurs CD/DVD, GPS et écrans tactiles ou LCD. On peut aussi remplacer les diodes et les connecteurs.'],['Contrôle de chauffage','Le module de contrôle de chauffage peut souvent être réparé, sans acheter une pièce neuve.'],['Système de coussin gonflable','On répare les modules de coussin gonflable. Un témoin allumé veut dire que le système doit être vérifié.'],['Module ABS','Les modules ABS font partie de nos réparations courantes.'],['PCM (ECU), l\'ordinateur du moteur','On répare les PCM (ECU). Appelez-nous pour décrire les symptômes.'],['Tableau de bord et instrumentation','Aiguilles, écrans, ampoules : on répare les tableaux de bord et l\'instrumentation.'],['Drainage parasitaire','Quelque chose vide votre batterie quand l\'auto est arrêtée. On trouve la cause dans le filage et les modules.']];let k=0;
+const sym=document.getElementById('sym'),out=document.getElementById('out'),wv=document.getElementById('wv');
+[...sym.children].forEach((b,i)=>b.onclick=()=>{k=i;draw()});
+function draw(){[...sym.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===k));let d='M0 25';for(let x=0;x<=400;x+=10){d+=' L'+x+' '+(25+Math.sin(x/(8+k*3))*(6+k*2)*(x%40<20?1:.4))}wv.setAttribute('d',d);
+ out.innerHTML='<h3>'+S[k][0]+'</h3><p>'+S[k][1]+'</p><p style="color:var(--cu)">Satisfaction garantie, travail professionnel.</p><a class="btn" href="tel:+18194728040">Appeler : 819 472-8040</a>'}
+draw()})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Papeterie & Photocopie Zoubris · Fournitures de bureau et scolaires à Montréal depuis 1982</title>
+<meta name="description" content="Papeterie & Photocopie Zoubris, avenue du Parc à Montréal : entreprise familiale depuis 1982. Fournitures de bureau et scolaires, grandes marques (Montblanc, Waterman, Cross, Pilot, Pentel, Crayola) et centre de photocopie complet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bl:#2350C8;--bl2:#1A3D9C;--ye:#FFD84D;--pk:#FF6B8B;--gr:#22A37A;--pap:#FDFCF7;--ink:#1D2433;--mu:#5d6475;--ln:rgba(29,36,51,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--pap);color:var(--ink);font:400 1.02rem/1.62 Figtree,system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.hand{font-family:"Gochi Hand",cursive}
+.ruled{background-image:linear-gradient(transparent 31px,rgba(35,80,200,.12) 32px);background-size:100% 32px}
+nav{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;font:800 1.25rem/1 Figtree}.logo span{display:inline-block;background:var(--ye);padding:2px 8px;transform:rotate(-2deg)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600;font-size:.94rem}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--bl)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:800 .95rem Figtree;text-decoration:none;padding:13px 22px;border-radius:12px;background:var(--bl);color:#fff;border:2px solid var(--bl);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--bl2);transform:translateY(-2px)}.btn.o{background:transparent;color:inherit;border-color:var(--ln)}
+.hero{padding:50px 0 80px;position:relative;overflow:hidden}
+.hgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
+.since{font:1.4rem "Gochi Hand";color:var(--pk)}
+h1{font:800 clamp(2.8rem,6.6vw,5.4rem)/1 Figtree;margin:8px 0 18px;letter-spacing:-.03em}
+h1 u{text-decoration:none;background:linear-gradient(transparent 60%,var(--ye) 60%)}
+.lead{font-size:1.12rem;color:var(--mu);max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.note{position:relative;background:#fff;padding:26px 26px 26px 50px;box-shadow:0 30px 50px -30px rgba(0,0,0,.4);transform:rotate(1.5deg)}
+.note::before{content:"";position:absolute;left:30px;top:0;bottom:0;width:2px;background:var(--pk)}
+.note img{width:100%;aspect-ratio:16/11;object-fit:cover;margin-bottom:14px}
+.note p{font:1.45rem/1.3 "Gochi Hand";margin:0;color:var(--bl)}
+.pencil{position:absolute;right:-30px;bottom:30px;width:180px;height:18px;background:linear-gradient(90deg,var(--pk) 0 8%,#ccc 8% 12%,var(--ye) 12% 88%,#E8C9A0 88%);clip-path:polygon(0 0,88% 0,100% 50%,88% 100%,0 100%);transform:rotate(-25deg)}
+section{padding:90px 0}
+h2{font:800 clamp(2.2rem,5vw,3.6rem)/1.02 Figtree;margin:0 0 14px;letter-spacing:-.03em}
+h2 u{text-decoration:none;background:linear-gradient(transparent 60%,var(--ye) 60%)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.05rem}
+.list{background:#EEF2FC}
+.lgrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;align-items:start}
+.paper{background:#fff;padding:24px 24px 24px 56px;position:relative;box-shadow:0 30px 50px -36px rgba(0,0,0,.45)}
+.paper::before{content:"";position:absolute;left:36px;top:0;bottom:0;width:2px;background:var(--pk)}
+.lv{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.lv button{border:1.5px solid var(--ln);background:var(--pap);border-radius:999px;padding:8px 14px;font:700 .9rem Figtree;cursor:pointer}
+.lv button[aria-pressed=true]{background:var(--bl);color:#fff;border-color:var(--bl)}
+.items{list-style:none;margin:0 0 16px;padding:0}
+.items label{display:flex;gap:12px;align-items:center;padding:7px 0;border-bottom:1px solid rgba(35,80,200,.1);cursor:pointer;font:1.3rem "Gochi Hand"}
+.items input{width:20px;height:20px;accent-color:var(--gr);flex:none}
+.items input:checked+span{text-decoration:line-through;color:#9aa}
+.cnt{font-weight:800;color:var(--gr);margin-bottom:12px}
+.brands{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.brands span{border:2px solid var(--ink);border-radius:10px;padding:8px 16px;font-weight:800;background:#fff}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}
+.c{background:#fff;border-radius:22px;padding:26px;border:1px solid var(--ln)}
+.c h3{font:800 1.4rem Figtree;margin:0 0 8px}.c ul{margin:0;padding-left:18px;color:var(--mu)}
+.contact{background:var(--ink);color:#e3e7f0}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact h2{color:#fff}.contact h2 u{background:linear-gradient(transparent 60%,var(--bl) 60%)}
+footer{background:#121722;color:#8890a1;padding:24px 0;font-size:.88rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.lgrid,.cgrid,.two{grid-template-columns:minmax(0,1fr)}.note{transform:none}.pencil{display:none}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Zoubris<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top"><span>Zoubris</span> Papeterie &amp; Photocopie</a>
+<ul><li><a href="#liste">Liste scolaire</a></li><li><a href="#produits">Produits</a></li><li><a href="#contact">Nous joindre</a></li></ul>
+<a class="btn" href="tel:+15144952483">514 495-2483</a></div></nav>
+
+<header class="hero ruled" id="top"><div class="wrap hgrid">
+<div><span class="since">depuis 1982, en famille</span>
+<h1>Tout pour <u>écrire</u>, imprimer et bien commencer l'année.</h1>
+<p class="lead">Fournitures de bureau et scolaires, les meilleures marques à prix imbattables dans la région de Montréal, et un centre de photocopie à service complet. Avec une connaissance des produits qu'on ne trouve plus ailleurs.</p>
+<div class="ctas"><a class="btn" href="#liste">Préparer ma liste scolaire</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Papeterie+%26+Photocopie+Zoubris+Inc+5678+Av.+du+Parc%2C+Montr%C3%A9al%2C+QC+H2V+4H1" target="_blank" rel="noopener">Itinéraire</a></div></div>
+<div class="note rv"><img src="img/1.jpg" alt="Papeterie"><p>« On trouve le bon produit pour vous ! »</p><span class="pencil" aria-hidden="true"></span></div>
+</div></header>
+
+<section class="list" id="liste"><div class="wrap lgrid">
+<div class="rv"><h2>La liste scolaire, <u>cochée.</u></h2><p class="sub">Choisissez le niveau, cochez ce que vous avez déjà à la maison. Envoyez-nous le reste : on peut vous aider à tout trouver en magasin.</p></div>
+<div class="paper rv">
+<div class="lv" id="lv"><button type="button">Maternelle</button><button type="button">Primaire</button><button type="button">Secondaire</button><button type="button">Cégep et université</button></div>
+<div class="cnt" id="cnt"></div>
+<ul class="items" id="items"></ul>
+<a class="btn" id="send" href="mailto:info@zoubris.ca">Envoyer ce qui me manque</a>
+<p style="font-size:.85rem;color:var(--mu);margin:12px 0 0">Liste de départ seulement : suivez toujours la liste de l'école.</p>
+</div></div></section>
+
+<section id="produits"><div class="wrap">
+<h2 class="rv">Les <u>grandes marques</u></h2>
+<div class="brands rv"><span>Montblanc</span><span>Waterman</span><span>Cross</span><span>Pilot</span><span>Pentel</span><span>Schneider</span><span>Crayola</span></div>
+<div class="two">
+<div class="c rv"><h3>Écriture</h3><ul><li>Stylos, crayons, marqueurs et recharges</li><li>Stylos plume, gel et à dessin</li><li>Calligraphie, feutres fins et pointes larges</li></ul></div>
+<div class="c rv" style="--d:.1s"><h3>Centre de photocopie</h3><ul><li>Un service complet de photocopie et d'impression</li><li>Papier, écriture et impression : une vaste sélection</li><li>Fournitures de bureau pour les entreprises</li></ul></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Passez nous <u>voir</u></h2><p style="font-weight:800;font-size:1.3rem;margin:0 0 6px">5678 Av. du Parc<br>Montréal, QC H2V 4H1</p><p><a href="tel:+15144952483">514 495-2483</a> · <a href="mailto:info@zoubris.ca">info@zoubris.ca</a><br><span style="color:#9aa3b5">4,8 ★ sur Google · 262 avis</span></p></div>
+<div class="rv"><p style="margin:0 0 16px">Une entreprise familiale, avec une forte implication dans la communauté.</p><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="tel:+15144952483">Appeler</a><a class="btn o" style="color:#fff;border-color:rgba(255,255,255,.3)" href="https://www.google.com/maps/search/?api=1&query=Papeterie+%26+Photocopie+Zoubris+Inc+5678+Av.+du+Parc%2C+Montr%C3%A9al%2C+QC+H2V+4H1" target="_blank" rel="noopener">Itinéraire</a></p></div>
+</div></section>
+<footer><div class="wrap"><span>© Papeterie &amp; Photocopie Zoubris inc. · Montréal</span><span>Depuis 1982</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const L=[['Crayons de couleur','Crayons de cire','Colle en bâton','Ciseaux à bouts ronds','Duo-tang','Sac d\'école','Boîte à crayons'],['Crayons à mine HB','Gommes à effacer','Crayons de couleur','Surligneurs','Règle 30 cm','Cahiers Canada','Duo-tang','Colle en bâton','Ciseaux','Taille-crayon avec réservoir'],['Stylos bleus et rouges','Crayons à mine','Surligneurs','Calculatrice scientifique','Ensemble de géométrie','Cartables 1 po','Feuilles mobiles','Séparateurs','Clé USB'],['Stylos','Cahiers à spirale','Surligneurs','Agenda','Calculatrice','Feuilles mobiles','Reliures','Clé USB']];let k=1;
+const lv=document.getElementById('lv'),items=document.getElementById('items'),cnt=document.getElementById('cnt'),send=document.getElementById('send');
+[...lv.children].forEach((b,i)=>b.onclick=()=>{k=i;build()});
+function build(){[...lv.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===k));items.innerHTML=L[k].map(x=>'<li><label><input type="checkbox"><span>'+x+'</span></label></li>').join('');upd()}
+function upd(){const all=[...items.querySelectorAll('label')],miss=all.filter(l=>!l.querySelector('input').checked).map(l=>l.textContent);cnt.textContent=miss.length?'Il vous manque '+miss.length+' article'+(miss.length>1?'s':'')+'.':'Tout est coché. Bonne rentrée !';
+ send.href='mailto:info@zoubris.ca?subject='+encodeURIComponent('Liste scolaire : '+lv.children[k].textContent)+'&body='+encodeURIComponent('Bonjour,\n\nIl me manque :\n- '+(miss.join('\n- ')||'rien')+'\n\nNom :\nTéléphone :\n\nMerci !')}
+items.addEventListener('change',upd);build()})();
+</script>
+
+</body>
+</html>

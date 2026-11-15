@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Serrurier Jacques · Serrurerie à Laval</title>
+<meta name="description" content="Serrurier Jacques, boulevard Cléroux à Laval : ouverture, réparation et ajustement de serrures, serrures haute sécurité Abloy Protec 2, Mul-T-Lock et Assa, clés à transpondeur, coffres-forts. Membre du Bureau de la sécurité privée.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--br:#B8862E;--br2:#9A6E20;--st:#1E2328;--st2:#2B3138;--pa:#F1EEE8;--mu:#5f646b;--ln:rgba(30,35,40,.13);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--pa);color:var(--st);font:400 1.02rem/1.64 "IBM Plex Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.sp{font-family:"Space Grotesk",sans-serif}
+nav{position:sticky;top:0;z-index:30;background:var(--st);color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 1.2rem "Space Grotesk"}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:.94rem;color:#b9bec5}
+nav ul a{text-decoration:none}nav ul a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 .95rem "IBM Plex Sans";text-decoration:none;padding:13px 22px;border-radius:8px;background:var(--br);color:#fff;border:2px solid var(--br);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--br2);transform:translateY(-2px)}.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.hero{background:var(--st);color:#fff;position:relative;overflow:hidden}
+.hgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-block:60px 80px}
+.bsp{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:6px 14px;font-size:.86rem;color:#ddd}
+h1{font:700 clamp(2.8rem,7vw,5.6rem)/.98 "Space Grotesk";margin:16px 0 18px;letter-spacing:-.02em}
+h1 span{color:var(--br)}
+.lead{font-size:1.12rem;color:#c3c7cc;max-width:44ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.key{justify-self:center;width:min(100%,360px)}
+.key .bit{transform-origin:100px 100px;animation:turn 5s ease-in-out infinite}
+@keyframes turn{0%,30%{transform:rotate(0)}45%,75%{transform:rotate(90deg)}90%,100%{transform:rotate(0)}}
+section{padding:90px 0}
+h2{font:700 clamp(2.1rem,4.8vw,3.5rem)/1.04 "Space Grotesk";margin:0 0 14px;letter-spacing:-.01em}
+h2 span{color:var(--br2)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.04rem}
+.need{display:grid;grid-template-columns:.95fr 1.05fr;gap:40px;align-items:start;margin-top:36px}
+.list{display:grid;gap:8px}
+.list button{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1.5px solid var(--ln);background:#fff;border-radius:10px;padding:15px 16px;font:600 1rem "IBM Plex Sans";cursor:pointer;text-align:left;color:inherit}
+.list button::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-top:2px solid currentColor;transform:rotate(45deg);flex:none}
+.list button[aria-pressed=true]{background:var(--st);color:#fff;border-color:var(--st)}
+.ans{background:#fff;border-radius:16px;padding:28px;border-top:6px solid var(--br);position:sticky;top:90px}
+.ans h3{font:700 1.7rem "Space Grotesk";margin:0 0 10px}.ans p{margin:0 0 14px;color:var(--mu)}
+.ans .br{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}.ans .br span{background:var(--pa);border-radius:6px;padding:4px 10px;font-weight:600;font-size:.88rem}
+.call{background:var(--pa);border-radius:10px;padding:12px 14px;font-size:.92rem;margin-bottom:16px;display:flex;gap:10px;align-items:flex-start}
+.brands{background:#fff;border-block:1px solid var(--ln)}
+.bg{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;background:var(--ln);border:1px solid var(--ln);margin-top:30px}
+.bg div{background:#fff;padding:24px 16px;text-align:center;font:700 1.1rem "Space Grotesk"}
+.bg small{display:block;font:500 .8rem "IBM Plex Sans";color:var(--mu)}
+.contact{background:var(--st2);color:#d2d6db}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact h2{color:#fff}.contact h2 span{color:var(--br)}
+footer{background:var(--st);color:#888e96;padding:24px 0;font-size:.86rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.need,.cgrid{grid-template-columns:minmax(0,1fr)}.bg{grid-template-columns:repeat(2,minmax(0,1fr))}.key{width:200px}.ans{position:static}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Serrurier Jacques<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B8862E" stroke-width="2.2"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v3M21 12v2"/></svg>Serrurier Jacques</a>
+<ul><li><a href="#besoin">Mon besoin</a></li><li><a href="#marques">Haute sécurité</a></li><li><a href="#contact">Nous joindre</a></li></ul>
+<a class="btn" href="tel:+14506879872">450 687-9872</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="bsp"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B8862E" stroke-width="2"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/></svg>Membre du Bureau de la sécurité privée</span>
+<h1>Ouverture, réparation, <span>ajustement.</span></h1>
+<p class="lead">Serrurier à Laval. On sécurise votre demeure ou votre commerce, des serrures haute sécurité aux clés d'auto à transpondeur.</p>
+<div class="ctas"><a class="btn" href="#besoin">Trouver mon service</a><a class="btn o" href="tel:+14506879872">Appeler</a></div></div>
+<svg class="key rv" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="84" fill="#2B3138" stroke="#B8862E" stroke-width="6"/><circle cx="100" cy="100" r="58" fill="#1E2328"/><g class="bit"><circle cx="100" cy="100" r="40" fill="#B8862E"/><rect x="94" y="64" width="12" height="52" rx="5" fill="#1E2328"/></g></svg>
+</div></header>
+
+<section id="besoin"><div class="wrap">
+<h2 class="rv">De quoi avez-vous <span>besoin ?</span></h2>
+<p class="sub rv">Choisissez votre situation. Plusieurs produits se font sur commande spéciale, selon la disponibilité.</p>
+<div class="need">
+<div class="list rv" id="list"><button type="button">Je veux sécuriser ma maison</button><button type="button">Mon commerce a besoin de contrôle des clés</button><button type="button">Une clé d'auto avec transpondeur</button><button type="button">Clé de moto, de VTT ou d'auto</button><button type="button">Ouvrir un coffre-fort à combinaison</button><button type="button">Barre panique, ferme-porte ou charnière</button><button type="button">Une serrure électronique</button></div>
+<div class="ans rv" id="ans" aria-live="polite"></div>
+</div></div></section>
+
+<section class="brands" id="marques"><div class="wrap">
+<h2 class="rv">Serrures <span>haute sécurité</span></h2>
+<p class="sub rv">Des marques reconnues, avec contrôle des clés.</p>
+<div class="bg rv"><div>Abloy<small>Protec 2</small></div><div>Mul-T-Lock<small>contrôle de clés</small></div><div>Assa<small>V10</small></div><div>Kaba<small>Unican, électronique</small></div><div>Medeco<small>service seulement</small></div></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>Venez nous <span>voir</span></h2><p style="font:700 1.3rem/1.3 'Space Grotesk';color:#fff;margin:0 0 8px">4261 Bd Cléroux<br>Laval, QC H7T 2E1</p><p><a href="tel:+14506879872">450 687-9872</a> · <a href="mailto:serrurierjacques@hotmail.com">serrurierjacques@hotmail.com</a><br><span style="opacity:.75">4,7 ★ sur Google · 121 avis</span></p></div>
+<div class="rv"><p style="font:700 1.5rem 'Space Grotesk';color:#fff;margin:0">8 h à 17 h</p><p style="margin:4px 0 18px">Téléphonez avant de passer, merci !</p><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="tel:+14506879872">Appeler</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=serrurier+jacques+4261+Bd+Cl%C3%A9roux%2C+Laval%2C+QC+H7T+2E1" target="_blank" rel="noopener">Itinéraire</a></p></div>
+</div></section>
+<footer><div class="wrap"><span>© Serrurier Jacques · Laval</span><span>Locksmith · serrurier</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const A=[['Sécuriser votre demeure','Ouverture, réparation et ajustement de vos serrures, ou passage à une serrure haute sécurité.',['Abloy Protec 2','Mul-T-Lock','Assa V10']],['Contrôle des clés','Des serrures et clés à contrôle, pour savoir qui peut ouvrir quoi dans votre commerce.',['Mul-T-Lock','Abloy Protec 2']],['Clé à transpondeur','Clé d\'auto avec puce transpondeur, par exemple pour Honda.',['Transpondeur']],['Clés de véhicules','Clés de motocyclette, de VTT et d\'auto.',['Moto','VTT','Auto']],['Coffre-fort','Ouverture de coffre-fort à combinaison.',['Combinaison']],['Quincaillerie de porte','Barre de sortie de secours, ferme-porte et charnière continue.',['Barre panique','Ferme-porte','Charnière continue']],['Serrure électronique','Serrure électronique Kaba Unican.',['Kaba Unican']]];let k=0;
+const list=document.getElementById('list'),ans=document.getElementById('ans');
+[...list.children].forEach((b,i)=>b.onclick=()=>{k=i;draw()});
+function draw(){[...list.children].forEach((b,i)=>b.setAttribute('aria-pressed',i===k));const a=A[k];
+ ans.innerHTML='<h3>'+a[0]+'</h3><p>'+a[1]+'</p><div class="br">'+a[2].map(x=>'<span>'+x+'</span>').join('')+'</div><div class="call"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A6E20" stroke-width="2" style="flex:none;margin-top:2px"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16v.5"/></svg><span>Plusieurs produits sont sur commande spéciale. Téléphonez avant de passer.</span></div><a class="btn" href="tel:+14506879872">Appeler Jacques</a> <a class="btn o" style="margin-top:8px" href="mailto:serrurierjacques@hotmail.com?subject='+encodeURIComponent(a[0])+'">Écrire</a>'}
+draw()})();
+</script>
+
+</body>
+</html>

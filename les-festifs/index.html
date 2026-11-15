@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Les Festifs · Photographes d'événements à Québec</title>
+<meta name="description" content="Les Festifs, photographes d'événements au Québec : près de 400 événements par année, 10 photographes et 2 caméramans, 20 ans d'expérience. Couverture d'événement à partir de 400 $.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--pk:#FF3D7F;--yl:#FFD23F;--vi:#2B1055;--vi2:#1B0838;--cr:#FFF8F0;--mu:#6b6280;--ln:rgba(43,16,85,.12);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cr);color:var(--vi2);font:400 1.02rem/1.62 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.un{font-family:Unbounded,sans-serif}
+nav{position:sticky;top:0;z-index:30;background:var(--vi2);color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;font:800 1.15rem Unbounded;letter-spacing:-.01em}.logo span{color:var(--pk)}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:500;font-size:.94rem;color:#c8bde0}
+nav ul a{text-decoration:none}nav ul a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .95rem "DM Sans";text-decoration:none;padding:13px 22px;border-radius:999px;background:var(--pk);color:#fff;border:2px solid var(--pk);transition:.2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px) rotate(-1deg)}.btn.o{background:transparent;color:inherit;border-color:currentColor}.btn.y{background:var(--yl);border-color:var(--yl);color:var(--vi2)}
+.hero{background:var(--vi);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{padding-block:60px 70px;position:relative}
+h1{font:800 clamp(2.6rem,7.4vw,6.2rem)/.98 Unbounded;margin:0 0 20px;letter-spacing:-.03em;max-width:13ch}
+h1 span{color:var(--yl)}
+.lead{font-size:1.14rem;color:#ddd3f0;max-width:46ch;margin:0 0 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.strip{display:flex;gap:16px;margin-top:46px}
+.strip figure{margin:0;background:#fff;padding:10px 10px 30px;flex:1;min-width:0;box-shadow:0 20px 40px -20px #000}
+.strip figure:nth-child(1){transform:rotate(-3deg)}.strip figure:nth-child(2){transform:rotate(2deg) translateY(14px)}.strip figure:nth-child(3){transform:rotate(-1deg)}
+.strip img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.conf{position:absolute;inset:0;pointer-events:none}
+.conf i{position:absolute;width:10px;height:16px;top:-20px;animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(900px) rotate(540deg)}}
+.stats{background:var(--yl)}
+.sg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.sg div{padding:28px 18px;border-right:2px solid var(--vi2)}.sg div:last-child{border:0}
+.sg b{display:block;font:800 clamp(1.8rem,3.6vw,2.8rem)/1 Unbounded}.sg span{font-weight:500}
+section{padding:90px 0}
+h2{font:800 clamp(2rem,4.8vw,3.6rem)/1.02 Unbounded;margin:0 0 14px;letter-spacing:-.02em}
+h2 span{color:var(--pk)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.04rem}
+.cal{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start;margin-top:36px}
+.hrs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-bottom:22px}
+.hrs button{border:2px solid var(--vi2);background:#fff;border-radius:14px;padding:14px 4px;font:800 1.2rem Unbounded;cursor:pointer}
+.hrs button small{display:block;font:500 .74rem "DM Sans"}
+.hrs button[aria-pressed=true]{background:var(--vi2);color:#fff}
+.alt{display:flex;align-items:center;gap:12px;border:2px dashed var(--ln);border-radius:14px;padding:14px;cursor:pointer;width:100%;background:transparent;font:inherit;text-align:left;color:inherit}
+.alt[aria-pressed=true]{border-style:solid;border-color:var(--pk);background:#fff0f5}
+.inc{list-style:none;padding:0;margin:20px 0 0}.inc li{padding:8px 0;border-bottom:1px solid var(--ln);display:flex;gap:10px}
+.inc li::before{content:"";width:8px;height:8px;margin-top:9px;border-radius:50%;background:var(--pk);flex:none}
+.tk{background:var(--vi2);color:#fff;border-radius:22px;padding:28px;position:relative;overflow:hidden}
+.tk::after{content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;border-radius:50%;background:var(--pk);opacity:.35}
+.tk .p{font:800 3.4rem/1 Unbounded;color:var(--yl);margin:10px 0}
+.tk small{display:block;color:#bcb0d6;margin-bottom:18px}
+.more{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.more img{width:100%;aspect-ratio:4/3.2;object-fit:cover;border-radius:22px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tags span{border:2px solid var(--vi2);border-radius:999px;padding:6px 14px;font-weight:700}
+.contact{background:var(--pk);color:#fff}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact h2 span{color:var(--vi2)}
+footer{background:var(--vi2);color:#a99dc4;padding:24px 0;font-size:.86rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.cal,.more,.cgrid{grid-template-columns:minmax(0,1fr)}.sg{grid-template-columns:repeat(2,minmax(0,1fr))}.sg div{border-right:0;border-bottom:2px solid var(--vi2)}.sg b{font-size:1.5rem;white-space:nowrap}.strip{gap:8px}.strip figure{padding:5px 5px 16px}.hrs button{font-size:1rem}section{padding:70px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Les Festifs<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top">Les <span>Festifs</span></a>
+<ul><li><a href="#tarifs">Tarifs</a></li><li><a href="#sur-mesure">Sur mesure</a></li><li><a href="#contact">Soumission</a></li></ul>
+<a class="btn" href="mailto:info@lesfestifs.com">Écrire</a></div></nav>
+
+<header class="hero" id="top"><div class="conf" id="conf" aria-hidden="true"></div><div class="wrap">
+<h1>Vos événements, <span>en lumière.</span></h1>
+<p class="lead">Photographes d'événements au Québec. Une équipe de professionnels qui couvre près de 400 événements par année.</p>
+<div class="ctas"><a class="btn y" href="#tarifs">Calculer ma couverture</a><a class="btn o" href="tel:+15818884603">Appeler</a></div>
+<div class="strip"><figure><img src="img/1.jpg" alt="Événement"></figure><figure><img src="img/2.jpg" alt="Invités"></figure><figure><img src="img/3.jpg" alt="Soirée"></figure></div>
+</div></header>
+<div class="stats"><div class="wrap sg">
+<div><b>~400</b><span>événements par année</span></div>
+<div><b>30 000</b><span>photos diffusées par année</span></div>
+<div><b>10 + 2</b><span>photographes et caméramans</span></div>
+<div><b>20 ans</b><span>d'expérience en événementiel</span></div>
+</div></div>
+
+<section id="tarifs"><div class="wrap">
+<h2 class="rv">Combien pour <span>votre soirée ?</span></h2>
+<p class="sub rv">Nos tarifs affichés, pour les événements jusqu'à 150 invités. Ils peuvent être ajustés selon le nombre de participants et vos besoins.</p>
+<div class="cal">
+<div class="rv"><div class="hrs" id="hrs"><button type="button">1<small>heure</small></button><button type="button">2<small>heures</small></button><button type="button">3<small>heures</small></button><button type="button">4<small>heures</small></button><button type="button">5<small>heures</small></button></div>
+<button type="button" class="alt" id="alt"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21V9l9-6 9 6v12M9 21v-6h6v6"/></svg><span><b>Plutôt mettre en valeur mon établissement</b><br><small>Espaces, ambiance et équipe · 1 h sur place</small></span></button>
+<ul class="inc" id="inc"></ul></div>
+<div class="tk rv" aria-live="polite"><span id="tn" style="font-weight:700"></span><div class="p" id="tp"></div><small>Avant taxes · jusqu'à 150 invités</small><a class="btn y" id="send" href="mailto:info@lesfestifs.com">Demander une soumission</a></div>
+</div></div></section>
+
+<section id="sur-mesure" style="background:#fff"><div class="wrap more">
+<img class="rv" src="img/4.jpg" alt="Photographie sur mesure">
+<div class="rv"><h2>Mariage et <span>sur mesure</span></h2><p class="sub">Présentez-nous votre projet pour une proposition adaptée : portraits corporatifs, mariage, vidéo récapitulative d'événement, et plus.</p>
+<div class="tags"><span>Mariage</span><span>Famille</span><span>Automobile</span><span>Animaux</span><span>Produits</span><span>Culinaire</span><span>Immobilier</span><span>Architecture</span><span>Vidéo</span></div></div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><h2>On fait la <span>fête ?</span></h2><p style="margin:0 0 6px">9055 Bd Mathieu, Québec, QC G1G 6J9</p><p><a href="tel:+15818884603">581 888-4603</a> · <a href="mailto:info@lesfestifs.com">info@lesfestifs.com</a><br><span style="opacity:.85">5,0 ★ sur Google · 135 avis</span></p></div>
+<div class="rv"><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn y" href="mailto:info@lesfestifs.com?subject=Demande%20de%20soumission">Demander une soumission</a><a class="btn o" href="tel:+15818884603">Appeler</a></p></div>
+</div></section>
+<footer><div class="wrap"><span>© Les Festifs · Québec</span><span>Photographie d'événements</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const P=[400,550,700,850,1050],TR=['2 h 30','3 h','3 h 30','4 h','5 h'];let h=1,alt=false;
+const hrs=document.getElementById('hrs'),a=document.getElementById('alt'),send=document.getElementById('send');
+[...hrs.children].forEach((b,i)=>b.onclick=()=>{h=i;alt=false;draw()});a.onclick=()=>{alt=!alt;draw()};
+function draw(){[...hrs.children].forEach((b,i)=>b.setAttribute('aria-pressed',!alt&&i===h));a.setAttribute('aria-pressed',alt);
+ const name=alt?'Mise en lumière d\'établissement, 1 h':'Couverture d\'événement, '+(h+1)+' h',price=alt?500:P[h];
+ document.getElementById('tn').textContent=name;document.getElementById('tp').textContent=price.toLocaleString('fr-CA')+' $';
+ const L=alt?['1 h sur place : intérieur, extérieur, ambiance, équipe','3 h 30 de traitement des images','Livraison par lien téléchargeable']:[(h+1)+' h sur place : ambiance, invités, moments forts',TR[h]+' de traitement des images','Livraison par lien téléchargeable',h?'Diffusion publique ou privée, selon vos besoins':'Diffusion sur nos réseaux pour les événements publics'];
+ document.getElementById('inc').innerHTML=L.map(x=>'<li>'+x+'</li>').join('');
+ send.href='mailto:info@lesfestifs.com?subject='+encodeURIComponent('Soumission : '+name)+'&body='+encodeURIComponent('Bonjour,\n\nForfait : '+name+' ('+price+' $)\nDate :\nLieu :\nNombre d\'invités :\nType d\'événement :\n\nNom :\nTéléphone :\n\nMerci !')}
+draw();
+const c=document.getElementById('conf'),K=['#FF3D7F','#FFD23F','#7ee0ff','#fff'];if(!matchMedia('(prefers-reduced-motion: reduce)').matches)for(let i=0;i<26;i++){const e=document.createElement('i');e.style.left=Math.random()*100+'%';e.style.background=K[i%4];e.style.animationDuration=6+Math.random()*8+'s';e.style.animationDelay=-Math.random()*14+'s';e.style.opacity=.7;c.appendChild(e)}})();
+</script>
+
+</body>
+</html>

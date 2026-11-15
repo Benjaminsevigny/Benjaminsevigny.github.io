@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Salon Le Barbü · Coiffeur et barbier à Sherbrooke depuis 2017</title>
+<meta name="description" content="Salon Le Barbü, 1564 rue Galt Ouest à Sherbrooke : coupes traditionnelles et modernes, afro et occidentales, barbe et contour. Depuis 2017.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+<style>
+:root{--cr:#F3EEE4;--bl:#1E4FD8;--bl2:#173FB0;--rd:#D63A2F;--ink:#121318;--mu:#6b6a70;--ln:rgba(18,19,24,.14);--vh:100svh}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cr);color:var(--ink);font:400 1.02rem/1.6 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.be{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.02em}
+.pole{height:10px;background:repeating-linear-gradient(-45deg,var(--bl) 0 14px,#fff 14px 28px,var(--rd) 28px 42px,#fff 42px 56px);background-size:79px 10px;animation:pl 3s linear infinite}
+@keyframes pl{to{background-position:79px 0}}
+nav{position:sticky;top:0;z-index:30;background:var(--ink);color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.logo{text-decoration:none;font:2rem/1 "Bebas Neue";letter-spacing:.06em}.logo i{font:italic 1.1rem "DM Serif Display";color:#9fb6ff;margin-right:6px}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-weight:500;font-size:.95rem;color:#c9cad2}
+nav ul a{text-decoration:none}nav ul a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;font:1.15rem/1 "Bebas Neue";letter-spacing:.08em;text-decoration:none;padding:14px 24px;border-radius:4px;background:var(--bl);color:#fff;border:2px solid var(--bl);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--bl2);transform:translateY(-2px)}.btn.o{background:transparent;color:var(--ink);border-color:var(--ink)}.btn.w{background:#fff;color:var(--ink);border-color:#fff}
+/* héros */
+.hero{padding:56px 0 0}
+.hgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:46px;align-items:end}
+.since{font:italic 1.3rem "DM Serif Display";color:var(--bl)}
+h1{font:clamp(5rem,15vw,12.5rem)/.8 "Bebas Neue";margin:10px 0 0;letter-spacing:.01em}
+h1 .u{position:relative;display:inline-block}
+h1 .u::after{content:"";position:absolute;left:4%;right:4%;bottom:.08em;height:.09em;background:var(--rd);transform:scaleX(0);transform-origin:left;animation:ul 1s .5s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes ul{to{transform:scaleX(1)}}
+.lead{font-size:1.15rem;color:var(--mu);max-width:42ch;margin:22px 0 26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:56px}
+.frame{position:relative;align-self:stretch}
+.frame img{width:100%;height:100%;min-height:440px;object-fit:cover;border-radius:220px 220px 0 0;border:8px solid var(--ink);border-bottom:0}
+.seal{position:absolute;left:-30px;top:30px;width:132px;height:132px;border-radius:50%;background:var(--rd);color:#fff;display:grid;place-items:center;text-align:center;font:1.25rem/1 "Bebas Neue";letter-spacing:.06em;transform:rotate(-12deg);box-shadow:0 16px 30px -12px rgba(0,0,0,.5)}
+.seal b{display:block;font-size:2.6rem}
+.bar{background:var(--ink);color:#fff}
+.bar .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-block:18px;font:1.3rem "Bebas Neue";letter-spacing:.08em}
+.bar span b{color:#9fb6ff;font-weight:400}
+section{padding:96px 0}
+h2{font:clamp(3rem,7vw,5.4rem)/.9 "Bebas Neue";margin:0 0 14px}
+h2 em{font:italic .55em "DM Serif Display";color:var(--bl);display:block;letter-spacing:0}
+.sub{color:var(--mu);max-width:56ch;margin:0;font-size:1.06rem}
+/* outil : tarif */
+.tgrid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;margin-top:36px;align-items:start}
+.list{border-top:3px solid var(--ink)}
+.item{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:16px;align-items:center;padding:16px 4px;border-bottom:1px solid var(--ln);cursor:pointer;transition:background .15s}
+.item:hover{background:rgba(30,79,216,.05)}
+.item input{position:absolute;opacity:0}
+.box{width:26px;height:26px;border:2.5px solid var(--ink);border-radius:6px;display:grid;place-items:center;transition:.15s}
+.item input:checked~.box{background:var(--bl);border-color:var(--bl)}
+.item input:checked~.box::after{content:"";width:10px;height:6px;border:3px solid #fff;border-top:0;border-right:0;transform:rotate(-45deg) translate(1px,-1px)}
+.item input:focus-visible~.box{outline:3px solid var(--rd);outline-offset:2px}
+.item b{font:1.6rem/1 "Bebas Neue";letter-spacing:.04em}.item small{display:block;color:var(--mu);font-size:.85rem}
+.item .p{font:1.9rem "Bebas Neue"}
+.ticket{background:var(--ink);color:#fff;border-radius:16px;padding:26px;position:sticky;top:90px}
+.ticket .be{font-size:1.4rem;letter-spacing:.1em;color:#9fb6ff}
+.ticket .t{font:5rem/.9 "Bebas Neue";margin:10px 0}
+.ticket ul{list-style:none;margin:0 0 16px;padding:0;color:#c9cad2;min-height:40px}.ticket li{padding:4px 0;border-bottom:1px dashed rgba(255,255,255,.15);display:flex;justify-content:space-between}
+.ticket .btn{width:100%;justify-content:center;margin-top:8px}
+/* histoire */
+.story{background:var(--bl);color:#fff}
+.sgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.story img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+.story h2 em{color:#cfd9ff}.story .sub{color:#dbe3ff}
+.story blockquote{margin:26px 0 0;font:italic 1.5rem/1.35 "DM Serif Display";border-left:4px solid #fff;padding-left:20px}
+.story cite{display:block;margin-top:10px;font:1.1rem "Bebas Neue";letter-spacing:.1em;font-style:normal;color:#cfd9ff}
+/* avis */
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:36px}
+.q{background:#fff;border-radius:14px;padding:24px;border:1px solid var(--ln)}
+.q p{margin:0 0 12px;font-size:1.05rem}.q span{font:1.1rem "Bebas Neue";letter-spacing:.08em;color:var(--bl)}
+.stars{color:#E8A317;letter-spacing:2px}
+/* contact */
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:46px}
+[data-hours]{list-style:none;margin:0;padding:0}[data-hours] li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--ln)}
+[data-hours] li.td{font-weight:700;color:var(--bl)}
+.st{display:inline-flex;align-items:center;gap:8px;font-weight:700;margin-bottom:12px}.st::before{content:"";width:10px;height:10px;border-radius:50%;background:#aaa}
+[data-open].on .st::before{background:#22a755;box-shadow:0 0 0 4px rgba(34,167,85,.2)}
+.big{font:2.6rem/1 "Bebas Neue";margin:10px 0 12px;letter-spacing:.03em}
+footer{background:var(--ink);color:#9a9ba3;padding:24px 0;font-size:.88rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.hgrid,.tgrid,.sgrid,.cgrid{grid-template-columns:minmax(0,1fr)}.quotes{grid-template-columns:minmax(0,1fr)}.frame img{min-height:340px}.seal{left:auto;right:10px;width:110px;height:110px}.ticket{position:static}section{padding:72px 0}.ctas{margin-bottom:30px}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Le Barbü<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<div class="pole"></div>
+<nav><div class="wrap"><a class="logo" href="#top"><i>Salon</i>LE BARBÜ</a>
+<ul><li><a href="#tarifs">Tarifs</a></li><li><a href="#histoire">Notre histoire</a></li><li><a href="#avis">Avis</a></li><li><a href="#contact">Heures</a></li></ul>
+<a class="btn" href="tel:+18193451929">819 345-1929</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap hgrid">
+<div><span class="since">À votre service depuis 2017</span>
+<h1>Bien dans<br>votre <span class="u">peau.</span></h1>
+<p class="lead">Des coiffeurs expérimentés, des coupes de qualité à tendance traditionnelle et moderne, pour tous les types de chevelure. Rue Galt Ouest, Sherbrooke.</p>
+<div class="ctas"><a class="btn" href="tel:+18193451929">Prendre rendez-vous</a><a class="btn o" href="#tarifs">Voir les tarifs</a></div></div>
+<div class="frame rv"><img src="img/1.jpg" alt="Barbier au travail"><div class="seal"><div><b>5,0★</b>949 avis</div></div></div>
+</div>
+<div class="bar"><div class="wrap"><span>Coupes <b>afro</b> &amp; <b>occidentales</b></span><span>Barbe · Contour · Twist</span><span>Lun–sam <b>12 h – 18 h</b></span></div></div></header>
+
+<section id="tarifs"><div class="wrap">
+<h2 class="rv">Votre coupe,<em>votre prix</em></h2>
+<p class="sub rv">Cochez ce que vous voulez : le total s'affiche tout de suite. Pas de surprise à la caisse.</p>
+<div class="tgrid">
+<div class="list rv" id="list"></div>
+<aside class="ticket rv"><div class="be">Votre total</div><div class="t" id="tot">0 $</div><ul id="sel"><li style="border:0">Rien de coché pour l'instant.</li></ul>
+<a class="btn w" href="tel:+18193451929">Réserver : 819 345-1929</a><p style="font-size:.85rem;color:#9a9ba3;margin:12px 0 0">Contour : demandez-nous le prix.</p></aside>
+</div></div></section>
+
+<section class="story" id="histoire"><div class="wrap sgrid">
+<img class="rv" src="img/2.jpg" alt="Salon Le Barbü">
+<div class="rv"><h2>Né près de l'université<em>en 2017</em></h2>
+<p class="sub">Salon Le Barbü a vu le jour en 2017, après une longue réflexion et quelques tours de couloirs à la Faculté de gestion de l'Université de Sherbrooke. On coupe les cheveux, on rase et on taille la barbe. Notre objectif : que vous vous sentiez mieux, et que vous vous démarquiez au 5 à 7.</p>
+<blockquote>« Ma raison d'être est de rendre les Sherbrookois plus beaux que jamais, pour qu'ils se sentent bien dans leur peau. »<cite>Joel Kakoherio · fondateur</cite></blockquote></div>
+</div></section>
+
+<section id="avis"><div class="wrap">
+<h2 class="rv">Ils en parlent<em>mieux que nous</em></h2>
+<div class="quotes">
+<div class="q rv"><div class="stars">★★★★★</div><p>Excellent coiffeur. Très bon accueil. Salon bien équipé (wifi gratuit, quelques sucreries aussi). Prix abordable.</p><span>Concorde-F.</span></div>
+<div class="q rv" style="--d:.1s"><div class="stars">★★★★★</div><p>Accueil très chaleureux, ça vaut la peine de prendre rendez-vous ! Le coiffeur est à l'écoute et offre un service personnalisé.</p><span>Antony</span></div>
+<div class="q rv" style="--d:.2s"><div class="stars">★★★★★</div><p>Coupes afro et occidentales. Il sait tenir sa tondeuse et ses rasoirs.</p><span>Armel</span></div>
+</div></div></section>
+
+<section id="contact" style="background:#fff;border-top:1px solid var(--ln)"><div class="wrap cgrid">
+<div class="rv"><span class="since">Nous visiter</span><p class="big">1564 Rue Galt O<br>Sherbrooke, QC J1H 2B5</p><p><a href="tel:+18193451929">819 345-1929</a> · <a href="mailto:info@lebarbusherbrooke.com">info@lebarbusherbrooke.com</a></p>
+<p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Salon+Le+Barb%C3%BC+1564+Rue+Galt+O%2C+Sherbrooke%2C+QC+J1H+2B5" target="_blank" rel="noopener">Itinéraire</a><a class="btn o" href="tel:+18193451929">Appeler</a></p></div>
+<div class="rv" data-open><span class="since">Horaire</span><div class="st" data-status style="margin-top:10px"></div><ul data-hours></ul></div>
+</div></section>
+<footer><div class="wrap"><span>© Salon Le Barbü · Sherbrooke</span><span>Depuis 2017</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données ({"1": [720, 1080], "2": [720, 1080], "3": [720, 1080], "4": [720, 1080], "5": [720, 1080], "6": [720, 1080]}, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H={"1": [720, 1080], "2": [720, 1080], "3": [720, 1080], "4": [720, 1080], "5": [720, 1080], "6": [720, 1080]},EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const S=[['Coupe régulière','Adulte',35],['Coupe stylisée / ciseau','Adulte',40],['Coupe régulière','Enfant',25],['Coupe stylisée / ciseau','Enfant',30],['Barbe simple','',15],['Twist avec éponge','',10]];
+const list=document.getElementById('list'),tot=document.getElementById('tot'),sel=document.getElementById('sel');
+S.forEach(([n,w,p],i)=>{const l=document.createElement('label');l.className='item';l.innerHTML='<input type="checkbox" data-i="'+i+'"><span class="box"></span><span><b>'+n+'</b>'+(w?'<small>'+w+'</small>':'')+'</span><span class="p">'+p+' $</span>';list.appendChild(l)});
+list.addEventListener('change',e=>{const i=+e.target.dataset.i;if(i<4&&e.target.checked){const grp=i<2?[0,1]:[2,3];/* une seule coupe par personne et par âge */grp.forEach(j=>{if(j!==i)list.querySelector('[data-i="'+j+'"]').checked=false})}draw()});
+function draw(){const c=[...list.querySelectorAll('input:checked')].map(x=>S[+x.dataset.i]);const t=c.reduce((a,x)=>a+x[2],0);tot.textContent=t+' $';
+ sel.innerHTML=c.length?c.map(x=>'<li><span>'+x[0]+(x[1]?' ('+x[1].toLowerCase()+')':'')+'</span><span>'+x[2]+' $</span></li>').join(''):'<li style="border:0">Rien de coché pour l\'instant.</li>'}
+draw()})();
+</script>
+
+</body>
+</html>

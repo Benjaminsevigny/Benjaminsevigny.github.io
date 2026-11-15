@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Démo · Boucherie Jean Leclerc et associé · Lévis, 7 jours sur 7</title>
+<meta name="description" content="Boucherie Jean Leclerc et associé (anciennement Marquis Leclerc) à Lévis depuis 1993 : 20 variétés de fondues chinoises, charcuteries et mets cuisinés maison, pâtés, desserts et traiteur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bk:#151312;--bk2:#211e1c;--gd:#C9A45C;--gd2:#E2C27F;--cr:#F6F0E4;--rd:#8E2A21;--mu:#a59d90;--ln:rgba(246,240,228,.12);--vh:100svh;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bk);color:var(--cr);font:400 1.04rem/1.65 "Source Sans 3",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.pf{font-family:"Playfair Display",Georgia,serif}
+nav{position:sticky;top:0;z-index:30;background:rgba(21,19,18,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.logo{text-decoration:none;line-height:1.05}.logo small{display:block;font:700 .66rem "Source Sans 3";letter-spacing:.3em;text-transform:uppercase;color:var(--gd)}.logo b{font:900 1.35rem "Playfair Display"}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-weight:600;font-size:.94rem;color:var(--mu)}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--cr)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .92rem "Source Sans 3";letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:14px 22px;background:var(--gd);color:var(--bk);border:1.5px solid var(--gd);transition:.2s;cursor:pointer}
+.btn:hover{background:var(--gd2);transform:translateY(-2px)}.btn.o{background:transparent;color:var(--cr);border-color:var(--ln)}.btn.o:hover{border-color:var(--gd)}
+.hero{position:relative;min-height:min(720px,calc(var(--vh) - 66px));display:grid;place-items:center;text-align:center;overflow:hidden;isolation:isolate}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:brightness(.42)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse,transparent 30%,rgba(21,19,18,.85))}
+.badge{display:inline-grid;place-items:center;width:120px;height:120px;border-radius:50%;border:1.5px solid var(--gd);color:var(--gd);font:700 .74rem/1.3 "Source Sans 3";letter-spacing:.2em;text-transform:uppercase;margin-bottom:20px}
+.badge b{display:block;font:900 2.2rem/1 "Playfair Display";letter-spacing:0}
+h1{font:900 clamp(3rem,7.6vw,6.4rem)/.98 "Playfair Display";margin:0 0 16px}
+h1 em{color:var(--gd);font-style:italic}
+.lead{font-size:1.18rem;color:#d7cfc1;max-width:50ch;margin:0 auto 26px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+section{padding:96px 0}
+h2{font:900 clamp(2.3rem,5vw,3.8rem)/1.03 "Playfair Display";margin:0 0 14px}
+h2 em{color:var(--gd);font-style:italic}
+.kick{font:700 .74rem "Source Sans 3";letter-spacing:.26em;text-transform:uppercase;color:var(--gd)}
+.sub{color:var(--mu);max-width:58ch;margin:0;font-size:1.06rem}
+.fond{background:var(--cr);color:var(--bk)}
+.fgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:start}
+.fond .sub{color:#6b6257}.fond h2 em{color:var(--rd)}.fond .kick{color:var(--rd)}
+.pot{background:#fff;border:1px solid rgba(0,0,0,.1);padding:28px;box-shadow:0 30px 60px -40px rgba(0,0,0,.5)}
+.lbl{font:700 .74rem "Source Sans 3";letter-spacing:.16em;text-transform:uppercase;color:#7b7266;display:block;margin-bottom:8px}
+.meats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.meats label{cursor:pointer}.meats input{position:absolute;opacity:0}
+.meats span{display:inline-block;padding:10px 16px;border:1.5px solid rgba(0,0,0,.15);font-weight:600}
+.meats input:checked+span{background:var(--rd);border-color:var(--rd);color:#fff}
+.meats input:focus-visible+span{outline:2px solid var(--gd);outline-offset:2px}
+.g{display:flex;align-items:center;gap:16px;margin-bottom:20px}.g output{font:900 3rem/1 "Playfair Display";color:var(--rd);min-width:64px}
+input[type=range]{flex:1;accent-color:var(--rd);height:30px}
+.split{display:grid;gap:6px;border-top:2px solid var(--bk);padding-top:14px}
+.split div{display:flex;justify-content:space-between;font-weight:600}
+.split .tot{font:900 1.6rem "Playfair Display";border-top:1px dashed rgba(0,0,0,.2);padding-top:8px;margin-top:4px}
+.fine{font-size:.86rem;color:#7b7266;margin:12px 0 0}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:40px}
+.c{background:var(--bk2);border:1px solid var(--ln)}
+.c img{width:100%;aspect-ratio:4/3;object-fit:cover}.c div{padding:20px 22px 24px}
+.c h3{font:700 1.45rem "Playfair Display";margin:0 0 6px;color:var(--gd2)}.c p{margin:0;color:var(--mu);font-size:.97rem}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.tl{border-left:2px solid var(--gd);padding-left:24px;margin-top:24px}
+.tl div{position:relative;margin-bottom:22px}.tl div::before{content:"";position:absolute;left:-31px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--gd)}
+.tl b{font:900 1.6rem "Playfair Display";color:var(--gd)}.tl p{margin:2px 0 0;color:var(--mu)}
+.story img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.draw{display:flex;gap:18px;align-items:center;margin-top:24px;border:1px dashed var(--gd);padding:16px 18px}
+.draw b{font:900 2.4rem/1 "Playfair Display";color:var(--gd)}
+.contact{background:var(--bk2)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
+.big{font:900 2rem/1.2 "Playfair Display";margin:10px 0}
+footer{border-top:1px solid var(--ln);color:#857d71;padding:24px 0;font-size:.88rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:900px){nav ul{display:none}.fgrid,.story,.cgrid{grid-template-columns:minmax(0,1fr)}.grid{grid-template-columns:minmax(0,1fr)}section{padding:72px 0}}
+</style>
+<style>
+.demo-bar{position:relative;z-index:9999;background:#111;color:#fff;font:500 13px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center;
+ padding:8px max(14px,env(safe-area-inset-right,0px)) 8px max(14px,env(safe-area-inset-left,0px));padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.demo-bar b{background:#FFD23F;color:#111;border-radius:4px;padding:1px 7px;margin-right:8px;font-weight:700;letter-spacing:.06em}
+@media (max-width:600px){.demo-bar{font-size:12px}.demo-bar .long{display:none}}
+</style>
+</head>
+<body>
+<div class="demo-bar" role="note"><b>DÉMO</b>Exemple préparé pour Boucherie Jean Leclerc<span class="long"> · ce n'est pas le site officiel du commerce</span><span class="long"> · Benjamin Sévigny, 819-449-8779</span></div>
+<nav><div class="wrap"><a class="logo" href="#top"><small>Boucherie</small><b>Jean Leclerc &amp; associé</b></a>
+<ul><li><a href="#fondue">Fondue chinoise</a></li><li><a href="#maison">Fait maison</a></li><li><a href="#histoire">Histoire</a></li><li><a href="#contact">Nous joindre</a></li></ul>
+<a class="btn" href="tel:+14188336776">418 833-6776</a></div></nav>
+
+<header class="hero" id="top"><img src="img/1.jpg" alt="Comptoir de boucherie">
+<div class="wrap"><div class="badge"><div><b>7/7</b>jours</div></div>
+<h1>Depuis 1993, <em>la première qualité.</em></h1>
+<p class="lead">Viandes fraîches tranchées sur place, charcuteries, mets cuisinés et pâtisseries maison, à Lévis, 7 jours sur 7. Venez faire un tour et constatez par vous-même.</p>
+<div class="ctas"><a class="btn" href="#fondue">Planifier ma fondue</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Boucherie+Jean+Leclerc+%26+associ%C3%A9+inc.+7265+Bd+Guillaume-Couture%2C+L%C3%A9vis%2C+QC+G6V+7A3" target="_blank" rel="noopener">Itinéraire</a></div></div></header>
+
+<section class="fond" id="fondue"><div class="wrap fgrid">
+<div class="rv"><span class="kick">Notre spécialité</span><h2>20 variétés de <em>fondues chinoises</em></h2>
+<p class="sub">Bœuf, porc, poulet, veau et dinde tranchés chaque jour sur place, plus des viandes à fondue déjà emballées et congelées, et une grande variété de sauces. Choisissez vos viandes et le nombre d'invités : on calcule pour vous.</p>
+<img src="img/2.jpg" alt="Viande tranchée" style="margin-top:26px;aspect-ratio:16/11;object-fit:cover;width:100%"></div>
+<div class="pot rv">
+<span class="lbl">Les viandes</span>
+<div class="meats" id="meats"><label><input type="checkbox" value="Bœuf" checked><span>Bœuf</span></label><label><input type="checkbox" value="Porc"><span>Porc</span></label><label><input type="checkbox" value="Poulet" checked><span>Poulet</span></label><label><input type="checkbox" value="Veau"><span>Veau</span></label><label><input type="checkbox" value="Dinde"><span>Dinde</span></label></div>
+<span class="lbl">Nombre d'invités</span>
+<div class="g"><output id="n">6</output><input type="range" id="r" min="2" max="30" value="6" aria-label="Nombre d'invités"></div>
+<div class="split" id="split" aria-live="polite"></div>
+<p class="fine">Repère d'environ 200 g par personne pour un repas de fondue. Pour les gros appétits, ajoutez-en ; l'équipe vous conseille au comptoir. Pensez aux sauces !</p>
+<p style="margin:16px 0 0"><a class="btn" style="background:var(--rd);border-color:var(--rd);color:#fff" href="tel:+14188336776">Commander : 418 833-6776</a></p>
+</div></div></section>
+
+<section id="maison"><div class="wrap">
+<span class="kick rv">Fait dans nos cuisines</span><h2 class="rv">De l'entrée <em>au dessert</em></h2>
+<div class="grid">
+<div class="c rv"><img src="img/3.jpg" alt="Charcuteries"><div><h3>Charcuteries et saucisses maison</h3><p>Saucisse porc et bœuf et saucisse au veau, produites dans nos cuisines.</p></div></div>
+<div class="c rv" style="--d:.1s"><img src="img/4.jpg" alt="Mets cuisinés"><div><h3>Mets cuisinés et pâtés</h3><p>Lasagne, bœuf bourguignon, ragoût de boulettes, tourtière, pâtés au poulet, au saumon frais, pâté mexicain et plus.</p></div></div>
+<div class="c rv" style="--d:.2s"><img src="img/5.jpg" alt="Desserts"><div><h3>Desserts maison</h3><p>Tarte au sucre ou aux fruits, mille-feuilles, éclairs, choux à la crème et carrés aux dattes.</p></div></div>
+</div>
+<p class="sub rv" style="margin-top:30px"><b style="color:var(--gd2)">Service de traiteur :</b> de l'entrée au dessert, on adapte nos menus à votre événement. On s'occupe aussi du gâteau ! Demandez Lucie Patry, responsable Cuisine-Buffet.</p>
+</div></section>
+
+<section id="histoire" style="padding-top:0"><div class="wrap story">
+<div class="rv"><span class="kick">Notre histoire</span><h2>Une boucherie <em>de famille</em></h2>
+<div class="tl"><div><b>1993</b><p>Gaétan Marquis et Jean Leclerc s'associent et fondent la Boucherie Marquis-Leclerc.</p></div><div><b>2012</b><p>Jean Leclerc devient l'unique propriétaire et renomme la boucherie.</p></div><div><b>Aujourd'hui</b><p>Notre viande hachée maigre vaut l'extra-maigre d'ailleurs. Comparez !</p></div></div>
+<div class="draw"><b>2</b><span>tirages chaque dimanche : inscrivez vos coordonnées au dos de votre facture et courez la chance de gagner le montant de vos achats.</span></div></div>
+<img class="rv" src="img/6.jpg" alt="Boucher">
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap cgrid">
+<div class="rv"><span class="kick">Nous joindre</span><p class="big">7265 Bd Guillaume-Couture<br>Lévis, QC G6V 7A3</p><p><a href="tel:+14188336776">418 833-6776</a> · <a href="mailto:leclerc.jean@hotmail.com">leclerc.jean@hotmail.com</a><br><span style="color:var(--mu)">4,7 ★ sur Google · 87 avis</span></p></div>
+<div class="rv"><p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="tel:+14188336776">Appeler</a><a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Boucherie+Jean+Leclerc+%26+associ%C3%A9+inc.+7265+Bd+Guillaume-Couture%2C+L%C3%A9vis%2C+QC+G6V+7A3" target="_blank" rel="noopener">Itinéraire</a></p><p class="sub" style="font-size:.9rem;margin-top:14px">Ouvert 7 jours sur 7. Les prix peuvent changer sans préavis : confirmez avec nous lors de la commande.</p></div>
+</div></section>
+<footer><div class="wrap"><span>© Boucherie Jean Leclerc et associé inc. · Lévis</span><span>Au plaisir de vous servir !</span></div></footer>
+<script>/* Base commune des sites v2 : mode capture, apparition au défilement, heures et « ouvert maintenant ». Les données (null, "fr") sont insérées par build_v2.py. */
+window.L=(function(){
+const R=document.documentElement,sh=/[?&]shot=(\d+)/.exec(location.search);
+if(sh){R.classList.add('shot');R.style.setProperty('--vh',sh[1]+'px')}
+const css=document.createElement('style');
+css.textContent='.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}.rv.in{opacity:1;transform:none}'+
+'@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}'+
+'@media (max-width:600px){.btn{white-space:normal!important;max-width:100%;text-align:center;justify-content:center}p,li,h1,h2,h3,h4,blockquote{overflow-wrap:break-word}}'+
+'html.shot .rv{opacity:1!important;transform:none!important;transition:none!important}html.shot *,html.shot *::before,html.shot *::after{animation-delay:-60s!important;animation-play-state:paused!important;transition:none!important}';
+document.head.appendChild(css);
+const H=null,EN="fr"==='en';
+const DN=EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+const DS=EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
+function fmt(m){m=((m%1440)+1440)%1440;const h=Math.floor(m/60),mi=m%60;
+ if(EN)return (h%12||12)+(mi?':'+String(mi).padStart(2,'0'):'')+(h<12?' a.m.':' p.m.');
+ return h+' h'+(mi?' '+String(mi).padStart(2,'0'):'')}
+const now=new Date(),d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+function status(){
+ if(H==='24h')return{on:true,txt:EN?'Open 24/7':'Ouvert 24 h sur 24, 7 jours'};
+ if(!H)return{on:false,txt:''};
+ const t=H[d],y=H[(d+6)%7];
+ if(y&&y[1]>1440&&m<y[1]-1440)return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(y[1])};
+ if(t&&m>=t[0]&&m<t[1])return{on:true,txt:(EN?'Open now · until ':'Ouvert maintenant · jusqu\'à ')+fmt(t[1])};
+ if(t&&m<t[0])return{on:false,txt:(EN?'Closed now · opens at ':'Fermé · ouvre à ')+fmt(t[0])};
+ for(let k=1;k<8;k++){const n=H[(d+k)%7];if(n){const w=k===1?(EN?'tomorrow':'demain'):(EN?DN[(d+k)%7]:DN[(d+k)%7].toLowerCase());return{on:false,txt:(EN?'Closed now · opens '+w+' at ':'Fermé · ouvre '+w+' à ')+fmt(n[0])}}}
+ return{on:false,txt:''}}
+function hours(ul){ul.replaceChildren();const short=ul.dataset.hours==='short';
+ if(H==='24h'){ul.innerHTML='<li class="td"><span>'+(EN?'Every day':'Tous les jours')+'</span><span>'+(EN?'24 hours':'24 h sur 24')+'</span></li>';return}
+ [1,2,3,4,5,6,0].forEach(k=>{const li=document.createElement('li');if(k===d)li.className='td';const t=H[k];
+  li.innerHTML='<span>'+(short?DS[k]:DN[k])+'</span><span>'+(t?fmt(t[0])+' – '+fmt(t[1]):(EN?'Closed':'Fermé'))+'</span>';ul.appendChild(li)})}
+function boot(){
+ const s=status();
+ document.querySelectorAll('[data-status]').forEach(e=>{if(s.txt)e.textContent=s.txt;const b=e.closest('[data-open]')||e;b.classList.toggle('on',s.on)});
+ document.querySelectorAll('[data-hours]').forEach(hours);
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(e=>io.observe(e))}
+function phones(){document.querySelectorAll('a.btn[href^="tel:"]').forEach(a=>{if(/^[\s\d().+-]{10,}$/.test(a.textContent)){a.style.whiteSpace='nowrap';if(a.closest('nav')){a.dataset.lbl=EN?'Call':'Appeler';a.classList.add('ph')}}})}
+const pc=document.createElement('style');pc.textContent='@media (max-width:600px){nav a.btn.ph{font-size:0!important;gap:0!important}nav a.btn.ph::after{content:attr(data-lbl);font-size:.9rem;letter-spacing:.02em}}';document.head.appendChild(pc);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{boot();phones()});else{boot();phones()}
+return{shot:!!sh,status,fmt,H,EN,today:d,mins:m,DN};
+})();
+</script>
+<script>
+(()=>{const meats=document.getElementById('meats'),r=document.getElementById('r'),n=document.getElementById('n'),split=document.getElementById('split');
+function draw(){const m=[...meats.querySelectorAll('input:checked')].map(i=>i.value),k=+r.value;n.textContent=k;const tot=k*200;
+ if(!m.length){split.innerHTML='<div>Cochez au moins une viande.</div>';return}
+ const each=Math.round(tot/m.length/50)*50,f=g=>g>=1000?(g/1000).toFixed(2).replace('.',',').replace(/0$/,'')+' kg':g+' g';
+ split.innerHTML=m.map(x=>'<div><span>'+x+'</span><span>'+f(each)+'</span></div>').join('')+'<div class="tot"><span>Total</span><span>'+f(each*m.length)+'</span></div>'}
+meats.addEventListener('change',draw);r.oninput=draw;draw()})();
+</script>
+
+</body>
+</html>
